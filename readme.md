@@ -1,1 +1,1 @@
-Specifications of RAiD metadata schema and vobabularies.
+Specification/documentation of RAiD metadata schema and vobabularies.
