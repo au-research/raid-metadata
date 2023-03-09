@@ -1,0 +1,11 @@
+[
+    "Continues",
+    "IsContiniuedBy",
+    "IsPartOf",
+    "HasPart",
+    "IsIdenticalTo",
+    "IsDerivedFrom",
+    "IsSourceOf",
+    "Obsoletes",
+    "IsObsoletedBy"
+]
