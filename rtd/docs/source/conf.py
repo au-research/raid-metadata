@@ -2,8 +2,8 @@
 
 # -- Project information
 
-project = 'RAiD'
-copyright = '2023, ARDC'
+project = 'RAiD Metadata Schema'
+copyright = '2023, Australian Research Data Commons'
 author = 'Shawn Ross'
 
 release = '0.1'
