@@ -1,7 +1,7 @@
-Extended Metadata Schema Elements
-=================================
+Extended Metadata Schema Properties
+===================================
 
 .. autosummary::
    :toctree: generated
 
-*extended metadata elements go here*
+*extended metadata properties go here*

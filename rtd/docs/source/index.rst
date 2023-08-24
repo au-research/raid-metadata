@@ -12,7 +12,7 @@ Blocks
 All metadata properties are divided into blocks. Each block contains related properties. 
 
 Property descriptions
-^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
 
 Each property description has a number of elements:
 
@@ -42,4 +42,5 @@ Contents
 .. toctree::
 
    core
+      identifier
    extended
