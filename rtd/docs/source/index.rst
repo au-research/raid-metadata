@@ -17,13 +17,18 @@ Property descriptions
 Each property description has a number of elements:
 
 **Definition** briefly defines the property
+
 **Requirement** indicates whether a property is mandatory, recommended, or optional
+
 **Occurance** indicates the number of times a property may occur:
+
 * 0 represents a recommended or optional property that may only occur once
 * 0-n represents an optional propterty that may occur multiple times
 * 1 represents a required property that may only occur once
 * 1-n represents a required propterty that may occur multiple times
+
 **Allowed values** will either indicate a controlled list of values limiting input (as a bulleted list), or rules governing the values (as an italicised statement followed by format and contraints).
+
 **Note** any additional information about the property.
 
 
