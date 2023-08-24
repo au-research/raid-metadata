@@ -1,6 +1,3 @@
-Core Metadata Schema Properties
-===============================
-
 .. autosummary::
    :toctree: generated
 
@@ -9,6 +6,8 @@ Core Metadata Schema Properties
 
 1 Identifier block
 ------------------
+
+.. _1.1-identifier:
 
 1.1 identifier.id
 ^^^^^^^^^^^^^^^^^
@@ -29,7 +28,7 @@ Core Metadata Schema Properties
 
 **Note**: RAiD names are valid DOIs and can also be resolved at https://doi.org/ or https://handle.net/.
 
-.. _1.1-identifierSchemeURI:
+.. _1.1-identifier.id:
 
 1.1a identifier.schemeURI
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -158,4 +157,3 @@ Core Metadata Schema Properties
 **Allowed values**: Auto-incrementing integer
 
 **Note**: The RAiD version number is set automatically by the RAiD Service software as a RAiD is updated. 
- 
