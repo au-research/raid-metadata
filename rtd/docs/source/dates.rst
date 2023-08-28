@@ -16,7 +16,7 @@
 
 **Requirement**: Mandatory
 
-**Occurence**: 1
+**Occurrence**: 1
 
 **Allowed values**: ISO 8601 standard date
 
@@ -35,7 +35,7 @@
 
 **Requirement**: Recommended
 
-**Occurence**: 1
+**Occurrence**: 1
 
 **Allowed values**: ISO 8601 standard date
 

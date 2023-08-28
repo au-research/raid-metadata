@@ -30,7 +30,7 @@
 
 .. _1.1a-identifier.id:
 
-1.1a identifier.schemeURI
+1.1.a identifier.schemeURI
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Definition**: The URI of the Identifier scheme used to identify RAiDs.
@@ -65,7 +65,7 @@
 
 .. _1.2a-identifier.registrationAgency.schemeURI:
 
-1.2a identifier.registrationAgency.schemeURI
+1.2.a identifier.registrationAgency.schemeURI
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Definition**: The URI of the Identifier scheme used to identify RAiD Registration Agencies.
@@ -103,7 +103,7 @@
 
 .. _1.3a-identifier.owner.schemeURI:
 
-1.3a identifier.owner.schemeURI
+1.3.a identifier.owner.schemeURI
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Definition**: The URI of the Identifier scheme used to identify RAiD Owners.
