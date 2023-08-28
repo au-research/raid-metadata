@@ -168,6 +168,6 @@
 
 **Occurence**: 1
 
-**Allowed values**: *Auto-incrementing integer*
+**Allowed values**: Auto-incrementing integer
 
 **Note**: The RAiD version number is set automatically by the RAiD Service software as a RAiD is updated. 
