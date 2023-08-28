@@ -45,7 +45,7 @@
 .. _3.2a-titles.typeId.schemaUri:
 
 3.2.a titles.typeId.schemaUri
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Definition**: The URI of the title type schema.
 
@@ -79,7 +79,7 @@
 **Note**: Currently limited to ISO 639-3 three-letter code.
 
 3.3.a titles.languageID.schemaUri
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Definition**: The URI of the language identifier schema.
 
