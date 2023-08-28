@@ -6,8 +6,8 @@ project = 'RAiD Metadata Schema'
 copyright = '2023, Australian Research Data Commons'
 author = 'Shawn Ross'
 
-release = '0.1'
-version = '0.1.0'
+release = '1.0'
+version = '1.0.0_draft'
 
 # -- General configuration
 

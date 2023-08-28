@@ -28,7 +28,7 @@
 
 **Note**: RAiD names are valid DOIs and can also be resolved at https://doi.org/ or https://handle.net/.
 
-.. _1.1-identifier.id:
+.. _1.1a-identifier.id:
 
 1.1a identifier.schemeURI
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -44,6 +44,8 @@
 * ``https://raid.org/``
 
 **Note**: This property declares that the Identifier is a RAiD, declaring it resolvable at https://raid.org/; this property is set as a default in all installations of the RAiD Service software.
+
+.. _1.2-identifier.registrationAgency:
 
 1.2 identifier.registrationAgency
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -61,6 +63,8 @@
 
 **Note**: Registration Agencies must have, acquire, or be assigned RORs. The Registration Agency identifier must be set as a default in each installation of the RAiD Service software. The Registration Authority maintains the list of Registration Agencies.
 
+.. _1.2a-identifier.registrationAgency.schemeURI:
+
 1.2a identifier.registrationAgency.schemeURI
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -75,6 +79,8 @@
 * ``https://ror.org/``
 
 **Note**: This property is set as a default in all installations of the RAiD Service software.
+
+.. _1.3-identifier.owner:
 
 1.3 identifier.owner
 ^^^^^^^^^^^^^^^^^^^^
@@ -95,6 +101,8 @@
 
 **Note**: Owners, i.e., Organisations hosting Service Points, must have, acquire, or be assigned RORs. A RAiD minted by a Registration Agency must be associated with an Owner affiliated with that Agency.
 
+.. _1.3a-identifier.owner.schemeURI:
+
 1.3a identifier.owner.schemeURI
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -109,6 +117,8 @@
 * ``https://ror.org/``
 
 **Note**: This property is set as a default in all installations of the RAiD Service software.
+
+.. _1.4-identifier.servicePoint:
 
 1.4 identifier.servicePoint
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -130,6 +140,8 @@
 
 **Note**: A RAiD minted by a Registration Agency must have a SP associated with an Owner affiliated with that Agency.
 
+.. _1.5-identifier.license:
+
 1.5 identifier.license
 ^^^^^^^^^^^^^^^^^^^^^^
 
@@ -145,6 +157,8 @@
 
 **Note**: All RAiD metadata is available on a 'no rights reserverd' basis. 
 
+.. _1.6-identifier.version:
+
 1.6 identifier.version
 ^^^^^^^^^^^^^^^^^^^^^^
 
@@ -154,6 +168,6 @@
 
 **Occurence**: 1
 
-**Allowed values**: Auto-incrementing integer
+**Allowed values**: *Auto-incrementing integer*
 
 **Note**: The RAiD version number is set automatically by the RAiD Service software as a RAiD is updated. 
