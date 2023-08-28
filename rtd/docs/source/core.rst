@@ -1,4 +1,4 @@
-Core Meteadta Schema Properties
+Core Metadata Schema Properties
 ===============================
 
 Contents

@@ -16,7 +16,7 @@
 
 **Requirement**: Mandatory
 
-**Occurence**: 1
+**Occurrence**: 1
 
 **Allowed values**: A RAiD name registered by a RAiD Registration Agency expressed as an actionable URL.
 
@@ -24,7 +24,7 @@
 
 **Example**: ``https://raid.org/10.12345/abc123``
 
-**Contraints**: RAiD name prefix supplied by the DOI Foundation; RAiD name suffix consisting of alphanumeric, English, ASCII Latin characters
+**Constraints**: RAiD name prefix supplied by the DOI Foundation; RAiD name suffix consisting of alphanumeric, English, ASCII Latin characters
 
 **Note**: RAiD names are valid DOIs and can also be resolved at https://doi.org/ or https://handle.net/.
 
@@ -37,7 +37,7 @@
 
 **Requirement**: Mandatory
 
-**Occurence**: 1
+**Occurrence**: 1
 
 **Allowed values**: *Controlled list*
 
@@ -54,7 +54,7 @@
 
 **Requirement**: Mandatory
 
-**Occurence**: 1
+**Occurrence**: 1
 
 **Allowed values**: *Controlled list*
 
@@ -72,7 +72,7 @@
 
 **Requirement**: Mandatory
 
-**Occurence**: 1
+**Occurrence**: 1
 
 **Allowed values**: *Controlled list*
 
@@ -89,7 +89,7 @@
 
 **Requirement**: Mandatory
 
-**Occurence**: 1
+**Occurrence**: 1
 
 **Allowed values**: *Controlled list of Owners maintained by each Registration Agency*
 
@@ -110,7 +110,7 @@
 
 **Requirement**: Mandatory
 
-**Occurence**: 1
+**Occurrence**: 1
 
 **Allowed values**: *Controlled list*
 
@@ -127,7 +127,7 @@
 
 **Requirement**: Mandatory
 
-**Occurence**: 1
+**Occurrence**: 1
 
 **Allowed values**: *Controlled list of Service Points maintained by each Registration Agency*
 
@@ -149,13 +149,13 @@
 
 **Requirement**: Mandatory
 
-**Occurence**: 1
+**Occurrence**: 1
 
 **Allowed values**: *Controlled list*
 
 * Creative Commons CC-0
 
-**Note**: All RAiD metadata is available on a 'no rights reserverd' basis. 
+**Note**: All RAiD metadata is available on a 'no rights reserved' basis. 
 
 .. _1.6-identifier.version:
 
@@ -166,7 +166,7 @@
 
 **Requirement**: Mandatory
 
-**Occurence**: 1
+**Occurrence**: 1
 
 **Allowed values**: Auto-incrementing integer
 
