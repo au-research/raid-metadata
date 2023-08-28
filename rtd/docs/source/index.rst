@@ -44,4 +44,5 @@ Contents
    core
       identifier
       dates
+      titles
    extended

@@ -8,6 +8,7 @@ Contents
 
    identifier
    dates
+   titles
 
 
 
