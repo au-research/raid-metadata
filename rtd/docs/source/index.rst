@@ -43,4 +43,5 @@ Contents
 
    core
       identifier
+      dates
    extended
