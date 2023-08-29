@@ -10,7 +10,10 @@ Contents
    dates
    titles
    descriptions
-
-
+   contributors
+   organisations
+   relatedObjects
+   alternateIdentifiers
+   relatedRaids
 
 
