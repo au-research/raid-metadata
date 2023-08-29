@@ -3,9 +3,12 @@
 
 .. _2-Dates:
 
+2 Dates
+-------
 
-2 Dates block
--------------
+**Definition**: Metadata schema block containing the start and end dates of the RAiD.
+
+**Example JSON**
 
 .. _2.1-dates.startDate:
 

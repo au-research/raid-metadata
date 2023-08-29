@@ -3,13 +3,16 @@
 
 .. _3-Titles:
 
+3 Titles
+--------
 
-3 Titles block
---------------
+**Definition**: Metadata schema block containing the title of the RAiD and associated properties.
 
-.. _3.1-titles.title:
+**Example JSON**
 
-3.1 titles.title
+.. _3.1-titles.text:
+
+3.1 titles.text
 ^^^^^^^^^^^^^^^^
 
 **Definition**: A name or title by which the project or activity is known.
@@ -42,9 +45,9 @@
 
 **Note**: One (and only one) current (as per start-end dates) Primary Title is mandatory for each Title specified; additional titles are optional. 'Previous titles' are managed by start-end dates. Controlled list adapted from Vocabularies for Registry Schema 1.6.5 'Name Type'.
 
-.. _3.2a-titles.typeId.schemaUri:
+.. _3.2.1-titles.typeId.schemaUri:
 
-3.2.a titles.typeId.schemaUri
+3.2.1 titles.typeId.schemaUri
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Definition**: The URI of the title type schema.
@@ -59,7 +62,7 @@
 
 **Note**: The RAiD vocabulary on RVA is specified for raid.org and used by ARDC registration service; Registration Agencies may implement other controlled vocabularies but must provide a crosswalk. In 'core' elements like this one where variation of controlled vocabularies amongst Registration Agencies occurs, the RAiD Service should return the 'local' term and schema as well as the ‘standardised’ term and schema. Mandatory for each titles.TypeId specified.
 
-.. _3.2-titles.languageID:
+.. _3.3-titles.languageID:
 
 3.3 titles.languageID
 ^^^^^^^^^^^^^^^^^^^^^
@@ -74,11 +77,11 @@
 
 **Example**: ``eng`` (*ISO 639-3 three-letter code*)
 
-.. _3.2a-titles.languageID.schemaUri:
-
 **Note**: Currently limited to ISO 639-3 three-letter code.
 
-3.3.a titles.languageID.schemaUri
+.. _3.3.1-titles.languageID.schemaUri:
+
+3.3.1 titles.languageID.schemaUri
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Definition**: The URI of the language identifier schema.

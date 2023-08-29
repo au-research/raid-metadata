@@ -3,11 +3,14 @@
 
 .. _1-Identifier:
 
+1 Identifier
+------------
 
-1 Identifier block
-------------------
+**Definition**: Metadata schema block containing the RAiD name (identifier.id) and associated properties.
 
-.. _1.1-identifier:
+**Example JSON**
+
+.. _1.1-identifier.id:
 
 1.1 identifier.id
 ^^^^^^^^^^^^^^^^^
@@ -28,10 +31,10 @@
 
 **Note**: RAiD names are valid DOIs and can also be resolved at https://doi.org/ or https://handle.net/.
 
-.. _1.1a-identifier.id:
+.. _1.1.1-identifier.id.schemaURI:
 
-1.1.a identifier.schemeURI
-~~~~~~~~~~~~~~~~~~~~~~~~~
+1.1.1 identifier.id.schemaURI
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Definition**: The URI of the Identifier scheme used to identify RAiDs.
 
@@ -45,10 +48,10 @@
 
 **Note**: This property declares that the Identifier is a RAiD, declaring it resolvable at https://raid.org/; this property is set as a default in all installations of the RAiD Service software.
 
-.. _1.2-identifier.registrationAgency:
+.. _1.2-identifier.registrationAgencyId:
 
-1.2 identifier.registrationAgency
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1.2 identifier.registrationAgencyId
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: The Research Organization Registry (ROR) of the RAiD Registration Agency that minted the RAiD.
 
@@ -63,10 +66,10 @@
 
 **Note**: Registration Agencies must have, acquire, or be assigned RORs. The Registration Agency identifier must be set as a default in each installation of the RAiD Service software. The Registration Authority maintains the list of Registration Agencies.
 
-.. _1.2a-identifier.registrationAgency.schemeURI:
+.. _1.2.1-identifier.registrationAgencyId.schemaURI:
 
-1.2.a identifier.registrationAgency.schemeURI
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1.2.1 identifier.registrationAgencyId.schemaURI
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Definition**: The URI of the Identifier scheme used to identify RAiD Registration Agencies.
 
@@ -93,7 +96,7 @@
 
 **Allowed values**: *Controlled list of Owners maintained by each Registration Agency*
 
-**Examples**:
+**Example values**:
 
 * ``https://ror.org/00rqy9422`` [University of Queensland]
 * ``https://ror.org/02stey378`` [University of Notre Dame Austraila]
@@ -101,10 +104,10 @@
 
 **Note**: Owners, i.e., Organisations hosting Service Points, must have, acquire, or be assigned RORs. A RAiD minted by a Registration Agency must be associated with an Owner affiliated with that Agency.
 
-.. _1.3a-identifier.owner.schemeURI:
+.. _1.3.1-identifier.owner.schemaURI:
 
-1.3.a identifier.owner.schemeURI
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1.3.1 identifier.owner.schemaURI
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Definition**: The URI of the Identifier scheme used to identify RAiD Owners.
 
