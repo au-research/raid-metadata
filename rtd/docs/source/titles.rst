@@ -99,7 +99,7 @@
 .. _3.4-titles.startDate:
 
 3.4 titles.startDate
-^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: Date the project or activity title began being used.
 
@@ -118,7 +118,7 @@
 .. _3.5-titles.endDate:
 
 3.5 titles.endDate
-^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^
 
 **Definition**: Date the project or activity title was changed or stopped being used.
 
