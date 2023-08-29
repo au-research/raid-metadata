@@ -9,6 +9,7 @@ Contents
    identifier
    dates
    titles
+   descriptions
 
 
 

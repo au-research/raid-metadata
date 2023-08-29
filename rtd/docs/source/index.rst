@@ -58,4 +58,5 @@ Contents
       identifier
       dates
       titles
+      descriptions
    extended
