@@ -1,9 +1,9 @@
 .. autosummary::
    :toctree: generated
 
-.. _1-Identifier:
+.. _1-identifier:
 
-1 Identifier
+1 identifier
 ============
 
 **Definition**: Metadata schema block containing the RAiD name (identifier.id) and associated properties.

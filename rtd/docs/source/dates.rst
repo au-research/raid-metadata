@@ -1,9 +1,9 @@
 .. autosummary::
    :toctree: generated
 
-.. _2-Dates:
+.. _2-dates:
 
-2 Dates
+2 dates
 =======
 
 **Definition**: Metadata schema block containing the start and end dates of the RAiD.

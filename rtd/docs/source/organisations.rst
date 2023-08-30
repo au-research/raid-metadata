@@ -1,9 +1,9 @@
 .. autosummary::
    :toctree: generated
 
-.. _6-Organisations:
+.. _6-organisations:
 
-6 Organisations
+6 organisations
 ===============
 
 **Definition**: Metadata schema block containing organisations to a RAiD and associated properties.

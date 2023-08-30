@@ -1,9 +1,9 @@
 .. autosummary::
    :toctree: generated
 
-.. _4-Descriptions:
+.. _4-descriptions:
 
-4 Descriptions
+4 descriptions
 ==============
 
 **Definition**: Metadata schema block containing the description of the RAiD and associated properties.

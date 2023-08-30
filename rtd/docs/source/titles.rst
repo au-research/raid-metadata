@@ -1,9 +1,9 @@
 .. autosummary::
    :toctree: generated
 
-.. _3-Titles:
+.. _3-titles:
 
-3 Titles
+3 titles
 ========
 
 **Definition**: Metadata schema block containing the title of the RAiD and associated properties.
@@ -17,7 +17,7 @@
 .. _3.1-titles.text:
 
 3.1 titles.text
-----------------
+---------------
 
 **Definition**: A name or title by which the project or activity is known.
 

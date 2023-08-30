@@ -1,9 +1,9 @@
 .. autosummary::
    :toctree: generated
 
-.. _5-Contributors:
+.. _5-dontributors:
 
-5 Contributors
+5 contributors
 ==============
 
 **Definition**: Metadata schema block containing contributors to a RAiD and associated properties.
@@ -30,7 +30,7 @@
 .. _5.1.1-contributors.id.schemaURI:
 
 5.1.1 contributors.id.schemaURI
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: The URI of the contributor identifier schema.
 
