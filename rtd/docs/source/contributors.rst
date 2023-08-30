@@ -4,7 +4,7 @@
 .. _5-Contributors:
 
 5 Contributors
---------
+==============
 
 **Definition**: Metadata schema block containing contributors to a RAiD and associated properties.
 
@@ -15,7 +15,7 @@
 .. _5.1-contributors.id:
 
 5.1 contributors.id
-^^^^^^^^^^^^^^^^^^^
+-------------------
 
 **Definition**: Contributor (person) associated with a project or activity identified by a PID.
 
@@ -47,7 +47,7 @@
 .. _5.2-contributors.position:
 
 5.2 contributors.position
-~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------
 
 **Definition**: Metadata schema sub-block describing a contributor's position on a project.
 
@@ -77,7 +77,7 @@
 .. _5.2.1.1-contributors.position.id.schemaURI:
 
 5.2.1.1 contributors.position.id.schemaURI
-++++++++++++++++++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Definition**: The URI of the position schema used.
 
@@ -162,7 +162,7 @@
 .. _5.3-contributors.roles:
 
 5.3 contributors.roles
-~~~~~~~~~~~~~~~~~~~~~~
+----------------------
 
 **Definition**: Metadata schema sub-block describing a contributor's role on a project using the CRediT system.
 
@@ -202,7 +202,7 @@
 .. _5.3.1.1-contributors.roles.id.schemaURI:
 
 5.3.1.1 contributors.roles.id.schemaURI
-+++++++++++++++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Definition**: The URI of the roles schema used.
 

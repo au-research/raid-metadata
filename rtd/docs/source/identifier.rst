@@ -4,7 +4,7 @@
 .. _1-Identifier:
 
 1 Identifier
-------------
+============
 
 **Definition**: Metadata schema block containing the RAiD name (identifier.id) and associated properties.
 
@@ -13,7 +13,7 @@
 .. _1.1-identifier.id:
 
 1.1 identifier.id
-^^^^^^^^^^^^^^^^^
+-----------------
 
 **Definition**: A unique string that identifies a Research Activity Identifier (RAiD); RAiD name.
 
@@ -34,7 +34,7 @@
 .. _1.1.1-identifier.id.schemaURI:
 
 1.1.1 identifier.id.schemaURI
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: The URI of the Identifier scheme used to identify RAiDs.
 
@@ -51,7 +51,7 @@
 .. _1.2-identifier.registrationAgencyId:
 
 1.2 identifier.registrationAgencyId
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+------------------------------------
 
 **Definition**: The Research Organization Registry (ROR) of the RAiD Registration Agency that minted the RAiD.
 
@@ -69,7 +69,7 @@
 .. _1.2.1-identifier.registrationAgencyId.schemaURI:
 
 1.2.1 identifier.registrationAgencyId.schemaURI
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: The URI of the Identifier scheme used to identify RAiD Registration Agencies.
 
@@ -86,7 +86,7 @@
 .. _1.3-identifier.owner:
 
 1.3 identifier.owner
-^^^^^^^^^^^^^^^^^^^^
+--------------------
 
 **Definition**: The Research Organization Registry (ROR) of the legal entity responsible for the RAiD; the ‘Owner’ of a RAiD. Analogous to a DataCite 'Member', the Owner has a legal agreement with its Registration Agency.
 
@@ -107,7 +107,7 @@
 .. _1.3.1-identifier.owner.schemaURI:
 
 1.3.1 identifier.owner.schemaURI
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: The URI of the Identifier scheme used to identify RAiD Owners.
 
@@ -124,7 +124,7 @@
 .. _1.4-identifier.servicePoint:
 
 1.4 identifier.servicePoint
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+---------------------------
 
 **Definition**: The Service Point (SP) that requested the RAiD. Analogous to a DataCite ‘Repository’. RAiD Owners can have multiple SPs, and SPs do not need to be legal entities.
 
@@ -146,7 +146,7 @@
 .. _1.5-identifier.license:
 
 1.5 identifier.license
-^^^^^^^^^^^^^^^^^^^^^^
+----------------------
 
 **Definition**: The licence under which the RAiD Metadata Record associated with this Identifier has been issued.
 
@@ -163,7 +163,7 @@
 .. _1.6-identifier.version:
 
 1.6 identifier.version
-^^^^^^^^^^^^^^^^^^^^^^
+----------------------
 
 **Definition**: The version number of the RAiD.
 

@@ -4,7 +4,7 @@
 .. _3-Titles:
 
 3 Titles
---------
+========
 
 **Definition**: Metadata schema block containing the title of the RAiD and associated properties.
 
@@ -13,7 +13,7 @@
 .. _3.1-titles.text:
 
 3.1 titles.text
-^^^^^^^^^^^^^^^^
+----------------
 
 **Definition**: A name or title by which the project or activity is known.
 
@@ -28,7 +28,7 @@
 .. _3.2-titles.typeId:
 
 3.2 titles.typeId
-^^^^^^^^^^^^^^^^^
+-----------------
 
 **Definition**: The type of title.
 
@@ -48,7 +48,7 @@
 .. _3.2.1-titles.typeId.schemaUri:
 
 3.2.1 titles.typeId.schemaUri
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: The URI of the title type schema.
 
@@ -65,7 +65,7 @@
 .. _3.3-titles.languageID:
 
 3.3 titles.languageID
-^^^^^^^^^^^^^^^^^^^^^
+---------------------
 
 **Definition**: Language used for the Title identified by a code or other identifier.
 
@@ -82,7 +82,7 @@
 .. _3.3.1-titles.languageID.schemaUri:
 
 3.3.1 titles.languageID.schemaUri
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: The URI of the language identifier schema.
 
@@ -99,7 +99,7 @@
 .. _3.4-titles.startDate:
 
 3.4 titles.startDate
-^^^^^^^^^^^^^^^^^^^^
+--------------------
 
 **Definition**: Date the project or activity title began being used.
 
@@ -118,7 +118,7 @@
 .. _3.5-titles.endDate:
 
 3.5 titles.endDate
-^^^^^^^^^^^^^^^^^^
+------------------
 
 **Definition**: Date the project or activity title was changed or stopped being used.
 

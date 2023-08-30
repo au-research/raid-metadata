@@ -4,7 +4,7 @@
 .. _2-Dates:
 
 2 Dates
--------
+=======
 
 **Definition**: Metadata schema block containing the start and end dates of the RAiD.
 
@@ -13,7 +13,7 @@
 .. _2.1-dates.startDate:
 
 2.1 dates.startDate
-^^^^^^^^^^^^^^^^^^^
+-------------------
 
 **Definition**: Project or activity start date.
 
@@ -31,8 +31,8 @@
 
 .. _2.2-dates.endDate:
 
-2.1 dates.endDate
-^^^^^^^^^^^^^^^^^^^
+2.2 dates.endDate
+-----------------
 
 **Definition**: Project or activity end date.
 

@@ -4,7 +4,7 @@
 .. _4-Descriptions:
 
 4 Descriptions
---------------
+==============
 
 **Definition**: Metadata schema block containing the description of the RAiD and associated properties.
 
@@ -13,7 +13,7 @@
 .. _4.1-descriptions.text:
 
 4.1 descriptions.text
-^^^^^^^^^^^^^^^^^^^^^
+---------------------
 
 **Definition**: A project description. May include any additional information that does not fit in the other categories.
 
@@ -28,7 +28,7 @@
 .. _4.2-descriptions.typeId:
 
 4.2 descriptions.typeId
-^^^^^^^^^^^^^^^^^^^^^^^
+-----------------------
 
 **Definition**: The type of description.
 
@@ -51,7 +51,7 @@
 .. _4.2.1-descriptions.typeId.schemaUri:
 
 4.2.1 descriptions.typeId.schemaUri
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: The URI of the description type schema.
 
@@ -68,7 +68,7 @@
 .. _4.3-descriptions.languageID:
 
 4.3 descriptions.languageID
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+---------------------------
 
 **Definition**: Language used for the description identified by a code or other identifier.
 
@@ -85,7 +85,7 @@
 .. _4.3.1-descriptions.languageID.schemaUri:
 
 4.3.1 descriptions.languageID.schemaUri
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: The URI of the language identifier schema.
 
