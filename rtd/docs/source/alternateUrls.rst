@@ -12,8 +12,6 @@
 
 **Occurrence**: 0-n
 
-**Note**: RAiDs should avoid duplicating existing PIDs whenever possible.
-
 **Example JSON**
 
 .. _9.1-alternateUrls.url:
