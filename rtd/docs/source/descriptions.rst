@@ -8,6 +8,10 @@
 
 **Definition**: Metadata schema block containing the description of the RAiD and associated properties.
 
+**Requirement**: Recommended
+
+**Occurrence**: 0-n
+
 **Example JSON**
 
 .. _4.1-descriptions.text:
@@ -17,9 +21,9 @@
 
 **Definition**: A project description. May include any additional information that does not fit in the other categories.
 
-**Requirement**: Recommended
+**Requirement**: Mandatory for each desription supplied
 
-**Occurrence**: 0-n
+**Occurrence**: 0-1
 
 **Allowed values**: Free text
 
@@ -32,7 +36,7 @@
 
 **Definition**: The type of description.
 
-**Requirement**: Recommended
+**Requirement**: Mandatory for each desription supplied
 
 **Occurrence**: 0-1
 
@@ -55,19 +59,19 @@
 
 **Definition**: The URI of the description type schema.
 
-**Requirement**: Mandatory
+**Requirement**: Mandatory for each descriptions.typeId supplied
 
-**Occurrence**: 1
+**Occurrence**: 0-1
 
 **Allowed values**: *Controlled list*
 
 * [URI of RAiD vocab on RVA (to be created)]
 
-**Note**: The RAiD vocabulary on RVA is specified for raid.org and used by ARDC registration service; Registration Agencies may implement other controlled vocabularies but must provide a crosswalk. In 'core' elements like this one where variation of controlled vocabularies amongst Registration Agencies occurs, the RAiD Service should return the 'local' term and schema as well as the ‘standardised’ term and schema. Mandatory for each descriptions.TypeId specified.
+**Note**: The RAiD vocabulary on RVA is specified for raid.org and used by ARDC registration service; Registration Agencies may implement other controlled vocabularies but must provide a crosswalk. In 'core' elements like this one where variation of controlled vocabularies amongst Registration Agencies occurs, the RAiD Service should return the 'local' term and schema as well as the ‘standardised’ term and schema.
 
-.. _4.3-descriptions.languageID:
+.. _4.3-descriptions.languageId:
 
-4.3 descriptions.languageID
+4.3 descriptions.languageId
 ---------------------------
 
 **Definition**: Language used for the description identified by a code or other identifier.
@@ -89,7 +93,7 @@
 
 **Definition**: The URI of the language identifier schema.
 
-**Requirement**: Recommended
+**Requirement**: Mandatory for each descriptions.languageId supplied
 
 **Occurrence**: 0-1
 

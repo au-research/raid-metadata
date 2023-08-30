@@ -8,6 +8,10 @@
 
 **Definition**: Metadata schema block containing the start and end dates of the RAiD.
 
+**Requirement**: Mandatory
+
+**Occurrence**: 1
+
 **Example JSON**
 
 .. _2.1-dates.startDate:
@@ -38,7 +42,7 @@
 
 **Requirement**: Recommended
 
-**Occurrence**: 1
+**Occurrence**: 0-1
 
 **Allowed values**: ISO 8601 standard date
 

@@ -8,6 +8,10 @@
 
 **Definition**: Metadata schema block containing the RAiD name (identifier.id) and associated properties.
 
+**Requirement**: Mandatory
+
+**Occurrence**: 1
+
 **Example JSON**
 
 .. _1.1-identifier.id:

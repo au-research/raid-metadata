@@ -8,6 +8,10 @@
 
 **Definition**: Metadata schema block containing the title of the RAiD and associated properties.
 
+**Requirement**: Mandatory
+
+**Occurrence**: 1-n
+
 **Example JSON**
 
 .. _3.1-titles.text:
@@ -17,9 +21,9 @@
 
 **Definition**: A name or title by which the project or activity is known.
 
-**Requirement**: Mandatory
+**Requirement**: Mandatory for each title supplied
 
-**Occurrence**: 1-n
+**Occurrence**: 1
 
 **Allowed values**: Free text
 
@@ -32,7 +36,7 @@
 
 **Definition**: The type of title.
 
-**Requirement**: Mandatory
+**Requirement**: Mandatory for each title supplied
 
 **Occurrence**: 1
 
@@ -52,7 +56,7 @@
 
 **Definition**: The URI of the title type schema.
 
-**Requirement**: Mandatory
+**Requirement**: Mandatory for each titles.typeId supplied
 
 **Occurrence**: 1
 
@@ -62,9 +66,9 @@
 
 **Note**: The RAiD vocabulary on RVA is specified for raid.org and used by ARDC registration service; Registration Agencies may implement other controlled vocabularies but must provide a crosswalk. In 'core' elements like this one where variation of controlled vocabularies amongst Registration Agencies occurs, the RAiD Service should return the 'local' term and schema as well as the ‘standardised’ term and schema. Mandatory for each titles.TypeId specified.
 
-.. _3.3-titles.languageID:
+.. _3.3-titles.languageId:
 
-3.3 titles.languageID
+3.3 titles.languageId
 ---------------------
 
 **Definition**: Language used for the Title identified by a code or other identifier.
@@ -79,14 +83,14 @@
 
 **Note**: Currently limited to ISO 639-3 three-letter code.
 
-.. _3.3.1-titles.languageID.schemaUri:
+.. _3.3.1-titles.languageId.schemaUri:
 
-3.3.1 titles.languageID.schemaUri
+3.3.1 titles.languageId.schemaUri
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: The URI of the language identifier schema.
 
-**Requirement**: Recommended
+**Requirement**: Mandatory for each titles.languageId supplied
 
 **Occurrence**: 0-1
 
@@ -103,7 +107,7 @@
 
 **Definition**: Date the project or activity title began being used.
 
-**Requirement**: Mandatory
+**Requirement**: Mandatory for every title supplied
 
 **Occurrence**: 1
 

@@ -8,7 +8,9 @@
 
 **Definition**: Metadata schema block containing contributors to a RAiD and associated properties.
 
-**Note**: At least one contributor must be provided. 
+**Requirement**: At least one contributor is mandatory
+
+**Occurrence**: 1-n
 
 **Example JSON**
 
@@ -19,7 +21,7 @@
 
 **Definition**: Contributor (person) associated with a project or activity identified by a PID.
 
-**Requirement**: Mandatory
+**Requirement**: Mandatory for each contributor supplied
 
 **Occurrence**: 1-n
 
@@ -32,7 +34,7 @@
 
 **Definition**: The URI of the contributor identifier schema.
 
-**Requirement**: Mandatory
+**Requirement**: Mandatory for each contributors.id supplied
 
 **Occurrence**: 1
 
@@ -42,7 +44,7 @@
 * ``https://isni.org/``
 
 
-**Note**: Controlled list shared across all Registration Agencies. Mandatory for each Contributor specified.
+**Note**: Controlled list shared across all Registration Agencies.
 
 .. _5.2-contributors.position:
 
@@ -50,6 +52,10 @@
 -------------------------
 
 **Definition**: Metadata schema sub-block describing a contributor's position on a project.
+
+**Requirement**: Mandatory for each contributor supplied
+
+**Occurrence**: 1
 
 **Note**: Contributors must have one and only one position at any given time (but may also be flagged as a 'leader' or 'contact').
 
@@ -60,7 +66,7 @@
 
 **Definition**: Contributor's administrative position in the project.
 
-**Requirement**: Mandatory
+**Requirement**: Mandatory for each contributors.position supplied
 
 **Occurrence**: 1
 
@@ -81,7 +87,7 @@
 
 **Definition**: The URI of the position schema used.
 
-**Requirement**: Mandatory
+**Requirement**: Mandatory for each contributors.position.id supplied
 
 **Occurrence**: 1
 
@@ -89,7 +95,7 @@
 
 * [URI of RAiD vocab on RVA (to be created)]
 
-**Note**: Controlled list shared across all Registration Agencies. Mandatory for each contributor.positionID specified.
+**Note**: Controlled list shared across all Registration Agencies.
 
 .. _5.2.2-contributors.position.startDate:
 
@@ -98,7 +104,7 @@
 
 **Definition**: Date the contributor began position associated with the project or activity.
 
-**Requirement**: Mandatory
+**Requirement**: Mandatory for each contributors.positionsupplied
 
 **Occurrence**: 1
 
@@ -119,7 +125,7 @@
 
 **Requirement**: Recommended
 
-**Occurrence**: 1
+**Occurrence**: 0-1
 
 **Allowed values**: ISO 8601 standard date
 
@@ -136,13 +142,13 @@
 
 **Definition**: Flag indicating that the contributor as a project leader.
 
-**Requirement**: Recommended
+**Requirement**: At least one contributor must be flagged as a project leader.
 
-**Occurrence**: 1
+**Occurrence**: 0-1
 
 **Allowed values**: Yes / Null
 
-**Note**: At least one Contributor must be flagged as a project leader. More than one contributor can be flagged as a leader if the project is jointly led.
+**Note**: More than one contributor can be flagged as a leader if the project is jointly led.
 
 .. _5.2.5-contributors.position.contact:
 
@@ -151,13 +157,13 @@
 
 **Definition**: Flag indicating that the contributor as a project contact.
 
-**Requirement**: Recommended
+**Requirement**: At least one contributor must be flagged as a project contact.
 
-**Occurrence**: 1
+**Occurrence**: 0-1
 
 **Allowed values**: Yes / Null
 
-**Note**: At least one Contributor must be flagged as a project contact. More than one Contributor can be flagged as a contact.
+**Note**: More than one Contributor can be flagged as a contact.
 
 .. _5.3-contributors.roles:
 
@@ -165,6 +171,10 @@
 ----------------------
 
 **Definition**: Metadata schema sub-block describing a contributor's role on a project using the CRediT system.
+
+**Requirement**: Recommended
+
+**Occurrence**: 0-n
 
 **Note**: Changes to roles are tracked through version history.
 
@@ -175,9 +185,9 @@
 
 **Definition**: A contributor's (person) role(s) on the Project.
 
-**Requirement**: Recommended
+**Requirement**: Mandatory for each contributors.roles provided
 
-**Occurrence**: 0-n
+**Occurrence**: 0-1
 
 **Allowed values**: *Controlled list*
 
@@ -206,7 +216,7 @@
 
 **Definition**: The URI of the roles schema used.
 
-**Requirement**: Recommended
+**Requirement**: Mandatory for each contributors.roles.id provided
 
 **Occurrence**: 0-1
 
@@ -214,4 +224,4 @@
 
 * ``https://credit.niso.org/``
 
-**Note**: Required if a contributors.roles.id is supplied. Registration Agencies may implement other contributorRole controlled vocabularies but must provide a crosswalk to CRediT. 
+**Note**: Registration Agencies may implement other contributorRole controlled vocabularies but must provide a crosswalk to CRediT. 
