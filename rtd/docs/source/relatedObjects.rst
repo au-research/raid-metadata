@@ -21,7 +21,7 @@
 
 **Definition**: Any (a) input or resource used by a project or activity, (b) output or product created b a project or activity, or (c) internal process documentation used within a project or activity, identified by a PID.
 
-**Requirement**: Mandatory for each relatedObject supplied
+**Requirement**: Mandatory for each relatedObjects supplied
 
 **Occurrence**: 0-1
 
@@ -56,7 +56,7 @@
 
 **Definition**: Metadata schema sub-block describing a relatedObject's type.
 
-**Requirement**: Mandatory for each relatedObject supplied
+**Requirement**: Mandatory for each relatedObjects supplied
 
 **Occurrence**: 0-1
 
@@ -128,7 +128,7 @@
 
 **Definition**: Metadata schema sub-block declaring that a relatedObject is an input, output, and/or process document.
 
-**Requirement**: Mandatory for each relatedObject supplied
+**Requirement**: Mandatory for each relatedObjects supplied
 
 **Occurrence**: 0-n
 
