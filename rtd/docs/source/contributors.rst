@@ -30,7 +30,7 @@
 5.1.1 contributors.id.schemaURI
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Definition**: The URI of the Contributor name identifier schema.
+**Definition**: The URI of the contributor identifier schema.
 
 **Requirement**: Mandatory
 
