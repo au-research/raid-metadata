@@ -14,6 +14,7 @@ Contents
    organisations
    relatedObjects
    alternateIdentifiers
+   alternateUrls
    relatedRaids
 
 
