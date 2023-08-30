@@ -25,7 +25,7 @@ All property descriptions include a number of elements:
 
 **Definition** briefly defines the property
 
-**Requirement** indicates whether a property is mandatory, recommended, or optional
+**Requirement** indicates whether a property is mandatory, recommended, or optional, with additional information where necessary (e.g., if the property is mandatory only if another property is present)
 
 **Occurrence** indicates the number of times a property may occur:
 
