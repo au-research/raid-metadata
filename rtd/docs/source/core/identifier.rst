@@ -35,9 +35,9 @@
 
 **Note**: RAiD names are valid DOIs and can also be resolved at https://doi.org/ or https://handle.net/.
 
-.. _1.1.1-identifier.id.schemaURI:
+.. _1.1.1-identifier.id.schemaUri:
 
-1.1.1 identifier.id.schemaURI
+1.1.1 identifier.id.schemaUri
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: The URI of the Identifier scheme used to identify RAiDs.
@@ -70,9 +70,9 @@
 
 **Note**: Registration Agencies must have, acquire, or be assigned RORs. The Registration Agency identifier must be set as a default in each installation of the RAiD Service software. The Registration Authority maintains the list of Registration Agencies.
 
-.. _1.2.1-identifier.registrationAgencyId.schemaURI:
+.. _1.2.1-identifier.registrationAgencyId.schemaUri:
 
-1.2.1 identifier.registrationAgencyId.schemaURI
+1.2.1 identifier.registrationAgencyId.schemaUri
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: The URI of the Identifier scheme used to identify RAiD Registration Agencies.
