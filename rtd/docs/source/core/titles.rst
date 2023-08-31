@@ -107,7 +107,7 @@
 
 **Definition**: Date the project or activity title began being used.
 
-**Requirement**: Mandatory for every title supplied
+**Requirement**: Mandatory for each title supplied
 
 **Occurrence**: 1
 
