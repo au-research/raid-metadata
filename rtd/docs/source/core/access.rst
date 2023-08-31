@@ -49,7 +49,7 @@
 .. _11.1.1.1-access.typeId.schemaUri:
 
 11.1.1.1 access.type.id.schemaUri
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Definition**: The URI of the title type schema.
 
@@ -112,8 +112,8 @@
 
 .. _11.3.2-access.statement:
 
-11.3.2 access.statement.language
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+11.3.2 access.statement.languageId
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: Language used for the access statement identified by a code or other identifier.
 
@@ -129,7 +129,7 @@
 
 .. _11.3.2.1-access.statement.language.schemaUri:
 
-11.3.2.1 access.statement.language.schemaUri
+11.3.2.1 access.statement.languageId.schemaUri
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Definition**: The URI of the language identifier schema.

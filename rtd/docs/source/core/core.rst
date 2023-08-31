@@ -16,5 +16,6 @@ Contents
    alternateIdentifiers
    alternateUrls
    relatedRaids
+   access
 
 

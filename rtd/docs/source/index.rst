@@ -65,4 +65,5 @@ Contents
       core/alternateIdentifiers
       core/alternateUrls
       core/relatedRaids
+      core/access
    extended/extended
