@@ -54,15 +54,15 @@ Contents
 
 .. toctree::
 
-   core
-      identifier
-      dates
-      titles
-      descriptions
-      contributors
-      organisations
-      relatedObjects
-      alternateIdentifiers
-      alternateUrls
-      relatedRaids
-   extended
+   core/core
+      core/identifier
+      core/dates
+      core/titles
+      core/descriptions
+      core/contributors
+      core/organisations
+      core/relatedObjects
+      core/alternateIdentifiers
+      core/alternateUrls
+      core/relatedRaids
+   extended/extended
