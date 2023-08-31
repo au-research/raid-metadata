@@ -29,10 +29,23 @@
 
 **Constraints**: Maximum 100 characters
 
-.. _3.2-titles.typeId:
+.. 3.2-titles.type:
 
-3.2 titles.typeId
------------------
+3.2 titles.type
+---------------
+
+**Definition**: Metadata schema block containing title type informaton.
+
+**Requirement**: Mandatory for each title supplied
+
+**Occurrence**: 1
+
+**Example JSON**
+
+.. _3.2.1-titles.typeId:
+
+3.2.1 titles.type.id
+^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: The type of title.
 
@@ -49,10 +62,10 @@
 
 **Note**: One (and only one) current (as per start-end dates) Primary Title is mandatory for each Title specified; additional titles are optional. 'Previous titles' are managed by start-end dates. Controlled list adapted from Vocabularies for Registry Schema 1.6.5 'Name Type'.
 
-.. _3.2.1-titles.typeId.schemaUri:
+.. _3.2.1.1-titles.type.id.schemaUri:
 
-3.2.1 titles.typeId.schemaUri
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+3.2.1.1 titles.type.id.schemaUri
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Definition**: The URI of the title type schema.
 

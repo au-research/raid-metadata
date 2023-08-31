@@ -27,7 +27,6 @@
 
 **Example JSON**
 
-
 .. _11.2-access.typeId:
 
 11.1.1 access.type.id

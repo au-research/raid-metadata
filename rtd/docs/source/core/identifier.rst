@@ -89,8 +89,8 @@
 
 .. _1.3-identifier.owner:
 
-1.3 identifier.owner
---------------------
+1.3 identifier.ownerId
+----------------------
 
 **Definition**: The Research Organization Registry (ROR) of the legal entity responsible for the RAiD; the ‘Owner’ of a RAiD. Analogous to a DataCite 'Member', the Owner has a legal agreement with its Registration Agency.
 
@@ -110,8 +110,8 @@
 
 .. _1.3.1-identifier.owner.schemaURI:
 
-1.3.1 identifier.owner.schemaURI
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1.3.1 identifier.ownerId.schemaURI
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: The URI of the Identifier scheme used to identify RAiD Owners.
 

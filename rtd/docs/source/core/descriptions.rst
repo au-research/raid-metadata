@@ -29,10 +29,23 @@
 
 **Constraints**: Maximum 1000 characters
 
-.. _4.2-descriptions.typeId:
+. 4.2-descriptions.type:
 
-4.2 descriptions.typeId
------------------------
+4.2 descriptions.type
+---------------------
+
+**Definition**: Metadata schema block containing description type informaton.
+
+**Requirement**: Mandatory for each description supplied
+
+**Occurrence**: 1
+
+**Example JSON**
+
+.. _4.2.1-descriptions.type.id:
+
+4.2.1 descriptions.type.id
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: The type of description.
 
@@ -52,10 +65,10 @@
 
 **Note**: If a description is provided, a single, primary description is mandatory; additional Descriptions are optional. Type is mandatory for each description specified. Controlled list adapted from Vocabularies for Registry Schema 1.6.5 'Description Type' and DataCite Metadata Schema 4.4 Appendix 1 Table 10 'descriptiontype'.
 
-.. _4.2.1-descriptions.typeId.schemaUri:
+.. _4.2.1.1-descriptions.type.id.schemaUri:
 
-4.2.1 descriptions.typeId.schemaUri
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+4.2.1.1 descriptions.type.id.schemaUri
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Definition**: The URI of the description type schema.
 
@@ -86,9 +99,9 @@
 
 **Note**: Currently limited to ISO 649-4 three-letter code.
 
-.. _4.3.1-descriptions.languageID.schemaUri:
+.. _4.3.1-descriptions.languageId.schemaUri:
 
-4.3.1 descriptions.languageID.schemaUri
+4.3.1 descriptions.languageId.schemaUri
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: The URI of the language identifier schema.
@@ -102,4 +115,3 @@
 * ``https://www.iso.org/standard/49544.html``
 
 **Note**: Controlled list shared across all Registration Agencies. No crosswalk; queries return language code and scheme URI. Mandatory for each language specified. 
-
