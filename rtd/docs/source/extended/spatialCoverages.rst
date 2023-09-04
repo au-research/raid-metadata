@@ -1,122 +1,123 @@
 .. autosummary::
    :toctree: generated
 
-.. _12-subjects:
+.. _14-spatialCoverage:
 
-12 subjects
-===========
+14 spatialCoverage
+==================
 
-**Definition**: Metadata schema block containing the subject area of the RAiD plus associated properties.
+**Definition**: Metadata schema block containing information about any spatial region(s) or named place(s) targeted by the project.
 
-**Requirement**: Recommended
+**Requirement**: Optional
 
 **Occurrence**: 0-n
 
 **Example JSON**
 
-.. _12.1-subjects.id:
+.. _14.1-spatialCoverage.id:
 
-12.1 subjects.id
-----------------
+14.1 spatialCoverage.id
+-----------------------
 
-**Definition**: Identifier (URI) for a subject area or classification code describing the project or activity.
+**Definition**: Spatial region or named place that is the subject or target of the project or activity. Repeat this property as necessary to indicate different locations. Do not duplicate organisational locations.
 
-**Requirement**: Mandatory for each subject supplied
+**Requirement**: Mandatory for each spatialCoverage supplied
 
 **Occurrence**: 0-1
 
-**Allowed values**: *Controlled list of URIs derived from subjects.id.schemaUri*
+**Allowed values**: *Controlled list of URIs derived from the schema chosen at spatialCoverage.id.schemaUri*
 
 **Examples**
 
-* https://vocabs.ardc.edu.au/repository/api/lda/anzsrc-2020-for/resource?uri=https://linked.data.gov.au/def/anzsrc-for/2020/430106 (ANZSRC 2020 Fields of Research code: ‘Digital Archaeology’)
-* https://id.loc.gov/authorities/subjects/sh85118622.html (LoC 'Science and State')
+* https://www.geonames.org/264371/athens.html (Athens, Greece, from geonames.org)
+* https://www.geonames.org/2161776/katoomba.html (Katoomba, NSW, Australia, from geonames.org)
+* https://pleiades.stoa.org/places/579885 (Athenae, Greece, from the Pleiades Gazetteer)
 
-.. _12.1.1-subjects.id.schemaUri:
+.. _14.2-spatialCoverage.schemaUri:
 
-12.1.1 subjects.id.schemaUri
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+14.2 spatialCoverage.schemaUri
+------------------------------
 
-**Definition**: The URI of the subject identifier schema
+**Definition**: The URI of the geolocation schema used for spatialCoverage
 
-**Requirement**: Mandatory for each subjects.id supplied
+**Requirement**: Mandatory for each spatialCoverage.id supplied
 
 **Occurrence**: 0-1
 
 **Allowed values**: *Open controlled list of URIs*
 
-* https://id.loc.gov/authorities/subjects.html (Library of Congress Subject Headings)
-* https://vocabs.ardc.edu.au/viewById/316 (Australian and New Zealand Standard Research Classification 2020: Fields of Research)
+* https://www.geonames.org/
+* https://pleiades.stoa.org/
 
-**Note**: Registration agencies may add new subject schemas, so long as they are human and machine-readable with a single page per subject area. Note that not all schemes provide a URI for each term (in which case Registration Agencies will need to build and publish their own vocabulary). Schemas must be registered with the Registraiton Authority.
+.. _14.3-spatialCoverage.place:
 
-.. _12.2-subjects.keywords:
+14.3 spatialCoverage.place
+--------------------------
 
-12.2 subjects.keywords
-----------------------
+**Definition**: Metadata schema sub-block containing free-text place names or descriptions plus associated metadata properties.
 
-**Definition**: Metadata schema sub-block containing free-text keywords describing a project plus associated properties.
+**Requirement**: Optional
+
+**Occurrence**: 0-n
+
+.. _14.3.1-spatialCoverage.place.text:
+
+14.3.1 spatialCoverage.place.text
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+**Definition**: Free text description of one or more geographic locations that are the subject or target of the project or activity; use to specify or describe a geographic location in a manner not covered by spatialCoverage.id.
 
 **Requirement**: Optional
 
 **Occurance**: 0-n
 
-.. _12.2.1-subjects.keywords.text:
-
-12.2.1 subjects.keywords.text
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-**Definition**: Unconstrained keyword or key phrase describing the project or activity
-
-**Requirement**: Optional
-
-**Occurance**: 1
-
 **Allowed values**: Free text
 
-**Constraints**: Do not duplicate Subject(s) above
+**Constraints**: Do not duplicate information from spatialCoverage.id above; do not duplicate organisational locations. 
 
-12.2.2 subjects.keywords.language
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. _14.3.2-spatialCoverage.place.language:
 
-**Definition**: Metadata schema block declaring the language of the subject keyword text.
+14.3.2 spatialCoverage.place.language
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Requirement**: Recommended
+**Definition**: Metadata schema block declaring the language of spatialCoverage.place.text.
+
+**Requirement**: Recommended for each spatialCoverage.place.text provided.
 
 **Occurrence**: 0-1
 
 **Example JSON**
 
-.. _12.2.2.1-subjects.keywords.language.id:
+.. _14.3.2.1-spatialCoverage.place.language.id:
 
-12.2.2.1 subjects.keywords.language.id
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+14.3.2.1 spatialCoverage.place.language.id
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Definition**: Language used for the subject keyword text identified by a code or other identifier.
+**Definition**: Language used for spatialCoverage.place.text identified by a code or other identifier.
 
 **Requirement**: Recommended
 
 **Occurrence**: 0-1
 
-**Allowed values**: *Controlled list from language schema*
+**Allowed values**: *Controlled list derived from spatialCoverage.place.language.schemaUri*
 
-**Example**: ``eng`` (*ISO 6129-12 three-letter code*)
+**Example**: ``eng`` (*ISO 6149-14 three-letter code*)
 
-**Note**: Currently limited to ISO 6129-12 three-letter code.
+**Note**: Currently limited to ISO 6149-14 three-letter code.
 
-.. _12.2.2.2-subjects.keywords.language.schemaUri:
+.. _14.2.2.2-spatialCoverage.place.language.schemaUri:
 
-12.2.2.2 subjects.keywords.language.schemaUri
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+14.2.2.2 spatialCoverage.place.language.schemaUri
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Definition**: The URI of the language identifier schema.
 
-**Requirement**: Mandatory for each subject.keywords.language supplied
+**Requirement**: Mandatory for each subject.keywords.language.id supplied
 
 **Occurrence**: 0-1
 
 **Allowed values**: *Controlled list*
 
-* ``https://www.iso.org/standard/12951212.html``
+* ``https://www.iso.org/standard/14951414.html``
 
 **Note**: Controlled list shared across all Registration Agencies. No crosswalk; queries return language code and scheme URI.  

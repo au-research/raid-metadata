@@ -35,10 +35,10 @@
 
 **Note**: RAiD names are valid DOIs and can also be resolved at https://doi.org/ or https://handle.net/.
 
-.. _1.1.1-identifier.id.schemaUri:
+.. _1.2-identifier.id.schemaUri:
 
-1.1.1 identifier.id.schemaUri
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1.2 identifier.schemaUri
+------------------------
 
 **Definition**: The URI of the Identifier scheme used to identify RAiDs.
 
@@ -46,16 +46,27 @@
 
 **Occurrence**: 1
 
-**Allowed values**: *Controlled list*
+**Allowed values**: *Closed controlled list*
 
 * ``https://raid.org/``
 
 **Note**: This property declares that the Identifier is a RAiD, declaring it resolvable at https://raid.org/; this property is set as a default in all installations of the RAiD Service software.
 
-.. _1.2-identifier.registrationAgencyId:
+.. _1.3-identifier.registrationAgency:
 
-1.2 identifier.registrationAgencyId
-------------------------------------
+1.3 identifier.registrationAgency
+---------------------------------
+
+**Definition**: Metadata schema sub-block declaring the Registration Agency that minted the RAiD.
+
+**Requirement**: Mandatory
+
+**Occurrence**: 1
+
+.. _1.3.1-identifier.registrationAgencyId:
+
+1.3.1 identifier.registrationAgency.id
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: The Research Organization Registry (ROR) of the RAiD Registration Agency that minted the RAiD.
 
@@ -63,16 +74,16 @@
 
 **Occurrence**: 1
 
-**Allowed values**: *Controlled list*
+**Allowed values**: *Controlled list derived from identifier.registrationAgency.schemaUri*
 
 * ``https://ror.org/038sjwq14`` [The Australian Research Data Commons]
 * ``https://ror.org/009vhk114`` [SURF]
 
 **Note**: Registration Agencies must have, acquire, or be assigned RORs. The Registration Agency identifier must be set as a default in each installation of the RAiD Service software. The Registration Authority maintains the list of Registration Agencies.
 
-.. _1.2.1-identifier.registrationAgencyId.schemaUri:
+.. _1.3.2-identifier.registrationAgencyId.schemaUri:
 
-1.2.1 identifier.registrationAgencyId.schemaUri
+1.3.2 identifier.registrationAgency.schemaUri
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: The URI of the Identifier scheme used to identify RAiD Registration Agencies.
@@ -81,16 +92,27 @@
 
 **Occurrence**: 1
 
-**Allowed values**: *Controlled list*
+**Allowed values**: *Closed controlled list*
 
 * ``https://ror.org/``
 
 **Note**: This property is set as a default in all installations of the RAiD Service software.
 
-.. _1.3-identifier.owner:
+.. _1.4-identifier.owner:
 
-1.3 identifier.ownerId
-----------------------
+1.4 identifier.owner
+--------------------
+
+**Definition**: Metadata schema sub-block declaring the owner of the RAiD (the organisation requesting the RAiD).
+
+**Requirement**: Mandatory
+
+**Occurrence**: 1
+
+.. _1.4.1-identifier.owner.id:
+
+1.4.1 identifier.owner.id
+-------------------------
 
 **Definition**: The Research Organization Registry (ROR) of the legal entity responsible for the RAiD; the ‘Owner’ of a RAiD. Analogous to a DataCite 'Member', the Owner has a legal agreement with its Registration Agency.
 
@@ -98,7 +120,7 @@
 
 **Occurrence**: 1
 
-**Allowed values**: *Controlled list of Owners maintained by each Registration Agency*
+**Allowed values**: *Controlled list of Owners maintained by each Registration Agency, utilising the schema declared at identifier.owner.schemaURI*
 
 **Example values**:
 
@@ -108,10 +130,10 @@
 
 **Note**: Owners, i.e., Organisations hosting Service Points, must have, acquire, or be assigned RORs. A RAiD minted by a Registration Agency must be associated with an Owner affiliated with that Agency.
 
-.. _1.3.1-identifier.owner.schemaURI:
+.. _1.4.2-identifier.owner.schemaURI:
 
-1.3.1 identifier.ownerId.schemaURI
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1.4.2 identifier.owner.schemaURI
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: The URI of the Identifier scheme used to identify RAiD Owners.
 
@@ -125,18 +147,18 @@
 
 **Note**: This property is set as a default in all installations of the RAiD Service software.
 
-.. _1.4-identifier.servicePoint:
+.. _1.4.3-identifier.owner.servicePoint:
 
-1.4 identifier.servicePoint
----------------------------
+1.4.3 identifier.owner.servicePoint
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Definition**: The Service Point (SP) that requested the RAiD. Analogous to a DataCite ‘Repository’. RAiD Owners can have multiple SPs, and SPs do not need to be legal entities.
+**Definition**: The Service Point (SP) that requested the RAiD. Analogous to a DataCite ‘Repository’. SPs belong to an owner, RAiD owners can have multiple SPs, and SPs do not need to be legal entities. 
 
 **Requirement**: Mandatory
 
 **Occurrence**: 1
 
-**Allowed values**: *Controlled list of Service Points maintained by each Registration Agency*
+**Allowed values**: *Open controlled list of Service Points maintained by each Registration Agency*
 
 **Examples**:
 
@@ -145,7 +167,7 @@
 * UQ Centre for Advanced Imaging
 * The University of Notre Dame Australia
 
-**Note**: A RAiD minted by a Registration Agency must have a SP associated with an Owner affiliated with that Agency.
+**Note**: A RAiD minted by a Registration Agency must have a SP associated with an Owner affiliated with that Agency. Registration Agencies must register lists of their Service Points with the Registration Authority on a regular basis.
 
 .. _1.5-identifier.license:
 
@@ -158,7 +180,7 @@
 
 **Occurrence**: 1
 
-**Allowed values**: *Controlled list*
+**Allowed values**: *Closed controlled list*
 
 * Creative Commons CC-0
 
@@ -175,6 +197,6 @@
 
 **Occurrence**: 1
 
-**Allowed values**: Auto-incrementing integer
+**Allowed values**: System-supplied, auto-incrementing integer
 
 **Note**: The RAiD version number is set automatically by the RAiD Service software as a RAiD is updated. 

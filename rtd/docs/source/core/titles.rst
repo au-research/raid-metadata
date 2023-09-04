@@ -53,7 +53,7 @@
 
 **Occurrence**: 1
 
-**Allowed values**: *Controlled list*
+**Allowed values**: *Controlled list derived from titles.type.schemaUri*
 
 * Primary
 * Short
@@ -62,10 +62,10 @@
 
 **Note**: One (and only one) current (as per start-end dates) Primary Title is mandatory for each Title specified; additional titles are optional. 'Previous titles' are managed by start-end dates. Controlled list adapted from Vocabularies for Registry Schema 1.6.5 'Name Type'.
 
-.. _3.2.1.1-titles.type.id.schemaUri:
+.. _3.2.2-titles.type.schemaUri:
 
-3.2.1.1 titles.type.id.schemaUri
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+3.2.2 titles.type.schemaUri
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: The URI of the title type schema.
 
@@ -73,7 +73,7 @@
 
 **Occurrence**: 1
 
-**Allowed values**: *Controlled list*
+**Allowed values**: *Closed controlled list*
 
 * [URI of RAiD vocab on RVA (to be created)]
 
@@ -103,7 +103,7 @@
 
 **Occurrence**: 0-1
 
-**Allowed values**: *Controlled list from language schema*
+**Allowed values**: *Controlled list derived from titles.language.schemaUri*
 
 **Example**: ``eng`` (*ISO 639-3 three-letter code*)
 
@@ -116,11 +116,11 @@
 
 **Definition**: The URI of the language identifier schema.
 
-**Requirement**: Mandatory for each titles.language supplied
+**Requirement**: Mandatory for each titles.language.id supplied
 
 **Occurrence**: 0-1
 
-**Allowed values**: *Controlled list*
+**Allowed values**: *Closed controlled list*
 
 * ``https://www.iso.org/standard/39534.html``
 

@@ -38,17 +38,17 @@
 
 **Occurrence**: 1
 
-**Allowed values**: *Controlled list*
+**Allowed values**: *Controlled list derived from access.type.schemaUri*
 
 * Open access
 * Embargoed access
 
 **Note**: Default is 'open access'. Emgargoes must be temporary (no longer than 18 months). 
 
-.. _11.1.1.1-access.typeId.schemaUri:
+.. _11.1.2-access.typeId.schemaUri:
 
-11.1.1.1 access.type.id.schemaUri
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+11.1.2 access.type.schemaUri
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: The URI of the title type schema.
 
@@ -56,7 +56,7 @@
 
 **Occurrence**: 1
 
-**Allowed values**: *Controlled list*
+**Allowed values**: *Closed controlled list*
 
 * [URI of RAiD vocab on RVA (to be created)]
 
@@ -133,7 +133,7 @@
 
 **Occurrence**: 0-1
 
-**Allowed values**: *Controlled list from language schema*
+**Allowed values**: *Controlled list derived from access.statement.language.schemaUri*
 
 **Example**: ``eng`` (*ISO 6119-11 three-letter code*)
 

@@ -81,7 +81,7 @@
 
 **Definition**: Metadata schema block declaring the language of the subject keyword text.
 
-**Requirement**: Recommended
+**Requirement**: Recommended for each subjects.keywords.text supplied
 
 **Occurrence**: 0-1
 
@@ -98,7 +98,7 @@
 
 **Occurrence**: 0-1
 
-**Allowed values**: *Controlled list from language schema*
+**Allowed values**: *Controlled list derived from subjects.keywords.language.schemaUri*
 
 **Example**: ``eng`` (*ISO 6129-12 three-letter code*)
 
@@ -111,7 +111,7 @@
 
 **Definition**: The URI of the language identifier schema.
 
-**Requirement**: Mandatory for each subject.keywords.language supplied
+**Requirement**: Mandatory for each subject.keywords.language.id supplied
 
 **Occurrence**: 0-1
 

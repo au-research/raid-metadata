@@ -25,12 +25,12 @@
 
 **Occurrence**: 0-1
 
-**Allowed values**: ROR
+**Allowed values**: Identifier defined by organisations.schemaURI
 
-.. _6.1.1-organisations.id.schemaURI:
+.. _6.2-organisations.schemaURI:
 
-6.1.1 organisations.id.schemaURI
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+6.2 organisations.schemaURI
+---------------------------
 
 **Definition**: The URI of the organisation identifier schema.
 
@@ -38,15 +38,15 @@
 
 **Occurrence**: 0-1
 
-**Allowed values**: *Controlled list*
+**Allowed values**: *Closed controlled list*
 
 * ``https://ror.org/``
 
 **Note**: Controlled list shared across all Registration Agencies.
 
-.. _6.2-organisations.role:
+.. _6.3-organisations.role:
 
-6.2 organisations.role
+6.3 organisations.role
 ----------------------
 
 **Definition**: Metadata schema sub-block describing an organisation's role on a project.
@@ -57,9 +57,9 @@
 
 **Note**: An organisation's role may change over time, but each may have one and only one role at any given time.
 
-.. _6.2.1-organisations.role.id:
+.. _6.3.1-organisations.role.id:
 
-6.2.1 organisations.role.id
+6.3.1 organisations.role.id
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: Organisation role.
@@ -68,7 +68,7 @@
 
 **Occurrence**: 0-1
 
-**Allowed values**: *Controlled list*
+**Allowed values**: *Controlled list derived from organisations.role.schemaURI*
 
 * Lead Research Organisation
 * Other Research Organisation
@@ -80,10 +80,10 @@
 
 **Note**: One Organisation must be designated as Lead. In 'core' elements where variation of controlled vocabularies amongst Registration Agencies is allowed, Registration Agencies must provide a crosswalk. In 'core' elements where variation of controlled vocabularies amongst Registration Agencies occurs, we should return the 'local' term and schema as well as the ‘standardised’ term and schema. Mandatory for each Contributor specified. In this case, roles are going to vary by region, and maybe by grant scheme within a region. Controlled list adapted from Simon Cox's Project Ontology, OpenAIRE ‘Project’ guidelines, NIH definitions, ARC definitions, and DataCite Metadata Schema 4.4 Appendix 1 Table 6.
 
-.. _6.2.1.1-organisations.role.id.schemaURI:
+.. _6.3.2-organisations.role.schemaURI:
 
-6.2.1.1 organisations.role.id.schemaURI
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6.3.2 organisations.role.schemaURI
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: The URI of the role schema used.
 
@@ -91,15 +91,15 @@
 
 **Occurrence**: 0-1
 
-**Allowed values**: *Controlled list*
+**Allowed values**: *Closed controlled list*
 
 * [URI of RAiD vocab on RVA (to be created)]
 
 **Note**: Controlled list shared across all Registration Agencies.
 
-.. _6.2.2-organisations.role.startDate:
+.. _6.3.3-organisations.role.startDate:
 
-6.2.2 organisations.role.startDate
+6.3.3 organisations.role.startDate
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: Date the contributor began role associated with the project or activity.
@@ -116,9 +116,9 @@
 
 **Note**: Only year is required, month and day are optional (but recommended when available).
 
-.. _6.2.3-organisations.role.endDate:
+.. _6.3.4-organisations.role.endDate:
 
-6.2.3 organisations.role.endDate
+6.3.4 organisations.role.endDate
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: Date the contributor terminated role associated with the project or activity.

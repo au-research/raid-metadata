@@ -25,12 +25,12 @@
 
 **Occurrence**: 0-1
 
-**Allowed values**: PID of any type listed at 7.1.1
+**Allowed values**: Identifier defined by relatedObjects.schemaURI
 
-.. _7.1.1-relatedObjects.id.schemaURI:
+.. _7.2-relatedObjects.id.schemaURI:
 
-7.1.1 relatedObjects.id.schemaURI
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+7.2 relatedObjects.schemaURI
+----------------------------
 
 **Definition**: The URI of the relatedObject identifier schema.
 
@@ -38,7 +38,7 @@
 
 **Occurrence**: 0-1
 
-**Allowed values**: *Controlled list*
+**Allowed values**: *Closed controlled list*
 
 * https://arks.org/ 
 * http://doi.org/ (*includes IGSNs, CrossRef Publication IDs or Grant IDs, DataCite DOIs, instrument DOIs, etc*)
@@ -49,9 +49,9 @@
 
 **Note**: Controlled list shared across all Registration Agencies. Controlled list is a subset of DataCite Metadata Schema 4.4 Appendix 1 Table 8 'relatedIdentiferType'.
 
-.. _7.2-relatedObjects.type:
+.. _7.3-relatedObjects.type:
 
-7.2 relatedObjects.type
+7.3 relatedObjects.type
 -----------------------
 
 **Definition**: Metadata schema sub-block describing a relatedObject's type.
@@ -60,9 +60,9 @@
 
 **Occurrence**: 0-1
 
-.. _7.2.1-relatedObjects.type.id:
+.. _7.3.1-relatedObjects.type.id:
 
-7.2.1 relatedObjects.type.id
+7.3.1 relatedObjects.type.id
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: Type of input, output, or process document.
@@ -71,7 +71,7 @@
 
 **Occurrence**: 0-1
 
-**Allowed values**: *Controlled list*
+**Allowed values**: *Controlled list derived from relatedObjects.type.schemaURI*
 
 * Audiovisual
 * Book
@@ -104,10 +104,10 @@
 
 **Note**: Controlled list is a subset of DataCite Metadata Schema 4.4 Appendix 1 Table 7  'resourceTypeGeneral', with 'Instrument', 'Funding', ‘Educational Material’, ‘Conference Poster’, and 'Prize' added (DataCite Metadata Schema 4.5 also adds ‘Instrument’).
 
-.. _7.2.1.1-relatedObjects.type.id.schemaURI:
+.. _7.3.2-relatedObjects.type.schemaURI:
 
-7.2.1.1 relatedObjects.type.id.schemaURI
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+7.3.2 relatedObjects.type.schemaURI
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: The URI of the type schema used.
 
@@ -115,15 +115,15 @@
 
 **Occurrence**: 0-1
 
-**Allowed values**: *Controlled list*
+**Allowed values**: *Closed controlled list*
 
 * [URI of RAiD vocab on RVA (to be created)]
 
 **Note**: The Controlled list adapted from DataCite Metadata Schema 4.4 is specified for raid.org and used by ARDC registration service. Registration Agencies may implement other controlled vocabularies but must provide a crosswalk. In 'core' elements where variation of controlled vocabularies amongst Registration Agencies occurs, we should return the 'local' term and schema as well as the ‘standardised’ term and schema.
 
-.. _7.3-relatedObjects.categories:
+.. _7.4-relatedObjects.categories:
 
-7.3 relatedObjects.categories
+7.4 relatedObjects.categories
 -----------------------------
 
 **Definition**: Metadata schema sub-block declaring that a relatedObject is an input, output, and/or process document.
@@ -134,9 +134,9 @@
 
 **Note**: A relatedObject may have more than one category, e.g., it a DMP could initially be a process document, but eventually be published as an output.
 
-.. _7.3.1-relatedObjects.categories.id:
+.. _7.4.1-relatedObjects.categories.id:
 
-7.3.1 relatedObjects.categories.id
+7.4.1 relatedObjects.categories.id
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: Declaration of an object as an input, output, or other.
@@ -145,18 +145,18 @@
 
 **Occurrence**: 0-1
 
-**Allowed values**: *Controlled list*
+**Allowed values**: *Closed controlled list derived from relatedObjects.categories.schemaURI*
 
 * Input
 * Output
 * Internal process document or artefact
 
-**Note**: Controlled list developed for RAiD.
+**Note**: Closed controlled list developed for RAiD.
 
-.. _7.3.1.1-relatedObjects.type.id.schemaURI:
+.. _7.4.2-relatedObjects.type.id.schemaURI:
 
-7.3.1.1 relatedObjects.categories.id.schemaURI
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+7.4.2 relatedObjects.categories.schemaURI
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: The URI of the category schema used.
 
@@ -164,7 +164,7 @@
 
 **Occurrence**: 0-1
 
-**Allowed values**: *Controlled list*
+**Allowed values**: *Closed controlled list*
 
 * [URI of RAiD vocab on RVA (to be created)]
 

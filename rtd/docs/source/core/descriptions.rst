@@ -53,7 +53,7 @@
 
 **Occurrence**: 0-1
 
-**Allowed values**: *Controlled list*
+**Allowed values**: *Controlled list derived from descriptions.type.schemaUri*
 
 * Primary (*preferred full description or abstract*)
 * Alternative (*additional full description or abstract*)
@@ -65,10 +65,10 @@
 
 **Note**: If a description is provided, a single, primary description is mandatory; additional Descriptions are optional. Type is mandatory for each description specified. Controlled list adapted from Vocabularies for Registry Schema 1.6.5 'Description Type' and DataCite Metadata Schema 4.4 Appendix 1 Table 10 'descriptiontype'.
 
-.. _4.2.1.1-descriptions.type.id.schemaUri:
+.. _4.2.2-descriptions.type.id.schemaUri:
 
-4.2.1.1 descriptions.type.id.schemaUri
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4.2.2 descriptions.type.schemaUri
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: The URI of the description type schema.
 
@@ -76,7 +76,7 @@
 
 **Occurrence**: 0-1
 
-**Allowed values**: *Controlled list*
+**Allowed values**: *Closed controlled list*
 
 * [URI of RAiD vocab on RVA (to be created)]
 
@@ -106,7 +106,7 @@
 
 **Occurrence**: 0-1
 
-**Allowed values**: *Controlled list from language schema*
+**Allowed values**: *Controlled list derived from titles.language.schemaUri*
 
 **Example**: ``eng`` (*ISO 649-4 three-letter code*)
 
@@ -119,7 +119,7 @@
 
 **Definition**: The URI of the language identifier schema.
 
-**Requirement**: Mandatory for each descriptions.language supplied
+**Requirement**: Mandatory for each descriptions.language.id supplied
 
 **Occurrence**: 0-1
 

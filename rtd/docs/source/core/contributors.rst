@@ -25,12 +25,12 @@
 
 **Occurrence**: 1-n
 
-**Allowed values**: ORCID or ISNI
+**Allowed values**: Identifier defined by contributors.schemaURI 
 
-.. _5.1.1-contributors.id.schemaURI:
+.. _5.2-contributors.id.schemaURI:
 
-5.1.1 contributors.id.schemaURI
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+5.2 contributors.schemaURI
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: The URI of the contributor identifier schema.
 
@@ -38,7 +38,7 @@
 
 **Occurrence**: 1
 
-**Allowed values**: *Controlled list*
+**Allowed values**: *Closed controlled list*
 
 * ``https://orcid.org/``
 * ``https://isni.org/``
@@ -46,9 +46,9 @@
 
 **Note**: Controlled list shared across all Registration Agencies.
 
-.. _5.2-contributors.position:
+.. _5.3-contributors.position:
 
-5.2 contributors.position
+5.3 contributors.position
 -------------------------
 
 **Definition**: Metadata schema sub-block describing a contributor's position on a project.
@@ -59,9 +59,9 @@
 
 **Note**: Contributors must have one and only one position at any given time (but may also be flagged as a 'leader' or 'contact').
 
-.. _5.2.1-contributors.position.id:
+.. _5.3.1-contributors.position.id:
 
-5.2.1 contributors.position.id
+5.3.1 contributors.position.id
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: Contributor's administrative position in the project.
@@ -70,7 +70,7 @@
 
 **Occurrence**: 1
 
-**Allowed values**: *Controlled list*
+**Allowed values**: *Controlled list derived from contributors.position.schemaURI*
 
 * Principal or Chief Investigator
 * Co-investigator or Collaborator
@@ -80,10 +80,10 @@
 
 **Note**: In 'core' elements where variation of controlled vocabularies amongst Registration Agencies is allowed, Registration Agencies must provide a crosswalk. In 'core' elements where variation of controlled vocabularies amongst Registration Agencies occurs, we should return the 'local' term and schema as well as the ‘standardised’ term and schema. Mandatory for each Contributor specified. In this case, Positions are going to vary by region, and maybe by grant scheme within a region. Controlled list adapted from Simon Cox's Project Ontology, OpenAIRE ‘Project’ guidelines, NIH definitions, ARC definitions, and DataCite Metadata Schema 4.4 Appendix 1 Table 5.
 
-.. _5.2.1.1-contributors.position.id.schemaURI:
+.. _5.3.2-contributors.position.id.schemaURI:
 
-5.2.1.1 contributors.position.id.schemaURI
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+5.3.2 contributors.position.schemaURI
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: The URI of the position schema used.
 
@@ -91,15 +91,15 @@
 
 **Occurrence**: 1
 
-**Allowed values**: *Controlled list*
+**Allowed values**: *Closed controlled list*
 
 * [URI of RAiD vocab on RVA (to be created)]
 
 **Note**: Controlled list shared across all Registration Agencies.
 
-.. _5.2.2-contributors.position.startDate:
+.. _5.3.3-contributors.position.startDate:
 
-5.2.2 contributors.position.startDate
+5.3.3 contributors.position.startDate
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: Date the contributor began position associated with the project or activity.
@@ -116,9 +116,9 @@
 
 **Note**: Only year is required, month and day are optional (but recommended when available).
 
-.. _5.2.3-contributors.position.endDate:
+.. _5.3.4-contributors.position.endDate:
 
-5.2.3 contributors.position.endDate
+5.3.4 contributors.position.endDate
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: Date the contributor terminated position associated with the project or activity.
@@ -135,9 +135,9 @@
 
 **Note**: Only year is required, month and day are optional (but recommended when available).
 
-.. _5.2.4-contributors.position.leader:
+.. _5.3.5-contributors.position.leader:
 
-5.2.4 contributors.position.leader
+5.3.5 contributors.position.leader
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: Flag indicating that the contributor as a project leader.
@@ -150,9 +150,9 @@
 
 **Note**: More than one contributor can be flagged as a leader if the project is jointly led.
 
-.. _5.2.5-contributors.position.contact:
+.. _5.3.6-contributors.position.contact:
 
-5.2.5 contributors.position.contact
+5.3.6 contributors.position.contact
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: Flag indicating that the contributor as a project contact.
@@ -165,9 +165,9 @@
 
 **Note**: More than one Contributor can be flagged as a contact.
 
-.. _5.3-contributors.roles:
+.. _5.4-contributors.roles:
 
-5.3 contributors.roles
+5.4 contributors.roles
 ----------------------
 
 **Definition**: Metadata schema sub-block describing a contributor's role on a project using the CRediT system.
@@ -178,9 +178,9 @@
 
 **Note**: Changes to roles are tracked through version history.
 
-.. _5.3.1-contributors.roles.id:
+.. _5.4.1-contributors.roles.id:
 
-5.3.1 contributors.roles.id
+5.4.1 contributors.roles.id
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: A contributor's (person) role(s) on the Project.
@@ -189,7 +189,7 @@
 
 **Occurrence**: 0-1
 
-**Allowed values**: *Controlled list*
+**Allowed values**: *Controlled list from contributors.roles.schemaURI*
 
 * ``https://credit.niso.org/contributor-roles/conceptualization/``
 * ``https://credit.niso.org/contributor-roles/data-curation/``
@@ -209,10 +209,10 @@
 
 **Note**: In 'core' elements where variation of controlled vocabularies amongst Registration Agencies is allowed, Registration Agencies must provide a crosswalk. In 'core' elements where variation of controlled vocabularies amongst Registration Agencies occurs, we should return the 'local' term and schema as well as the ‘standardised’ term and schema. 
 
-.. _5.3.1.1-contributors.roles.id.schemaURI:
+.. _5.4.2-contributors.roles.id.schemaURI:
 
-5.3.1.1 contributors.roles.id.schemaURI
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+5.4.2 contributors.roles.schemaURI
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: The URI of the roles schema used.
 
@@ -220,7 +220,7 @@
 
 **Occurrence**: 0-1
 
-**Allowed values**: *Controlled list*
+**Allowed values**: *Closed controlled list*
 
 * ``https://credit.niso.org/``
 

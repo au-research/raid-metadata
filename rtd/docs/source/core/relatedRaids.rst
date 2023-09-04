@@ -41,7 +41,7 @@
 .. _10.2.1-relatedRaids.type.id:
 
 10.2.1 relatedRaids.type.id
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: Description of the relationship between the activity being registered and the related resource.
 
@@ -49,7 +49,7 @@
 
 **Occurrence**: 0-1
 
-**Allowed values**: *Controlled list*
+**Allowed values**: *Controlled list derived from relatedRaids.type.schemaURI*
 
 * Continues
 * IsContinuedBy
@@ -62,10 +62,10 @@
 
 **Note**: Controlled list is a subset of DataCite Schema v4.4 (Table 8 relatedIdentifierType). All list items appear in the DataCite Schema. 
 
-.. _10.2.1.1-relatedRaids.type.id.schemaURI:
+.. _10.2.2-relatedRaids.type.id.schemaURI:
 
-10.2.1.1 relatedRaids.type.id.schemaURI
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+10.2.2 relatedRaids.type.schemaURI
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: The URI of the relationship schema used.
 
@@ -73,7 +73,7 @@
 
 **Occurrence**: 0-1
 
-**Allowed values**: *Controlled list*
+**Allowed values**: *Closed controlled list*
 
 * [URI of RAiD vocab on RVA (to be created)]
 
