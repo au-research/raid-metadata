@@ -30,7 +30,7 @@
 .. _5.2-contributors.id.schemaURI:
 
 5.2 contributors.schemaURI
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+--------------------------
 
 **Definition**: The URI of the contributor identifier schema.
 

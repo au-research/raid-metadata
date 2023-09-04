@@ -34,7 +34,7 @@
 .. _8.2-alternateIdentifiers.type:
 
 8.2 alternateIdentifiers.type
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-----------------------------
 
 **Definition**: Free text description of the type of alternateIdentifiers supplied.
 
