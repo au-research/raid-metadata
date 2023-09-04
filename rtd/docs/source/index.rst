@@ -67,3 +67,7 @@ Contents
       core/relatedRaids
       core/access
    extended/extended
+      extended/subjects
+      extended/traditionalKnowledgeLabels
+      extended/spatialCoverages
+      

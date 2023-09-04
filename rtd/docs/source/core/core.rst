@@ -1,6 +1,9 @@
 Core Metadata Schema Properties
 ===============================
 
+.. autosummary::
+   :toctree: generated
+
 Contents
 --------
 

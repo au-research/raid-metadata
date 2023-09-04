@@ -79,12 +79,25 @@
 
 **Note**: The RAiD vocabulary on RVA is specified for raid.org and used by ARDC registration service; Registration Agencies may implement other controlled vocabularies but must provide a crosswalk. In 'core' elements like this one where variation of controlled vocabularies amongst Registration Agencies occurs, the RAiD Service should return the 'local' term and schema as well as the ‘standardised’ term and schema. Mandatory for each titles.TypeId specified.
 
-.. _3.3-titles.languageId:
+.. _3.3-titles.language:
 
-3.3 titles.languageId
----------------------
+3.3 titles.language
+-------------------
 
-**Definition**: Language used for the Title identified by a code or other identifier.
+**Definition**: Metadata schema block declaring the language of the title text.
+
+**Requirement**: Recommended
+
+**Occurrence**: 0-1
+
+**Example JSON**
+
+.. _3.3.1-titles.languageId:
+
+3.3.1 titles.language.id
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+**Definition**: Language used for the title text identified by a code or other identifier.
 
 **Requirement**: Recommended
 
@@ -96,14 +109,14 @@
 
 **Note**: Currently limited to ISO 639-3 three-letter code.
 
-.. _3.3.1-titles.languageId.schemaUri:
+.. _3.3.2-titles.languageId.schemaUri:
 
-3.3.1 titles.languageId.schemaUri
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+3.3.2 titles.language.schemaUri
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: The URI of the language identifier schema.
 
-**Requirement**: Mandatory for each titles.languageId supplied
+**Requirement**: Mandatory for each titles.language supplied
 
 **Occurrence**: 0-1
 
@@ -111,7 +124,7 @@
 
 * ``https://www.iso.org/standard/39534.html``
 
-**Note**: Controlled list shared across all Registration Agencies. No crosswalk; queries return language code and scheme URI. Mandatory for each language specified. 
+**Note**: Controlled list shared across all Registration Agencies. No crosswalk; queries return language code and scheme URI.  
 
 .. _3.4-titles.startDate:
 

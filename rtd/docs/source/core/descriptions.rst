@@ -82,12 +82,25 @@
 
 **Note**: The RAiD vocabulary on RVA is specified for raid.org and used by ARDC registration service; Registration Agencies may implement other controlled vocabularies but must provide a crosswalk. In 'core' elements like this one where variation of controlled vocabularies amongst Registration Agencies occurs, the RAiD Service should return the 'local' term and schema as well as the ‘standardised’ term and schema.
 
-.. _4.3-descriptions.languageId:
+.. _4.3-descriptions.language:
 
-4.3 descriptions.languageId
----------------------------
+4.3 descriptions.language
+-------------------------
 
-**Definition**: Language used for the description identified by a code or other identifier.
+**Definition**: Metadata schema block declaring the language of the description text.
+
+**Requirement**: Recommended
+
+**Occurrence**: 0-1
+
+**Example JSON**
+
+.. _4.3.1-descriptions.languageId:
+
+4.3.1 descriptions.language.id
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+**Definition**: Language used for the description text identified by a code or other identifier.
 
 **Requirement**: Recommended
 
@@ -101,12 +114,12 @@
 
 .. _4.3.1-descriptions.languageId.schemaUri:
 
-4.3.1 descriptions.languageId.schemaUri
+4.3.2 descriptions.language.schemaUri
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: The URI of the language identifier schema.
 
-**Requirement**: Mandatory for each descriptions.languageId supplied
+**Requirement**: Mandatory for each descriptions.language supplied
 
 **Occurrence**: 0-1
 
@@ -114,4 +127,4 @@
 
 * ``https://www.iso.org/standard/49544.html``
 
-**Note**: Controlled list shared across all Registration Agencies. No crosswalk; queries return language code and scheme URI. Mandatory for each language specified. 
+**Note**: Controlled list shared across all Registration Agencies. No crosswalk; queries return language code and scheme URI. 

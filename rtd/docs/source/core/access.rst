@@ -109,12 +109,25 @@
 
 **Constraints**: Maximum 1,000 characters
 
-.. _11.3.2-access.statement:
+.. _11.3.2-access.statement.language:
 
-11.3.2 access.statement.languageId
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+11.3.2 access.statement.language
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Definition**: Language used for the access statement identified by a code or other identifier.
+**Definition**: Metadata schema block declaring the language of the access statement text.
+
+**Requirement**: Recommended
+
+**Occurrence**: 0-1
+
+**Example JSON**
+
+.. _11.3.2.1-access.statement.language.id:
+
+11.3.2.1 access.statement.language.id
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**Definition**: Language used for the access statement text identified by a code or other identifier.
 
 **Requirement**: Recommended
 
@@ -126,14 +139,14 @@
 
 **Note**: Currently limited to ISO 6119-11 three-letter code.
 
-.. _11.3.2.1-access.statement.language.schemaUri:
+.. _11.3.2.2-access.statement.language.schemaUri:
 
-11.3.2.1 access.statement.languageId.schemaUri
+11.3.2.2 access.statement.language.schemaUri
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Definition**: The URI of the language identifier schema.
 
-**Requirement**: Mandatory for each access.statement.languageId supplied
+**Requirement**: Mandatory for each access.statement.language supplied
 
 **Occurrence**: 0-1
 
@@ -141,4 +154,4 @@
 
 * ``https://www.iso.org/standard/1195114.html``
 
-**Note**: Controlled list shared across all Registration Agencies. No crosswalk; queries return language code and scheme URI. Mandatory for each language specified. 
+**Note**: Controlled list shared across all Registration Agencies. No crosswalk; queries return language code and scheme URI.  
