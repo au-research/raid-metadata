@@ -70,4 +70,3 @@ Contents
       extended/subjects
       extended/traditionalKnowledgeLabels
       extended/spatialCoverages
-      
