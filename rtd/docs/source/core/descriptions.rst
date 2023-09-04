@@ -21,7 +21,7 @@
 
 **Definition**: A project description. May include any additional information that does not fit in the other categories.
 
-**Requirement**: Mandatory for each desription supplied
+**Requirement**: Mandatory for each description supplied
 
 **Occurrence**: 0-1
 
@@ -34,7 +34,7 @@
 4.2 descriptions.type
 ---------------------
 
-**Definition**: Metadata schema block containing description type informaton.
+**Definition**: Metadata schema block declaring the type of description.
 
 **Requirement**: Mandatory for each description supplied
 
@@ -49,7 +49,7 @@
 
 **Definition**: The type of description.
 
-**Requirement**: Mandatory for each desription supplied
+**Requirement**: Mandatory for each description.type supplied
 
 **Occurrence**: 0-1
 
@@ -72,7 +72,7 @@
 
 **Definition**: The URI of the description type schema.
 
-**Requirement**: Mandatory for each descriptions.typeId supplied
+**Requirement**: Mandatory for each descriptions.type.id supplied
 
 **Occurrence**: 0-1
 

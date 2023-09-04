@@ -34,7 +34,7 @@
 3.2 titles.type
 ---------------
 
-**Definition**: Metadata schema block containing title type informaton.
+**Definition**: Metadata schema block containing information about the title type.
 
 **Requirement**: Mandatory for each title supplied
 

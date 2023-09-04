@@ -31,7 +31,7 @@
 
 * https://www.geonames.org/264371/athens.html (Athens, Greece, from geonames.org)
 * https://www.geonames.org/2161776/katoomba.html (Katoomba, NSW, Australia, from geonames.org)
-* https://pleiades.stoa.org/places/579885 (Athenae, Greece, from the Pleiades Gazetteer)
+* https://pleiades.stoa.org/places/579885 (Athenae from the Pleiades Gazetteer)
 
 .. _14.2-spatialCoverage.schemaUri:
 
@@ -69,7 +69,7 @@
 
 **Requirement**: Optional
 
-**Occurance**: 0-n
+**Occurrence**: 0-n
 
 **Allowed values**: Free text
 
@@ -112,7 +112,7 @@
 
 **Definition**: The URI of the language identifier schema.
 
-**Requirement**: Mandatory for each subject.keywords.language.id supplied
+**Requirement**: Mandatory for each subject.place.language.id supplied
 
 **Occurrence**: 0-1
 

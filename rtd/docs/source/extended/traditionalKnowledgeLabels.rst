@@ -32,7 +32,7 @@
 * https://localcontexts.org/label/tk-attribution/ (Local Contexts TK Label 'TK Atribution (TK A)')
 * https://localcontexts.org/label/bc-provenance/ (Local Contexts BC Label 'BC Provenance (BC P))''
 
-**Note**: traditionalKnowledgeLabel.id may be ommitted if a project wishes to specify only the scheme used, and not the range of labels used.
+**Note**: traditionalKnowledgeLabel.id may be omitted if a project wishes to specify only the scheme used, and not the range of labels used.
 
 .. _13.2-traditionalKnowledgeLabel.schemaUri:
 
@@ -50,4 +50,4 @@
 * https://id.loc.gov/authorities/traditionalKnowledgeLabel.html (Library of Congress Subject Headings)
 * https://vocabs.ardc.edu.au/viewById/316 (Australian and New Zealand Standard Research Classification 2020: Fields of Research)
 
-**Note**: May be used without specifying a traditionalKnowlegeLabel.id, if a project only wants to declare the schema used. Registration agencies may add new Traditional Knowledge or Biocultural label schemas, so long as they are human and machine-readable with a single page per label. Note that not all schemes provide a URI for each term (in which case Registration Agencies will need to build and publish their own list). Schemas must be registered with the Registraiton Authority.
+**Note**: May be used without specifying a traditionalKnowlegeLabel.id, if a project only wants to declare the schema used. Registration agencies may add new Traditional Knowledge or Biocultural label schemas, so long as they are human and machine-readable with a single page per label. Note that not all schemes provide a URI for each term (in which case Registration Agencies will need to build and publish their own list). Schemas must be registered with the Registration Authority.

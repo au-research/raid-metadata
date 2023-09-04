@@ -104,7 +104,7 @@
 
 **Definition**: Date the contributor began position associated with the project or activity.
 
-**Requirement**: Mandatory for each contributors.positionsupplied
+**Requirement**: Mandatory for each contributors.position.id supplied
 
 **Occurrence**: 1
 

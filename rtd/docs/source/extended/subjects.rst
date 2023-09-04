@@ -48,7 +48,7 @@
 * https://id.loc.gov/authorities/subjects.html (Library of Congress Subject Headings)
 * https://vocabs.ardc.edu.au/viewById/316 (Australian and New Zealand Standard Research Classification 2020: Fields of Research)
 
-**Note**: Registration agencies may add new subject schemas, so long as they are human and machine-readable with a single page per subject area. Note that not all schemes provide a URI for each term (in which case Registration Agencies will need to build and publish their own vocabulary). Schemas must be registered with the Registraiton Authority.
+**Note**: Registration agencies may add new subject schemas, so long as they are human and machine-readable with a single page per subject area. Note that not all schemes provide a URI for each term (in which case Registration Agencies will need to build and publish their own vocabulary). Schemas must be registered with the Registration Authority.
 
 .. _12.3-subjects.keywords:
 
@@ -59,7 +59,7 @@
 
 **Requirement**: Optional
 
-**Occurance**: 0-n
+**Occurrence**: 0-n
 
 .. _12.3.1-subjects.keywords.text:
 
@@ -70,7 +70,7 @@
 
 **Requirement**: Optional
 
-**Occurance**: 1
+**Occurrence**: 1
 
 **Allowed values**: Free text
 

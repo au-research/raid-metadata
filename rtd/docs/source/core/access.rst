@@ -6,7 +6,7 @@
 11 access
 =========
 
-**Definition**: Metadata schema block containing RAiD access informaton.
+**Definition**: Metadata schema block containing RAiD access information.
 
 **Requirement**: Mandatory
 
@@ -19,7 +19,7 @@
 11.1 access.type
 ----------------
 
-**Definition**: Metadata schema block containing RAiD access type informaton.
+**Definition**: Metadata schema block containing RAiD access type information.
 
 **Requirement**: Mandatory
 
@@ -43,7 +43,7 @@
 * Open access
 * Embargoed access
 
-**Note**: Default is 'open access'. Emgargoes must be temporary (no longer than 18 months). 
+**Note**: Default is 'open access'. Embargoes must be temporary (no longer than 18 months). 
 
 .. _11.1.2-access.typeId.schemaUri:
 
