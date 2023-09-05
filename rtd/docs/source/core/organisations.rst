@@ -1,12 +1,12 @@
 .. autosummary::
    :toctree: generated
 
-.. _6-organisations:
+.. _6-organisation:
 
-6 organisations
-===============
+6 organisation
+==============
 
-**Definition**: Metadata schema block containing organisations to a RAiD and associated properties.
+**Definition**: Metadata schema block containing organisation to a RAiD and associated properties.
 
 **Requirement**: Recommended
 
@@ -14,10 +14,10 @@
 
 **Example JSON**
 
-.. _6.1-organisations.id:
+.. _6.1-organisation.id:
 
-6.1 organisations.id
---------------------
+6.1 organisation.id
+-------------------
 
 **Definition**: Organisation associated with a project or activity identified by a PID.
 
@@ -25,16 +25,16 @@
 
 **Occurrence**: 0-1
 
-**Allowed values**: Identifier defined by organisations.schemaURI
+**Allowed values**: Identifier defined by organisation.schemaUri
 
-.. _6.2-organisations.schemaURI:
+.. _6.2-organisation.schemaUri:
 
-6.2 organisations.schemaURI
----------------------------
+6.2 organisation.schemaUri
+--------------------------
 
 **Definition**: The URI of the organisation identifier schema.
 
-**Requirement**: Mandatory for each organisations.id supplied
+**Requirement**: Mandatory for each organisation.id supplied
 
 **Occurrence**: 0-1
 
@@ -44,10 +44,10 @@
 
 **Note**: Controlled list shared across all Registration Agencies.
 
-.. _6.3-organisations.role:
+.. _6.3-organisation.role:
 
-6.3 organisations.role
-----------------------
+6.3 organisation.role
+---------------------
 
 **Definition**: Metadata schema sub-block describing an organisation's role on a project.
 
@@ -57,18 +57,18 @@
 
 **Note**: An organisation's role may change over time, but each may have one and only one role at any given time.
 
-.. _6.3.1-organisations.role.id:
+.. _6.3.1-organisation.role.id:
 
-6.3.1 organisations.role.id
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+6.3.1 organisation.role.id
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: Organisation role.
 
-**Requirement**: Mandatory for each organisations.role supplied
+**Requirement**: Mandatory for each organisation.role supplied
 
 **Occurrence**: 0-1
 
-**Allowed values**: *Controlled list derived from organisations.role.schemaURI*
+**Allowed values**: *Controlled list derived from organisation.role.schemaUri*
 
 * Lead Research Organisation
 * Other Research Organisation
@@ -80,14 +80,14 @@
 
 **Note**: One Organisation must be designated as Lead. In 'core' elements where variation of controlled vocabularies amongst Registration Agencies is allowed, Registration Agencies must provide a crosswalk. In 'core' elements where variation of controlled vocabularies amongst Registration Agencies occurs, we should return the 'local' term and schema as well as the ‘standardised’ term and schema. Mandatory for each Contributor specified. In this case, roles are going to vary by region, and maybe by grant scheme within a region. Controlled list adapted from Simon Cox's Project Ontology, OpenAIRE ‘Project’ guidelines, NIH definitions, ARC definitions, and DataCite Metadata Schema 4.4 Appendix 1 Table 6.
 
-.. _6.3.2-organisations.role.schemaURI:
+.. _6.3.2-organisation.role.schemaUri:
 
-6.3.2 organisations.role.schemaURI
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+6.3.2 organisation.role.schemaUri
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: The URI of the role schema used.
 
-**Requirement**: Mandatory for each organisations.role.id supplied
+**Requirement**: Mandatory for each organisation.role.id supplied
 
 **Occurrence**: 0-1
 
@@ -97,14 +97,14 @@
 
 **Note**: Controlled list shared across all Registration Agencies.
 
-.. _6.3.3-organisations.role.startDate:
+.. _6.3.3-organisation.role.startDate:
 
-6.3.3 organisations.role.startDate
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+6.3.3 organisation.role.startDate
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: Date the contributor began role associated with the project or activity.
 
-**Requirement**: Mandatory for each organisations.role supplied
+**Requirement**: Mandatory for each organisation.role supplied
 
 **Occurrence**: 0-1
 
@@ -116,10 +116,10 @@
 
 **Note**: Only year is required, month and day are optional (but recommended when available).
 
-.. _6.3.4-organisations.role.endDate:
+.. _6.3.4-organisation.role.endDate:
 
-6.3.4 organisations.role.endDate
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+6.3.4 organisation.role.endDate
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: Date the contributor terminated role associated with the project or activity.
 
@@ -134,5 +134,3 @@
 **Examples**: ``2026-08-28``; ``2026-08``; ``2026``
 
 **Note**: Only year is required, month and day are optional (but recommended when available).
-
-.. _6.3.1.1-organisations.roles.id.schemaURI:

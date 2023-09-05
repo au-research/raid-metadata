@@ -1,10 +1,10 @@
 .. autosummary::
    :toctree: generated
 
-.. _3-titles:
+.. _3-title:
 
-3 titles
-========
+3 title
+=======
 
 **Definition**: Metadata schema block containing the title of the RAiD and associated properties.
 
@@ -14,10 +14,10 @@
 
 **Example JSON**
 
-.. _3.1-titles.text:
+.. _3.1-title.text:
 
-3.1 titles.text
----------------
+3.1 title.text
+--------------
 
 **Definition**: A name or title by which the project or activity is known.
 
@@ -29,10 +29,10 @@
 
 **Constraints**: Maximum 100 characters
 
-.. 3.2-titles.type:
+.. 3.2-title.type:
 
-3.2 titles.type
----------------
+3.2 title.type
+--------------
 
 **Definition**: Metadata schema block containing information about the title type.
 
@@ -42,10 +42,10 @@
 
 **Example JSON**
 
-.. _3.2.1-titles.typeId:
+.. _3.2.1-title.type.id:
 
-3.2.1 titles.type.id
-^^^^^^^^^^^^^^^^^^^^
+3.2.1 title.type.id
+^^^^^^^^^^^^^^^^^^^
 
 **Definition**: The type of title.
 
@@ -53,23 +53,23 @@
 
 **Occurrence**: 1
 
-**Allowed values**: *Controlled list derived from titles.type.schemaUri*
+**Allowed values**: *Controlled list derived from title.type.schemaUri*
 
 * Primary
 * Short
 * Acronym
-* Alternative (*includes subtitles and other supplemental or alternative titles*)
+* Alternative (*includes subtitle and other supplemental or alternative title*)
 
-**Note**: One (and only one) current (as per start-end dates) Primary Title is mandatory for each Title specified; additional titles are optional. 'Previous titles' are managed by start-end dates. Controlled list adapted from Vocabularies for Registry Schema 1.6.5 'Name Type'.
+**Note**: One (and only one) current (as per start-end dates) Primary Title is mandatory for each Title specified; additional title are optional. 'Previous title' are managed by start-end dates. Controlled list adapted from Vocabularies for Registry Schema 1.6.5 'Name Type'.
 
-.. _3.2.2-titles.type.schemaUri:
+.. _3.2.2-title.type.schemaUri:
 
-3.2.2 titles.type.schemaUri
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+3.2.2 title.type.schemaUri
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: The URI of the title type schema.
 
-**Requirement**: Mandatory for each titles.typeId supplied
+**Requirement**: Mandatory for each title.type.id supplied
 
 **Occurrence**: 1
 
@@ -77,12 +77,12 @@
 
 * [URI of RAiD vocab on RVA (to be created)]
 
-**Note**: The RAiD vocabulary on RVA is specified for raid.org and used by ARDC registration service; Registration Agencies may implement other controlled vocabularies but must provide a crosswalk. In 'core' elements like this one where variation of controlled vocabularies amongst Registration Agencies occurs, the RAiD Service should return the 'local' term and schema as well as the ‘standardised’ term and schema. Mandatory for each titles.TypeId specified.
+**Note**: The RAiD vocabulary on RVA is specified for raid.org and used by ARDC registration service; Registration Agencies may implement other controlled vocabularies but must provide a crosswalk. In 'core' elements like this one where variation of controlled vocabularies amongst Registration Agencies occurs, the RAiD Service should return the 'local' term and schema as well as the ‘standardised’ term and schema. Mandatory for each title.TypeId specified.
 
-.. _3.3-titles.language:
+.. _3.3-title.language:
 
-3.3 titles.language
--------------------
+3.3 title.language
+------------------
 
 **Definition**: Metadata schema block declaring the language of the title text.
 
@@ -92,10 +92,10 @@
 
 **Example JSON**
 
-.. _3.3.1-titles.languageId:
+.. _3.3.1-title.languageId:
 
-3.3.1 titles.language.id
-^^^^^^^^^^^^^^^^^^^^^^^^
+3.3.1 title.language.id
+^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: Language used for the title text identified by a code or other identifier.
 
@@ -103,20 +103,20 @@
 
 **Occurrence**: 0-1
 
-**Allowed values**: *Controlled list derived from titles.language.schemaUri*
+**Allowed values**: *Controlled list derived from title.language.schemaUri*
 
 **Example**: ``eng`` (*ISO 639-3 three-letter code*)
 
 **Note**: Currently limited to ISO 639-3 three-letter code.
 
-.. _3.3.2-titles.languageId.schemaUri:
+.. _3.3.2-title.languageId.schemaUri:
 
-3.3.2 titles.language.schemaUri
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+3.3.2 title.language.schemaUri
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: The URI of the language identifier schema.
 
-**Requirement**: Mandatory for each titles.language.id supplied
+**Requirement**: Mandatory for each title.language.id supplied
 
 **Occurrence**: 0-1
 
@@ -126,10 +126,10 @@
 
 **Note**: Controlled list shared across all Registration Agencies. No crosswalk; queries return language code and scheme URI.  
 
-.. _3.4-titles.startDate:
+.. _3.4-title.startDate:
 
-3.4 titles.startDate
---------------------
+3.4 title.startDate
+-------------------
 
 **Definition**: Date the project or activity title began being used.
 
@@ -145,10 +145,10 @@
 
 **Note**: Only year is required, month and day are optional (but recommended when available).
 
-.. _3.5-titles.endDate:
+.. _3.5-title.endDate:
 
-3.5 titles.endDate
-------------------
+3.5 title.endDate
+-----------------
 
 **Definition**: Date the project or activity title was changed or stopped being used.
 

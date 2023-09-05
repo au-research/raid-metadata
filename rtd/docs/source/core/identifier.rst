@@ -84,7 +84,7 @@
 .. _1.3.2-identifier.registrationAgencyId.schemaUri:
 
 1.3.2 identifier.registrationAgency.schemaUri
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: The URI of the Identifier scheme used to identify RAiD Registration Agencies.
 
@@ -120,7 +120,7 @@
 
 **Occurrence**: 1
 
-**Allowed values**: *Controlled list of Owners maintained by each Registration Agency, utilising the schema declared at identifier.owner.schemaURI*
+**Allowed values**: *Controlled list of Owners maintained by each Registration Agency, utilising the schema declared at identifier.owner.schemaUri*
 
 **Example values**:
 
@@ -130,9 +130,9 @@
 
 **Note**: Owners, i.e., Organisations hosting Service Points, must have, acquire, or be assigned RORs. A RAiD minted by a Registration Agency must be associated with an Owner affiliated with that Agency.
 
-.. _1.4.2-identifier.owner.schemaURI:
+.. _1.4.2-identifier.owner.schemaUri:
 
-1.4.2 identifier.owner.schemaURI
+1.4.2 identifier.owner.schemaUri
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: The URI of the Identifier scheme used to identify RAiD Owners.

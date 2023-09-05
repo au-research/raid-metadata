@@ -29,9 +29,11 @@
 
 **Examples**
 
+* https://nominatim.openstreetmap.org/ui/details.html?osmtype=R&osmid=1947835&class=boundary (Tundzha, Bulgaria, from OpenStreetMaps)
+* https://nominatim.openstreetmap.org/ui/details.html?osmtype=R&osmid=186382&class=boundary (Bulgaria, from OpenStreetMaps)
+* https://nominatim.openstreetmap.org/ui/details.html?osmtype=W&osmid=26707240&class=historic (Pompeii, Italy, OpenStreetMaps)
 * https://www.geonames.org/264371/athens.html (Athens, Greece, from geonames.org)
 * https://www.geonames.org/2161776/katoomba.html (Katoomba, NSW, Australia, from geonames.org)
-* https://pleiades.stoa.org/places/579885 (Athenae from the Pleiades Gazetteer)
 
 .. _14.2-spatialCoverage.schemaUri:
 
@@ -46,8 +48,10 @@
 
 **Allowed values**: *Open controlled list of URIs*
 
+* https://nominatim.openstreetmap.org/
 * https://www.geonames.org/
-* https://pleiades.stoa.org/
+
+**Note**: OpenStreetMaps preferred; other geoname servers can be nominated by Registration Agencies.
 
 .. _14.3-spatialCoverage.place:
 

@@ -1,10 +1,10 @@
 .. autosummary::
    :toctree: generated
 
-.. _7-relatedObjects:
+.. _7-relatedObject:
 
-7 relatedObjects
-================
+7 relatedObject
+===============
 
 **Definition**: Metadata schema block containing inputs, outputs, and process documents related to a RAiD plus associated properties.
 
@@ -14,27 +14,27 @@
 
 **Example JSON**
 
-.. _7.1-relatedObjects.id:
+.. _7.1-relatedObject.id:
 
-7.1 relatedObjects.id
----------------------
+7.1 relatedObject.id
+--------------------
 
 **Definition**: Any (a) input or resource used by a project or activity, (b) output or product created b a project or activity, or (c) internal process documentation used within a project or activity, identified by a PID.
 
-**Requirement**: Mandatory for each relatedObjects supplied
+**Requirement**: Mandatory for each relatedObject supplied
 
 **Occurrence**: 0-1
 
-**Allowed values**: Identifier defined by relatedObjects.schemaURI
+**Allowed values**: Identifier defined by relatedObject.schemaUri
 
-.. _7.2-relatedObjects.id.schemaURI:
+.. _7.2-relatedObject.id.schemaUri:
 
-7.2 relatedObjects.schemaURI
-----------------------------
+7.2 relatedObject.schemaUri
+---------------------------
 
 **Definition**: The URI of the relatedObject identifier schema.
 
-**Requirement**: Mandatory for each relatedObjects.id supplied
+**Requirement**: Mandatory for each relatedObject.id supplied
 
 **Occurrence**: 0-1
 
@@ -49,29 +49,29 @@
 
 **Note**: Controlled list shared across all Registration Agencies. Controlled list is a subset of DataCite Metadata Schema 4.4 Appendix 1 Table 8 'relatedIdentiferType'.
 
-.. _7.3-relatedObjects.type:
+.. _7.3-relatedObject.type:
 
-7.3 relatedObjects.type
------------------------
+7.3 relatedObject.type
+----------------------
 
 **Definition**: Metadata schema sub-block describing a relatedObject's type.
 
-**Requirement**: Mandatory for each relatedObjects supplied
+**Requirement**: Mandatory for each relatedObject supplied
 
 **Occurrence**: 0-1
 
-.. _7.3.1-relatedObjects.type.id:
+.. _7.3.1-relatedObject.type.id:
 
-7.3.1 relatedObjects.type.id
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+7.3.1 relatedObject.type.id
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: Type of input, output, or process document.
 
-**Requirement**: Mandatory for each relatedObjects.type supplied
+**Requirement**: Mandatory for each relatedObject.type supplied
 
 **Occurrence**: 0-1
 
-**Allowed values**: *Controlled list derived from relatedObjects.type.schemaURI*
+**Allowed values**: *Controlled list derived from relatedObject.type.schemaUri*
 
 * Audiovisual
 * Book
@@ -104,14 +104,14 @@
 
 **Note**: Controlled list is a subset of DataCite Metadata Schema 4.4 Appendix 1 Table 7  'resourceTypeGeneral', with 'Instrument', 'Funding', ‘Educational Material’, ‘Conference Poster’, and 'Prize' added (DataCite Metadata Schema 4.5 also adds ‘Instrument’).
 
-.. _7.3.2-relatedObjects.type.schemaURI:
+.. _7.3.2-relatedObject.type.schemaUri:
 
-7.3.2 relatedObjects.type.schemaURI
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+7.3.2 relatedObject.type.schemaUri
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: The URI of the type schema used.
 
-**Requirement**: Mandatory for each relatedObjects.type.id supplied
+**Requirement**: Mandatory for each relatedObject.type.id supplied
 
 **Occurrence**: 0-1
 
@@ -121,31 +121,31 @@
 
 **Note**: The Controlled list adapted from DataCite Metadata Schema 4.4 is specified for raid.org and used by ARDC registration service. Registration Agencies may implement other controlled vocabularies but must provide a crosswalk. In 'core' elements where variation of controlled vocabularies amongst Registration Agencies occurs, we should return the 'local' term and schema as well as the ‘standardised’ term and schema.
 
-.. _7.4-relatedObjects.categories:
+.. _7.4-relatedObject.category:
 
-7.4 relatedObjects.categories
------------------------------
+7.4 relatedObject.category
+--------------------------
 
 **Definition**: Metadata schema sub-block declaring that a relatedObject is an input, output, and/or process document.
 
-**Requirement**: Mandatory for each relatedObjects supplied
+**Requirement**: Mandatory for each relatedObject supplied
 
 **Occurrence**: 0-n
 
 **Note**: A relatedObject may have more than one category, e.g., it a DMP could initially be a process document, but eventually be published as an output.
 
-.. _7.4.1-relatedObjects.categories.id:
+.. _7.4.1-relatedObject.category.id:
 
-7.4.1 relatedObjects.categories.id
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+7.4.1 relatedObject.category.id
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: Declaration of an object as an input, output, or other.
 
-**Requirement**: Mandatory for each relatedObject.categories supplied.
+**Requirement**: Mandatory for each relatedObject.category supplied.
 
 **Occurrence**: 0-1
 
-**Allowed values**: *Closed controlled list derived from relatedObjects.categories.schemaURI*
+**Allowed values**: *Closed controlled list derived from relatedObject.category.schemUri*
 
 * Input
 * Output
@@ -153,14 +153,14 @@
 
 **Note**: Closed controlled list developed for RAiD.
 
-.. _7.4.2-relatedObjects.type.id.schemaURI:
+.. _7.4.2-relatedObject.type.id.schemaUri:
 
-7.4.2 relatedObjects.categories.schemaURI
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+7.4.2 relatedObject.category.schemaUri
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: The URI of the category schema used.
 
-**Requirement**: Mandatory for each relatedObjects.category.id supplied
+**Requirement**: Mandatory for each relatedObject.category.id supplied
 
 **Occurrence**: 0-1
 

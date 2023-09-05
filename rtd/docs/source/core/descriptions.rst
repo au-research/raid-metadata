@@ -1,9 +1,9 @@
 .. autosummary::
    :toctree: generated
 
-.. _4-descriptions:
+.. _4-description:
 
-4 descriptions
+4 description
 ==============
 
 **Definition**: Metadata schema block containing the description of the RAiD and associated properties.
@@ -14,10 +14,10 @@
 
 **Example JSON**
 
-.. _4.1-descriptions.text:
+.. _4.1-description.text:
 
-4.1 descriptions.text
----------------------
+4.1 description.text
+--------------------
 
 **Definition**: A project description. May include any additional information that does not fit in the other categories.
 
@@ -29,10 +29,10 @@
 
 **Constraints**: Maximum 1000 characters
 
-. 4.2-descriptions.type:
+. 4.2-description.type:
 
-4.2 descriptions.type
----------------------
+4.2 description.type
+--------------------
 
 **Definition**: Metadata schema block declaring the type of description.
 
@@ -42,10 +42,10 @@
 
 **Example JSON**
 
-.. _4.2.1-descriptions.type.id:
+.. _4.2.1-description.type.id:
 
-4.2.1 descriptions.type.id
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+4.2.1 description.type.id
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: The type of description.
 
@@ -53,7 +53,7 @@
 
 **Occurrence**: 0-1
 
-**Allowed values**: *Controlled list derived from descriptions.type.schemaUri*
+**Allowed values**: *Controlled list derived from description.type.schemaUri*
 
 * Primary (*preferred full description or abstract*)
 * Alternative (*additional full description or abstract*)
@@ -65,14 +65,14 @@
 
 **Note**: If a description is provided, a single, primary description is mandatory; additional Descriptions are optional. Type is mandatory for each description specified. Controlled list adapted from Vocabularies for Registry Schema 1.6.5 'Description Type' and DataCite Metadata Schema 4.4 Appendix 1 Table 10 'descriptiontype'.
 
-.. _4.2.2-descriptions.type.id.schemaUri:
+.. _4.2.2-description.type.id.schemaUri:
 
-4.2.2 descriptions.type.schemaUri
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+4.2.2 description.type.schemaUri
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: The URI of the description type schema.
 
-**Requirement**: Mandatory for each descriptions.type.id supplied
+**Requirement**: Mandatory for each description.type.id supplied
 
 **Occurrence**: 0-1
 
@@ -82,10 +82,10 @@
 
 **Note**: The RAiD vocabulary on RVA is specified for raid.org and used by ARDC registration service; Registration Agencies may implement other controlled vocabularies but must provide a crosswalk. In 'core' elements like this one where variation of controlled vocabularies amongst Registration Agencies occurs, the RAiD Service should return the 'local' term and schema as well as the ‘standardised’ term and schema.
 
-.. _4.3-descriptions.language:
+.. _4.3-description.language:
 
-4.3 descriptions.language
--------------------------
+4.3 description.language
+------------------------
 
 **Definition**: Metadata schema block declaring the language of the description text.
 
@@ -95,10 +95,10 @@
 
 **Example JSON**
 
-.. _4.3.1-descriptions.languageId:
+.. _4.3.1-description.languageId:
 
-4.3.1 descriptions.language.id
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+4.3.1 description.language.id
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: Language used for the description text identified by a code or other identifier.
 
@@ -112,14 +112,14 @@
 
 **Note**: Currently limited to ISO 649-4 three-letter code.
 
-.. _4.3.1-descriptions.languageId.schemaUri:
+.. _4.3.1-description.languageId.schemaUri:
 
-4.3.2 descriptions.language.schemaUri
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+4.3.2 description.language.schemaUri
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: The URI of the language identifier schema.
 
-**Requirement**: Mandatory for each descriptions.language.id supplied
+**Requirement**: Mandatory for each description.language.id supplied
 
 **Occurrence**: 0-1
 
