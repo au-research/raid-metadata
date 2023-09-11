@@ -6,9 +6,9 @@
 5 contributor
 =============
 
-**Definition**: Metadata schema block containing contributor to a RAiD and associated properties.
+**Definition**: a metadata schema block containing a contributor to a RAiD and their associated properties
 
-**Requirement**: At least one contributor is mandatory
+**Requirement**: at least one contributor is mandatory
 
 **Occurrence**: 1-n
 
@@ -19,83 +19,82 @@
 5.1 contributor.id
 ------------------
 
-**Definition**: Contributor (person) associated with a project or activity identified by a PID.
+**Definition**: the contributor (person) associated with a project or activity identified by a persistent identifier (PID)
 
-**Requirement**: Mandatory for each contributor supplied
+**Requirement**: mandatory for each contributor supplied
 
 **Occurrence**: 1-n
 
-**Allowed values**: Identifier defined by contributor.schemaUri 
+**Allowed values**: identifier defined by contributor.schemaUri 
 
 .. _5.2-contributor.id.schemaUri:
 
 5.2 contributor.schemaUri
 -------------------------
 
-**Definition**: The URI of the contributor identifier schema.
+**Definition**: the URI of the contributor identifier schema
 
-**Requirement**: Mandatory for each contributor.id supplied
+**Requirement**: mandatory for each contributor.id supplied
 
 **Occurrence**: 1
 
-**Allowed values**: *Closed controlled list*
+**Allowed values**: *closed controlled list*
 
 * ``https://orcid.org/``
 * ``https://isni.org/``
 
-
-**Note**: Controlled list shared across all Registration Agencies.
+**Note**: the controlled list is shared across all Registration Agencies.
 
 .. _5.3-contributor.position:
 
 5.3 contributor.position
 ------------------------
 
-**Definition**: Metadata schema sub-block describing a contributor's position on a project.
+**Definition**: a metadata schema sub-block describing a contributor's position on a project or activity
 
-**Requirement**: Mandatory for each contributor supplied
+**Requirement**: mandatory for each contributor supplied
 
 **Occurrence**: 1
 
-**Note**: Contributors must have one and only one position at any given time (but may also be flagged as a 'leader' or 'contact').
+**Note**: contributors must have one and only one position at any given time (but they may also be flagged as a 'leader' or 'contact').
 
 .. _5.3.1-contributor.position.id:
 
 5.3.1 contributor.position.id
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Definition**: Contributor's administrative position in the project.
+**Definition**: a contributor's administrative position in the project
 
-**Requirement**: Mandatory for each contributor.position supplied
+**Requirement**: mandatory for each contributor.position supplied
 
 **Occurrence**: 1
 
-**Allowed values**: *Controlled list derived from contributor.position.schemaUri*
+**Allowed values**: *controlled list derived from contributor.position.schemaUri*
 
 * Principal or Chief Investigator
 * Co-investigator or Collaborator
 * Partner Investigator (industry, government, or community collaborator)
 * Consultant (consultant or contractor hired by the project)
-* Other Participant (not covered by one of the positions above; ‘member’; ‘other * significant contributor’)
+* Other Participant (not covered by one of the positions above; 'member'; 'other * significant contributor')
 
-**Note**: In 'core' elements where variation of controlled vocabularies amongst Registration Agencies is allowed, Registration Agencies must provide a crosswalk. In 'core' elements where variation of controlled vocabularies amongst Registration Agencies occurs, we should return the 'local' term and schema as well as the ‘standardised’ term and schema. Mandatory for each Contributor specified. In this case, Positions are going to vary by region, and maybe by grant scheme within a region. Controlled list adapted from Simon Cox's Project Ontology, OpenAIRE ‘Project’ guidelines, NIH definitions, ARC definitions, and DataCite Metadata Schema 4.4 Appendix 1 Table 5.
+**Note**: in 'core' elements where variation of controlled vocabularies amongst Registration Agencies is allowed, Registration Agencies must provide a crosswalk. In 'core' elements where variation of controlled vocabularies amongst Registration Agencies occurs, the RAiD system should return the 'local' term and schema as well as the 'standardised' term and schema. Mandatory for each contributor specified. In this case, positions are going to vary by region, and maybe by grant scheme within a region. The controlled list was adapted from Simon Cox's Project Ontology, OpenAIRE 'Project' guidelines, NIH definitions, ARC definitions and DataCite Metadata Schema 4.4 Appendix 1 Table 5.
 
 .. _5.3.2-contributor.position.id.schemaUri:
 
 5.3.2 contributor.position.schemaUri
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Definition**: The URI of the position schema used.
+**Definition**: the URI of the position schema used
 
-**Requirement**: Mandatory for each contributor.position.id supplied
+**Requirement**: mandatory for each contributor.position.id supplied
 
 **Occurrence**: 1
 
-**Allowed values**: *Closed controlled list*
+**Allowed values**: *closed controlled list*
 
 * [URI of RAiD vocab on RVA (to be created)]
 
-**Note**: Controlled list shared across all Registration Agencies.
+**Note**: this controlled list shared across all Registration Agencies.
 
 .. _5.3.3-contributor.position.startDate:
 
@@ -104,7 +103,7 @@
 
 **Definition**: Date the contributor began position associated with the project or activity.
 
-**Requirement**: Mandatory for each contributor.position.id supplied
+**Requirement**: mandatory for each contributor.position.id supplied
 
 **Occurrence**: 1
 
@@ -185,7 +184,7 @@
 
 **Definition**: A contributor's (person) role(s) on the Project.
 
-**Requirement**: Mandatory for each contributor.role provided
+**Requirement**: mandatory for each contributor.role provided
 
 **Occurrence**: 0-1
 
@@ -207,7 +206,7 @@
 * ``https://credit.niso.org/contributor-role/writing-review-editing/``
 
 
-**Note**: In 'core' elements where variation of controlled vocabularies amongst Registration Agencies is allowed, Registration Agencies must provide a crosswalk. In 'core' elements where variation of controlled vocabularies amongst Registration Agencies occurs, we should return the 'local' term and schema as well as the ‘standardised’ term and schema. 
+**Note**: In 'core' elements where variation of controlled vocabularies amongst Registration Agencies is allowed, Registration Agencies must provide a crosswalk. In 'core' elements where variation of controlled vocabularies amongst Registration Agencies occurs, we should return the 'local' term and schema as well as the 'standardised' term and schema. 
 
 .. _5.6.2-contributor.role.id.schemaUri:
 
@@ -216,11 +215,11 @@
 
 **Definition**: The URI of the role schema used.
 
-**Requirement**: Mandatory for each contributor.role.id provided
+**Requirement**: mandatory for each contributor.role.id provided
 
 **Occurrence**: 0-1
 
-**Allowed values**: *Closed controlled list*
+**Allowed values**: *closed controlled list*
 
 * ``https://credit.niso.org/``
 

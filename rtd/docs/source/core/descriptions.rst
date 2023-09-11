@@ -6,9 +6,9 @@
 4 description
 ==============
 
-**Definition**: Metadata schema block containing the description of the RAiD and associated properties.
+**Definition**: a metadata schema block containing the description of the RAiD and associated properties.
 
-**Requirement**: Recommended
+**Requirement**: recommended
 
 **Occurrence**: 0-n
 
@@ -19,24 +19,24 @@
 4.1 description.text
 --------------------
 
-**Definition**: A project description. May include any additional information that does not fit in the other categories.
+**Definition**: a project description that may include any additional information that does not fit in the other categories
 
-**Requirement**: Mandatory for each description supplied
+**Requirement**: mandatory for each description supplied
 
 **Occurrence**: 0-1
 
-**Allowed values**: Free text
+**Allowed values**: free text
 
-**Constraints**: Maximum 1000 characters
+**Constraints**: maximum 1000 characters
 
 . 4.2-description.type:
 
 4.2 description.type
 --------------------
 
-**Definition**: Metadata schema block declaring the type of description.
+**Definition**: a metadata schema block declaring the type of description.
 
-**Requirement**: Mandatory for each description supplied
+**Requirement**: mandatory for each description supplied
 
 **Occurrence**: 1
 
@@ -47,13 +47,13 @@
 4.2.1 description.type.id
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Definition**: The type of description.
+**Definition**: the type of description.
 
-**Requirement**: Mandatory for each description.type supplied
+**Requirement**: mandatory for each description.type supplied
 
 **Occurrence**: 0-1
 
-**Allowed values**: *Controlled list derived from description.type.schemaUri*
+**Allowed values**: *controlled list derived from description.type.schemaUri*
 
 * Primary (*preferred full description or abstract*)
 * Alternative (*additional full description or abstract*)
@@ -61,35 +61,35 @@
 * Significance Statement
 * Methods
 * Objectives
-* Other (*any other descriptive information, e.g., a note or similar*)
+* Other (*any other descriptive information, e.g. a note or similar*)
 
-**Note**: If a description is provided, a single, primary description is mandatory; additional Descriptions are optional. Type is mandatory for each description specified. Controlled list adapted from Vocabularies for Registry Schema 1.6.5 'Description Type' and DataCite Metadata Schema 4.4 Appendix 1 Table 10 'descriptiontype'.
+**Note**: if a description is provided, a single primary description is mandatory while additional Descriptions are optional. The type is mandatory for each description specified. The controlled list adapted from Vocabularies for Registry Schema 1.6.5 'Description Type' and DataCite Metadata Schema 4.4 Appendix 1 Table 10 'descriptiontype'.
 
 .. _4.2.2-description.type.id.schemaUri:
 
 4.2.2 description.type.schemaUri
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Definition**: The URI of the description type schema.
+**Definition**: the URI of the description type schema
 
-**Requirement**: Mandatory for each description.type.id supplied
+**Requirement**: mandatory for each description.type.id supplied
 
 **Occurrence**: 0-1
 
-**Allowed values**: *Closed controlled list*
+**Allowed values**: *closed controlled list*
 
 * [URI of RAiD vocab on RVA (to be created)]
 
-**Note**: The RAiD vocabulary on RVA is specified for raid.org and used by ARDC registration service; Registration Agencies may implement other controlled vocabularies but must provide a crosswalk. In 'core' elements like this one where variation of controlled vocabularies amongst Registration Agencies occurs, the RAiD Service should return the 'local' term and schema as well as the ‘standardised’ term and schema.
+**Note**: the RAiD vocabulary on RVA is specified for https://raid.org and used by the ARDC RAiD service; Registration Agencies may implement other controlled vocabularies but they must provide a crosswalk. In 'core' elements like this one where variation of controlled vocabularies among Registration Agencies occurs, the RAiD service should return the 'local' term and schema as well as the 'standardised' term and schema.
 
 .. _4.3-description.language:
 
 4.3 description.language
 ------------------------
 
-**Definition**: Metadata schema block declaring the language of the description text.
+**Definition**: a metadata schema block declaring the language of the description text
 
-**Requirement**: Recommended
+**Requirement**: recommended
 
 **Occurrence**: 0-1
 
@@ -100,31 +100,31 @@
 4.3.1 description.language.id
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Definition**: Language used for the description text identified by a code or other identifier.
+**Definition**: the language used for the description text identified by a code or other identifier
 
-**Requirement**: Recommended
+**Requirement**: recommended
 
 **Occurrence**: 0-1
 
-**Allowed values**: *Controlled list derived from titles.language.schemaUri*
+**Allowed values**: *controlled list derived from titles.language.schemaUri*
 
-**Example**: ``eng`` (*ISO 649-4 three-letter code*)
+**Example**: ``eng`` (*ISO 649-3's 3-letter code*)
 
-**Note**: Currently limited to ISO 649-4 three-letter code.
+**Note**: Currently limited to ISO 649-3's 3-letter code.
 
 .. _4.3.1-description.languageId.schemaUri:
 
 4.3.2 description.language.schemaUri
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Definition**: The URI of the language identifier schema.
+**Definition**: the URI of the language identifier schema
 
-**Requirement**: Mandatory for each description.language.id supplied
+**Requirement**: mandatory for each description.language.id supplied
 
 **Occurrence**: 0-1
 
-**Allowed values**: *Controlled list*
+**Allowed values**: *controlled list*
 
 * ``https://www.iso.org/standard/49544.html``
 
-**Note**: Controlled list shared across all Registration Agencies. No crosswalk; queries return language code and scheme URI. 
+**Note**: the controlled list is shared across all Registration Agencies. No crosswalk - queries return language code and scheme URI. 
