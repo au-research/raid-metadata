@@ -20,8 +20,8 @@ RAiDs can also be linked to one another using arbitrary qualified relationships 
 
 The RAiD system was developed by the `Australian Research Data Commons (ARDC) <https://www.ardc.edu.au>`_ and has been standardised for international use by `ISO 23527, Information and Documentation — Research Activity Identifier (RAiD) <https://www.iso.org/standard/75931.html>`_.
 
-RAiD Metadata Schema conventions used
--------------------------------------
+RAiD Metadata Schema conventions
+--------------------------------
 
 'Core', 'extended' and 'local' metadata schema components
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -31,36 +31,29 @@ The RAiD metadata schema is divided into 3 components:
 2. extended
 3. local.
 
-The  **Core** component refers to metadata properties and controlled lists that are standardised across all RAiD Registration Agencies. If a Registration Agency uses its own controlled lists, it must provide a cross-walk to the RAiD's standardised core terms.
+The  **Core** component refers to metadata properties and controlled lists that are standardised across all RAiD Registration Agencies. Controlled lists are 'closed' and may not be altered. If a Registration Agency substitutes its own controlled lists, it must provide a cross-walk to the RAiD's standardised core terms. Properties may not be altered.
 
-The **Extended** component refers to properties that are standardised across all Registration Agencies, but their controlled lists may vary. A Registration Agency may use its own controlled lists, but it must first:
-* publish each list in a machine-readable format, preferably on a vocabulary service (Note: the ARDC can assist with this requirement)
-* register the controlled list(s) with the ARDC as the RAID's ISO 23527 Registration Authority (RAu). Re-use of an existing published controlled list is acceptable. as long as it is published in machine-readable format.
+The **Extended** component refers to properties that are standardised across all Registration Agencies, but where controlled lists may vary. A Registration Agency may ammend the controlled list (lists are 'open'), or substitute its own controlled list entierely. In either case, it must:
+* Publish each non-standard list in a machine-readable format, preferably on a vocabulary service (the ARDC can assist with this requirement). Re-use of an existing published controlled list is acceptable. as long as it is published in machine-readable format.
+* Register the controlled list(s) with the ARDC as the RAID's ISO 23527 Registration Authority (RAu). 
+Properties may not be altered.
 
-The **Local** components refers to properties and controlled lists that are entirely under the control of a Registration Agency, and only need to be reported to the ARDC (RAu) annually or whenever major changes are made. Local properties can be tailored to meet the needs of the research community served by the Registration Agency. However, a mechanism must be put in place by the Registration Agency to enable useful local metadata properties to be promoted into extended metadata, or extended properties into core metadata.
+The **Local** components refers to properties and controlled lists that are entirely under the control of Registration Agencies, and only need to be reported to the ARDC (RAu) annually or when major changes are made. Local properties can be tailored to meet the needs of the research community served by the Registration Agency. The Registration Authority will provide a system enabling local metadata properties to be promoted into extended metadata if they are found broadly useful.
 
 Component blocks
 ^^^^^^^^^^^^^^^^
 
 Within each metadata schema component, the metadata properties are divided into groups or 'blocks' of related properties.
 
-Property block descriptions
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sub-blocks
+^^^^^^^^^^
 
-All property block descriptions include these elements:
+Sub-blocks contain no values, but instead bundle tightly bound properties together, for example, a recurring 'language' sub-block includes language code, language code scheme, and language code scheme URL. 
 
-.. csv-table:: Example :rst:dir:`csv-table`
+Properties
+^^^^^^^^^^^
 
-   "**Definition**", "briefly defines the property"
-   "**Requirement**",               "indicates whether a property is mandatory, recommended or optional, with additional information where necessary (e.g., if a property is mandatory only if another property is present)"
-   "**Occurrence**",               "indicates the number of times a property may occur:
-
-* 0 represents a recommended or optional property that may only occur once
-* 0-n represents an optional property that may occur multiple times
-* 1 represents a required property that may only occur once
-* 1-n represents a required property that may occur multiple times"
-   "**Allowed values**",               "will either indicate a controlled list of values limiting input (as a bulleted list), or rules governing the values (as an italicised statement followed by format and constraints).
-"
+Each metadata property is described with the following characteristics:
 
 **Definition** briefly defines the property
 
@@ -68,12 +61,14 @@ All property block descriptions include these elements:
 
 **Occurrence** indicates the number of times a property may occur:
 
-* 0 represents a recommended or optional property that may only occur once
-* 0-n represents an optional property that may occur multiple times
-* 1 represents a required property that may only occur once
-* 1-n represents a required property that may occur multiple times
+* 0 represents a recommended or optional property that may only occur only once
+* 0-n represents an optional property that may occur one or many times
+* 1 represents a required property that may only occur only once
+* 1-n represents a required property that may occur one or many times
 
-**Allowed values** will either indicate a controlled list of values limiting input (as a bulleted list), or rules governing the values (as an italicised statement followed by format and constraints).
+**Allowed values** will either indicate a controlled list of values limiting input (as a bulleted list), or rules governing the values (as an italicised statement followed by format and constraints). Controlled lists are described as 'open' if Registration Agencies can add new terms to them, with the only restriction being that the Registration Authority must be notified. Such lists are 'closed' if they cannot be altered by Registration Agencies, in which cases changes must be proposed during the normal metadata review cycle. 
+
+**Example JSON** provides an indicative JSON code snippet.
 
 In addition, some properties include additional information:
 
@@ -81,7 +76,7 @@ In addition, some properties include additional information:
 
 **Examples** provide models for the value.
 
-**Note** any additional information about the property.
+**Note** contains any additional information about the property.
 
 
 .. note::
