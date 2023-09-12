@@ -52,10 +52,13 @@ Sub-blocks contain no values, but instead bundle tightly bound properties togeth
    "**Definition**", "briefly defines the property"
    "**Requirement**", "indicates whether a property is mandatory, recommended or optional, with additional information included where necessary (e.g. if a property is mandatory when only another property is present)"
    "**Occurrence**",  "indicates the number of times a property may occur:
+
    * 0 – represents a recommended or optional property that may only occur once
    * 0-n – represents an optional property that may occur multiple times
    * 1 – represents a required property that may only occur once
-   * 1-n – represents a required property that may occur multiple times"
+   * 1-n – represents a required property that may occur multiple times
+    
+   "
    "**Allowed values**", "will indicate a controlled list of values' limiting input (such as a bulleted list) or the rules that govern those values (such as an italicised statement followed by format and constraints)"
 
 In addition, some properties include additional information:
