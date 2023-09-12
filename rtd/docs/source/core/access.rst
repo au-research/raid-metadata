@@ -6,9 +6,9 @@
 11 access
 =========
 
-**Definition**: Metadata schema block containing RAiD access information.
+**Definition**: a metadata schema block containing RAiD access information
 
-**Requirement**: Mandatory
+**Requirement**: mandatory
 
 **Occurrence**: 1
 
@@ -19,9 +19,9 @@
 11.1 access.type
 ----------------
 
-**Definition**: Metadata schema block containing RAiD access type information.
+**Definition**: a metadata schema block containing RAiD access type information
 
-**Requirement**: Mandatory
+**Requirement**: mandatory
 
 **Occurrence**: 1
 
@@ -32,13 +32,13 @@
 11.1.1 access.type.id
 ^^^^^^^^^^^^^^^^^^^^^
 
-**Definition**: The type of access granted to a RAiD.
+**Definition**: the type of access granted to a RAiD metadata record
 
-**Requirement**: Mandatory
+**Requirement**: mandatory
 
 **Occurrence**: 1
 
-**Allowed values**: *Closed controlled list derived from access.type.schemaUri*
+**Allowed values**: *closed controlled list derived from access.type.schemaUri*
 
 * Open access
 * Embargoed access
@@ -52,13 +52,13 @@
 11.1.2 access.type.schemaUri
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Definition**: The URI of the title type schema.
+**Definition**: the URI of the title type schema
 
-**Requirement**: Mandatory
+**Requirement**: mandatory
 
 **Occurrence**: 1
 
-**Allowed values**: *Closed controlled list*
+**Allowed values**: *closed controlled list*
 
 * https://vocabularies.coar-repositories.org/access_rights/1.1/
 
@@ -69,9 +69,9 @@
 11.2 access.embargoExpiry
 -------------------------
 
-**Definition**: Date the embargo on access to the RAiD ends.
+**Definition**: the date an embargo on access to the RAiD metadata ends
 
-**Requirement**: Mandatory if access.type is 'embargoed'
+**Requirement**: mandatory if access.type is 'embargoed'
 
 **Occurrence**: 1
 
@@ -79,7 +79,7 @@
 
 **Format**: ``YYYY-MM-DD``
 
-**Constraints**: Embargo expiration dates may not lay more than 18 months from the date the RAiD was registered; year, month, and day must be specified
+**Constraints**: embargo expiration dates may not lay more than 18 months from the date the RAiD was registered; year, month, and day must be specified
 
 **Examples**: ``20211-08-28``
 
@@ -88,9 +88,9 @@
 11.3 access.statement
 ---------------------
 
-**Definition**: Metadata schema block containing an explanation for any access type that is not 'open' plus associated properties.
+**Definition**: a metadata schema block containing an explanation for any access type that is not 'open' and its associated properties
 
-**Requirement**: Mandatory if access.type.id is not 'open'
+**Requirement**: mandatory if access.type.id is not 'open'
 
 **Occurrence**: 1
 
@@ -101,24 +101,24 @@
 11.3.1 access.statement.text
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Definition**: Text of access statement explaining any restrictions on access.
+**Definition**: the text of an access statement that explains any restrictions on access
 
-**Requirement**: Mandatory if access.type.id is not 'open'
+**Requirement**: mandatory if access.type.id is not 'open'
 
 **Occurrence**: 1
 
-**Allowed values**: Free text
+**Allowed values**: free text
 
-**Constraints**: Maximum 1,000 characters
+**Constraints**: maximum 1,000 characters
 
 .. _11.3.2-access.statement.language:
 
 11.3.2 access.statement.language
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Definition**: Metadata schema block declaring the language of the access statement text.
+**Definition**: a metadata schema block declaring the language of the text in the access statement
 
-**Requirement**: Recommended
+**Requirement**: recommended
 
 **Occurrence**: 0-1
 
@@ -129,29 +129,29 @@
 11.3.2.1 access.statement.language.id
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Definition**: Language used for the access statement text identified by a code or other identifier.
+**Definition**: the language used for the access statement text, identified by a code or other identifier
 
-**Requirement**: Recommended
+**Requirement**: recommended
 
 **Occurrence**: 0-1
 
-**Allowed values**: *Controlled list derived from access.statement.language.schemaUri*
+**Allowed values**: *closed controlled list derived from access.statement.language.schemaUri*
 
-**Example**: ``eng`` (*ISO 6119-11 three-letter code*)
+**Example**: ``eng`` (*ISO 639-3's 3-letter code*)
 
 .. _11.3.2.2-access.statement.language.schemaUri:
 
 11.3.2.2 access.statement.language.schemaUri
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Definition**: The URI of the language identifier schema.
+**Definition**: the URI of the language identifier schema
 
-**Requirement**: Mandatory for each access.statement.language supplied
+**Requirement**: mandatory for each access.statement.language supplied
 
 **Occurrence**: 0-1
 
-**Allowed values**: *Controlled list*
+**Allowed values**: *closed controlled list*
 
 * ``https://www.iso.org/standard/1195114.html``
 
-**Note**: Currently limited to ISO 6119-11 (three-letter code).
+**Note**: currently limited to ISO 6119-11 (three-letter code).

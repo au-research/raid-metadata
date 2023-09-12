@@ -6,9 +6,9 @@
 6 organisation
 ==============
 
-**Definition**: Metadata schema block containing organisation to a RAiD and associated properties.
+**Definition**: a metadata schema block containing the organisation associated with a RAiD and its associated properties
 
-**Requirement**: Recommended
+**Requirement**: recommended
 
 **Occurrence**: 0-n
 
@@ -19,26 +19,26 @@
 6.1 organisation.id
 -------------------
 
-**Definition**: Organisation associated with a project or activity identified by a PID.
+**Definition**: the organisation associated with a project or activity
 
-**Requirement**: Mandatory for each organisation supplied
+**Requirement**: mandatory for each organisation supplied
 
 **Occurrence**: 0-1
 
-**Allowed values**: Identifier defined by organisation.schemaUri
+**Allowed values**: the identifier specified by organisation.schemaUri
 
 .. _6.2-organisation.schemaUri:
 
 6.2 organisation.schemaUri
 --------------------------
 
-**Definition**: The URI of the organisation identifier schema.
+**Definition**: the URI of the organisation identifier schema
 
-**Requirement**: Mandatory for each organisation.id supplied
+**Requirement**: mandatory for each organisation.id supplied
 
 **Occurrence**: 0-1
 
-**Allowed values**: *Closed controlled list*
+**Allowed values**: *closed controlled list*
 
 * ``https://ror.org/``
 
@@ -47,51 +47,52 @@
 6.3 organisation.role
 ---------------------
 
-**Definition**: Metadata schema sub-block describing an organisation's role on a project.
+**Definition**: a metadata schema sub-block describing an organisation's role on a project
 
-**Requirement**: Mandatory for each organisation supplied
+**Requirement**: mandatory for each organisation supplied
 
 **Occurrence**: 0-1
 
-**Note**: An organisation's role may change over time, but each may have one and only one role at any given time.
+**Note**: an organisation's role may change over time, but each organisation may have one and only one role at any given time.
 
 .. _6.3.1-organisation.role.id:
 
 6.3.1 organisation.role.id
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Definition**: Organisation role.
+**Definition**: the organisation's role
 
-**Requirement**: Mandatory for each organisation.role supplied
+**Requirement**: mandatory for each organisation.role supplied
 
 **Occurrence**: 0-1
 
-**Allowed values**: *Controlled list derived from organisation.role.schemaUri*
+**Allowed values**: *controlled list derived from organisation.role.schemaUri*
 
 * Lead Research Organisation
 * Other Research Organisation
-* Partner Organisation (*i.e., a non-research organisation, such as an industry, government, or community partner collaborating on the project, as a research partner rather than a hired consultant or contractor*) 
-* Contractor (*consultant or contractor hired by project*)
-* Funder (*organisation underwriting the research via a cash or in-kind grant, prize, or investment, but not otherwise listed as a Research Organisation, Partner Organisation, or Contractor*)
-* Facility (*organisation providing access to physical or digital infrastructure, but not otherwise listed as a Research Organisation, Partner Organisation, or Contractor*)
+* Partner Organisation (*i.e. a non-research organisation, such as an industry, government, or community partner that is collaborating on the project or activity, as a research partner rather than a hired consultant or contractor*) 
+* Contractor (*consultant or contractor hired by project or activity*)
+* Funder (*organisation underwriting the research via a cash or in-kind grant, prize, or investment, but not otherwise listed as a research organisation, partner organisation or contractor*)
+* Facility (*organisation providing access to physical or digital infrastructure, but not otherwise listed as a research organisation, partner organisation or contractor*)
 * Other Organisation (*not covered by the roles above*)
 
-**Default**: First-entered Organisation (only) defaults to 'Lead Research Organisation'
+**Default**: first-entered Organisation (only) defaults to 'Lead Research Organisation'
 
-**Constraints**: One (and only one) Organisation must be designated as 'Lead Research Organisation'. 
+**Constraints**: one (and only one) Organisation must be designated as 'Lead Research Organisation'
+**Note**: roles are likely to vary by region; controlled list adapted from Simon Cox's Project Ontology, OpenAIRE ‘Project’ guidelines, NIH definitions, ARC definitions, and DataCite Metadata Schema 4.4 Appendix 1 Table 5 'Description of contributorType'.
 
 .. _6.3.2-organisation.role.schemaUri:
 
 6.3.2 organisation.role.schemaUri
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Definition**: The URI of the role schema used.
+**Definition**: the URI of the role schema used
 
-**Requirement**: Mandatory for each organisation.role.id supplied
+**Requirement**: mandatory for each organisation.role.id supplied
 
 **Occurrence**: 0-1
 
-**Allowed values**: *Closed controlled list*
+**Allowed values**: *closed controlled list*
 
 * [URI of RAiD vocab on RVA (to be created)]
 
@@ -100,9 +101,9 @@
 6.3.3 organisation.role.startDate
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Definition**: Date the contributor began role associated with the project or activity.
+**Definition**: the date that the organisation began a role associated with the project or activity
 
-**Requirement**: Mandatory for each organisation.role supplied
+**Requirement**: mandatory for each organisation.role supplied
 
 **Occurrence**: 0-1
 
@@ -112,16 +113,16 @@
 
 **Examples**: ``2026-08-28``; ``2026-08``; ``2026``
 
-**Note**: Only year is required, month and day are optional (but recommended when available).
+**Note**: only the year is required; month and day are optional (but recommended when available).
 
 .. _6.3.4-organisation.role.endDate:
 
 6.3.4 organisation.role.endDate
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Definition**: Date the contributor terminated role associated with the project or activity.
+**Definition**: the date that the organisation terminated a role associated with the project or activity
 
-**Requirement**: Recommended
+**Requirement**: recommended
 
 **Occurrence**: 0-1
 
@@ -131,4 +132,4 @@
 
 **Examples**: ``2026-08-28``; ``2026-08``; ``2026``
 
-**Note**: Only year is required, month and day are optional (but recommended when available).
+**Note**: only the year is required; month and day are optional (but recommended when available).

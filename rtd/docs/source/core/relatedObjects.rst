@@ -6,9 +6,9 @@
 7 relatedObject
 ===============
 
-**Definition**: Metadata schema block containing inputs, outputs, and process documents related to a RAiD plus associated properties.
+**Definition**: a metadata schema block containing inputs, outputs, and process documents related to a RAiD plus associated properties
 
-**Requirement**: Recommended
+**Requirement**: recommended
 
 **Occurrence**: 0-n
 
@@ -19,26 +19,26 @@
 7.1 relatedObject.id
 --------------------
 
-**Definition**: Any (a) input or resource used by a project or activity, (b) output or product created b a project or activity, or (c) internal process documentation used within a project or activity, identified by a PID.
+**Definition**: any (a) input or resource used by a project or activity, (b) output or product created by a project or activity, and/or (c) internal process documentation used within a project or activity, that is identified by a persistent identifier (PID).
 
-**Requirement**: Mandatory for each relatedObject supplied
+**Requirement**: mandatory for each relatedObject supplied
 
 **Occurrence**: 0-1
 
-**Allowed values**: Identifier defined by relatedObject.schemaUri
+**Allowed values**: an identifier specified by relatedObject.schemaUri
 
 .. _7.2-relatedObject.id.schemaUri:
 
 7.2 relatedObject.schemaUri
 ---------------------------
 
-**Definition**: The URI of the relatedObject identifier schema.
+**Definition**: The URI of the relatedObject identifier schema
 
-**Requirement**: Mandatory for each relatedObject.id supplied
+**Requirement**: mandatory for each relatedObject.id supplied
 
 **Occurrence**: 0-1
 
-**Allowed values**: *Closed controlled list*
+**Allowed values**: *closed controlled list*
 
 * https://arks.org/ 
 * http://doi.org/ (*includes IGSNs, CrossRef Publication IDs or Grant IDs, DataCite DOIs, instrument DOIs, etc*)
@@ -54,9 +54,9 @@
 7.3 relatedObject.type
 ----------------------
 
-**Definition**: Metadata schema sub-block describing a relatedObject's type.
+**Definition**: a metadata schema sub-block describing a relatedObject's type
 
-**Requirement**: Mandatory for each relatedObject supplied
+**Requirement**: mandatory for each relatedObject supplied
 
 **Occurrence**: 0-1
 
@@ -65,13 +65,13 @@
 7.3.1 relatedObject.type.id
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Definition**: Type of input, output, or process document.
+**Definition**: a type of input, output, or process document
 
-**Requirement**: Mandatory for each relatedObject.type supplied
+**Requirement**: mandatory for each relatedObject.type supplied
 
 **Occurrence**: 0-1
 
-**Allowed values**: *Controlled list derived from relatedObject.type.schemaUri*
+**Allowed values**: *closed controlled list derived from relatedObject.type.schemaUri*
 
 * Audiovisual
 * Book
@@ -85,7 +85,7 @@
 * Dissertation
 * Learning Object
 * Event
-* Funding (includes ‘grant’ or other cash or in-kind awards)
+* Funding (includes 'grant' or other cash or in-kind awards)
 * Image
 * Instrument
 * Journal Article
@@ -109,13 +109,13 @@
 7.3.2 relatedObject.type.schemaUri
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Definition**: The URI of the type schema used.
+**Definition**: the URI of the type schema used
 
-**Requirement**: Mandatory for each relatedObject.type.id supplied
+**Requirement**: mandatory for each relatedObject.type.id supplied
 
 **Occurrence**: 0-1
 
-**Allowed values**: *Closed controlled list*
+**Allowed values**: *closed controlled list*
 
 * [URI of RAiD vocab on RVA (to be created)]
 
@@ -124,26 +124,26 @@
 7.4 relatedObject.category
 --------------------------
 
-**Definition**: Metadata schema sub-block declaring that a relatedObject is an input, output, and/or process document.
+**Definition**:  a metadata schema sub-block declaring that a relatedObject is an input, output and/or process document
 
-**Requirement**: Mandatory for each relatedObject supplied
+**Requirement**: mandatory for each relatedObject supplied
 
 **Occurrence**: 0-n
 
-**Note**: A relatedObject may have more than one category, e.g., it a DMP could initially be a process document, but eventually be published as an output.
+**Note**: a relatedObject may have more than one category (e.g.) a DMP could initially be a process document, yet eventually be published as an output.
 
 .. _7.4.1-relatedObject.category.id:
 
 7.4.1 relatedObject.category.id
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Definition**: Declaration of an object as an input, output, or other.
+**Definition**: a declaration of an object as an input, output, or other
 
-**Requirement**: Mandatory for each relatedObject.category supplied.
+**Requirement**: mandatory for each relatedObject.category supplied
 
 **Occurrence**: 0-1
 
-**Allowed values**: *Closed controlled list derived from relatedObject.category.schemUri*
+**Allowed values**: *closed controlled list derived from relatedObject.category.schemUri*
 
 * Input
 * Output
@@ -154,14 +154,12 @@
 7.4.2 relatedObject.category.schemaUri
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Definition**: The URI of the category schema used.
+**Definition**: the URI of the category schema used.
 
-**Requirement**: Mandatory for each relatedObject.category.id supplied
+**Requirement**: mandatory for each relatedObject.category.id supplied
 
 **Occurrence**: 0-1
 
-**Allowed values**: *Closed controlled list*
+**Allowed values**: *closed controlled list*
 
 * [URI of RAiD vocab on RVA (to be created)]
-
-**Note**: Registration Agencies may implement other controlled vocabularies but must provide a crosswalk. In 'core' elements where variation of controlled vocabularies amongst Registration Agencies occurs, we should return the 'local' term and schema as well as the ‘standardised’ term and schema.

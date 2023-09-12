@@ -6,9 +6,9 @@
 13 traditionalKnowledgeLabel
 ============================
 
-**Definition**: Metadata schema block containing information about Traditional Knowledge or Biocultural labels.
+**Definition**: metadata schema block containing information about Traditional Knowledge or Biocultural labels
 
-**Requirement**: Optional
+**Requirement**: optional
 
 **Occurrence**: 0-n
 
@@ -19,13 +19,13 @@
 13.1 traditionalKnowledgeLabel.id
 ---------------------------------
 
-**Definition**: Identifier (URI) for a Traditional Knowledge or Biocultural label pertaining to a project or activity.
+**Definition**: identifier (URI) for a Traditional Knowledge or Biocultural label pertaining to a project or activity
 
-**Requirement**: Optional
+**Requirement**: optional
 
 **Occurrence**: 0-n
 
-**Allowed values**: *Closed controlled list of URIs derived from traditionalKnowledgeLabel.id.schemaUri*
+**Allowed values**: *closed controlled list of URIs derived from traditionalKnowledgeLabel.id.schemaUri*
 
 **Examples**:
 
@@ -39,15 +39,15 @@
 13.2 traditionalKnowledgeLabel.schemaUri
 ----------------------------------------
 
-**Definition**: The URI of the Traditional Knowledge or Biocultural label identifier schema
+**Definition**: the URI of the Traditional Knowledge or Biocultural label identifier schema
 
-**Requirement**: Mandatory for each traditionalKnowledgeLabel.id supplied
+**Requirement**: mandatory for each traditionalKnowledgeLabel.id supplied
 
 **Occurrence**: 0-1
 
-**Allowed values**: *Open controlled list of URIs*
+**Allowed values**: *open controlled list of URIs*
 
 * https://localcontexts.org/labels/traditional-knowledge-labels/
 * https://localcontexts.org/labels/biocultural-labels/
 
-**Note**: Users may select a traditionalKnowledgeLabel.schemaUri without specifying a traditionalKnowlegeLabel.id, if a project only wants to declare only the schema used without specifying what labels may be used. 
+**Note**: users may select a traditionalKnowledgeLabel.schemaUri without specifying a traditionalKnowlegeLabel.id, if a project only wants to declare only the schema used without specifying what labels may be used. 

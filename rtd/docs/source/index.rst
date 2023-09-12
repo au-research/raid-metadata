@@ -1,61 +1,66 @@
 Research Activity Identifier (RAiD) Metadata Schema
 ===================================================
 
-Research Activity Identifier (RAiD) is a globally unique, persistent identifier (PID) system used for identifying research projects and activities. The RAiD system relies on a RAiD metadata schema that enables any research project or activity to be identified globally and linked to in research citations.
+The RAiD Metadata Schema is a way of organising data elements that are common to minted RAiD names. It is the overall structure by which each RAiD metadata component and its properties are ordered, defined and standardised across all RAiD names.
+The RAiD Metadata Schema specifies things like:
 
-What is a RAID?
----------------
+* the type and number of data elements recorded (e.g. dates, names and places)
+* the designation of 'mandatory', 'recommended' and 'optional' fields
+* encoding requirements
+* use of that data content (e.g. controlled, uncontrolled, open or closed data lists)
+* elements that are specific to a particular type of use (e.g. different types of schema)
+* the vocabulary source for a particular property
+* instructions on how to add another type of vocabulary.
 
-Each RAiD comprises 2 parts:
-1. a unique RAiD name, which is the Digital Object Identifier (DOI)
-2. a metadata record.
+The RAiD Metadata Schema underpins how RAiD names are identified, minted, resolved, updated and tracked via their metadata records. Any research project or activity with a RAiD name can be related to another RAiD or identified via the RAiD system, as well as cited in research documentation.
 
-A **RAiD name** will always start with the digits '10' and contain a prefix-slash-suffix using a string of numbers and letters (e.g. `<https://raid.org/102.100.100/62855>`_).
+The RAiD system is developed by the Australian Research Data Commons (ARDC). In December 2022, the RAiD system was standardised for international use in `ISO 23527, Information and Documentation — Research Activity Identifier (RAiD) <https://www.iso.org/standard/75931.html>`_
 
-A RAiD's **metadata record** links various components (e.g. contributors, organisations, grants, instruments, publications, datasets) to a project via their own pre-existing PIDs where available (e.g. ORCiDs, RORs, Crossref or DataCite DOIs). These components are only linked to the project itself and not with each other (e.g. a RAiD contributor is not linked with a RAiD organisation).
-
-RAiDs contain project information not found in other PIDs (e.g. a project's title, start date, description or subject), yet they do not duplicate information used in other PIDs either.
-
-RAiDs can also be linked to one another using arbitrary qualified relationships so that (e.g.) subprojects can be created.
-
-The RAiD system was developed by the `Australian Research Data Commons (ARDC) <https://www.ardc.edu.au>`_ and has been standardised for international use by `ISO 23527, Information and Documentation — Research Activity Identifier (RAiD) <https://www.iso.org/standard/75931.html>`_.
-
-RAiD Metadata Schema conventions
---------------------------------
+RAiD Metadata Schema conventions used
+-------------------------------------
 
 'Core', 'extended' and 'local' metadata schema components
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The RAiD metadata schema is divided into 3 components:
+<<<<<<< HEAD
 
 1. core
 2. extended
 3. local
+=======
+>>>>>>> 9fbbfc1b73b5a426172d45134e980eaa2ac54e5a
 
-The  **Core** component refers to metadata properties and controlled lists that are standardised across all RAiD Registration Agencies. Controlled lists are 'closed' and may not be altered. If a Registration Agency substitutes its own controlled lists, it must provide a cross-walk to the RAiD's standardised core terms. Properties may not be altered.
+#. core
+#. extended
+#. local.
 
-The **Extended** component refers to properties that are standardised across all Registration Agencies, but where controlled lists may vary. A Registration Agency may ammend the controlled list (lists are 'open'), or substitute its own controlled list entierely. In either case, it must:
-* Publish each non-standard list in a machine-readable format, preferably on a vocabulary service (the ARDC can assist with this requirement). Re-use of an existing published controlled list is acceptable. as long as it is published in machine-readable format.
-* Register the controlled list(s) with the ARDC as the RAID's ISO 23527 Registration Authority (RAu). 
-Properties may not be altered.
+**Core** components refer to metadata properties and controlled lists that are standardised across all RAiD Registration Agencies. If a Registration Agency uses its own controlled lists, it must provide a crosswalk to the RAiD's standardised core terms.
 
-The **Local** components refers to properties and controlled lists that are entirely under the control of Registration Agencies, and only need to be reported to the ARDC (RAu) annually or when major changes are made. Local properties can be tailored to meet the needs of the research community served by the Registration Agency. The Registration Authority will provide a system enabling local metadata properties to be promoted into extended metadata if they are found broadly useful.
+**Extended** components are properties that are standardised across all Registration Agencies, but their controlled lists may vary. A Registration Agency may use its own controlled lists, but it must first:
+
+#. Publish each list in a machine-readable format, preferably on a vocabulary service (**Note**: the ARDC can assist with this requirement)
+#. Register the controlled list(s) with the ARDC as the RAiD's ISO 23527 Registration Authority (RAu). Re-use of an existing published controlled list is acceptable. as long as it is published in machine-readable format.
+
+**Local** components are properties and controlled lists that are entirely under the control of a Registration Agency, and only need to be reported to the ARDC (RAu) annually or whenever major changes are made. Local properties can be tailored to meet the needs of the research community served by the Registration Agency. However, a mechanism must be put in place by the Registration Agency to enable useful local metadata to be promoted into extended metadata, or extended properties into core metadata.
 
 Component blocks
 ^^^^^^^^^^^^^^^^
 
 Within each metadata schema component, the metadata properties are divided into groups or 'blocks' of related properties.
 
-Sub-blocks
-^^^^^^^^^^
+Block descriptions
+^^^^^^^^^^^^^^^^^^
 
 Sub-blocks contain no values, but instead bundle tightly bound properties together, for example, a recurring 'language' sub-block includes language code, language code scheme, and language code scheme URL. 
 
-Properties
-^^^^^^^^^^^
+.. csv-table::
 
-Each metadata property is described with the following characteristics:
+   "**Definition**", "briefly defines the property"
+   "**Requirement**", "indicates whether a property is mandatory, recommended or optional, with additional information included where necessary (e.g. if a property is mandatory when only another property is present)"
+   "**Occurrence**",  "indicates the number of times a property may occur:
 
+<<<<<<< HEAD
 **Definition** briefly defines the property
 
 **Requirement** indicates whether a property is mandatory, recommended or optional, with additional information where necessary (e.g., if a property is mandatory only if another property is present)
@@ -82,11 +87,29 @@ In addition, some properties include additional information:
 **Example JSON** provides an indicative JSON code snippet.
 
 **Note** contains any additional information about the property.
+=======
+   * 0 – represents a recommended or optional property that may only occur once
+   * 0-n – represents an optional property that may occur multiple times
+   * 1 – represents a required property that may only occur once
+   * 1-n – represents a required property that may occur multiple times
+    
+   "
+   "**Allowed values**", "will indicate a controlled list of values' limiting input (such as a bulleted list) or the rules that govern those values (such as an italicised statement followed by format and constraints)"
+
+In addition, some properties include additional information:
+
+.. csv-table::
+
+   "**Format**", "illustrates how a value should be formed (e.g. dates are formatted YYYY-MM-DD)"
+   "**Examples**", "provide models for the value."
+   "**Contraints**", "provide limitations for the value"
+   "**Note**", "any additional information about the property."
+>>>>>>> 9fbbfc1b73b5a426172d45134e980eaa2ac54e5a
 
 
 .. note::
 
-   This project is under active development by the ARDC
+   This RAiD project is under active development by the ARDC.
 
 Contents
 --------

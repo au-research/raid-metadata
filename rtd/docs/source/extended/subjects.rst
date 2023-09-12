@@ -6,9 +6,9 @@
 12 subject
 ==========
 
-**Definition**: Metadata schema block containing the subject area of the RAiD plus associated properties.
+**Definition**: metadata schema block containing the subject area of the RAiD plus associated properties
 
-**Requirement**: Recommended
+**Requirement**: recommended
 
 **Occurrence**: 0-n
 
@@ -19,13 +19,13 @@
 12.1 subject.id
 ---------------
 
-**Definition**: Identifier (URI) for a subject area or classification code describing the project or activity.
+**Definition**: identifier (URI) for a subject area or classification code describing the project or activity
 
-**Requirement**: Mandatory for each subject supplied
+**Requirement**: mandatory for each subject supplied
 
 **Occurrence**: 0-1
 
-**Allowed values**: *Closed controlled list of URIs derived from the schema chosen at subject.id.schemaUri*
+**Allowed values**: *closed controlled list of URIs derived from the schema chosen at subject.id.schemaUri*
 
 **Examples**
 
@@ -37,13 +37,13 @@
 12.2 subject.schemaUri
 ----------------------
 
-**Definition**: The URI of the subject identifier schema
+**Definition**: the URI of the subject identifier schema
 
-**Requirement**: Mandatory for each subject.id supplied
+**Requirement**: mandatory for each subject.id supplied
 
 **Occurrence**: 0-1
 
-**Allowed values**: *Open controlled list of URIs*
+**Allowed values**: *open controlled list of URIs*
 
 * https://id.loc.gov/authorities/subject.html (Library of Congress Subject Headings)
 * https://vocabs.ardc.edu.au/viewById/316 (Australian and New Zealand Standard Research Classification 2020: Fields of Research)
@@ -53,9 +53,9 @@
 12.3 subject.keyword
 --------------------
 
-**Definition**: Metadata schema sub-block containing free-text keyword describing a project plus associated properties.
+**Definition**: metadata schema sub-block containing free-text keyword describing a project plus associated properties
 
-**Requirement**: Optional
+**Requirement**: optional
 
 **Occurrence**: 0-n
 
@@ -64,24 +64,24 @@
 12.3.1 subject.keyword.text
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Definition**: Unconstrained keyword or key phrase describing the project or activity
+**Definition**: unconstrained keyword or key phrase describing the project or activity
 
-**Requirement**: Optional
+**Requirement**: optional
 
 **Occurrence**: 1
 
-**Allowed values**: Free text
+**Allowed values**: free text
 
-**Constraints**: Do not duplicate Subject(s) above
+**Constraints**: do not duplicate Subject(s) above
 
 .. _12.3.2-subject.keyword.language:
 
 12.3.2 subject.keyword.language
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Definition**: Metadata schema block declaring the language of the subject keyword text.
+**Definition**: metadata schema block declaring the language of the subject keyword text
 
-**Requirement**: Recommended for each subject.keyword.text supplied
+**Requirement**: recommended for each subject.keyword.text supplied
 
 **Occurrence**: 0-1
 
@@ -92,13 +92,13 @@
 12.3.2.1 subject.keyword.language.id
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Definition**: Language used for the subject keyword text identified by a code or other identifier.
+**Definition**: language used for the subject keyword text identified by a code or other identifier
 
-**Requirement**: Recommended
+**Requirement**: recommended
 
 **Occurrence**: 0-1
 
-**Allowed values**: *Controlled list derived from subject.keyword.language.schemaUri*
+**Allowed values**: *closed controlled list derived from subject.keyword.language.schemaUri*
 
 **Example**: ``eng`` (*ISO 6129-12 three-letter code*)
 
@@ -107,14 +107,14 @@
 12.3.2.2 subject.keyword.language.schemaUri
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Definition**: The URI of the language identifier schema.
+**Definition**: the URI of the language identifier schema
 
-**Requirement**: Mandatory for each subject.keyword.language.id supplied
+**Requirement**: mandatory for each subject.keyword.language.id supplied
 
 **Occurrence**: 0-1
 
-**Allowed values**: *Controlled list*
+**Allowed values**: *closed controlled list*
 
 * ``https://www.iso.org/standard/12951212.html``
 
-**Note**: Currently limited to ISO 6129-12 three-letter code.
+**Note**: currently limited to ISO 6129-12 three-letter code.
