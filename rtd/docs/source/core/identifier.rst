@@ -29,9 +29,9 @@
 
 **Format**: ``https://raid.org/prefix/suffix``
 
-**Example**: ``https://raid.org/10.12345/abc123``
-
 **Constraints**: RAiD name prefix supplied by the DOI Foundation; RAiD name suffix consisting of alphanumeric, English, ASCII Latin characters
+
+**Example**: ``https://raid.org/10.12345/abc123``
 
 **Note**: RAiD names are valid DOIs and can also be resolved at https://doi.org/ or https://handle.net/.
 
@@ -78,6 +78,8 @@
 
 * ``https://ror.org/038sjwq14`` [The Australian Research Data Commons]
 * ``https://ror.org/009vhk114`` [SURF]
+
+**Constraints**: Always set to the RAiD Registration Agency minting the identifier
 
 **Note**: Registration Agencies must have, acquire, or be assigned RORs. The Registration Agency identifier must be set as a default in each installation of the RAiD Service software. The Registration Authority maintains the list of Registration Agencies.
 
@@ -128,6 +130,8 @@
 * ``https://ror.org/02stey378`` [University of Notre Dame Austraila]
 * ``https://ror.org/03pnv4752`` [Queensland University of Technology]
 
+**Constraints**: Always set to the organisation requesting the RAiD
+
 **Note**: Owners, i.e., Organisations hosting Service Points, must have, acquire, or be assigned RORs. A RAiD minted by a Registration Agency must be associated with an Owner affiliated with that Agency.
 
 .. _1.4.2-identifier.owner.schemaUri:
@@ -167,7 +171,9 @@
 * UQ Centre for Advanced Imaging
 * The University of Notre Dame Australia
 
-**Note**: A RAiD minted by a Registration Agency must have a SP associated with an Owner affiliated with that Agency. Registration Agencies must register lists of their Service Points with the Registration Authority on a regular basis.
+**Constraints**: Always set to the SP requesting the RAiD
+
+**Note**: A RAiD minted by a Registration Agency must have a SP associated with an Owner affiliated with that Agency. Registration Agencies must register lists of their Service Points with the Registration Authority regularly.
 
 .. _1.5-identifier.license:
 
@@ -199,4 +205,4 @@
 
 **Allowed values**: System-supplied, auto-incrementing integer
 
-**Note**: The RAiD version number is set automatically by the RAiD Service software as a RAiD is updated. 
+**Default**: The RAiD version number is set automatically by the RAiD Service software when a RAiD is updated. 

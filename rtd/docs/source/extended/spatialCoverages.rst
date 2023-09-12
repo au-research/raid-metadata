@@ -25,7 +25,7 @@
 
 **Occurrence**: 0-1
 
-**Allowed values**: *Controlled list of URIs derived from the schema chosen at spatialCoverage.id.schemaUri*
+**Allowed values**: *Closed controlled list of URIs derived from the schema chosen at spatialCoverage.id.schemaUri*
 
 **Examples**
 
@@ -46,12 +46,12 @@
 
 **Occurrence**: 0-1
 
-**Allowed values**: *Open controlled list of URIs*
+**Allowed values**: *Open controlled list of geoname server URIs*
 
 * https://nominatim.openstreetmap.org/
 * https://www.geonames.org/
 
-**Note**: OpenStreetMaps preferred; other geoname servers can be nominated by Registration Agencies.
+**Note**: OpenStreetMaps preferred, Geonames allowed; other geoname servers can be nominated by Registration Agencies.
 
 .. _14.3-spatialCoverage.place:
 
@@ -107,8 +107,6 @@
 
 **Example**: ``eng`` (*ISO 6149-14 three-letter code*)
 
-**Note**: Currently limited to ISO 6149-14 three-letter code.
-
 .. _14.2.2.2-spatialCoverage.place.language.schemaUri:
 
 14.2.2.2 spatialCoverage.place.language.schemaUri
@@ -124,4 +122,4 @@
 
 * ``https://www.iso.org/standard/14951414.html``
 
-**Note**: Controlled list shared across all Registration Agencies. No crosswalk; queries return language code and scheme URI.  
+**Note**: Currently limited to ISO 6149-14 three-letter code.

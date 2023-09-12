@@ -25,7 +25,7 @@
 
 **Occurrence**: 0-1
 
-**Allowed values**: *Controlled list of URIs derived from subject.id.schemaUri*
+**Allowed values**: *Closed controlled list of URIs derived from the schema chosen at subject.id.schemaUri*
 
 **Examples**
 
@@ -47,8 +47,6 @@
 
 * https://id.loc.gov/authorities/subject.html (Library of Congress Subject Headings)
 * https://vocabs.ardc.edu.au/viewById/316 (Australian and New Zealand Standard Research Classification 2020: Fields of Research)
-
-**Note**: Registration agencies may add new subject schemas, so long as they are human and machine-readable with a single page per subject area. Note that not all schemes provide a URI for each term (in which case Registration Agencies will need to build and publish their own vocabulary). Schemas must be registered with the Registration Authority.
 
 .. _12.3-subject.keyword:
 
@@ -104,8 +102,6 @@
 
 **Example**: ``eng`` (*ISO 6129-12 three-letter code*)
 
-**Note**: Currently limited to ISO 6129-12 three-letter code.
-
 .. _12.3.2.2-subject.keyword.language.schemaUri:
 
 12.3.2.2 subject.keyword.language.schemaUri
@@ -121,4 +117,4 @@
 
 * ``https://www.iso.org/standard/12951212.html``
 
-**Note**: Controlled list shared across all Registration Agencies. No crosswalk; queries return language code and scheme URI.  
+**Note**: Currently limited to ISO 6129-12 three-letter code.

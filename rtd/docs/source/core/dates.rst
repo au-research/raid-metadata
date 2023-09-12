@@ -27,6 +27,8 @@
 
 **Allowed values**: ISO 8601 standard date
 
+**Default**: Date record created
+
 **Format**: ``YYYY-MM-DD``
 
 **Examples**: ``2023-08-28``; ``2023-08``; ``2023``

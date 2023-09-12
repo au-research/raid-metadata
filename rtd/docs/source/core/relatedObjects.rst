@@ -47,7 +47,7 @@
 * https://scicrunch.org/resolver/ (RRID)
 * https://archive.org/ (*fallback for any Object that has no ID other than a webpage - a snapshot must be taken from archive.org and that link inserted into the RAiD*).
 
-**Note**: Controlled list shared across all Registration Agencies. Controlled list is a subset of DataCite Metadata Schema 4.4 Appendix 1 Table 8 'relatedIdentiferType'.
+**Note**: Controlled list is a subset of DataCite Metadata Schema 4.4 Appendix 1 Table 8 'Description of relatedIdentiferType'.
 
 .. _7.3-relatedObject.type:
 
@@ -83,7 +83,7 @@
 * DataPaper
 * Dataset
 * Dissertation
-* Educational Material
+* Learning Object
 * Event
 * Funding (includes ‘grant’ or other cash or in-kind awards)
 * Image
@@ -102,7 +102,7 @@
 * Text
 * Workflow
 
-**Note**: Controlled list is a subset of DataCite Metadata Schema 4.4 Appendix 1 Table 7  'resourceTypeGeneral', with 'Instrument', 'Funding', ‘Educational Material’, ‘Conference Poster’, and 'Prize' added (DataCite Metadata Schema 4.5 also adds ‘Instrument’).
+**Note**: Controlled list is a subset of DataCite Metadata Schema 4.4 Appendix 1 Table 7  'Description of resourceTypeGeneral', with 'Instrument', 'Funding', 'Learning Object', ‘Conference Poster’, and 'Prize' added (DataCite Metadata Schema 4.5 also adds ‘Instrument’). COAR Resource Types 3.1 (https://vocabularies.coar-repositories.org/resource_types/) used as source for missing terms where possible. 
 
 .. _7.3.2-relatedObject.type.schemaUri:
 
@@ -118,8 +118,6 @@
 **Allowed values**: *Closed controlled list*
 
 * [URI of RAiD vocab on RVA (to be created)]
-
-**Note**: The Controlled list adapted from DataCite Metadata Schema 4.4 is specified for raid.org and used by ARDC registration service. Registration Agencies may implement other controlled vocabularies but must provide a crosswalk. In 'core' elements where variation of controlled vocabularies amongst Registration Agencies occurs, we should return the 'local' term and schema as well as the ‘standardised’ term and schema.
 
 .. _7.4-relatedObject.category:
 
@@ -150,8 +148,6 @@
 * Input
 * Output
 * Internal process document or artefact
-
-**Note**: Closed controlled list developed for RAiD.
 
 .. _7.4.2-relatedObject.type.id.schemaUri:
 

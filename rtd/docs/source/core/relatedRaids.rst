@@ -60,7 +60,7 @@
 * Obsoletes (*for resolving duplicate RAiDs*)
 * IsObsoletedBy (*for resolving duplicate RAiDs*)
 
-**Note**: Controlled list is a subset of DataCite Schema v4.4 (Table 8 relatedIdentifierType). All list items appear in the DataCite Schema. 
+**Note**: Controlled list is a subset of DataCite Schema v4.4 Table 8 'Description of relatedIdentifierType'. All list items appear in the DataCite Schema. 
 
 .. _10.2.2-relatedRaid.type.schemaUri:
 

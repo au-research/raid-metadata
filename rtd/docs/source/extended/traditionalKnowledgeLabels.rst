@@ -25,7 +25,7 @@
 
 **Occurrence**: 0-n
 
-**Allowed values**: *Controlled list of URIs derived from traditionalKnowledgeLabel.id.schemaUri*
+**Allowed values**: *Closed controlled list of URIs derived from traditionalKnowledgeLabel.id.schemaUri*
 
 **Examples**:
 
@@ -47,7 +47,7 @@
 
 **Allowed values**: *Open controlled list of URIs*
 
-* https://id.loc.gov/authorities/traditionalKnowledgeLabel.html (Library of Congress Subject Headings)
-* https://vocabs.ardc.edu.au/viewById/316 (Australian and New Zealand Standard Research Classification 2020: Fields of Research)
+* https://localcontexts.org/labels/traditional-knowledge-labels/
+* https://localcontexts.org/labels/biocultural-labels/
 
-**Note**: May be used without specifying a traditionalKnowlegeLabel.id, if a project only wants to declare the schema used. Registration agencies may add new Traditional Knowledge or Biocultural label schemas, so long as they are human and machine-readable with a single page per label. Note that not all schemes provide a URI for each term (in which case Registration Agencies will need to build and publish their own list). Schemas must be registered with the Registration Authority.
+**Note**: Users may select a traditionalKnowledgeLabel.schemaUri without specifying a traditionalKnowlegeLabel.id, if a project only wants to declare only the schema used without specifying what labels may be used. 

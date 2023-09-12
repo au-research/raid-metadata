@@ -27,9 +27,10 @@ RAiD Metadata Schema conventions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The RAiD metadata schema is divided into 3 components:
+
 1. core
 2. extended
-3. local.
+3. local
 
 The  **Core** component refers to metadata properties and controlled lists that are standardised across all RAiD Registration Agencies. Controlled lists are 'closed' and may not be altered. If a Registration Agency substitutes its own controlled lists, it must provide a cross-walk to the RAiD's standardised core terms. Properties may not be altered.
 
@@ -68,13 +69,17 @@ Each metadata property is described with the following characteristics:
 
 **Allowed values** will either indicate a controlled list of values limiting input (as a bulleted list), or rules governing the values (as an italicised statement followed by format and constraints). Controlled lists are described as 'open' if Registration Agencies can add new terms to them, with the only restriction being that the Registration Authority must be notified. Such lists are 'closed' if they cannot be altered by Registration Agencies, in which cases changes must be proposed during the normal metadata review cycle. 
 
-**Example JSON** provides an indicative JSON code snippet.
-
 In addition, some properties include additional information:
 
-**Format** illustrates how a value should be formed (e.g. dates are formatted YYYY-MM-DD)
+**Default** represents a prefilled value set by the system, which can usually (but not always) be changed by the user. If only one value appears in the controlled list, it is automatically the default.
+
+**Format** illustrates how a value should be formed (e.g. dates are formatted YYYY-MM-DD).
+
+**Constraints** are further limits or requirements governing 'Allowed values'.
 
 **Examples** provide models for the value.
+
+**Example JSON** provides an indicative JSON code snippet.
 
 **Note** contains any additional information about the property.
 

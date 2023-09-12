@@ -42,8 +42,6 @@
 
 * ``https://ror.org/``
 
-**Note**: Controlled list shared across all Registration Agencies.
-
 .. _6.3-organisation.role:
 
 6.3 organisation.role
@@ -78,7 +76,9 @@
 * Facility (*organisation providing access to physical or digital infrastructure, but not otherwise listed as a Research Organisation, Partner Organisation, or Contractor*)
 * Other Organisation (*not covered by the roles above*)
 
-**Note**: One Organisation must be designated as Lead. In 'core' elements where variation of controlled vocabularies amongst Registration Agencies is allowed, Registration Agencies must provide a crosswalk. In 'core' elements where variation of controlled vocabularies amongst Registration Agencies occurs, we should return the 'local' term and schema as well as the ‘standardised’ term and schema. Mandatory for each Contributor specified. In this case, roles are going to vary by region, and maybe by grant scheme within a region. Controlled list adapted from Simon Cox's Project Ontology, OpenAIRE ‘Project’ guidelines, NIH definitions, ARC definitions, and DataCite Metadata Schema 4.4 Appendix 1 Table 6.
+**Default**: First-entered Organisation (only) defaults to 'Lead Research Organisation'
+
+**Constraints**: One (and only one) Organisation must be designated as 'Lead Research Organisation'. 
 
 .. _6.3.2-organisation.role.schemaUri:
 
@@ -94,8 +94,6 @@
 **Allowed values**: *Closed controlled list*
 
 * [URI of RAiD vocab on RVA (to be created)]
-
-**Note**: Controlled list shared across all Registration Agencies.
 
 .. _6.3.3-organisation.role.startDate:
 

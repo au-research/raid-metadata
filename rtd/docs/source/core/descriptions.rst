@@ -63,7 +63,9 @@
 * Objectives
 * Other (*any other descriptive information, e.g., a note or similar*)
 
-**Note**: If a description is provided, a single, primary description is mandatory; additional Descriptions are optional. Type is mandatory for each description specified. Controlled list adapted from Vocabularies for Registry Schema 1.6.5 'Description Type' and DataCite Metadata Schema 4.4 Appendix 1 Table 10 'descriptiontype'.
+**Default**: 'Primary'
+
+**Note**: If a description is provided, a single, primary description is mandatory; additional Descriptions are optional. Type is mandatory for each description specified. Controlled list adapted from Vocabularies for Registry Schema 1.6.5 'Description Type' and DataCite Metadata Schema 4.4 Appendix 1 Table 10 'Description of descriptiontype'.
 
 .. _4.2.2-description.type.id.schemaUri:
 
@@ -79,8 +81,6 @@
 **Allowed values**: *Closed controlled list*
 
 * [URI of RAiD vocab on RVA (to be created)]
-
-**Note**: The RAiD vocabulary on RVA is specified for raid.org and used by ARDC registration service; Registration Agencies may implement other controlled vocabularies but must provide a crosswalk. In 'core' elements like this one where variation of controlled vocabularies amongst Registration Agencies occurs, the RAiD Service should return the 'local' term and schema as well as the ‘standardised’ term and schema.
 
 .. _4.3-description.language:
 
@@ -110,8 +110,6 @@
 
 **Example**: ``eng`` (*ISO 649-4 three-letter code*)
 
-**Note**: Currently limited to ISO 649-4 three-letter code.
-
 .. _4.3.1-description.languageId.schemaUri:
 
 4.3.2 description.language.schemaUri
@@ -127,4 +125,4 @@
 
 * ``https://www.iso.org/standard/49544.html``
 
-**Note**: Controlled list shared across all Registration Agencies. No crosswalk; queries return language code and scheme URI. 
+**Note**: Currently limited to ISO 649-4 three-letter code.

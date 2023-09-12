@@ -53,14 +53,16 @@
 
 **Occurrence**: 1
 
-**Allowed values**: *Controlled list derived from title.type.schemaUri*
+**Allowed values**: *Closed controlled list derived from title.type.schemaUri*
 
 * Primary
 * Short
 * Acronym
 * Alternative (*includes subtitle and other supplemental or alternative title*)
 
-**Note**: One (and only one) current (as per start-end dates) Primary Title is mandatory for each Title specified; additional title are optional. 'Previous title' are managed by start-end dates. Controlled list adapted from Vocabularies for Registry Schema 1.6.5 'Name Type'.
+**Default** 'Primary'
+
+**Note**: One (and only one) current (as per start-end dates) Primary Title is mandatory for each Title specified; additional title are optional. 'Previous title' are managed by start-end dates (type does not change). Controlled list adapted from Vocabularies for Registry Schema 1.6.5 'Name Type'.
 
 .. _3.2.2-title.type.schemaUri:
 
@@ -76,8 +78,6 @@
 **Allowed values**: *Closed controlled list*
 
 * [URI of RAiD vocab on RVA (to be created)]
-
-**Note**: The RAiD vocabulary on RVA is specified for raid.org and used by ARDC registration service; Registration Agencies may implement other controlled vocabularies but must provide a crosswalk. In 'core' elements like this one where variation of controlled vocabularies amongst Registration Agencies occurs, the RAiD Service should return the 'local' term and schema as well as the ‘standardised’ term and schema. Mandatory for each title.TypeId specified.
 
 .. _3.3-title.language:
 
@@ -107,8 +107,6 @@
 
 **Example**: ``eng`` (*ISO 639-3 three-letter code*)
 
-**Note**: Currently limited to ISO 639-3 three-letter code.
-
 .. _3.3.2-title.languageId.schemaUri:
 
 3.3.2 title.language.schemaUri
@@ -124,7 +122,7 @@
 
 * ``https://www.iso.org/standard/39534.html``
 
-**Note**: Controlled list shared across all Registration Agencies. No crosswalk; queries return language code and scheme URI.  
+**Note**: Currently limited to ISO 639-3 three-letter code.
 
 .. _3.4-title.startDate:
 
@@ -140,6 +138,8 @@
 **Allowed values**: ISO 8601 standard date
 
 **Format**: ``YYYY-MM-DD``
+
+**Default**: Date record created
 
 **Examples**: ``2023-08-28``; ``2023-08``; ``2023``
 

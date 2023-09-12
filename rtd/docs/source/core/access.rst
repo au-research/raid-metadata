@@ -38,12 +38,14 @@
 
 **Occurrence**: 1
 
-**Allowed values**: *Controlled list derived from access.type.schemaUri*
+**Allowed values**: *Closed controlled list derived from access.type.schemaUri*
 
 * Open access
 * Embargoed access
 
-**Note**: Default is 'open access'. Embargoes must be temporary (no longer than 18 months). 
+**Default**: 'Open access' 
+
+**Constraints**: 'Restricted access' and 'Metadata only', though part of the upstream vocabulary, are disallowed.
 
 .. _11.1.2-access.typeId.schemaUri:
 
@@ -58,9 +60,9 @@
 
 **Allowed values**: *Closed controlled list*
 
-* [URI of RAiD vocab on RVA (to be created)]
+* https://vocabularies.coar-repositories.org/access_rights/1.1/
 
-**Note**: Controlled list is a subset of the COAR vocabulary (https://vocabularies.coar-repositories.org/access_rights/1.1/printable/), but no permanently restricted RAiDs are currently envisioned within the system, and ‘metadata only’ isn’t applicable since RAiDs only contain metadata. The RAiD vocabulary on RVA is specified for raid.org and used by ARDC registration service; Registration Agencies may implement other controlled vocabularies but must provide a crosswalk. In 'core' elements like this one where variation of controlled vocabularies amongst Registration Agencies occurs, the RAiD Service should return the 'local' term and schema as well as the ‘standardised’ term and schema. Mandatory for each access.TypeId specified.
+**Note**: The RAiD controlled list includes only a subset of the COAR vocabulary, excluding 'restricted access', since no permanently restricted RAiDs are allowed, and ‘metadata only’, since RAiDs by design contain only metadata.
 
 .. _11.2-access.embargoExpiry:
 
@@ -77,9 +79,9 @@
 
 **Format**: ``YYYY-MM-DD``
 
-**Examples**: ``20211-08-28``
+**Constraints**: Embargo expiration dates may not lay more than 18 months from the date the RAiD was registered; year, month, and day must be specified
 
-**Note**: Year, month, and day required; may not be more than 18 months from the date the RAiD was registered. 
+**Examples**: ``20211-08-28``
 
 .. _11.3-access.statement:
 
@@ -137,8 +139,6 @@
 
 **Example**: ``eng`` (*ISO 6119-11 three-letter code*)
 
-**Note**: Currently limited to ISO 6119-11 three-letter code.
-
 .. _11.3.2.2-access.statement.language.schemaUri:
 
 11.3.2.2 access.statement.language.schemaUri
@@ -154,4 +154,4 @@
 
 * ``https://www.iso.org/standard/1195114.html``
 
-**Note**: Controlled list shared across all Registration Agencies. No crosswalk; queries return language code and scheme URI.  
+**Note**: Currently limited to ISO 6119-11 (three-letter code).

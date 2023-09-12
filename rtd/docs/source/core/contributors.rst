@@ -43,9 +43,6 @@
 * ``https://orcid.org/``
 * ``https://isni.org/``
 
-
-**Note**: Controlled list shared across all Registration Agencies.
-
 .. _5.3-contributor.position:
 
 5.3 contributor.position
@@ -70,7 +67,7 @@
 
 **Occurrence**: 1
 
-**Allowed values**: *Controlled list derived from contributor.position.schemaUri*
+**Allowed values**: *Closed controlled list derived from contributor.position.schemaUri*
 
 * Principal or Chief Investigator
 * Co-investigator or Collaborator
@@ -78,7 +75,11 @@
 * Consultant (consultant or contractor hired by the project)
 * Other Participant (not covered by one of the positions above; ‘member’; ‘other * significant contributor’)
 
-**Note**: In 'core' elements where variation of controlled vocabularies amongst Registration Agencies is allowed, Registration Agencies must provide a crosswalk. In 'core' elements where variation of controlled vocabularies amongst Registration Agencies occurs, we should return the 'local' term and schema as well as the ‘standardised’ term and schema. Mandatory for each Contributor specified. In this case, Positions are going to vary by region, and maybe by grant scheme within a region. Controlled list adapted from Simon Cox's Project Ontology, OpenAIRE ‘Project’ guidelines, NIH definitions, ARC definitions, and DataCite Metadata Schema 4.4 Appendix 1 Table 5.
+**Default**: First-entered Contributor (only) defaults to 'Principal or Chief Investigator'
+
+**Constraints**: One (and only one) Contributor must be designated as 'Principal or Chief Investigator'. 
+
+**Note**: Controlled list adapted from Simon Cox's Project Ontology, OpenAIRE ‘Project’ guidelines, NIH definitions, ARC definitions, and DataCite Metadata Schema 4.4 Appendix 1 Table 5 'Description of contributorType'.
 
 .. _5.3.2-contributor.position.id.schemaUri:
 
@@ -95,8 +96,6 @@
 
 * [URI of RAiD vocab on RVA (to be created)]
 
-**Note**: Controlled list shared across all Registration Agencies.
-
 .. _5.3.3-contributor.position.startDate:
 
 5.3.3 contributor.position.startDate
@@ -109,6 +108,8 @@
 **Occurrence**: 1
 
 **Allowed values**: ISO 8601 standard date
+
+**Default**: Date record created
 
 **Format**: ``YYYY-MM-DD``
 
@@ -148,6 +149,8 @@
 
 **Allowed values**: Yes / Null
 
+**Constraints**: At least one Contributor must be designated as a Leader. 
+
 **Note**: More than one contributor can be flagged as a leader if the project is jointly led.
 
 .. _5.5-contributor.position.contact:
@@ -163,6 +166,8 @@
 
 **Allowed values**: Yes / Null
 
+**Constraints**: At least one Contributor must be designated as a Contact. 
+
 **Note**: More than one Contributor can be flagged as a contact.
 
 .. _5.6-contributor.role:
@@ -176,7 +181,7 @@
 
 **Occurrence**: 0-n
 
-**Note**: Changes to roles are tracked through version history.
+**Note**: Changes to roles are tracked through version history rather than explicitly declared, as with position.
 
 .. _5.6.1-contributor.role.id:
 
@@ -206,9 +211,6 @@
 * ``https://credit.niso.org/contributor-role/writing-original-draft/``
 * ``https://credit.niso.org/contributor-role/writing-review-editing/``
 
-
-**Note**: In 'core' elements where variation of controlled vocabularies amongst Registration Agencies is allowed, Registration Agencies must provide a crosswalk. In 'core' elements where variation of controlled vocabularies amongst Registration Agencies occurs, we should return the 'local' term and schema as well as the ‘standardised’ term and schema. 
-
 .. _5.6.2-contributor.role.id.schemaUri:
 
 5.6.2 contributor.role.schemaUri
@@ -223,5 +225,3 @@
 **Allowed values**: *Closed controlled list*
 
 * ``https://credit.niso.org/``
-
-**Note**: Registration Agencies may implement other contributorRole controlled vocabularies but must provide a crosswalk to CRediT. 
