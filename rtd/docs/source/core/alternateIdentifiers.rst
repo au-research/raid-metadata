@@ -6,9 +6,9 @@
 8 alternateIdentifier
 =====================
 
-**Definition**: Metadata schema block containing alternative local or global identifiers.
+**Definition**: a metadata schema block containing alternative local or global identifiers.
 
-**Requirement**: Optional
+**Requirement**: optional
 
 **Occurrence**: 0-n
 
@@ -21,13 +21,13 @@
 8.1 alternateIdentifier.id
 --------------------------
 
-**Definition**: An identifier other than the primary Identifier applied to the Project. This identifier may be any alphanumeric string that is unique within its domain of issue, for example a local identifier. The AlternateIdentifier represents an additional identifier for the same instance of the Project or Activity.
+**Definition**: an identifier other than the primary identifier applied to the project or activity. This identifier may be any alphanumeric string that is unique within its domain of issue, for example a local identifier. The AlternateIdentifier represents an additional identifier for the same instance of the project or activity.
 
-**Requirement**: Mandatory for each alternateIdentifier supplied
+**Requirement**: mandatory for each alternateIdentifier supplied
 
 **Occurrence**: 0-1
 
-**Allowed values**: Free text
+**Allowed values**: free text
 
 **Example**: '123456ABC'
 
@@ -36,12 +36,12 @@
 8.2 alternateIdentifier.type
 ----------------------------
 
-**Definition**: Free text description of the type of alternateIdentifier supplied.
+**Definition**: free text description of the type of alternateIdentifier supplied.
 
-**Requirement**: Mandatory for each alternateIdentifier.id supplied
+**Requirement**: mandatory for each alternateIdentifier.id supplied
 
 **Occurrence**: 0-1
 
-**Allowed values**: Free text
+**Allowed values**: free text
 
-**Example**: 'A local project ID in Elsevier Pure'
+**Example**: 'a local project ID in Elsevier Pure'

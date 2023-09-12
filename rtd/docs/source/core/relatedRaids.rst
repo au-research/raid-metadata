@@ -6,9 +6,9 @@
 10 relatedRaid
 ==============
 
-**Definition**: Metadata schema block containing related RAiDs and qualifying the relationship.
+**Definition**: a metadata schema block containing related RAiDs and qualifying the relationship
 
-**Requirement**: Optional
+**Requirement**: optional
 
 **Occurrence**: 0-n
 
@@ -19,9 +19,9 @@
 10.1 relatedRaid.id
 -------------------
 
-**Definition**: Subsidiary or otherwise related RAiD.
+**Definition**: a subsidiary or otherwise related RAiD.
 
-**Requirement**: Mandatory for each relatedRaid supplied
+**Requirement**: mandatory for each relatedRaid supplied
 
 **Occurrence**: 0-1
 
@@ -32,9 +32,9 @@
 10.2 relatedRaid.type
 ----------------------
 
-**Definition**: Metadata schema sub-block qualifying the relationship with a related Raid.
+**Definition**: a metadata schema sub-block qualifying the relationship with a related Raid
 
-**Requirement**: Mandatory for each relatedRaid.id supplied
+**Requirement**: mandatory for each relatedRaid.id supplied
 
 **Occurrence**: 0-1
 
@@ -43,13 +43,13 @@
 10.2.1 relatedRaid.type.id
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Definition**: Description of the relationship between the activity being registered and the related resource.
+**Definition**: a description of the relationship between the activity being registered and the related resource
 
-**Requirement**: Mandatory for each relatedRaid.type supplied
+**Requirement**: mandatory for each relatedRaid.type supplied
 
 **Occurrence**: 0-1
 
-**Allowed values**: *Controlled list derived from relatedRaid.type.schemaUri*
+**Allowed values**: *a controlled list derived from relatedRaid.type.schemaUri*
 
 * Continues
 * IsContinuedBy
@@ -60,7 +60,7 @@
 * Obsoletes (*for resolving duplicate RAiDs*)
 * IsObsoletedBy (*for resolving duplicate RAiDs*)
 
-**Note**: Controlled list is a subset of DataCite Schema v4.4 (Table 8 relatedIdentifierType). All list items appear in the DataCite Schema. 
+**Note**: the controlled list is a subset of DataCite Schema v4.4 (Table 8 relatedIdentifierType). All list items appear in the DataCite Schema
 
 .. _10.2.2-relatedRaid.type.schemaUri:
 
@@ -69,12 +69,12 @@
 
 **Definition**: The URI of the relationship schema used.
 
-**Requirement**: Mandatory for each relatedRaid.type.id supplied
+**Requirement**: mandatory for each relatedRaid.type.id supplied
 
 **Occurrence**: 0-1
 
-**Allowed values**: *Closed controlled list*
+**Allowed values**: *closed controlled list*
 
 * [URI of RAiD vocab on RVA (to be created)]
 
-**Note**: The Controlled list adapted from DataCite Metadata Schema 4.4 and published on Research Vocabularies Australia is specified for raid.org and used by ARDC registration service. Registration Agencies may implement other controlled vocabularies but must provide a crosswalk. In 'core' elements where variation of controlled vocabularies amongst Registration Agencies occurs, we should return the 'local' term and schema as well as the ‘standardised’ term and schema.
+**Note**: the controlled list that was adapted from DataCite Metadata Schema 4.4 and published on Research Vocabularies Australia (RVA) is specified for https://raid.org and used by ARDC RAiD service. Registration Agencies may implement other controlled vocabularies but they must provide a crosswalk. In 'core' elements where variation of controlled vocabularies amongst Registration Agencies occurs, the API should return the 'local' term and schema as well as the 'standardised' term and schema.

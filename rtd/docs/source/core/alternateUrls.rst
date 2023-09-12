@@ -6,9 +6,9 @@
 9 alternateUrl
 ==============
 
-**Definition**: Metadata schema block containing alternative URLs for the project.
+**Definition**: a metadata schema block containing alternative URLs for the project
 
-**Requirement**: Optional
+**Requirement**: optional
 
 **Occurrence**: 0-n
 
@@ -19,9 +19,9 @@
 9.1 alternateUrl.url
 --------------------
 
-**Definition**: Links allowing visitors to the standardised landing page or user of the API export to access other URLs related to the project or activity.
+**Definition**: links that allow visitors to access the standardised landing page or the user of the API export to access other URLs related to the project or activity
 
-**Requirement**: Mandatory for each alternateUrl supplied
+**Requirement**: mandatory for each alternateUrl supplied
 
 **Occurrence**: 0-1
 
