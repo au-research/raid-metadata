@@ -16,14 +16,6 @@ The RAiD Metadata Schema underpins how RAiD names are identified, minted, resolv
 
 The RAiD system is developed by the Australian Research Data Commons (ARDC). In December 2022, the RAiD system was standardised for international use in `ISO 23527, Information and Documentation — Research Activity Identifier (RAiD) <https://www.iso.org/standard/75931.html>`_
 
-A RAiD's **metadata record** links various components (e.g. contributors, organisations, grants, instruments, publications, datasets) to a project via their own pre-existing PIDs where available (e.g. ORCiDs, RORs, Crossref or DataCite DOIs). These components are only linked to the project itself and not with each other (e.g. a RAiD contributor is not linked with a RAiD organisation).
-
-RAiDs contain project information not found in other PIDs (e.g. a project's title, start date, description or subject), yet they do not duplicate information used in other PIDs either.
-
-RAiDs can also be linked to one another using arbitrary qualified relationships so that (e.g.) subprojects can be created.
-
-The RAiD system was developed by the `Australian Research Data Commons (ARDC) <https://www.ardc.edu.au>`_ and has been standardised for international use by `ISO 23527, Information and Documentation — Research Activity Identifier (RAiD) <https://www.iso.org/standard/75931.html>`_.
-
 RAiD Metadata Schema conventions used
 -------------------------------------
 
