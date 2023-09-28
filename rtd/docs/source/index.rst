@@ -16,20 +16,13 @@ The RAiD Metadata Schema underpins how RAiD names are identified, minted, resolv
 
 The RAiD system is developed by the Australian Research Data Commons (ARDC). In December 2022, the RAiD system was standardised for international use in `ISO 23527, Information and Documentation — Research Activity Identifier (RAiD) <https://www.iso.org/standard/75931.html>`_
 
-RAiD Metadata Schema conventions used
--------------------------------------
+RAiD Metadata Schema conventions
+--------------------------------
 
 'Core', 'extended' and 'local' metadata schema components
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The RAiD metadata schema is divided into 3 components:
-<<<<<<< HEAD
-
-1. core
-2. extended
-3. local
-=======
->>>>>>> 9fbbfc1b73b5a426172d45134e980eaa2ac54e5a
 
 #. core
 #. extended
@@ -76,36 +69,14 @@ Sub-blocks contain no values, but instead bundle tightly bound properties togeth
 
 In addition, some properties include additional information:
 
-**Default** represents a prefilled value set by the system, which can usually (but not always) be changed by the user. If only one value appears in the controlled list, it is automatically the default.
-
-**Format** illustrates how a value should be formed (e.g. dates are formatted YYYY-MM-DD).
-
-**Constraints** are further limits or requirements governing 'Allowed values'.
-
-**Examples** provide models for the value.
-
-**Example JSON** provides an indicative JSON code snippet.
-
-**Note** contains any additional information about the property.
-=======
-   * 0 – represents a recommended or optional property that may only occur once
-   * 0-n – represents an optional property that may occur multiple times
-   * 1 – represents a required property that may only occur once
-   * 1-n – represents a required property that may occur multiple times
-    
-   "
-   "**Allowed values**", "will indicate a controlled list of values' limiting input (such as a bulleted list) or the rules that govern those values (such as an italicised statement followed by format and constraints)"
-
-In addition, some properties include additional information:
-
 .. csv-table::
 
-   "**Format**", "illustrates how a value should be formed (e.g. dates are formatted YYYY-MM-DD)"
+   "**Default**", "represents a prefilled value set by the system, which can usually (but not always) be changed by the user. If only one value appears in the controlled list, it is automatically the default."
+   "**Format**", "illustrates how a value should be formed (e.g. dates are formatted YYYY-MM-DD)."
+   "**Constraints**", "specify further limits or requirements governing 'Allowed values'.
    "**Examples**", "provide models for the value."
-   "**Contraints**", "provide limitations for the value"
-   "**Note**", "any additional information about the property."
->>>>>>> 9fbbfc1b73b5a426172d45134e980eaa2ac54e5a
-
+   "**Example JSON**", "provides an indicative JSON code snippet."
+   "**Note**", "contains any additional information about the property."
 
 .. note::
 
