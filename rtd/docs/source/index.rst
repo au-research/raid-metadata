@@ -48,9 +48,9 @@ Metadata properties
 
 Metadata properties, cotained within blocks and sometimes sub-blocks, are described using the following elements.
 
-**Definition** briefly defines the property
+**Definition** briefly defines the property.
 
-**Requirement** indicates whether a property is mandatory, recommended or optional, with additional information where necessary (e.g., if a property is mandatory only if another property is present)
+**Requirement** indicates whether a property is mandatory, recommended or optional, with additional information where necessary (e.g., if a property is mandatory only if another property is present).
 
 **Occurrence** indicates the number of times a property may occur:
 
