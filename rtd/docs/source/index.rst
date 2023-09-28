@@ -14,7 +14,7 @@ The RAiD Metadata Schema specifies things like:
 
 The RAiD Metadata Schema underpins how RAiD names are identified, minted, resolved, updated and tracked via their metadata records. Any research project or activity with a RAiD name can be related to another RAiD or identified via the RAiD system, as well as cited in research documentation.
 
-The RAiD system is developed by the Australian Research Data Commons (ARDC). In December 2022, the RAiD system was standardised for international use in `ISO 23527, Information and Documentation — Research Activity Identifier (RAiD) <https://www.iso.org/standard/75931.html>`_
+The RAiD system is developed by the Australian Research Data Commons (ARDC). In December 2022, the RAiD system was standardised for international use in `ISO 23527 Research Activity Identifier (RAiD) <https://www.iso.org/standard/75931.html>`.
 
 RAiD Metadata Schema conventions
 --------------------------------
@@ -22,20 +22,20 @@ RAiD Metadata Schema conventions
 'Core', 'extended' and 'local' metadata schema components
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The RAiD metadata schema is divided into 3 components:
+The RAiD metadata schema is divided into three components:
 
-#. core
-#. extended
-#. local.
+#. Core
+#. Extended
+#. Local
 
-**Core** components refer to metadata properties and controlled lists that are standardised across all RAiD Registration Agencies. If a Registration Agency uses its own controlled lists, it must provide a crosswalk to the RAiD's standardised core terms.
+**Core components** refer to metadata properties and controlled lists that are standardised across all RAiD Registration Agencies. If a Registration Agency uses its own controlled lists, it must provide a crosswalk to the RAiD's standardised core terms.
 
-**Extended** components are properties that are standardised across all Registration Agencies, but their controlled lists may vary. A Registration Agency may use its own controlled lists, but it must first:
+**Extended components** are properties that are standardised across all Registration Agencies, but their controlled lists may vary. A Registration Agency may use its own controlled lists, but it must first:
 
-#. Publish each list in a machine-readable format, preferably on a vocabulary service (**Note**: the ARDC can assist with this requirement)
-#. Register the controlled list(s) with the ARDC as the RAiD's ISO 23527 Registration Authority (RAu). Re-use of an existing published controlled list is acceptable. as long as it is published in machine-readable format.
+* Publish each list in a machine-readable format, preferably on a vocabulary service (**Note**: the ARDC can assist with this requirement)
+* Register the controlled list(s) with the ARDC as the RAiD's ISO 23527 Registration Authority (RAu). Re-use of an existing published controlled list is acceptable. as long as it is published in machine-readable format.
 
-**Local** components are properties and controlled lists that are entirely under the control of a Registration Agency, and only need to be reported to the ARDC (RAu) annually or whenever major changes are made. Local properties can be tailored to meet the needs of the research community served by the Registration Agency. However, a mechanism must be put in place by the Registration Agency to enable useful local metadata to be promoted into extended metadata, or extended properties into core metadata.
+**Local** components are properties and controlled lists that are entirely under the control of a Registration Agency, and only need to be reported to the ARDC annually or whenever major changes are made. Local properties can be tailored to meet the needs of the research community served by the Registration Agency. A mechanism will be provided by the Registration Authority to enable useful local metadata to be promoted into extended metadata, or extended properties into core metadata.
 
 Component blocks
 ^^^^^^^^^^^^^^^^
@@ -45,7 +45,7 @@ Within each metadata schema component, the metadata properties are divided into 
 Block descriptions
 ^^^^^^^^^^^^^^^^^^
 
-Sub-blocks contain no values, but instead bundle tightly bound properties together, for example, a recurring 'language' sub-block includes language code, language code scheme, and language code scheme URL. 
+**Sub-blocks** contain no values, but instead bundle tightly bound properties together, for example, a recurring 'language' sub-block includes language code, language code scheme, and language code scheme URL. 
 
 .. csv-table::
 
@@ -53,7 +53,6 @@ Sub-blocks contain no values, but instead bundle tightly bound properties togeth
    "**Requirement**", "indicates whether a property is mandatory, recommended or optional, with additional information included where necessary (e.g. if a property is mandatory when only another property is present)"
    "**Occurrence**",  "indicates the number of times a property may occur:
 
-<<<<<<< HEAD
 **Definition** briefly defines the property
 
 **Requirement** indicates whether a property is mandatory, recommended or optional, with additional information where necessary (e.g., if a property is mandatory only if another property is present)
