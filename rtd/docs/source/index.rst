@@ -46,7 +46,7 @@ Within each metadata schema component, the metadata properties are divided into 
 Metadata properties
 ^^^^^^^^^^^^^^^^^^^
 
-Metadata properties, cotained within blocks and sometimes sub-blocks, are described using the following conventions.
+Metadata properties, cotained within blocks and sometimes sub-blocks, are described using the following elements.
 
 **Definition** briefly defines the property
 
@@ -61,9 +61,11 @@ Metadata properties, cotained within blocks and sometimes sub-blocks, are descri
 
 **Allowed values** will either indicate a controlled list of values limiting input (as a bulleted list), or rules governing the values (as an italicised statement followed by format and constraints). Controlled lists are described as 'open' if Registration Agencies can add new terms to them, with the only restriction being that the Registration Authority must be notified. Such lists are 'closed' if they cannot be altered by Registration Agencies, in which cases changes must be proposed during the normal metadata review cycle. 
 
-In addition, some properties include additional information:
+In addition, some properties include additional information.
 
-.. csv-table::
+.. csv-table:: 
+   :header: "Element", "Description"
+   :widths:
 
    "**Default**", "represents a prefilled value set by the system, which can usually (but not always) be changed by the user. If only one value appears in the controlled list, it is automatically the default."
    "**Format**", "illustrates how a value should be formed (e.g. dates are formatted YYYY-MM-DD)."
