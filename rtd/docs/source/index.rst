@@ -64,9 +64,10 @@ Metadata properties, cotained within blocks and sometimes sub-blocks, are descri
 In addition, some properties include additional information.
 
 .. csv-table::
+   
    "**Default**", "represents a prefilled value set by the system, which can usually (but not always) be changed by the user. If only one value appears in the controlled list, it is automatically the default."
    "**Format**", "illustrates how a value should be formed (e.g. dates are formatted YYYY-MM-DD)."
-   "**Constraints**", "specify further limits or requirements governing Allowed values."
+   "**Constraints**", "specify further limits or requirements governing 'Allowed values'."
    "**Examples**", "provide models for the value."
    "**Example JSON**", "provides an indicative JSON code snippet."
    "**Note**", "contains any additional information about the property."
