@@ -37,21 +37,16 @@ The RAiD metadata schema is divided into three components:
 
 **Local** components are properties and controlled lists that are entirely under the control of a Registration Agency, and only need to be reported to the ARDC annually or whenever major changes are made. Local properties can be tailored to meet the needs of the research community served by the Registration Agency. A mechanism will be provided by the Registration Authority to enable useful local metadata to be promoted into extended metadata, or extended properties into core metadata.
 
-Component blocks
-^^^^^^^^^^^^^^^^
+Component blocks and sub-blocks
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Within each metadata schema component, the metadata properties are divided into groups or 'blocks' of related properties.
+Within each metadata schema component, the metadata properties are divided into groups or 'blocks' of related properties, such as all properties related to contributors or organisations. Blocks are further divided into 'sub-blocks', which contain no values themselves, but instead bracket tightly bound properties, for example, a recurring 'language' sub-block includes language code, language code scheme, and language code scheme URL. 
 
-Block descriptions
-^^^^^^^^^^^^^^^^^^
 
-**Sub-blocks** contain no values, but instead bundle tightly bound properties together, for example, a recurring 'language' sub-block includes language code, language code scheme, and language code scheme URL. 
+Metadata properties
+^^^^^^^^^^^^^^^^^^^
 
-.. csv-table::
-
-   "**Definition**", "briefly defines the property"
-   "**Requirement**", "indicates whether a property is mandatory, recommended or optional, with additional information included where necessary (e.g. if a property is mandatory when only another property is present)"
-   "**Occurrence**",  "indicates the number of times a property may occur:
+Metadata properties, cotained within blocks and sometimes sub-blocks, are described using the following conventions.
 
 **Definition** briefly defines the property
 
