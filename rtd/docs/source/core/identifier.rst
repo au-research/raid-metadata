@@ -31,7 +31,7 @@
 
 **Constraints**: RAiD name prefix supplied by the DOI Foundation; RAiD name suffix consisting of alphanumeric, English, ASCII Latin characters
 
-**Example**: ``https://raid.org/10.12345/abc123``
+**Example**: ``https://raid.org/10.25.10.1234/a1b2c``
 
 **Note**: RAiD names are valid DOIs and can also be resolved via https://doi.org/ or https://handle.net/.
 
@@ -68,7 +68,7 @@
 1.3.1 identifier.registrationAgency.id
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Definition**: the Research Organization Registry (ROR) of the RAiD Registration Agency that minted the RAiD.
+**Definition**: the persistent identifier of the RAiD Registration Agency that minted the RAiD.
 
 **Requirement**: mandatory
 
@@ -114,7 +114,7 @@
 1.4.1 identifier.owner.id
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Definition**: the ROR of the legal entity responsible for the RAiD (i.e. the 'owner' of a RAiD); analogous to a DataCite 'Member', an owner has a legal agreement with their Registration Agency
+**Definition**: the persistent identifier of the legal entity responsible for the RAiD (i.e. the 'owner' of a RAiD); an owner has a legal agreement with their Registration Agency
 
 **Requirement**: mandatory
 
@@ -130,7 +130,7 @@
 
 **Constraints**: Always set by default to the organisation requesting the RAiD
 
-**Note**: owners, i.e., Organisations hosting Service Points, must have, acquire, or be assigned RORs; a RAiD minted by a Registration Agency must be associated with an Owner affiliated with that Agency; Registration Agencies must register lists of their Owerns with the RAiD Registration Authority regularly.
+**Note**: owners, i.e., Organisations hosting Service Points, must have, acquire, or be assigned RORs; a RAiD minted by a Registration Agency must be associated with an Owner affiliated with that Agency; Registration Agencies must register lists of their Owerns with the RAiD Registration Authority regularly. Analogous to a DataCite 'Member'.
 
 .. _1.4.2-identifier.owner.schemaUri:
 
@@ -143,7 +143,7 @@
 
 **Occurrence**: 1
 
-**Allowed values**: *controlled list*
+**Allowed values**: *closed controlled list*
 
 * ``https://ror.org/``
 
@@ -152,7 +152,7 @@
 1.4.3 identifier.owner.servicePoint
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Definition**: the service point (SP) that requested the RAiD. Analogous to a DataCite 'repository'. SPs belong to an owner, RAiD owners can have multiple SPs; yet SPs do not need to be legal entities 
+**Definition**: the Service Point (SP) that requested the RAiD. SPs belong to an owner, RAiD owners can have multiple SPs; SPs do not need to be legal entities 
 
 **Requirement**: mandatory
 
@@ -169,7 +169,7 @@
 
 **Constraints**: Always set to the SP requesting the RAiD
 
-**Note**: a RAiD minted by a Registration Agency must have a SP associated with an Owner affiliated with that Agency; Registration Agencies must register lists of their Service Points with the RAiD Registration Authority regularly.
+**Note**: a RAiD minted by a Registration Agency must have a SP associated with an Owner affiliated with that Agency; Registration Agencies must register lists of their Service Points with the RAiD Registration Authority regularly. Analogous to a DataCite 'repository'.
 
 .. _1.5-identifier.license:
 
