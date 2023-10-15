@@ -105,7 +105,7 @@
 
 **Allowed values**: *closed controlled list derived from title.language.schemaUri*
 
-**Example**: ``eng`` (*ISO 639-3's 3-letter code*)
+**Example**: ``eng`` (*ISO 639-3 three-letter code*)
 
 .. _3.3.2-title.languageId.schemaUri:
 
@@ -118,7 +118,7 @@
 
 **Occurrence**: 0-1
 
-**Allowed values**: *Closed controlled list*
+**Allowed values**: *closed controlled list of allowed language schemas*
 
 * ``https://www.iso.org/standard/39534.html``
 

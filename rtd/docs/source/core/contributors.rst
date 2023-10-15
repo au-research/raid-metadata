@@ -75,7 +75,7 @@
 * Co-investigator or Collaborator
 * Partner Investigator (industry, government, or community collaborator)
 * Consultant (consultant or contractor hired by the project)
-* Other Participant (not covered by one of the positions above; 'member'; 'other * significant contributor')
+* Other Participant (not covered by one of the positions above: i.e., 'member' or 'other significant contributor')
 
 **Default**: first-entered Contributor (only) defaults to 'Principal or Chief Investigator'
 

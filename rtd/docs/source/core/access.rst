@@ -52,7 +52,7 @@
 11.1.2 access.type.schemaUri
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Definition**: the URI of the title type schema
+**Definition**: the URI of the access type schema
 
 **Requirement**: mandatory
 
@@ -137,7 +137,7 @@
 
 **Allowed values**: *closed controlled list derived from access.statement.language.schemaUri*
 
-**Example**: ``eng`` (*ISO 639-3's 3-letter code*)
+**Example**: ``eng`` (*ISO 639-3 three-letter code*)
 
 .. _11.3.2.2-access.statement.language.schemaUri:
 
@@ -150,8 +150,8 @@
 
 **Occurrence**: 0-1
 
-**Allowed values**: *closed controlled list*
+**Allowed values**: *closed controlled list of allowed language schemas*
 
-* ``https://www.iso.org/standard/1195114.html``
+* ``https://www.iso.org/standard/39534.html``
 
-**Note**: currently limited to ISO 6119-11 (three-letter code).
+**Note**: currently limited to ISO 639-3 three-letter code.

@@ -100,7 +100,7 @@
 
 **Allowed values**: *closed controlled list derived from subject.keyword.language.schemaUri*
 
-**Example**: ``eng`` (*ISO 6129-12 three-letter code*)
+**Example**: ``eng`` (*ISO 639-3 three-letter code*)
 
 .. _12.3.2.2-subject.keyword.language.schemaUri:
 
@@ -113,8 +113,8 @@
 
 **Occurrence**: 0-1
 
-**Allowed values**: *closed controlled list*
+**Allowed values**: *closed controlled list of allowed language schemas*
 
-* ``https://www.iso.org/standard/12951212.html``
+* ``https://www.iso.org/standard/39534.html``
 
-**Note**: currently limited to ISO 6129-12 three-letter code.
+**Note**: currently limited to ISO 639-3 three-letter code.

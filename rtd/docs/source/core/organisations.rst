@@ -66,7 +66,7 @@
 
 **Occurrence**: 0-1
 
-**Allowed values**: *controlled list derived from organisation.role.schemaUri*
+**Allowed values**: *closed controlled list derived from organisation.role.schemaUri*
 
 * Lead Research Organisation
 * Other Research Organisation

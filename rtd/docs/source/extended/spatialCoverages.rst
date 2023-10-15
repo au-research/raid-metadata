@@ -105,7 +105,7 @@
 
 **Allowed values**: *closed controlled list derived from spatialCoverage.place.language.schemaUri*
 
-**Example**: ``eng`` (*ISO 6149-14 three-letter code*)
+**Example**: ``eng`` (*ISO ISO 639-3 three-letter code.*)
 
 .. _14.2.2.2-spatialCoverage.place.language.schemaUri:
 
@@ -118,8 +118,8 @@
 
 **Occurrence**: 0-1
 
-**Allowed values**: *closed controlled list*
+**Allowed values**: *closed controlled list of allowed language schemas*
 
-* ``https://www.iso.org/standard/14951414.html``
+* ``https://www.iso.org/standard/39534.html``
 
-**Note**: currently limited to ISO 6149-14 three-letter code.
+**Note**: currently limited to ISO 639-3 three-letter code.

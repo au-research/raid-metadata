@@ -41,10 +41,10 @@
 **Allowed values**: *closed controlled list*
 
 * https://arks.org/ 
-* http://doi.org/ (*includes IGSNs, CrossRef Publication IDs or Grant IDs, DataCite DOIs, instrument DOIs, etc*)
-* http://hdl.handle.net/
-* https://www.isbn-international.org/ (IBSN)
-* https://scicrunch.org/resolver/ (RRID)
+* http://doi.org/ (*all DOIs, including IGSNs, CrossRef Publication IDs or Grant IDs, DataCite DOIs, instrument DOIs, etc.*)
+* http://hdl.handle.net/ (*all non-DOI handles*)
+* https://www.isbn-international.org/ 
+* https://scicrunch.org/resolver/ (*RRID*)
 * https://archive.org/ (*fallback for any Object that has no ID other than a webpage - a snapshot must be taken from archive.org and that link inserted into the RAiD*).
 
 **Note**: Controlled list is a subset of DataCite Metadata Schema 4.4 Appendix 1 Table 8 'Description of relatedIdentiferType'.
@@ -75,12 +75,12 @@
 
 * Audiovisual
 * Book
-* BookChapter
+* Book Chapter
 * Computational Notebook
 * Conference Paper
 * Conference Poster
 * Conference Proceeding
-* DataPaper
+* Data Paper
 * Dataset
 * Dissertation
 * Learning Object
