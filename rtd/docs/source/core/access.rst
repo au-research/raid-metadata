@@ -40,12 +40,12 @@
 
 **Allowed values**: *closed controlled list derived from access.type.schemaUri*
 
-* Open access
-* Embargoed access
+* ``https://vocabularies.coar-repositories.org/access_rights/c_abf2/`` (Open access) 
+* ``https://vocabularies.coar-repositories.org/access_rights/c_f1cf/`` (Embargoed access)
 
 **Default**: 'Open access' 
 
-**Constraints**: 'Restricted access' and 'Metadata only', though part of the upstream vocabulary, are disallowed.
+**Constraints**: 'Restricted access' and 'Metadata only', though part of the upstream vocabulary, are disallowed
 
 .. _11.1.2-access.typeId.schemaUri:
 
@@ -60,16 +60,16 @@
 
 **Allowed values**: *closed controlled list*
 
-* https://vocabularies.coar-repositories.org/access_rights/1.1/
+* ``https://vocabulary.raid.org/access.type.id/241``
 
-**Note**: The RAiD controlled list includes only a subset of the COAR vocabulary, excluding 'restricted access', since no permanently restricted RAiDs are allowed, and ‘metadata only’, since RAiDs by design contain only metadata.
+**Note**: The RAiD controlled list includes a subset of the COAR vocabulary (https://vocabularies.coar-repositories.org/access_rights/1.1/), including 'Open access' and 'Embargoed access', but excluding 'restricted access' (since no permanently restricted RAiDs are allowed), and ‘metadata only’ (since RAiDs by design contain only metadata).
 
 .. _11.2-access.embargoExpiry:
 
 11.2 access.embargoExpiry
 -------------------------
 
-**Definition**: the date an embargo on access to the RAiD metadata ends
+**Definition**: the date any embargo on access to the RAiD metadata ends
 
 **Requirement**: mandatory if access.type is 'embargoed'
 
@@ -81,14 +81,14 @@
 
 **Constraints**: embargo expiration dates may not lay more than 18 months from the date the RAiD was registered; year, month, and day must be specified
 
-**Examples**: ``20211-08-28``
+**Example**: ``20211-08-28``
 
 .. _11.3-access.statement:
 
 11.3 access.statement
 ---------------------
 
-**Definition**: a metadata schema block containing an explanation for any access type that is not 'open' and its associated properties
+**Definition**: a metadata schema block containing an explanation for any access type that is not 'open', with the explanation's associated properties
 
 **Requirement**: mandatory if access.type.id is not 'open'
 
@@ -110,6 +110,8 @@
 **Allowed values**: free text
 
 **Constraints**: maximum 1,000 characters
+
+**Example JSON**
 
 .. _11.3.2-access.statement.language:
 
@@ -148,10 +150,10 @@
 
 **Requirement**: mandatory for each access.statement.language supplied
 
-**Occurrence**: 0-1
+**Occurrence**: 1
 
 **Allowed values**: *closed controlled list of allowed language schemas*
 
-* ``https://www.iso.org/standard/39534.html``
+* ``https://vocabulary.raid.org/access.statement.language.schemaUri/196``
 
-**Note**: currently limited to ISO 639-3 three-letter code.
+**Note**: currently limited to ISO 639-3 three-letter code (https://www.iso.org/standard/39534.html).
