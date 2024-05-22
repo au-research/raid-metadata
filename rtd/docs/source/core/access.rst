@@ -73,7 +73,7 @@
 
 **Requirement**: mandatory if access.type is 'embargoed'
 
-**Occurrence**: 1
+**Occurrence**: 0-1
 
 **Allowed values**: ISO 8601 standard date
 
@@ -92,7 +92,7 @@
 
 **Requirement**: mandatory if access.type.id is not 'open'
 
-**Occurrence**: 1
+**Occurrence**: 0-1
 
 **Example JSON**
 
@@ -105,7 +105,7 @@
 
 **Requirement**: mandatory if access.type.id is not 'open'
 
-**Occurrence**: 1
+**Occurrence**: 0-1
 
 **Allowed values**: free text
 
