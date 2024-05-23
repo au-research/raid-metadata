@@ -163,9 +163,9 @@
 5.5 contributor.contact
 -----------------------
 
-**Definition**: flag indicating that the contributor as a project contact.
+**Definition**: flag indicating that the contributor as a project contact
 
-**Requirement**: at least one contributor must be flagged as a project contact.
+**Requirement**: at least one contributor must be flagged as a project contact
 
 **Occurrence**: 0-1
 
