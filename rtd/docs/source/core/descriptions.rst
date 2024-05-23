@@ -19,15 +19,17 @@
 4.1 description.text
 --------------------
 
-**Definition**: a project description that may include any additional information that does not fit in the other categories
+**Definition**: a project description that may include any additional information not captured by other metadata properties
 
 **Requirement**: mandatory for each description supplied
 
-**Occurrence**: 0-1
+**Occurrence**: 1
 
 **Allowed values**: free text
 
 **Constraints**: maximum 1000 characters
+
+**Note**: Descriptions are intended to be flexible, and projects can use them liberally to capture information about the project that is not recorded elsewhere in the RAiD.
 
 . 4.2-description.type:
 
@@ -51,23 +53,21 @@
 
 **Requirement**: mandatory for each description.type supplied
 
-**Occurrence**: 0-1
+**Occurrence**: 1
 
 **Allowed values**: *closed controlled list derived from description.type.schemaUri*
 
-* Primary (*preferred full description or abstract*)
-* Alternative (*additional full description or abstract*)
-* Brief
-* Significance Statement
-* Methods
-* Objectives
-* Other (*any other descriptive information, e.g. a note or similar*)
+* ``https://vocabulary.raid.org/description.type.id/326`` (Primary, i.e., a preferred full description or abstract)
+* `https://vocabulary.raid.org/description.type.id/321`` (Alternative, i.e., an additional or supplementary full description or abstract)
+* ``https://vocabulary.raid.org/description.type.id/322`` (Brief, i.e., a shorted version of the primary description)
+* ``https://vocabulary.raid.org/description.type.id/327`` (Significance Statement)
+* ``https://vocabulary.raid.org/description.type.id/323`` (Methods)
+* ``https://vocabulary.raid.org/description.type.id/324`` (Objectives)
+* ``https://vocabulary.raid.org/description.type.id/325`` (Other, i.e., any other descriptive information such as a note)
 
-**Default**: 'Primary'
+**Default**: description.type.id for first-entered description (only) defaults to 'Primary'
 
 **Constraints**: if a description is provided, one (and only one) primary description is mandatory
-
-**Note**: controlled list adapted from Vocabularies for Registry Schema 1.6.5 'Description Type' and DataCite Metadata Schema 4.4 Appendix 1 Table 10 'Description of descriptiontype'.
 
 .. _4.2.2-description.type.id.schemaUri:
 
@@ -76,13 +76,15 @@
 
 **Definition**: the URI of the description type schema
 
-**Requirement**: mandatory for each description.type.id supplied
+**Requirement**: mandatory for each description.type supplied
 
-**Occurrence**: 0-1
+**Occurrence**: 1
 
 **Allowed values**: *closed controlled list*
 
-* [URI of RAiD vocab on RVA (to be created)]
+* ``https://vocabulary.raid.org/description.type.schemaUri/275``
+
+**Note**: Controlled list adapted from Vocabularies for Registry Schema 1.6.5 'Description Type' and DataCite Metadata Schema 4.4 Appendix 1 Table 10 'Description of descriptiontype'.
 
 .. _4.3-description.language:
 
@@ -125,6 +127,6 @@
 
 **Allowed values**: *closed controlled list of allowed language schemas*
 
-* ``https://www.iso.org/standard/39534.html``
+* ``https://vocabulary.raid.org/description.language.schemaUri/240``
 
-**Note**: Currently limited to ISO 639-3 three-letter code.
+**Note**: Currently limited to ISO 639-3 three-letter code (https://www.iso.org/standard/39534.html).

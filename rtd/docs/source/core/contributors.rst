@@ -81,7 +81,7 @@
 * ``https://vocabulary.raid.org/contributor.position.id/314`` (Consultant, e.g., someone hired as a contract researcher by the project)
 * ``https://vocabulary.raid.org/contributor.position.id/315`` (Other Participant not covered by one of the positions above, e.g., 'member' or 'other significant contributor')
 
-**Default**: first-entered Contributor (only) defaults to 'Principal or Chief Investigator' 
+**Default**: contributor.position.id for first-entered contributor (only) defaults to 'Principal or Chief Investigator' 
 
 .. _5.3.2-contributor.position.id.schemaUri:
 
