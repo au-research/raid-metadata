@@ -139,7 +139,7 @@
 
 **Allowed values**: *closed controlled list derived from access.statement.language.schemaUri*
 
-**Example**: ``eng`` (*ISO 639-3 three-letter code*)
+**Example**: ``eng``
 
 .. _11.3.2.2-access.statement.language.schemaUri:
 
@@ -156,4 +156,4 @@
 
 * ``https://vocabulary.raid.org/access.statement.language.schemaUri/196``
 
-**Note**: currently limited to ISO 639-3 three-letter code (https://www.iso.org/standard/39534.html).
+**Note**: currently limited to ISO 639:2023 Code for individual languages and language groups (Set 3; https://www.iso.org/standard/74575.html).

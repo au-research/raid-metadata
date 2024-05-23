@@ -112,7 +112,7 @@
 
 **Allowed values**: *closed controlled list derived from titles.language.schemaUri*
 
-**Example**: ``eng`` (*ISO 639-3 three-letter code*)
+**Example**: ``eng``
 
 .. _4.3.1-description.languageId.schemaUri:
 
@@ -129,4 +129,4 @@
 
 * ``https://vocabulary.raid.org/description.language.schemaUri/240``
 
-**Note**: Currently limited to ISO 639-3 three-letter code (https://www.iso.org/standard/39534.html).
+**Note**: Currently limited to ISO 639:2023 Code for individual languages and language groups (Set 3; https://www.iso.org/standard/39534.html).

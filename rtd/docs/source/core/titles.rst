@@ -107,7 +107,7 @@
 
 **Allowed values**: *closed controlled list derived from title.language.schemaUri*
 
-**Example**: ``eng`` (*ISO 639-3 three-letter code*)
+**Example**: ``eng``
 
 .. _3.3.2-title.languageId.schemaUri:
 
