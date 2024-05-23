@@ -7,7 +7,7 @@ Core Metadata Schema Properties
 Overview
 --------
 
-'Core' metadata is shared across Registration Agencies. All properties must be used without variation. Requirements, constraints, and format must be enforced. Controlled list must either be used without changes or, if they modified or a different list chosen, a crosswalk must be provided to the canonical values. If a Registraiton Agency modifies a controlled list, the web application and API should return both the local and canonical values.
+'Core' metadata is shared across Registration Agencies. All properties must be used without variation. Requirements, constraints, and format must be enforced. Controlled list must either be used without changes or, if they modified or a different list chosen, a crosswalk must be provided to the canonical values. If a Registraiton Agency modifies a controlled list, the web application and API should return both the local and canonical values. Any modified controlled list must be published using a vocabulary service. Modifications must be reported to and approved by the Registration Authority.
 
 Contents
 --------
