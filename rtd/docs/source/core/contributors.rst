@@ -40,23 +40,27 @@
 
 **Allowed values**: *closed controlled list*
 
-* ``https://orcid.org/``
-* ``https://isni.org/``
+* ``https://orcid.org/`` (ORCID)
+* ``https://isni.org/`` (ISNI)
 
-**Note**: the controlled list is shared across all Registration Agencies.
+**Constraints**: a PID is required and (currently) only ORCID and ISNI are allowed
+
+**Note**: The controlled list is defined at https://vocabulary.raid.org/contributor.schemaUri/215 and is shared across all Registration Agencies.
 
 .. _5.3-contributor.position:
 
 5.3 contributor.position
 ------------------------
 
-**Definition**: a metadata schema sub-block describing a contributor's position on a project or activity
+**Definition**: a metadata schema sub-block describing a contributor's administrative position on a project or activity
 
 **Requirement**: mandatory for each contributor supplied
 
 **Occurrence**: 1
 
-**Note**: contributors must have one and only one position at any given time (but they may also be flagged as a 'leader' or 'contact').
+**Constraints**: contributors must have one and only one position at any given time (contributors may also be flagged as a 'leader' or 'contact' separately)
+
+**Note**: This property represents a contributor's administrative position on a project (such as their position on a grant application); use contributor.role to define for scientific or scholarly contribution.
 
 .. _5.3.1-contributor.position.id:
 
@@ -71,17 +75,13 @@
 
 **Allowed values**: *closed controlled list derived from contributor.position.schemaUri*
 
-* Principal or Chief Investigator
-* Co-investigator or Collaborator
-* Partner Investigator (industry, government, or community collaborator)
-* Consultant (consultant or contractor hired by the project)
-* Other Participant (not covered by one of the positions above: i.e., 'member' or 'other significant contributor')
+* ``https://vocabulary.raid.org/contributor.position.id/317`` (Principal or Chief Investigator)
+* ``https://vocabulary.raid.org/contributor.position.id/313`` (Co-investigator or Collaborator)
+* ``https://vocabulary.raid.org/contributor.position.id/316`` (Partner Investigator, e.g., industry, government, or community collaborator)
+* ``https://vocabulary.raid.org/contributor.position.id/314`` (Consultant, e.g., someone hired as a contract researcher by the project)
+* ``https://vocabulary.raid.org/contributor.position.id/315`` (Other Participant not covered by one of the positions above, e.g., 'member' or 'other significant contributor')
 
-**Default**: first-entered Contributor (only) defaults to 'Principal or Chief Investigator'
-
-**Constraints**: one (and only one) Contributor must be designated as 'Principal or Chief Investigator'. 
-
-**Note**: Controlled list adapted from Simon Cox's Project Ontology, OpenAIRE ‘Project’ guidelines, NIH definitions, ARC definitions, and DataCite Metadata Schema 4.4 Appendix 1 Table 5 'Description of contributorType'.
+**Default**: first-entered Contributor (only) defaults to 'Principal or Chief Investigator' 
 
 .. _5.3.2-contributor.position.id.schemaUri:
 
@@ -96,7 +96,9 @@
 
 **Allowed values**: *closed controlled list*
 
-* [URI of RAiD vocab on RVA (to be created)]
+* ``https://vocabulary.raid.org/contributor.position.schemaUri/306``
+
+**Note**: Controlled list informed by Simon Cox's Project Ontology, OpenAIRE ‘Project’ guidelines, NIH definitions, ARC definitions, and DataCite Metadata Schema 4.4 Appendix 1 Table 5 'Description of contributorType'.
 
 .. _5.3.3-contributor.position.startDate:
 
@@ -117,14 +119,14 @@
 
 **Examples**: ``2025-08-28``; ``2025-08``; ``2025``
 
-**Note**: only year is required, month and day are optional (but recommended when available).
+**Note**: Only year is required, month and day are optional (but recommended when available).
 
 .. _5.3.4-contributor.position.endDate:
 
 5.3.4 contributor.position.endDate
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Definition**: date the contributor terminated position associated with the project or activity.
+**Definition**: date the contributor terminated position associated with the project or activity
 
 **Requirement**: recommended
 
@@ -136,7 +138,7 @@
 
 **Examples**: ``2025-08-28``; ``2025-08``; ``2025``
 
-**Note**: only year is required, month and day are optional (but recommended when available).
+**Note**: Only year is required, month and day are optional (but recommended when available).
 
 .. _5.4-contributor.position.leader:
 
@@ -149,9 +151,12 @@
 
 **Occurrence**: 0-1
 
-**Allowed values**: Yes / Null
+**Allowed values**: 
 
-**Note**: more than one contributor can be flagged as a leader if the project is jointly led.
+* ``Yes``
+* ``Null``
+
+**Note**: More than one contributor can be flagged as a leader if the project is jointly led.
 
 .. _5.5-contributor.position.contact:
 
@@ -164,22 +169,25 @@
 
 **Occurrence**: 0-1
 
-**Allowed values**: Yes / Null
+**Allowed values**: 
 
-**Note**: more than one Contributor can be flagged as a contact.
+* ``Yes``
+* ``Null``
+
+**Note**: More than one contributor can be flagged as a contact.
 
 .. _5.6-contributor.role:
 
 5.6 contributor.role
 --------------------
 
-**Definition**: metadata schema sub-block describing a contributor's role on a project using the CRediT system.
+**Definition**: metadata schema sub-block describing a contributor's scientific or scholarly role on a project using the CRediT vocabulary
 
 **Requirement**: recommended
 
 **Occurrence**: 0-n
 
-**Note**: changes to roles are tracked through version history rather than explicitly declared.
+**Note**: Changes to roles are tracked through version history rather than explicitly declared.
 
 .. _5.6.1-contributor.role.id:
 
@@ -192,7 +200,7 @@
 
 **Occurrence**: 0-1
 
-**Allowed values**: *closed controlled list from contributor.role.schemaUri*
+**Allowed values**: *closed controlled list derived from contributor.role.schemaUri*
 
 * ``https://credit.niso.org/contributor-role/conceptualization/``
 * ``https://credit.niso.org/contributor-role/data-curation/``
@@ -222,4 +230,6 @@
 
 **Allowed values**: *closed controlled list*
 
-* ``https://credit.niso.org/``
+* ``https://vocabulary.raid.org/contributor.role.schemaUri/165``
+
+**Constraints**: currently limited to the CRediT vocabulary (https://credit.niso.org/) 

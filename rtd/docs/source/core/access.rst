@@ -62,7 +62,7 @@
 
 * ``https://vocabulary.raid.org/access.type.id/241``
 
-**Note**: The RAiD controlled list includes a subset of the COAR vocabulary (https://vocabularies.coar-repositories.org/access_rights/1.1/), including 'Open access' and 'Embargoed access', but excluding 'restricted access' (since no permanently restricted RAiDs are allowed), and ‘metadata only’ (since RAiDs by design contain only metadata).
+**Note**: The RAiD controlled list includes a subset of the COAR vocabulary (https://vocabularies.coar-repositories.org/access_rights/1.1/), including 'Open access' and 'Embargoed access', but excluding 'Restricted access' (since no permanently restricted RAiDs are allowed), and ‘Metadata only’ (since RAiDs by design contain only metadata).
 
 .. _11.2-access.embargoExpiry:
 
