@@ -55,14 +55,14 @@
 
 **Allowed values**: *closed controlled list derived from title.type.schemaUri*
 
-* Primary
-* Short
-* Acronym
-* Alternative (*includes subtitle and other supplemental or alternative title*)
+* ``https://vocabulary.raid.org/title.type.id/380`` (Primary, i.e., a preferred full or long title)
+* ``https://vocabulary.raid.org/title.type.id/381`` (Short)
+* ``https://vocabulary.raid.org/title.type.id/378`` (Acronym)
+* ``https://vocabulary.raid.org/title.type.id/379`` (Alternative, including subtitle or other supplemental title)
 
 **Default** 'Primary'
 
-**Note**: one (and only one) current (as per start-end dates) Primary Title is mandatory for each Title specified; additional title are optional; any previous titles are managed by start-end dates (title type does not change); controlled list adapted from Vocabularies for Registry Schema 1.6.5 'Name Type'.
+**Note**: One (and only one) current (as per start-end dates) Primary Title is mandatory for each Title specified; additional titles are optional; any previous titles are managed by start-end dates (title type does not change).
 
 .. _3.2.2-title.type.schemaUri:
 
@@ -77,7 +77,9 @@
 
 **Allowed values**: *Closed controlled list*
 
-* [URI of RAiD vocab on RVA (to be created)]
+* ``https://vocabulary.raid.org/title.type.schemaUri/377``
+
+**Note**: Controlled list adapted from Vocabularies for Registry Schema 1.6.5 'Name Type'.
 
 .. _3.3-title.language:
 
@@ -120,9 +122,9 @@
 
 **Allowed values**: *closed controlled list of allowed language schemas*
 
-* ``https://www.iso.org/standard/39534.html``
+* ``https://vocabulary.raid.org/title.language.schemaUri/163``
 
-**Note**: Currently limited to ISO 639-3 three-letter code.
+**Note**: Currently limited to ISO 639:2023 Code for individual languages and language groups (Set 3; https://www.iso.org/standard/74575.html).
 
 .. _3.4-title.startDate:
 
@@ -143,7 +145,7 @@
 
 **Examples**: ``2023-08-28``; ``2023-08``; ``2023``
 
-**Note**: only the year is required, month and day are optional (but recommended when available).
+**Note**: Only the year is required, month and day are optional (but recommended when available).
 
 .. _3.5-title.endDate:
 
@@ -162,4 +164,4 @@
 
 **Examples**: ``2023-08-28``; ``2023-08``; ``2023``
 
-**Note**: only the year is required, month and day are optional (but recommended when available).
+**Note**: Only the year is required, month and day are optional (but recommended when available).
