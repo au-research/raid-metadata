@@ -6,7 +6,7 @@
 2 date
 ======
 
-**Definition**: a metadata schema block containing the start and end date of the RAiD.
+**Definition**: a metadata schema block containing the start and end date of the RAiD
 
 **Requirement**: mandatory
 
@@ -33,7 +33,7 @@
 
 **Examples**: ``2023-08-28``; ``2023-08``; ``2023``
 
-**Note**: only the year is required, month and day are optional (but recommended when available).
+**Note**: Only the year is required, month and day are optional (but recommended when available).
 
 .. _2.2-date.endDate:
 
@@ -42,7 +42,7 @@
 
 **Definition**: the project or activity's end date
 
-**Requirement**: recommended
+**Requirement**: recommended if a project has concluded
 
 **Occurrence**: 0-1
 
@@ -52,4 +52,4 @@
 
 **Examples**: ``2023-08-28``; ``2023-08``; ``2023``
 
-**Note**: only year is required, month and day are optional (but recommended when available). An end date should be supplied when a project concludes. Providing an end date terminates active management of and Registration Agency / owner responsibility for a RAiD. Once a RAiD has an end date, it is archival only.
+**Note**: Only year is required, month and day are optional (but recommended when available). An end date should be supplied when a project concludes. Providing an end date terminates active management of and Registration Agency / Identifier Owner responsibility for a RAiD. Once a RAiD has an end date, it should be considered archival only.
