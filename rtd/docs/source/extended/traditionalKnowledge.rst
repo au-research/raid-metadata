@@ -1,12 +1,25 @@
 .. autosummary::
    :toctree: generated
 
-.. _13-traditionalKnowledgeLabel:
+.. _14-traditionalKnowledge:
 
-13 traditionalKnowledgeLabel
-============================
+14 traditionalKnowledge
+=======================
 
-**Definition**: metadata schema block containing information about Traditional Knowledge or Biocultural labels
+**Definition**: metadata schema block containing information about Traditional Knowledge Labels and Notices
+
+**Requirement**: recommended
+
+**Occurrence**: 0-n
+
+**Example JSON**
+
+.. _14.1-traditionalKnowledgeLabel:
+
+14.1 traditionalKnowledgeLabel
+------------------------------
+
+**Definition**: metadata schema sub-block containing information about Traditional Knowledge or Biocultural labels
 
 **Requirement**: optional
 
@@ -16,10 +29,10 @@
 
 **Note**: The Traditional Knowledge (TK) and Biocultural (BC) Labels are tools for Indigenous communities and local organizations. Developed through sustained partnership and testing within Indigenous communities across multiple countries, the Labels allow communities to express local and specific conditions for sharing and engaging in future research and relationships in ways that are consistent with already existing community rules, governance, and protocols for using, sharing, and circulating knowledge and data. Labels can be applied to websites, publications, datasets, museum exhibitions, items in a collection, genetic samples, and more. Communities can customize and apply their TK and BC Labels using the Local Contexts Hub. *Labels should only be used by or in conjunction with Indigenous communities and local organizations*. Institutions and researchers should use 'Notices' instead. See https://localcontexts.org/labels/about-the-labels/ for more information.
 
-.. _13.1-traditionalKnowledgeLabel.id:
+.. _14.1.1-traditionalKnowledgeLabel.id:
 
-13.1 traditionalKnowledgeLabel.id
----------------------------------
+14.1.1 traditionalKnowledgeLabel.id
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: identifier (URI) for a Traditional Knowledge or Biocultural label pertaining to a project or activity
 
@@ -36,10 +49,10 @@
 
 **Note**: TraditionalKnowledgeLabel.id may be omitted if a project wishes to specify only the scheme used, and not the range of labels used.
 
-.. _13.2-traditionalKnowledgeLabel.schemaUri:
+.. _14.1.2-traditionalKnowledgeLabel.schemaUri:
 
-13.2 traditionalKnowledgeLabel.schemaUri
-----------------------------------------
+14.1.2 traditionalKnowledgeLabel.schemaUri
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: the URI of the Traditional Knowledge or Biocultural label identifier schema
 
@@ -54,12 +67,12 @@
 
 **Note**: Users may select a traditionalKnowledgeLabel.schemaUri without specifying a traditionalKnowlegeLabel.id, if a project only wants to declare only the schema used without specifying what labels may be used. 
 
-.. _14-traditionalKnowledgeNotice:
+.. _14.2-traditionalKnowledgeNotice:
 
-14 traditionalKnowledgeNotice
-=============================
+14.2 traditionalKnowledgeNotice
+-------------------------------
 
-**Definition**: metadata schema block containing information about Traditional Knowledge Notices
+**Definition**: metadata schema sub-block containing information about Traditional Knowledge Notices
 
 **Requirement**: optional
 
@@ -69,10 +82,10 @@
 
 **Note**: The Notices are tools for institutions and researchers to identify Indigenous collections and data and recognize Indigenous rights and interests. The Notices were developed to create pathways for partnership, collaboration, and support of Indigenous cultural authority. Notices can be applied to websites, publications, datasets, museum exhibitions, items in a collection, genetic samples, and more. Institutions and researchers can generate Notices using the Local Contexts Hub. See https://localcontexts.org/notices/about-the-notices// for more information.
 
-.. _14.1-traditionalKnowledgeNotice.id:
+.. _14.2.1-traditionalKnowledgeNotice.id:
 
-14.1 traditionalKnowledgeNotice.id
-----------------------------------
+14.2.1 traditionalKnowledgeNotice.id
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: identifier (URI) for a Traditional Knowledge Notice pertaining to a project or activity
 
@@ -97,10 +110,10 @@
 
 **Note**: TraditionalKnowledgeNotice.id may be omitted if a project wishes to specify only the scheme used, and not the range of notices used.
 
-.. _14.2-traditionalKnowledgeNotice.schemaUri:
+.. _14.2.2-traditionalKnowledgeNotice.schemaUri:
 
-14.2 traditionalKnowledgeNotice.schemaUri
------------------------------------------
+14.2.2 traditionalKnowledgeNotice.schemaUri
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: the URI of the Traditional Knowledge or Biocultural label identifier schema
 

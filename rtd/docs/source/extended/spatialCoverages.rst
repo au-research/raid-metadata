@@ -1,9 +1,9 @@
 .. autosummary::
    :toctree: generated
 
-.. _14-spatialCoverage:
+.. _13-spatialCoverage:
 
-14 spatialCoverage
+13 spatialCoverage
 ==================
 
 **Definition**: metadata schema block containing information about any spatial region(s) or named place(s) targeted by the project
@@ -14,9 +14,9 @@
 
 **Example JSON**
 
-.. _14.1-spatialCoverage.id:
+.. _13.1-spatialCoverage.id:
 
-14.1 spatialCoverage.id
+13.1 spatialCoverage.id
 -----------------------
 
 **Definition**: spatial region or named place that is the subject or target of the project or activity. Repeat this property as necessary to indicate different locations. Do not duplicate organisational locations
@@ -35,9 +35,9 @@
 * ``https://www.geonames.org/264371/athens.html`` (Athens, Greece, from Geonames)
 * ``https://www.geonames.org/2161776/katoomba.html`` (Katoomba, NSW, Australia, from Geonames)
 
-.. _14.2-spatialCoverage.schemaUri:
+.. _13.2-spatialCoverage.schemaUri:
 
-14.2 spatialCoverage.schemaUri
+13.2 spatialCoverage.schemaUri
 ------------------------------
 
 **Definition**: the URI of the geolocation schema used for spatialCoverage
@@ -53,9 +53,9 @@
 
 **Note**: OpenStreetMap preferred, Geonames allowed; other geoname servers can be nominated by Registration Agencies.
 
-.. _14.3-spatialCoverage.place:
+.. _13.3-spatialCoverage.place:
 
-14.3 spatialCoverage.place
+13.3 spatialCoverage.place
 --------------------------
 
 **Definition**: metadata schema sub-block containing free-text place names or descriptions plus associated metadata properties
@@ -64,9 +64,9 @@
 
 **Occurrence**: 0-n
 
-.. _14.3.1-spatialCoverage.place.text:
+.. _13.3.1-spatialCoverage.place.text:
 
-14.3.1 spatialCoverage.place.text
+13.3.1 spatialCoverage.place.text
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: free text description of one or more geographic locations that are the subject or target of the project or activity; use to specify or describe a geographic location in a manner not covered by spatialCoverage.id
@@ -79,9 +79,9 @@
 
 **Constraints**: do not duplicate information from spatialCoverage.id above; do not use for organisational locations (which are derived from the organisation's ROR)
 
-.. _14.3.2-spatialCoverage.place.language:
+.. _13.3.2-spatialCoverage.place.language:
 
-14.3.2 spatialCoverage.place.language
+13.3.2 spatialCoverage.place.language
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: metadata schema block declaring the language of spatialCoverage.place.text
@@ -92,9 +92,9 @@
 
 **Example JSON**
 
-.. _14.3.2.1-spatialCoverage.place.language.id:
+.. _13.3.2.1-spatialCoverage.place.language.id:
 
-14.3.2.1 spatialCoverage.place.language.id
+13.3.2.1 spatialCoverage.place.language.id
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Definition**: language used for spatialCoverage.place.text identified by a code or other identifier
@@ -107,9 +107,9 @@
 
 **Example**: ``eng``
 
-.. _14.2.2.2-spatialCoverage.place.language.schemaUri:
+.. _13.2.2.2-spatialCoverage.place.language.schemaUri:
 
-14.2.2.2 spatialCoverage.place.language.schemaUri
+13.2.2.2 spatialCoverage.place.language.schemaUri
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Definition**: the URI of the language identifier schema
