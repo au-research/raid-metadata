@@ -34,7 +34,7 @@
 
 **Definition**: The URI of the relatedObject identifier schema
 
-**Requirement**: mandatory for each relatedObject.id supplied
+**Requirement**: mandatory for each relatedObject supplied
 
 **Occurrence**: 1
 
@@ -111,7 +111,7 @@
 
 **Definition**: the URI of the type schema used
 
-**Requirement**: mandatory for each relatedObject.type.id supplied
+**Requirement**: mandatory for each relatedObject.type supplied
 
 **Occurrence**: 1
 
@@ -156,7 +156,7 @@
 
 **Definition**: the URI of the category schema used.
 
-**Requirement**: mandatory for each relatedObject.category.id supplied
+**Requirement**: mandatory for each relatedObject.category supplied
 
 **Occurrence**: 1
 

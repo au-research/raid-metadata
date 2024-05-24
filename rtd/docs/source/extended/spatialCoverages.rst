@@ -99,9 +99,9 @@
 
 **Definition**: language used for spatialCoverage.place.text identified by a code or other identifier
 
-**Requirement**: recommended
+**Requirement**: mandatory for each subject.place.language supplied
 
-**Occurrence**: 0-1
+**Occurrence**: 1
 
 **Allowed values**: *closed controlled list derived from spatialCoverage.place.language.schemaUri*
 
@@ -114,7 +114,7 @@
 
 **Definition**: the URI of the language identifier schema
 
-**Requirement**: mandatory for each subject.place.language.id supplied
+**Requirement**: mandatory for each subject.place.language supplied
 
 **Occurrence**: 1
 

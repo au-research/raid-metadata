@@ -94,7 +94,7 @@
 
 **Definition**: the URI of the role schema used
 
-**Requirement**: mandatory for each organisation.role.id supplied
+**Requirement**: mandatory for each organisation.role supplied
 
 **Occurrence**: 1
 

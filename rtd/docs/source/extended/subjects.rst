@@ -94,9 +94,9 @@
 
 **Definition**: language used for the subject keyword text identified by a code or other identifier
 
-**Requirement**: recommended
+**Requirement**: mandatory for each subject.keyword.language supplied
 
-**Occurrence**: 0-1
+**Occurrence**: 1
 
 **Allowed values**: *closed controlled list derived from subject.keyword.language.schemaUri*
 
@@ -109,7 +109,7 @@
 
 **Definition**: the URI of the language identifier schema
 
-**Requirement**: mandatory for each subject.keyword.language.id supplied
+**Requirement**: mandatory for each subject.keyword.language supplied
 
 **Occurrence**: 1
 

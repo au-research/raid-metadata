@@ -34,7 +34,7 @@
 
 **Definition**: the URI of the contributor identifier schema
 
-**Requirement**: mandatory for each contributor.id supplied
+**Requirement**: mandatory for each contributor supplied
 
 **Occurrence**: 1
 
@@ -90,7 +90,7 @@
 
 **Definition**: the URI of the position schema used
 
-**Requirement**: mandatory for each contributor.position.id supplied
+**Requirement**: mandatory for each contributor.position supplied
 
 **Occurrence**: 1
 
@@ -107,7 +107,7 @@
 
 **Definition**: date the contributor began position associated with the project or activity
 
-**Requirement**: mandatory for each contributor.position.id supplied
+**Requirement**: mandatory for each contributor.position supplied
 
 **Occurrence**: 1
 
@@ -128,7 +128,7 @@
 
 **Definition**: date the contributor terminated position associated with the project or activity
 
-**Requirement**: recommended
+**Requirement**: recommended if the contributor has left the project
 
 **Occurrence**: 0-1
 
@@ -224,7 +224,7 @@
 
 **Definition**: the URI of the role schema used
 
-**Requirement**: mandatory for each contributor.role.id provided
+**Requirement**: mandatory for each contributor.role provided
 
 **Occurrence**: 0-1
 

@@ -34,7 +34,7 @@
 
 **Definition**: a metadata schema sub-block qualifying the relationship with a related Raid
 
-**Requirement**: mandatory for each relatedRaid.id supplied
+**Requirement**: mandatory for each relatedRaid supplied
 
 **Occurrence**: 1
 
@@ -69,7 +69,7 @@
 
 **Definition**: The URI of the relationship schema used
 
-**Requirement**: mandatory for each relatedRaid.type.id supplied
+**Requirement**: mandatory for each relatedRaid.type supplied
 
 **Occurrence**: 1
 

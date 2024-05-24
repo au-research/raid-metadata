@@ -133,9 +133,9 @@
 
 **Definition**: the language used for the access statement text, identified by a code or other identifier
 
-**Requirement**: recommended
+**Requirement**: mandatory for each access.statement.language supplied
 
-**Occurrence**: 0-1
+**Occurrence**: 1
 
 **Allowed values**: *closed controlled list derived from access.statement.language.schemaUri*
 

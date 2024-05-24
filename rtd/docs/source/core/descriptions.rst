@@ -106,9 +106,9 @@
 
 **Definition**: the language used for the description text identified by a code or other identifier
 
-**Requirement**: recommended
+**Requirement**: mandatory for each description.language supplied
 
-**Occurrence**: 0-1
+**Occurrence**: 1
 
 **Allowed values**: *closed controlled list derived from titles.language.schemaUri*
 
@@ -121,9 +121,9 @@
 
 **Definition**: the URI of the language identifier schema
 
-**Requirement**: mandatory for each description.language.id supplied
+**Requirement**: mandatory for each description.language supplied
 
-**Occurrence**: 0-1
+**Occurrence**: 1
 
 **Allowed values**: *closed controlled list of allowed language schemas defined at https://vocabulary.raid.org/description.language.schemaUri/240*
 

@@ -49,7 +49,7 @@
 
 **Definition**: the type of title
 
-**Requirement**: mandatory for each title supplied
+**Requirement**: mandatory for each title.type supplied
 
 **Occurrence**: 1
 
@@ -71,7 +71,7 @@
 
 **Definition**: the URI of the title type schema
 
-**Requirement**: mandatory for each title.type.id supplied
+**Requirement**: mandatory for each title.type supplied
 
 **Occurrence**: 1
 
@@ -101,9 +101,9 @@
 
 **Definition**: the language used for the title text, identified by a code or another identifier
 
-**Requirement**: recommended
+**Requirement**: mandatory for each title.language supplied
 
-**Occurrence**: 0-1
+**Occurrence**: 1
 
 **Allowed values**: *closed controlled list derived from title.language.schemaUri*
 
@@ -116,9 +116,9 @@
 
 **Definition**: the URI of the language identifier schema
 
-**Requirement**: mandatory for each title.language.id supplied
+**Requirement**: mandatory for each title.language supplied
 
-**Occurrence**: 0-1
+**Occurrence**: 1
 
 **Allowed values**: *closed controlled list of allowed language schemas defined at https://vocabulary.raid.org/title.language.schemaUri/163*
 
