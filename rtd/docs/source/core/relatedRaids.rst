@@ -23,7 +23,7 @@
 
 **Requirement**: mandatory for each relatedRaid supplied
 
-**Occurrence**: 0-1
+**Occurrence**: 1
 
 **Allowed values**: RAiD name
 
@@ -36,7 +36,7 @@
 
 **Requirement**: mandatory for each relatedRaid.id supplied
 
-**Occurrence**: 0-1
+**Occurrence**: 1
 
 .. _10.2.1-relatedRaid.type.id:
 
@@ -47,18 +47,18 @@
 
 **Requirement**: mandatory for each relatedRaid.type supplied
 
-**Occurrence**: 0-1
+**Occurrence**: 1
 
 **Allowed values**: *closed controlled list derived from relatedRaid.type.schemaUri*
 
-* Continues
-* IsContinuedBy
-* IsPartOf
-* HasPart
-* IsDerivedFrom
-* IsSourceOf
-* Obsoletes (*for resolving duplicate RAiDs*)
-* IsObsoletedBy (*for resolving duplicate RAiDs*)
+* ``https://vocabulary.raid.org/relatedRaid.type.schema/204`` (Continues)
+* ``https://vocabulary.raid.org/relatedRaid.type.schema/203`` (IsContinuedBy)
+* ``https://vocabulary.raid.org/relatedRaid.type.schema/201`` (HasPart)
+* ``https://vocabulary.raid.org/relatedRaid.type.schema/202`` (IsPartOf)
+* ``https://vocabulary.raid.org/relatedRaid.type.schema/199`` (IsSourceOf)
+* ``https://vocabulary.raid.org/relatedRaid.type.schema/200`` (IsDerivedFrom)
+* ``https://vocabulary.raid.org/relatedRaid.type.schema/198`` (Obsoletes, for resolving duplicate RAiDs)
+* ``https://vocabulary.raid.org/relatedRaid.type.schema/205`` (IsObsoletedBy, for resolving duplicate RAiDs)
 
 **Note**: Controlled list is a subset of DataCite Schema v4.4 Table 8 'Description of relatedIdentifierType'. All list items appear in the DataCite Schema. 
 
@@ -71,8 +71,8 @@
 
 **Requirement**: mandatory for each relatedRaid.type.id supplied
 
-**Occurrence**: 0-1
+**Occurrence**: 1
 
-**Allowed values**: *closed controlled list*
+**Allowed values**: *closed controlled list defined at https://vocabulary.raid.org/relatedRaid.type.schemaUri/285*
 
-* [URI of RAiD vocab on RVA (to be created)]
+* https://vocabulary.raid.org/relatedRaid.type.schema/367
