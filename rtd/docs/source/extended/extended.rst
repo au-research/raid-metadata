@@ -24,5 +24,5 @@ Contents
 .. toctree::
 
    subjects
-   traditionalKnowledgeLabels
    spatialCoverages
+   traditionalKnowledge   
