@@ -116,7 +116,7 @@
 
 **Requirement**: mandatory for each subject.place.language.id supplied
 
-**Occurrence**: 0-1
+**Occurrence**: 1
 
 **Allowed values**: *closed controlled list of allowed language schemas defined at https://vocabulary.raid.org/spatialCoverage.place.language.schemaUri/206*
 

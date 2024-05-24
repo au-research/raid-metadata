@@ -23,7 +23,7 @@
 
 **Requirement**: mandatory for each subject supplied
 
-**Occurrence**: 0-1
+**Occurrence**: 1
 
 **Allowed values**: *closed controlled list of URIs derived from the schema chosen at subject.id.schemaUri*
 
@@ -39,11 +39,11 @@
 
 **Definition**: the URI of the subject identifier schema
 
-**Requirement**: mandatory for each subject.id supplied
+**Requirement**: mandatory for each subject supplied
 
-**Occurrence**: 0-1
+**Occurrence**: 1
 
-**Allowed values**: *open controlled list of URIs*
+**Allowed values**: *open controlled list of URIs defined at https://vocabulary.raid.org/subject.schemaUri/193*
 
 * https://id.loc.gov/authorities/subject.html (Library of Congress Subject Headings)
 * https://vocabs.ardc.edu.au/viewById/316 (Australian and New Zealand Standard Research Classification 2020: Fields of Research)
@@ -100,7 +100,7 @@
 
 **Allowed values**: *closed controlled list derived from subject.keyword.language.schemaUri*
 
-**Example**: ``eng`` (*ISO 639-3 three-letter code*)
+**Example**: ``eng``
 
 .. _12.3.2.2-subject.keyword.language.schemaUri:
 
@@ -111,10 +111,10 @@
 
 **Requirement**: mandatory for each subject.keyword.language.id supplied
 
-**Occurrence**: 0-1
+**Occurrence**: 1
 
-**Allowed values**: *closed controlled list of allowed language schemas*
+**Allowed values**: *closed controlled list of allowed language schemas defined at https://vocabulary.raid.org/subject.keyword.language.schemaUri/245*
 
-* ``https://www.iso.org/standard/39534.html``
+* ``https://www.iso.org/standard/74575.html`` (ISO 639:2023 Code for individual languages and language groups (Set 3))
 
-**Note**: currently limited to ISO 639-3 three-letter code.
+**Constraints**: currently limited to ISO 639:2023 (Set 3)
