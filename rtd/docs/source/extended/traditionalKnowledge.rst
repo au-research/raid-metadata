@@ -8,7 +8,7 @@
 
 **Definition**: metadata schema block containing information about Traditional Knowledge Labels and Notices
 
-**Requirement**: recommended
+**Requirement**: optional
 
 **Occurrence**: 0-n
 
