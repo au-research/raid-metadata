@@ -58,11 +58,11 @@
 
 **Occurrence**: 1
 
-**Allowed values**: *closed controlled list*
+**Allowed values**: *closed controlled list defined at https://vocabulary.raid.org/access.type.schemaUri/207*
 
-* ``https://vocabulary.raid.org/access.type.id/241``
+* ``https://vocabularies.coar-repositories.org/access_rights/`` 
 
-**Note**: The RAiD controlled list includes a subset of the COAR vocabulary (https://vocabularies.coar-repositories.org/access_rights/1.1/), including 'Open access' and 'Embargoed access', but excluding 'Restricted access' (since no permanently restricted RAiDs are allowed), and ‘Metadata only’ (since RAiDs by design contain only metadata).
+**Note**: The RAiD controlled list includes only a subset of the COAR vocabulary (https://vocabularies.coar-repositories.org/access_rights/1.1/), including 'Open access' and 'Embargoed access', but excluding 'Restricted access' (since no permanently restricted RAiDs are allowed), and ‘Metadata only’ (since RAiDs by design contain only metadata).
 
 .. _11.2-access.embargoExpiry:
 
@@ -152,8 +152,8 @@
 
 **Occurrence**: 1
 
-**Allowed values**: *closed controlled list of allowed language schemas*
+**Allowed values**: *closed controlled list of allowed language schemas defined at https://vocabulary.raid.org/access.statement.language.schemaUri/196*
 
-* ``https://vocabulary.raid.org/access.statement.language.schemaUri/196``
+* ``https://www.iso.org/standard/74575.html`` (ISO 639:2023 Code for individual languages and language groups (Set 3))
 
-**Note**: currently limited to ISO 639:2023 Code for individual languages and language groups (Set 3; https://www.iso.org/standard/74575.html).
+**Constraints**: currently limited to ISO 639:2023 (Set 3)

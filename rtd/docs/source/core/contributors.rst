@@ -38,14 +38,14 @@
 
 **Occurrence**: 1
 
-**Allowed values**: *closed controlled list*
+**Allowed values**: *closed controlled list defined at https://vocabulary.raid.org/contributor.schemaUri/215*
 
 * ``https://orcid.org/`` (ORCID)
 * ``https://isni.org/`` (ISNI)
 
 **Constraints**: a PID is required and (currently) only ORCID and ISNI are allowed
 
-**Note**: The controlled list is defined at https://vocabulary.raid.org/contributor.schemaUri/215 and is shared across all Registration Agencies.
+**Note**: The controlled list of allowed identifier schemas is defined at https://vocabulary.raid.org/contributor.schemaUri/215 and is shared across all Registration Agencies.
 
 .. _5.3-contributor.position:
 
@@ -75,11 +75,11 @@
 
 **Allowed values**: *closed controlled list derived from contributor.position.schemaUri*
 
-* ``https://vocabulary.raid.org/contributor.position.id/317`` (Principal or Chief Investigator)
-* ``https://vocabulary.raid.org/contributor.position.id/313`` (Co-investigator or Collaborator)
-* ``https://vocabulary.raid.org/contributor.position.id/316`` (Partner Investigator, e.g., industry, government, or community collaborator)
-* ``https://vocabulary.raid.org/contributor.position.id/314`` (Consultant, e.g., someone hired as a contract researcher by the project)
-* ``https://vocabulary.raid.org/contributor.position.id/315`` (Other Participant not covered by one of the positions above, e.g., 'member' or 'other significant contributor')
+* ``https://vocabulary.raid.org/contributor.position.schema/307`` (Principal or Chief Investigator)
+* ``https://vocabulary.raid.org/contributor.position.schema/308`` (Co-investigator or Collaborator)
+* ``https://vocabulary.raid.org/contributor.position.schema/309`` (Partner Investigator, e.g., industry, government, or community collaborator)
+* ``https://vocabulary.raid.org/contributor.position.schema/310`` (Consultant, e.g., someone hired as a contract researcher by the project)
+* ``https://vocabulary.raid.org/contributor.position.schema/311`` (Other Participant not covered by one of the positions above, e.g., 'member' or 'other significant contributor')
 
 **Default**: contributor.position.id for first-entered contributor (only) defaults to 'Principal or Chief Investigator' 
 
@@ -94,9 +94,9 @@
 
 **Occurrence**: 1
 
-**Allowed values**: *closed controlled list*
+**Allowed values**: *closed controlled list defined at https://vocabulary.raid.org/contributor.position.schemaUri/277*
 
-* ``https://vocabulary.raid.org/contributor.position.schemaUri/306``
+* ``https://vocabulary.raid.org/contributor.position.schema/305``
 
 **Note**: Controlled list informed by Simon Cox's Project Ontology, OpenAIRE ‘Project’ guidelines, NIH definitions, ARC definitions, and DataCite Metadata Schema 4.4 Appendix 1 Table 5 'Description of contributorType'.
 
@@ -228,8 +228,8 @@
 
 **Occurrence**: 0-1
 
-**Allowed values**: *closed controlled list*
+**Allowed values**: *closed controlled list defined at https://vocabulary.raid.org/contributor.role.schemaUri/165*
 
-* ``https://vocabulary.raid.org/contributor.role.schemaUri/165``
+* ``https://credit.niso.org/``
 
-**Constraints**: currently limited to the CRediT vocabulary (https://credit.niso.org/) 
+**Constraints**: currently limited to the CRediT vocabulary 

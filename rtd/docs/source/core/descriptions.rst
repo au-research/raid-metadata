@@ -80,9 +80,9 @@
 
 **Occurrence**: 1
 
-**Allowed values**: *closed controlled list*
+**Allowed values**: *closed controlled list defined at https://vocabulary.raid.org/description.type.schemaUri/275*
 
-* ``https://vocabulary.raid.org/description.type.schemaUri/275``
+* ``https://vocabulary.raid.org/description.type.schema/320``
 
 **Note**: Controlled list adapted from Vocabularies for Registry Schema 1.6.5 'Description Type' and DataCite Metadata Schema 4.4 Appendix 1 Table 10 'Description of descriptiontype'.
 
@@ -125,8 +125,8 @@
 
 **Occurrence**: 0-1
 
-**Allowed values**: *closed controlled list of allowed language schemas*
+**Allowed values**: *closed controlled list of allowed language schemas defined at https://vocabulary.raid.org/description.language.schemaUri/240*
 
-* ``https://vocabulary.raid.org/description.language.schemaUri/240``
+* ``https://www.iso.org/standard/74575.html`` (ISO 639:2023 Code for individual languages and language groups (Set 3))
 
-**Note**: Currently limited to ISO 639:2023 Code for individual languages and language groups (Set 3; https://www.iso.org/standard/39534.html).
+**Constraints**: currently limited to ISO 639:2023 (Set 3)

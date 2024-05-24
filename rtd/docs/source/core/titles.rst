@@ -75,9 +75,9 @@
 
 **Occurrence**: 1
 
-**Allowed values**: *Closed controlled list*
+**Allowed values**: *Closed controlled list defined at https://vocabulary.raid.org/title.type.schemaUri/377*
 
-* ``https://vocabulary.raid.org/title.type.schemaUri/377``
+* ``https://vocabulary.raid.org/title.type.schema/376``
 
 **Note**: Controlled list adapted from Vocabularies for Registry Schema 1.6.5 'Name Type'.
 
@@ -120,11 +120,11 @@
 
 **Occurrence**: 0-1
 
-**Allowed values**: *closed controlled list of allowed language schemas*
+**Allowed values**: *closed controlled list of allowed language schemas defined at https://vocabulary.raid.org/title.language.schemaUri/163*
 
-* ``https://vocabulary.raid.org/title.language.schemaUri/163``
+* ``https://www.iso.org/standard/74575.html`` (ISO 639:2023 Code for individual languages and language groups (Set 3))
 
-**Note**: Currently limited to ISO 639:2023 Code for individual languages and language groups (Set 3; https://www.iso.org/standard/74575.html).
+**Constraints**: currently limited to ISO 639:2023 (Set 3)
 
 .. _3.4-title.startDate:
 
