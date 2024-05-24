@@ -119,7 +119,7 @@
 
 **Examples**: ``2026-08-28``; ``2026-08``; ``2026``
 
-**Note**: only the year is required; month and day are optional (but recommended when available).
+**Note**: Only the year is required; month and day are optional (but recommended when available).
 
 .. _6.3.4-organisation.role.endDate:
 
@@ -138,4 +138,4 @@
 
 **Examples**: ``2026-08-28``; ``2026-08``; ``2026``
 
-**Note**: only the year is required; month and day are optional (but recommended when available).
+**Note**: Only the year is required; month and day are optional (but recommended when available).
