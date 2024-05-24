@@ -11,12 +11,12 @@ Overview
 
 Registration agencies may:
 
-1. Add additional existing controlled list schemas, so long as they are human and machine-readable with a single page per value. 
+1. Add existing controlled list schemas from other sources, so long as they are human and machine-readable with a single page per value. 
 2. Build new controlled list schemas, so long as they are human and machine-readable with a single page per value. 
 
 Note that not all existing schemes provide a URI for each term, in which case Registration Agencies will need to build and publish their own lists. 
 
-All non-canonical schemas must be registered with the Registration Authority.
+All non-canonical schemas or controlled lists must be registered with the Registration Authority and published to a vocabulary service.
 
 Contents
 --------
