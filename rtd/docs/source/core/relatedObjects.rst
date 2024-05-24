@@ -23,9 +23,9 @@
 
 **Requirement**: mandatory for each relatedObject supplied
 
-**Occurrence**: 0-1
+**Occurrence**: 1
 
-**Allowed values**: an identifier specified by relatedObject.schemaUri
+**Allowed values**: an identifier as specified by relatedObject.schemaUri
 
 .. _7.2-relatedObject.id.schemaUri:
 
@@ -36,9 +36,9 @@
 
 **Requirement**: mandatory for each relatedObject.id supplied
 
-**Occurrence**: 0-1
+**Occurrence**: 1
 
-**Allowed values**: *closed controlled list*
+**Allowed values**: *closed controlled list defined by https://vocabulary.raid.org/relatedObject.schemaUri/218*
 
 * https://arks.org/ 
 * http://doi.org/ (*all DOIs, including IGSNs, CrossRef Publication IDs or Grant IDs, DataCite DOIs, instrument DOIs, etc.*)
@@ -58,7 +58,7 @@
 
 **Requirement**: mandatory for each relatedObject supplied
 
-**Occurrence**: 0-1
+**Occurrence**: 1
 
 .. _7.3.1-relatedObject.type.id:
 
@@ -69,38 +69,38 @@
 
 **Requirement**: mandatory for each relatedObject.type supplied
 
-**Occurrence**: 0-1
+**Occurrence**: 1
 
 **Allowed values**: *closed controlled list derived from relatedObject.type.schemaUri*
 
-* Audiovisual
-* Book
-* Book Chapter
-* Computational Notebook
-* Conference Paper
-* Conference Poster
-* Conference Proceeding
-* Data Paper
-* Dataset
-* Dissertation
-* Learning Object
-* Event
-* Funding (includes 'grant' or other cash or in-kind awards)
-* Image
-* Instrument
-* Journal Article
-* Model
-* Output Management Plan
-* Physical Object
-* Preprint
-* Prize
-* Report
-* Service
-* Software
-* Sound
-* Standard
-* Text
-* Workflow
+* ``https://vocabulary.raid.org/relatedObject.type.schema/273`` (Audiovisual)
+* ``https://vocabulary.raid.org/relatedObject.type.schema/258`` (Book)
+* ``https://vocabulary.raid.org/relatedObject.type.schema/271`` (Book Chapter)
+* ``https://vocabulary.raid.org/relatedObject.type.schema/256`` (Computational Notebook)
+* ``https://vocabulary.raid.org/relatedObject.type.schema/264`` (Conference Paper)
+* ``https://vocabulary.raid.org/relatedObject.type.schema/248`` (Conference Poster)
+* ``https://vocabulary.raid.org/relatedObject.type.schema/262`` (Conference Proceeding)
+* ``https://vocabulary.raid.org/relatedObject.type.schema/255`` (Data Paper)
+* ``https://vocabulary.raid.org/relatedObject.type.schema/269`` (Dataset)
+* ``https://vocabulary.raid.org/relatedObject.type.schema/253`` (Dissertation)
+* ``https://vocabulary.raid.org/relatedObject.type.schema/260`` (Event)
+* ``https://vocabulary.raid.org/relatedObject.type.schema/272`` (Funding, including grants or other cash or in-kind awards, but not prizes)
+* ``https://vocabulary.raid.org/relatedObject.type.schema/257`` (Image)
+* ``https://vocabulary.raid.org/relatedObject.type.schema/266`` (Instrument)
+* ``https://vocabulary.raid.org/relatedObject.type.schema/250`` (Journal Article)
+* ``https://vocabulary.raid.org/relatedObject.type.schema/267`` (Learning Object)
+* ``https://vocabulary.raid.org/relatedObject.type.schema/263`` (Model)
+* ``https://vocabulary.raid.org/relatedObject.type.schema/247`` (Output Management Plan)
+* ``https://vocabulary.raid.org/relatedObject.type.schema/270`` (Physical Object)
+* ``https://vocabulary.raid.org/relatedObject.type.schema/254`` (Preprint)
+* ``https://vocabulary.raid.org/relatedObject.type.schema/268`` (Prize, excluding funded awards)
+* ``https://vocabulary.raid.org/relatedObject.type.schema/252`` (Report)
+* ``https://vocabulary.raid.org/relatedObject.type.schema/274`` (Service)
+* ``https://vocabulary.raid.org/relatedObject.type.schema/259`` (Software)
+* ``https://vocabulary.raid.org/relatedObject.type.schema/261`` (Sound)
+* ``https://vocabulary.raid.org/relatedObject.type.schema/251`` (Standard)
+* ``https://vocabulary.raid.org/relatedObject.type.schema/265`` (Text)
+* ``https://vocabulary.raid.org/relatedObject.type.schema/249`` (Workflow)
 
 **Note**: Controlled list is a subset of DataCite Metadata Schema 4.4 Appendix 1 Table 7  'Description of resourceTypeGeneral', with 'Instrument', 'Funding', 'Learning Object', ‘Conference Poster’, and 'Prize' added (DataCite Metadata Schema 4.5 also adds ‘Instrument’). COAR Resource Types 3.1 (https://vocabularies.coar-repositories.org/resource_types/) used as source for missing terms where possible. 
 
@@ -113,11 +113,11 @@
 
 **Requirement**: mandatory for each relatedObject.type.id supplied
 
-**Occurrence**: 0-1
+**Occurrence**: 1
 
-**Allowed values**: *closed controlled list*
+**Allowed values**: *closed controlled list defined at https://vocabulary.raid.org/relatedObject.type.schemaUri/283*
 
-* [URI of RAiD vocab on RVA (to be created)]
+* ``https://vocabulary.raid.org/relatedObject.type.schema/329``
 
 .. _7.4-relatedObject.category:
 
@@ -128,9 +128,9 @@
 
 **Requirement**: mandatory for each relatedObject supplied
 
-**Occurrence**: 0-n
+**Occurrence**: 1-n
 
-**Note**: a relatedObject may have more than one category (e.g.) a DMP could initially be a process document, yet eventually be published as an output.
+**Note**: A relatedObject may have more than one category (e.g.) a DMP could initially be a process document, yet eventually be published as an output.
 
 .. _7.4.1-relatedObject.category.id:
 
@@ -141,13 +141,13 @@
 
 **Requirement**: mandatory for each relatedObject.category supplied
 
-**Occurrence**: 0-1
+**Occurrence**: 1
 
 **Allowed values**: *closed controlled list derived from relatedObject.category.schemUri*
 
-* Input
-* Output
-* Internal process document or artefact
+* ``https://vocabulary.raid.org/relatedObject.category.id/191`` (Input)
+* ``https://vocabulary.raid.org/relatedObject.category.id/192`` (Internal process document or artefact)
+* ``https://vocabulary.raid.org/relatedObject.category.id/190`` (Output)
 
 .. _7.4.2-relatedObject.type.id.schemaUri:
 
@@ -158,8 +158,8 @@
 
 **Requirement**: mandatory for each relatedObject.category.id supplied
 
-**Occurrence**: 0-1
+**Occurrence**: 1
 
-**Allowed values**: *closed controlled list*
+**Allowed values**: *closed controlled list defined at https://vocabulary.raid.org/relatedObject.category.schemaUri/386*
 
-* [URI of RAiD vocab on RVA (to be created)]
+* https://vocabulary.raid.org/relatedObject.category.schema/385
