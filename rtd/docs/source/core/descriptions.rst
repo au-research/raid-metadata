@@ -58,11 +58,12 @@
 **Allowed values**: *closed controlled list derived from description.type.schemaUri*
 
 * ``https://vocabulary.raid.org/description.type.id/326`` (Primary, i.e., a preferred full description or abstract)
-* `https://vocabulary.raid.org/description.type.id/321`` (Alternative, i.e., an additional or supplementary full description or abstract)
+* ``https://vocabulary.raid.org/description.type.id/321`` (Alternative, i.e., an additional or supplementary full description or abstract)
 * ``https://vocabulary.raid.org/description.type.id/322`` (Brief, i.e., a shorted version of the primary description)
 * ``https://vocabulary.raid.org/description.type.id/327`` (Significance Statement)
 * ``https://vocabulary.raid.org/description.type.id/323`` (Methods)
 * ``https://vocabulary.raid.org/description.type.id/324`` (Objectives)
+* ``https://vocabulary.raid.org/raid_placeholder/392`` (Acknowledgements, i.e., for recognition of people not listed as Contributors or organisations not listed as Organisations)
 * ``https://vocabulary.raid.org/description.type.id/325`` (Other, i.e., any other descriptive information such as a note)
 
 **Default**: description.type.id for first-entered description (only) defaults to 'Primary'
