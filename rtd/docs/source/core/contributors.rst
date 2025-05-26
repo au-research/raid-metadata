@@ -202,20 +202,20 @@
 
 **Allowed values**: *closed controlled list derived from contributor.role.schemaUri*
 
-* ``https://credit.niso.org/contributor-role/conceptualization/``
-* ``https://credit.niso.org/contributor-role/data-curation/``
-* ``https://credit.niso.org/contributor-role/formal-analysis/``
-* ``https://credit.niso.org/contributor-role/funding-acquisition/``
-* ``https://credit.niso.org/contributor-role/investigation/``
-* ``https://credit.niso.org/contributor-role/methodology/``
-* ``https://credit.niso.org/contributor-role/project-administration/``
-* ``https://credit.niso.org/contributor-role/resources/``
-* ``https://credit.niso.org/contributor-role/software/``
-* ``https://credit.niso.org/contributor-role/supervision/``
-* ``https://credit.niso.org/contributor-role/validation/``
-* ``https://credit.niso.org/contributor-role/visualization/``
-* ``https://credit.niso.org/contributor-role/writing-original-draft/``
-* ``https://credit.niso.org/contributor-role/writing-review-editing/``
+* ``https://credit.niso.org/contributor-roles/conceptualization/``
+* ``https://credit.niso.org/contributor-roles/data-curation/``
+* ``https://credit.niso.org/contributor-roles/formal-analysis/``
+* ``https://credit.niso.org/contributor-roles/funding-acquisition/``
+* ``https://credit.niso.org/contributor-roles/investigation/``
+* ``https://credit.niso.org/contributor-roles/methodology/``
+* ``https://credit.niso.org/contributor-roles/project-administration/``
+* ``https://credit.niso.org/contributor-roles/resources/``
+* ``https://credit.niso.org/contributor-roles/software/``
+* ``https://credit.niso.org/contributor-roles/supervision/``
+* ``https://credit.niso.org/contributor-roles/validation/``
+* ``https://credit.niso.org/contributor-roles/visualization/``
+* ``https://credit.niso.org/contributor-roles/writing-original-draft/``
+* ``https://credit.niso.org/contributor-roles/writing-review-editing/``
 
 .. _5.6.2-contributor.role.id.schemaUri:
 
