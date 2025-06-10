@@ -53,7 +53,7 @@
 * ``https://www.geonames.org/`` (Geonames)
 * ``https://marineregions.org/gazetteer.php`` (Marine Regions)
 
-**Note**: OpenStreetMap preferred, Geonames allowed; other geoname servers can be nominated by Registration Agencies.
+**Note**: OpenStreetMap or (as appropriate) Marine Regions preferred, Geonames allowed; other geoname servers can be nominated by Registration Agencies.
 
 .. _13.3-spatialCoverage.place:
 
