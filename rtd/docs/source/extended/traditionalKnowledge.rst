@@ -46,6 +46,6 @@
 
 **Allowed values**: *closed controlled list of URIs defined at https://vocabulary.raid.org/traditionalKnowledgeLabel.schemaUri/160*
 
-* https://localcontextshub.org/projects-board/ (Local Contexts Hub Projects)
+* https://localcontextshub.org/projects/ (Local Contexts Hub Projects)
 
 **Note**: Currently only Local Contexts Hub is supported for validated TK/BC Labels and Notices. 
