@@ -51,6 +51,9 @@
 
 * ``https://nominatim.openstreetmap.org/`` (OpenStreetMap)
 * ``https://www.geonames.org/`` (Geonames)
+
+**Proposed values**: *not yet implemented*
+
 * ``https://marineregions.org/gazetteer.php`` (Marine Regions)
 
 **Note**: OpenStreetMap or (as appropriate) Marine Regions preferred, Geonames allowed; other geoname servers can be nominated by Registration Agencies.
