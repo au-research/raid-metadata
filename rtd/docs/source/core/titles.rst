@@ -156,7 +156,7 @@
 
 **Requirement**: recommended
 
-**Occurrence**: 1
+**Occurrence**: 0-1
 
 **Allowed values**: ISO 8601 standard date
 
