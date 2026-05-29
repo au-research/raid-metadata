@@ -78,7 +78,7 @@
 
 **Requirement**: optional
 
-**Occurrence**: 0-n
+**Occurrence**: 0-1
 
 **Allowed values**: free text
 
