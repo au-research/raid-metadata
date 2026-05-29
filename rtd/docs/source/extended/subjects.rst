@@ -48,6 +48,8 @@
 * https://id.loc.gov/authorities/subject.html (Library of Congress Subject Headings)
 * https://vocabs.ardc.edu.au/viewById/316 (Australian and New Zealand Standard Research Classification 2020: Fields of Research)
 
+Other subject schemas can be nominated by Registration Agencies.
+
 .. _12.3-subject.keyword:
 
 12.3 subject.keyword
