@@ -27,7 +27,7 @@
 
 **Allowed values**: URL
 
-**Note**: An alternateURL can be used to point to any other project website, whether stand-alone, organisational, or in a platform such as Open Science Framework.
+**Note**: An alternateURL can be used to point to any other project website, whether standalone, organisational, or in a platform such as Open Science Framework.
 
 **Example**: ``https://osf.io/puwgx/`` (an Open Science Framework project page)
 
