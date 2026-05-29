@@ -71,7 +71,7 @@
 
 **Definition**: the date any embargo on access to the RAiD metadata ends
 
-**Requirement**: mandatory if access.type is 'embargoed'
+**Requirement**: mandatory if access.type is 'Embargoed access'
 
 **Occurrence**: 0-1
 
@@ -79,18 +79,18 @@
 
 **Format**: ``YYYY-MM-DD``
 
-**Constraints**: embargo expiration dates may not lay more than 18 months from the date the RAiD was registered; year, month, and day must be specified
+**Constraints**: an embargo expiration date must be within 18 months of the date the RAiD was registered; the year, month, and day that the embargo ends must be specified
 
-**Example**: ``20211-08-28``
+**Example**: ``2021-08-28``
 
 .. _11.3-access.statement:
 
 11.3 access.statement
 ---------------------
 
-**Definition**: a metadata schema block containing an explanation for any access type that is not 'open', with the explanation's associated properties
+**Definition**: a metadata schema block containing an explanation of why the RAiD metadata record is not openly accessible, along with the explanation's associated properties
 
-**Requirement**: mandatory if access.type.id is not 'open'
+**Requirement**: mandatory if access.type.id is not 'Open access'
 
 **Occurrence**: 0-1
 
@@ -103,7 +103,7 @@
 
 **Definition**: the text of an access statement that explains any restrictions on access
 
-**Requirement**: mandatory if access.type.id is not 'open'
+**Requirement**: mandatory if access.type.id is not 'Open access'
 
 **Occurrence**: 0-1
 
