@@ -6,7 +6,7 @@
 14 traditionalKnowledge
 =======================
 
-**Definition**: metadata schema block containing information about Traditional Knowledge / Biocultural Labels and Notices
+**Definition**: metadata schema block containing information about Traditional Knowledge (TK) / Biocultural (BC) Labels and Notices
 
 **Requirement**: optional
 
@@ -16,14 +16,14 @@
 
 .. _14.1-traditionalKnowledge.id:
 
-14.1.1 traditionalKnowledge.id
+14.1 traditionalKnowledge.id
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Definition**: identifier (URI) linking to a verified source for Traditional Knowledge (TK) or Biocultural (BC) Labels or Notices pertaining to a project or activity
+**Definition**: identifier (URI) linking to a verified source for TK or BC Labels or Notices pertaining to a project or activity
 
 **Requirement**: optional
 
-**Occurrence**: 0-n
+**Occurrence**: 0-1
 
 **Allowed values**: *identifier defined by traditionalKnowledge.schemaUri*
 
@@ -33,12 +33,12 @@
 
 **Note**: Currently only Local Contexts Hub Projects are allowed as a source for validated TK/BC Labels and Notices.
 
-.. _14.1.2-traditionalKnowledgeLabel.schemaUri:
+.. _14.2-traditionalKnowledgeLabel.schemaUri:
 
-14.1.2 traditionalKnowledge.schemaUri
+14.2 traditionalKnowledge.schemaUri
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Definition**: the URI of the Traditional Knowledge or Biocultural label identifier schema
+**Definition**: the URI of the TK/BC label identifier schema
 
 **Requirement**: mandatory for each traditionalKnowledgeLabel supplied
 
