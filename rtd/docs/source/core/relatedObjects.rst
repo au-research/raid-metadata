@@ -32,7 +32,7 @@
 7.2 relatedObject.schemaUri
 ---------------------------
 
-**Definition**: The URI of the relatedObject identifier schema
+**Definition**: the URI of the relatedObject identifier schema
 
 **Requirement**: mandatory for each relatedObject supplied
 
