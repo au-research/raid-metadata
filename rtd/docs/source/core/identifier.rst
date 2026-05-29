@@ -175,7 +175,7 @@
 
 **Default**: the SP requesting the RAiD
 
-**Note**: A RAiD minted by a Registration Agency must have a SP associated with an Owner affiliated with that Agency; Registration Agencies must maintain and register lists of their Service Points with the RAiD Registration Authority. 
+**Note**: A RAiD minted by a Registration Agency must have an SP associated with an Owner affiliated with that Agency; Registration Agencies must maintain and register lists of their Service Points with the RAiD Registration Authority. 
 
 .. _1.5-identifier.license:
 
