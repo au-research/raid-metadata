@@ -112,9 +112,9 @@
 
 **Example**: ``eng``
 
-.. _13.2.2.2-spatialCoverage.place.language.schemaUri:
+.. _13.3.2.2-spatialCoverage.place.language.schemaUri:
 
-13.2.2.2 spatialCoverage.place.language.schemaUri
+13.3.2.2 spatialCoverage.place.language.schemaUri
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Definition**: the URI of the language identifier schema
