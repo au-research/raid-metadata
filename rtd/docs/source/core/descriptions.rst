@@ -31,7 +31,7 @@
 
 **Note**: Descriptions are intended to be flexible, and projects can use them liberally to capture information about the project that is not recorded elsewhere in the RAiD.
 
-. 4.2-description.type:
+.. _4.2-description.type:
 
 4.2 description.type
 --------------------
