@@ -33,35 +33,35 @@ The RAiD metadata schema is divided into three components:
 **Extended components** are properties that are standardised across all Registration Agencies, but their controlled lists may vary. A Registration Agency may use its own controlled lists, but it must first:
 
 * Publish each list in a machine-readable format, preferably on a vocabulary service (**Note**: the ARDC can assist with this requirement)
-* Register the controlled list(s) with the ARDC as the RAiD's ISO 23527 Registration Authority (RAu). Re-use of an existing published controlled list is acceptable. as long as it is published in machine-readable format.
+* Register the controlled list(s) with the ARDC as the RAiD's ISO 23527 Registration Authority (RAu). Reuse of an existing published controlled list is acceptable, as long as it is published in machine-readable format.
 
 **Local** components are properties and controlled lists that are entirely under the control of a Registration Agency, and only need to be reported to the ARDC annually or whenever major changes are made. Local properties can be tailored to meet the needs of the research community served by the Registration Agency. A mechanism will be provided by the Registration Authority to enable useful local metadata to be promoted into extended metadata, or extended properties into core metadata.
 
 Component blocks and sub-blocks
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Within each metadata schema component, the metadata properties are divided into groups or 'blocks' of related properties, such as all properties related to contributors or organisations. Blocks are further divided into 'sub-blocks', which contain no values themselves, but instead bracket tightly bound properties, for example, a recurring 'language' sub-block includes language code, language code scheme, and language code scheme URL. 
+Within each metadata schema component, the metadata properties are divided into groups or 'blocks' of related properties, such as all properties related to contributors or organisations. Blocks are further divided into 'sub-blocks', which contain no values themselves, but instead bracket tightly bound properties; for example, a recurring 'language' sub-block includes language code, language code scheme, and language code scheme URL. 
 
 
 Metadata properties
 ^^^^^^^^^^^^^^^^^^^
 
-Metadata properties, cotained within blocks and sometimes sub-blocks, are described using the following elements.
+Metadata properties, contained within blocks and sometimes sub-blocks, are described using the following elements.
 
 **Definition** briefly defines the property.
 
-**Requirement** indicates whether a property is mandatory, recommended or optional, with additional information where necessary (e.g., if a property is mandatory only if another property is present).
+**Requirement** indicates whether a property is mandatory, recommended or optional, with additional information where necessary (e.g. if a property is mandatory only if another property is present).
 
 **Occurrence** indicates the number of times a property may occur:
 
-* 0 represents a recommended or optional property that may only occur only once
-* 0-n represents an optional property that may occur one or many times
-* 1 represents a required property that may only occur only once
+* 0 represents a recommended or optional property that may occur only once
+* 0-n represents a recommended or optional property that may occur one or many times
+* 1 represents a required property that may occur only once
 * 1-n represents a required property that may occur one or many times
 
 **Allowed values** will either indicate a controlled list of values limiting input (as a bulleted list), or rules governing the values (as an italicised statement followed by format and constraints). Controlled lists are described as 'open' if Registration Agencies can add new terms to them, with the only restriction being that the Registration Authority must be notified. Such lists are 'closed' if they cannot be altered by Registration Agencies, in which cases changes must be proposed during the normal metadata review cycle. 
 
-In addition, some properties include additional information.
+Furthermore, some properties include additional information.
 
 **Default** represents a prefilled value set by the system, which can usually (but not always) be changed by the user. If only one value appears in the controlled list, it is automatically the default.
 
