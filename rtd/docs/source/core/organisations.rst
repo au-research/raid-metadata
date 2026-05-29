@@ -29,7 +29,7 @@
 
 **Examples**
 
-* ``https://ror.org/01sf06y89`` (Macquarie Univerity)
+* ``https://ror.org/01sf06y89`` (Macquarie University)
 * ``https://ror.org/027bh9e2`` (Leiden University)
 
 .. _6.2-organisation.schemaUri:
