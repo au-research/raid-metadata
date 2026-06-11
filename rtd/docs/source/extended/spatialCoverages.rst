@@ -50,10 +50,10 @@
 **Allowed values**: *open controlled list of URIs defined at https://vocabulary.raid.org/spatialCoverage.schemaUri/167*
 
 * ``https://nominatim.openstreetmap.org/`` (OpenStreetMap)
-* ``https://www.geonames.org/`` (Geonames)
 
 **Proposed values**: *not yet implemented*
 
+* ``https://www.geonames.org/`` (Geonames)
 * ``https://marineregions.org/gazetteer.php`` (Marine Regions)
 
 **Note**: OpenStreetMap or (as appropriate) Marine Regions preferred, Geonames allowed; other geoname servers can be nominated by Registration Agencies.

@@ -6,6 +6,8 @@
 14 traditionalKnowledge
 =======================
 
+**Note**: This metadata block is not yet implemented in the RAiD service.
+
 **Definition**: metadata schema block containing information about Traditional Knowledge (TK) / Biocultural (BC) Labels and Notices
 
 **Requirement**: optional
