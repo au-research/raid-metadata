@@ -198,7 +198,7 @@
 
 **Requirement**: mandatory for each contributor.role provided
 
-**Occurrence**: 0-1
+**Occurrence**: 1
 
 **Allowed values**: *closed controlled list derived from contributor.role.schemaUri*
 
@@ -226,7 +226,7 @@
 
 **Requirement**: mandatory for each contributor.role provided
 
-**Occurrence**: 0-1
+**Occurrence**: 1
 
 **Allowed values**: *closed controlled list defined at https://vocabulary.raid.org/contributor.role.schemaUri/165*
 
