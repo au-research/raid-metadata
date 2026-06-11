@@ -41,9 +41,12 @@
 **Allowed values**: *closed controlled list defined at https://vocabulary.raid.org/contributor.schemaUri/215*
 
 * ``https://orcid.org/`` (ORCID)
+
+**Proposed values**: *not yet implemented*
+
 * ``https://isni.org/`` (ISNI)
 
-**Constraints**: a PID is required and (currently) only ORCID and ISNI are allowed
+**Constraints**: a PID is required and (currently) only ORCID is allowed
 
 **Note**: The controlled list of allowed identifier schemas is defined at https://vocabulary.raid.org/contributor.schemaUri/215 and is shared across all Registration Agencies.
 
