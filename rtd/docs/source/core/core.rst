@@ -25,5 +25,6 @@ Contents
    alternateUrls
    relatedRaids
    access
+   metadata
 
 

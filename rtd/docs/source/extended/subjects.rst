@@ -46,10 +46,7 @@
 **Allowed values**: *open controlled list of URIs defined at https://vocabulary.raid.org/subject.schemaUri/193*
 
 * https://vocabs.ardc.edu.au/viewById/316 (Australian and New Zealand Standard Research Classification 2020: Fields of Research)
-
-**Proposed values**: *not yet implemented*
-
-* https://id.loc.gov/authorities/subject.html (Library of Congress Subject Headings)
+* https://vocabs.ardc.edu.au/viewById/317 (Australian and New Zealand Standard Research Classification 2020: Socio-Economic Objectives)
 
 Other subject schemas can be nominated by Registration Agencies.
 

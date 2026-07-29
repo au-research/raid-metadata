@@ -41,14 +41,11 @@
 **Allowed values**: *closed controlled list defined at https://vocabulary.raid.org/contributor.schemaUri/215*
 
 * ``https://orcid.org/`` (ORCID)
-
-**Proposed values**: *not yet implemented*
-
 * ``https://isni.org/`` (ISNI)
 
-**Constraints**: a PID is required and (currently) only ORCID is allowed
+**Constraints**: a PID is required; ORCID and ISNI are currently allowed
 
-**Note**: The controlled list of allowed identifier schemas is defined at https://vocabulary.raid.org/contributor.schemaUri/215 and is shared across all Registration Agencies.
+**Note**: The controlled list of allowed identifier schemas is defined at https://vocabulary.raid.org/contributor.schemaUri/215 and is shared across all Registration Agencies. An ORCID Sandbox schema (``https://sandbox.orcid.org/``) is also present in the controlled list for testing purposes only and is not intended for production RAiD records. ISNI existence is verified against the ISNI registry; local checksum validation of the ISNI check digit ahead of that lookup is planned but not yet implemented.
 
 .. _5.3-contributor.position:
 

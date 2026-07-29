@@ -96,6 +96,7 @@ Contents
       core/alternateUrls
       core/relatedRaids
       core/access
+      core/metadata
    extended/extended
       extended/subjects
       extended/traditionalKnowledgeLabels
