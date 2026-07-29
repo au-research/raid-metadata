@@ -1,9 +1,9 @@
 .. autosummary::
    :toctree: generated
 
-.. _2-date:
+.. _3-date:
 
-2 date
+3 date
 ======
 
 **Definition**: a metadata schema block containing the start and end date of the RAiD
@@ -14,9 +14,9 @@
 
 **Example JSON**
 
-.. _2.1-date.startDate:
+.. _3.1-date.startDate:
 
-2.1 date.startDate
+3.1 date.startDate
 ------------------
 
 **Definition**: the project or activity's start date
@@ -35,9 +35,9 @@
 
 **Note**: Only the year is required, month and day are optional (but recommended when available).
 
-.. _2.2-date.endDate:
+.. _3.2-date.endDate:
 
-2.2 date.endDate
+3.2 date.endDate
 ----------------
 
 **Definition**: the project or activity's end date

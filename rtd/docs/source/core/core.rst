@@ -15,6 +15,7 @@ Contents
 .. toctree::
 
    identifier
+   metadata
    dates
    titles
    descriptions
@@ -25,6 +26,5 @@ Contents
    alternateUrls
    relatedRaids
    access
-   metadata
 
 

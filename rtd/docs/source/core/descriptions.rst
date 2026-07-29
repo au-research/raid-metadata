@@ -1,9 +1,9 @@
 .. autosummary::
    :toctree: generated
 
-.. _4-description:
+.. _5-description:
 
-4 description
+5 description
 ==============
 
 **Definition**: a metadata schema block containing the description of the RAiD and associated properties
@@ -14,9 +14,9 @@
 
 **Example JSON**
 
-.. _4.1-description.text:
+.. _5.1-description.text:
 
-4.1 description.text
+5.1 description.text
 --------------------
 
 **Definition**: a project description that may include any additional information not captured by other metadata properties
@@ -31,9 +31,9 @@
 
 **Note**: Descriptions are intended to be flexible, and projects can use them liberally to capture information about the project that is not recorded elsewhere in the RAiD.
 
-.. _4.2-description.type:
+.. _5.2-description.type:
 
-4.2 description.type
+5.2 description.type
 --------------------
 
 **Definition**: a metadata schema block declaring the type of description
@@ -44,9 +44,9 @@
 
 **Example JSON**
 
-.. _4.2.1-description.type.id:
+.. _5.2.1-description.type.id:
 
-4.2.1 description.type.id
+5.2.1 description.type.id
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: the type of description.
@@ -70,9 +70,9 @@
 
 **Constraints**: if a description is provided, one (and only one) primary description is mandatory
 
-.. _4.2.2-description.type.id.schemaUri:
+.. _5.2.2-description.type.id.schemaUri:
 
-4.2.2 description.type.schemaUri
+5.2.2 description.type.schemaUri
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: the URI of the description type schema
@@ -87,9 +87,9 @@
 
 **Note**: Controlled list adapted from Vocabularies for Registry Schema 1.6.5 'Description Type' and DataCite Metadata Schema 4.4 Appendix 1 Table 10 'Description of descriptiontype'.
 
-.. _4.3-description.language:
+.. _5.3-description.language:
 
-4.3 description.language
+5.3 description.language
 ------------------------
 
 **Definition**: a metadata schema block declaring the language of the description text
@@ -100,9 +100,9 @@
 
 **Example JSON**
 
-.. _4.3.1-description.languageId:
+.. _5.3.1-description.languageId:
 
-4.3.1 description.language.id
+5.3.1 description.language.id
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: the language used for the description text identified by a code or other identifier
@@ -115,9 +115,9 @@
 
 **Example**: ``eng``
 
-.. _4.3.1-description.languageId.schemaUri:
+.. _5.3.1-description.languageId.schemaUri:
 
-4.3.2 description.language.schemaUri
+5.3.2 description.language.schemaUri
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: the URI of the language identifier schema

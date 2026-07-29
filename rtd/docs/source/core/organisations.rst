@@ -1,9 +1,9 @@
 .. autosummary::
    :toctree: generated
 
-.. _6-organisation:
+.. _7-organisation:
 
-6 organisation
+7 organisation
 ==============
 
 **Definition**: a metadata schema block containing the organisation associated with a RAiD and its associated properties
@@ -14,9 +14,9 @@
 
 **Example JSON**
 
-.. _6.1-organisation.id:
+.. _7.1-organisation.id:
 
-6.1 organisation.id
+7.1 organisation.id
 -------------------
 
 **Definition**: an organisation associated with a project or activity
@@ -32,9 +32,9 @@
 * ``https://ror.org/01sf06y89`` (Macquarie University)
 * ``https://ror.org/027bh9e2`` (Leiden University)
 
-.. _6.2-organisation.schemaUri:
+.. _7.2-organisation.schemaUri:
 
-6.2 organisation.schemaUri
+7.2 organisation.schemaUri
 --------------------------
 
 **Definition**: the URI of the organisation identifier schema
@@ -47,9 +47,9 @@
 
 * ``https://ror.org/``
 
-.. _6.3-organisation.role:
+.. _7.3-organisation.role:
 
-6.3 organisation.role
+7.3 organisation.role
 ---------------------
 
 **Definition**: a metadata schema sub-block describing an organisation's role on a project
@@ -60,9 +60,9 @@
 
 **Note**: An organisation's role may change over time, but each organisation may have one and only one role at any given time.
 
-.. _6.3.1-organisation.role.id:
+.. _7.3.1-organisation.role.id:
 
-6.3.1 organisation.role.id
+7.3.1 organisation.role.id
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: the organisation's role
@@ -87,9 +87,9 @@
 
 **Note**: Roles are likely to vary by region; controlled list adapted from Simon Cox's Project Ontology, OpenAIRE ‘Project’ guidelines, NIH definitions, ARC definitions, and DataCite Metadata Schema 4.4 Appendix 1 Table 5 'Description of contributorType'.
 
-.. _6.3.2-organisation.role.schemaUri:
+.. _7.3.2-organisation.role.schemaUri:
 
-6.3.2 organisation.role.schemaUri
+7.3.2 organisation.role.schemaUri
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: the URI of the role schema used
@@ -102,9 +102,9 @@
 
 * ``https://vocabulary.raid.org/organisation.role.schema/359``
 
-.. _6.3.3-organisation.role.startDate:
+.. _7.3.3-organisation.role.startDate:
 
-6.3.3 organisation.role.startDate
+7.3.3 organisation.role.startDate
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: the date that the organisation began a role associated with the project or activity
@@ -121,9 +121,9 @@
 
 **Note**: Only the year is required; month and day are optional (but recommended when available).
 
-.. _6.3.4-organisation.role.endDate:
+.. _7.3.4-organisation.role.endDate:
 
-6.3.4 organisation.role.endDate
+7.3.4 organisation.role.endDate
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: the date that the organisation terminated a role associated with the project or activity

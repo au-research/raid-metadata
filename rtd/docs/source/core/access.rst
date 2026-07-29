@@ -1,9 +1,9 @@
 .. autosummary::
    :toctree: generated
 
-.. _11-access:
+.. _12-access:
 
-11 access
+12 access
 =========
 
 **Definition**: a metadata schema block containing RAiD access information
@@ -14,9 +14,9 @@
 
 **Example JSON**
 
-.. _11.1-access.type:
+.. _12.1-access.type:
 
-11.1 access.type
+12.1 access.type
 ----------------
 
 **Definition**: a metadata schema block containing RAiD access type information
@@ -27,9 +27,9 @@
 
 **Example JSON**
 
-.. _11.2-access.typeId:
+.. _12.2-access.typeId:
 
-11.1.1 access.type.id
+12.1.1 access.type.id
 ^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: the type of access granted to a RAiD metadata record
@@ -47,9 +47,9 @@
 
 **Constraints**: 'Restricted access' and 'Metadata only', though part of the upstream vocabulary, are disallowed
 
-.. _11.1.2-access.typeId.schemaUri:
+.. _12.1.2-access.typeId.schemaUri:
 
-11.1.2 access.type.schemaUri
+12.1.2 access.type.schemaUri
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: the URI of the access type schema
@@ -64,9 +64,9 @@
 
 **Note**: The RAiD controlled list includes only a subset of the COAR vocabulary (https://vocabularies.coar-repositories.org/access_rights/1.1/), including 'Open access' and 'Embargoed access', but excluding 'Restricted access' (since no permanently restricted RAiDs are allowed), and ‘Metadata only’ (since RAiDs by design contain only metadata).
 
-.. _11.2-access.embargoExpiry:
+.. _12.2-access.embargoExpiry:
 
-11.2 access.embargoExpiry
+12.2 access.embargoExpiry
 -------------------------
 
 **Definition**: the date any embargo on access to the RAiD metadata ends
@@ -83,9 +83,9 @@
 
 **Example**: ``2021-08-28``
 
-.. _11.3-access.statement:
+.. _12.3-access.statement:
 
-11.3 access.statement
+12.3 access.statement
 ---------------------
 
 **Definition**: a metadata schema block containing an explanation of why the RAiD metadata record is not openly accessible, along with the explanation's associated properties
@@ -96,9 +96,9 @@
 
 **Example JSON**
 
-.. _11.3.1-access.statement.text:
+.. _12.3.1-access.statement.text:
 
-11.3.1 access.statement.text
+12.3.1 access.statement.text
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: the text of an access statement that explains any restrictions on access
@@ -113,9 +113,9 @@
 
 **Example JSON**
 
-.. _11.3.2-access.statement.language:
+.. _12.3.2-access.statement.language:
 
-11.3.2 access.statement.language
+12.3.2 access.statement.language
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: a metadata schema block declaring the language of the text in the access statement
@@ -126,9 +126,9 @@
 
 **Example JSON**
 
-.. _11.3.2.1-access.statement.language.id:
+.. _12.3.2.1-access.statement.language.id:
 
-11.3.2.1 access.statement.language.id
+12.3.2.1 access.statement.language.id
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Definition**: the language used for the access statement text, identified by a code or other identifier
@@ -141,9 +141,9 @@
 
 **Example**: ``eng``
 
-.. _11.3.2.2-access.statement.language.schemaUri:
+.. _12.3.2.2-access.statement.language.schemaUri:
 
-11.3.2.2 access.statement.language.schemaUri
+12.3.2.2 access.statement.language.schemaUri
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Definition**: the URI of the language identifier schema
