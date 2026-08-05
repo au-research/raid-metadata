@@ -1,30 +1,35 @@
-Some guidelines for naming blocks and fields in the metadata schema 
-documentation and how to implement the schema in the API implementation.
+Guidelines for naming blocks and fields in the metadata schema documentation,
+and how those names map to the actual RAiD API/data model implementation
+(the LinkML model in `au-research/raid-au`, `api-svc/datamodel/src/v2/`).
 
+**Note (2026-07-29):** this document previously described a flattened,
+block-name-prefixed field convention (e.g. `identifierSchemeUri`,
+`titleStartDate`). That convention was never actually implemented — neither
+in the real API nor in this repository's own schema documentation, both of
+which use the nested dot-path structure described below. This document has
+been rewritten to describe what is actually implemented.
 
 # Terminology
 
-* Case name terms come from: 
-https://web.archive.org/web/20230208161922/https://en.wikipedia.org/wiki/Naming_convention_(programming)#Examples_of_multiple-word_identifier_formats
+* Case name terms come from:
+  https://web.archive.org/web/20230208161922/https://en.wikipedia.org/wiki/Naming_convention_(programming)#Examples_of_multiple-word_identifier_formats
   * examples:
-    * "camel case" : "identifierBlock"  
-    * "pascal case" : "IdentifierBlock"  
-* "Schema documentation" refers to the Google drive
-  [RAiD Metadata Schema v0-5](https://docs.google.com/document/d/1qL1evcBDv4KsV18wqm99RPg3iUNvVndZ1zKJY2i649Y/edit#)
+    * "camel case": `identifier`
+    * "pascal case": `Identifier`
+* "Schema documentation" refers to the RST source in `rtd/docs/source/`
+  (rendered at https://metadata.raid.org), which is itself sourced from the
+  LinkML data model in `au-research/raid-au`.
 
+# Block names
 
-# Schema documentation 
-
-## Block names
-
-Block names aren't physically present in the metadata, but their naming is used
-to drive the API for things like field names - so we need to be careful and 
-consistent.
+Block names aren't physically present in the metadata as a key, but they
+name the LinkML class that defines a block's properties (e.g. the
+`identifier` root field's values are defined by the LinkML class `Id`; the
+`title` root field's values are defined by the class `Title`).
 
 ### Pluralisation
 
-Always use the singular.  Mostly just because english has weird and 
-inconsistent pluralisation rules.
+Always use the singular.
 
 #### Examples
 
@@ -33,213 +38,123 @@ inconsistent pluralisation rules.
 
 ### Capitalisation
 
-The schema documentation may use whatever case it wants, but it does not 
-drive the capitalisation of field identifiers or type names in the API 
-(defined below).
+Pascal case, matching the LinkML class name directly — **no suffix** (e.g.
+`Title`, `Access`, `Contributor`, `RelatedRaid`; not `TitleBlock`,
+`AccessBlock`, etc.). Initialisms and acronyms are treated as proper words.
 
-This allows the schema documentation to represent names in reader-friendly 
-capitalisation that makes things easier for humans to understand, for example:
-"identifierURL", or "RAiD". 
+Schema documentation prose may use whatever reader-friendly capitalisation
+makes sense (e.g. "identifierURL", "RAiD") — this never drives the actual
+class/type name in the data model or API.
 
-## Root fields
+# Root fields
 
-Talking here about fields at the root level of the meta schema, the fields that
-contain the blocks.
-
-### Naming standard
-
-Use the same name as the block name.
-
-
-## Block fields
-
-Talking here about fields inside a block.
+Fields at the root level of the metadata document that hold a block's
+values.
 
 ### Naming standard
 
-Prepend the block name to the field name.
-
-Yes, this means there's a lot of duplication of the block name withing the 
-field names.
-
-We don't know why we do this - we're just copying what DataCite and other 
-schema definitions do.  It has the advantage of not needing any kind of 
-exemptions or edge case rules (for example what do you do with `title.title`
-if you insist on de-duplicating the names).
-
-#### Examples
-
-* `Identifier` block field names
-  * `identifierSchemeURI`
-  * `identifierServicePoint`
-* `Date` block field names
-  * `dateStart`
-  * `dateEnd`
-
-### Capitalisation
-
-The schema documentation may use whatever case it wants, but it does not
-drive the capitalisation of field identifiers or type names in the API
-(defined below).
-
----
-
-# API implementation 
-
-## Block Type names
-
-The "Type name" is a technical thing, in OpenAPI we map a metadata schema block 
-as a [component schema](https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.3.md#components-object).
-
-In Java or TypeScript, the block maps to a class or interface.
-
-### Naming standard
-
-Append the word `Block` to the block name used in the schema documentation.
-
-e.g. `Identifier` is mapped to type name `IdentifierBlock`, `Title` -> 
-`TitleBlock`, etc.
-  
-### Capitalisation
-
-Use pascal case for the block type name.
-
-Initialisms and acronyms should be treated as proper words.
-
-### Examples
-
-* `IdentifierBlock`
-* `TitleBlock`
-* `AccessBlock`
-* `AlternateUrlBlock`
-* `RelatedRaidBlock`
-
-
-### Pluralisation 
-
-Stick to the singular, as used in the schema documentation.
-
-### Examples
-* use `TitleBlock`, not `TitlesBlock`
-
-
-## Root fields
-
-Talking here about fields at the root level of the meta schema, the fields that
-contain the blocks.
-
-### Naming standard
-
-Use the block name for the field that contains the values of that block.
-
-####
-* use `identifier` 
-  * not `Identifier` or `IdentifierBlock`
-* use `title` 
-  * not `tiles` or `Titles` or `titleBlocks`
-
-### Pluralisation
-
-Always use the singular.
-
-####
-
-* use `title`, not `titles`
-* use `relatedRaid`, not `relatedRAiDs`
-
-### Capitalisation
-
-Use camel case.
+Use the same name as the block, camel case, singular.
 
 #### Examples
 
 * `identifier`
-* `relatedRaid`
+* `title`
+* `relatedRaid` (not `relatedRAiDs`)
 * `alternateUrl`
 
+# Fields within a block (and sub-blocks)
 
-## Block fields
-
-Talking here about fields within a block.
+Fields nested inside a block, or inside a sub-block nested within a block.
 
 ### Naming standard
 
-Field names should be derived directly from the name in the schema 
-documentation, including maintaining the "duplication" of the block name 
-within the field name.
-
-###$ Examples
-
-* `IdentifierBlock`, stored in field named `identifier`
-  * `identifier`
-  * `identifierSchemeUri`
-  * `identifierRegistrationAgency`
-  * `identifierOwner`
-  * `identifierServicePoint`
-
-### Capitalisation
-
-Use camel case.
+Plain camel case, with **no** repetition of the parent block's name — the
+nesting itself (dot-path) is what scopes the field, not a name prefix.
 
 #### Examples
 
-* `IdentifierBlock`, stored in field named `identifier`
-  * `identifier`
-  * `identifierSchemeUri`
-* `RelatedRaidBlock`, stored in field `relatedRaid`
-  * `relatedRaid`
-  * `relatedRaidType`
-  * `relatedRaidTypeSchemeUri`
+* `identifier` block (LinkML class `Id`):
+  * `identifier.schemaUri`
+  * `identifier.registrationAgency.id`
+  * `identifier.registrationAgency.schemaUri`
+  * `identifier.owner.id`
+  * `identifier.owner.schemaUri`
+  * `identifier.owner.servicePoint`
+* `title` block (LinkML class `Title`):
+  * `title.text`
+  * `title.startDate`
+  * `title.type.id`
+  * `title.type.schemaUri`
+* `relatedRaid` block (LinkML class `RelatedRaid`):
+  * `relatedRaid.id`
+  * `relatedRaid.type.id`
+  * `relatedRaid.type.schemaUri`
+
+This matches both the LinkML attribute names directly and the section
+numbering already used throughout `rtd/docs/source/` (e.g.
+`core/identifier.rst`'s `1.3.1 identifier.registrationAgency.id`).
 
 ---
 
-# Final example
+# Worked example
 
-```
+```json
 {
-  "metadataSchema": "RaidoMetadataSchemaV2",
   "identifier": {
-    "identifier": "https://raid.org/prefix/suffix",
-    "identifierSchemeUri": "https://raid.org",
-    "identifierRegistrationAgency": "https://ror.org/038sjwq14",
-    "identifierOwner": "https://ror.org/038sjwq14",
-    "identifierServicePoint": 20000000,
+    "id": "https://raid.org/prefix/suffix",
+    "schemaUri": "https://raid.org/",
+    "registrationAgency": {
+      "id": "https://ror.org/038sjwq14",
+      "schemaUri": "https://ror.org"
+    },
+    "owner": {
+      "id": "https://ror.org/038sjwq14",
+      "schemaUri": "https://ror.org/",
+      "servicePoint": 20000000
+    },
+    "license": "Creative Commons CC-0",
+    "version": 1
   },
- "date": {
-    "dateStart": "2023-03-08T00:00:00.000Z"
+  "date": {
+    "startDate": "2023-03-08"
   },
   "title": [
     {
-      "title": "sto mint 1",
-      "titleType": "sto mint 1",
-      "titleTypeSchemeUri": "Primary Title",
-      "titleStartDate": "2023-03-08T00:00:00.000Z"
+      "text": "sto mint 1",
+      "type": {
+        "id": "https://vocabulary.raid.org/title.type.id/380",
+        "schemaUri": "https://vocabulary.raid.org/title.type.schema/376"
+      },
+      "startDate": "2023-03-08"
     }
   ],
   "contributor": [
     {
-      "contributor": "https://orcid.org/0009-0004-9651-5072",
-      "contributorIdentifierSchemeUri": "https://orcid.org/",
-      "contributorPosition": [
+      "id": "https://orcid.org/0009-0004-9651-5072",
+      "schemaUri": "https://orcid.org/",
+      "position": [
         {
-          "contributorPosition": "Leader",
-          "contributorPositionSchemaUri": "https://raid.org/",
-          "contributorPositionStartDate": "2023-03-08T00:00:00.000Z"
+          "id": "https://vocabulary.raid.org/contributor.position.schema/307",
+          "schemaUri": "https://vocabulary.raid.org/contributor.position.schema/305",
+          "startDate": "2023-03-08"
         }
       ],
-      "contributorRole": [
+      "role": [
         {
-          "contributorRole": "project-administration"
-          "contributorRoleSchemeUri": "https://credit.niso.org/",
+          "id": "https://credit.niso.org/contributor-roles/project-administration/",
+          "schemaUri": "https://credit.niso.org/"
         }
       ]
     }
-  ],  
+  ],
   "relatedRaid": [
     {
-      "relatedRaid": "https://raid.org/prefix/suffix"
-      "relatedRaidType": "https://github.com/au-research/raid-metadata/tree/main/scheme/related-raid/continues.json"
-      "relatedRaidTypeSchemeUri": "https://github.com/au-research/raid-metadata/tree/main/scheme/related-raid",
+      "id": "https://raid.org/prefix/suffix",
+      "type": {
+        "id": "https://vocabulary.raid.org/relatedRaid.type.schema/204",
+        "schemaUri": "https://vocabulary.raid.org/relatedRaid.type.schemaUri/285"
+      }
     }
   ]
+}
 ```

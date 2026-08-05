@@ -1,9 +1,9 @@
 .. autosummary::
    :toctree: generated
 
-.. _8-alternateIdentifier:
+.. _9-alternateIdentifier:
 
-8 alternateIdentifier
+9 alternateIdentifier
 =====================
 
 **Definition**: a metadata schema block containing alternative local or global identifiers for the project or activity associated with the RAiD
@@ -14,9 +14,9 @@
 
 **Example JSON**
 
-.. _8.1-alternateIdentifier.id:
+.. _9.1-alternateIdentifier.id:
 
-8.1 alternateIdentifier.id
+9.1 alternateIdentifier.id
 --------------------------
 
 **Definition**: an identifier other than the RAiD applied to the project or activity
@@ -34,9 +34,9 @@
 **Example JSON**
 
 
-.. _8.2-alternateIdentifier.type:
+.. _9.2-alternateIdentifier.type:
 
-8.2 alternateIdentifier.type
+9.2 alternateIdentifier.type
 ----------------------------
 
 **Definition**: free text description of the type of alternateIdentifier supplied

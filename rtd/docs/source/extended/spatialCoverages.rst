@@ -1,9 +1,9 @@
 .. autosummary::
    :toctree: generated
 
-.. _13-spatialCoverage:
+.. _14-spatialCoverage:
 
-13 spatialCoverage
+14 spatialCoverage
 ==================
 
 **Definition**: metadata schema block containing information about any spatial region(s) or named place(s) targeted by the project
@@ -14,9 +14,9 @@
 
 **Example JSON**
 
-.. _13.1-spatialCoverage.id:
+.. _14.1-spatialCoverage.id:
 
-13.1 spatialCoverage.id
+14.1 spatialCoverage.id
 -----------------------
 
 **Definition**: spatial region or named place that is the subject or target of the project or activity. Repeat this property as necessary to indicate different locations. Do not duplicate organisational locations
@@ -29,16 +29,14 @@
 
 **Examples**
 
-* ``https://nominatim.openstreetmap.org/ui/details.html?osmtype=R&osmid=1947835&class=boundary`` (Tundzha, Bulgaria, from OpenStreetMap)
-* ``https://nominatim.openstreetmap.org/ui/details.html?osmtype=R&osmid=186382&class=boundary`` (Bulgaria, from OpenStreetMap)
-* ``https://nominatim.openstreetmap.org/ui/details.html?osmtype=W&osmid=26707240&class=historic`` (Pompeii, Italy, OpenStreetMap)
+* ``https://www.openstreetmap.org/relation/80500`` (Australia, from OpenStreetMap)
+* ``https://www.openstreetmap.org/way/173530296`` (University of New South Wales, Kensington, Sydney, from OpenStreetMap)
 * ``https://www.geonames.org/264371/athens.html`` (Athens, Greece, from Geonames)
 * ``https://www.geonames.org/2161776/katoomba.html`` (Katoomba, NSW, Australia, from Geonames)
-* ``https://marineregions.org/gazetteer.php?p=details&id=62967`` (Abrolhos Australian Marine Park, Australia)
 
-.. _13.2-spatialCoverage.schemaUri:
+.. _14.2-spatialCoverage.schemaUri:
 
-13.2 spatialCoverage.schemaUri
+14.2 spatialCoverage.schemaUri
 ------------------------------
 
 **Definition**: the URI of the geolocation schema used for spatialCoverage
@@ -49,18 +47,14 @@
 
 **Allowed values**: *open controlled list of URIs defined at https://vocabulary.raid.org/spatialCoverage.schemaUri/167*
 
-* ``https://nominatim.openstreetmap.org/`` (OpenStreetMap)
-
-**Proposed values**: *not yet implemented*
-
+* ``https://www.openstreetmap.org/`` (OpenStreetMap)
 * ``https://www.geonames.org/`` (Geonames)
-* ``https://marineregions.org/gazetteer.php`` (Marine Regions)
 
-**Note**: OpenStreetMap or (as appropriate) Marine Regions preferred, Geonames allowed; other geoname servers can be nominated by Registration Agencies.
+**Note**: OpenStreetMap preferred, Geonames allowed; other geoname servers can be nominated by Registration Agencies.
 
-.. _13.3-spatialCoverage.place:
+.. _14.3-spatialCoverage.place:
 
-13.3 spatialCoverage.place
+14.3 spatialCoverage.place
 --------------------------
 
 **Definition**: metadata schema sub-block containing free-text place names or descriptions plus associated metadata properties
@@ -69,9 +63,9 @@
 
 **Occurrence**: 0-n
 
-.. _13.3.1-spatialCoverage.place.text:
+.. _14.3.1-spatialCoverage.place.text:
 
-13.3.1 spatialCoverage.place.text
+14.3.1 spatialCoverage.place.text
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: free text description of one or more geographic locations that are the subject or target of the project or activity; use to specify or describe a geographic location in a manner not covered by spatialCoverage.id
@@ -84,9 +78,9 @@
 
 **Constraints**: do not duplicate information from spatialCoverage.id above; do not use for organisational locations (which are derived from the organisation's ROR)
 
-.. _13.3.2-spatialCoverage.place.language:
+.. _14.3.2-spatialCoverage.place.language:
 
-13.3.2 spatialCoverage.place.language
+14.3.2 spatialCoverage.place.language
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: metadata schema block declaring the language of spatialCoverage.place.text
@@ -97,9 +91,9 @@
 
 **Example JSON**
 
-.. _13.3.2.1-spatialCoverage.place.language.id:
+.. _14.3.2.1-spatialCoverage.place.language.id:
 
-13.3.2.1 spatialCoverage.place.language.id
+14.3.2.1 spatialCoverage.place.language.id
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Definition**: language used for spatialCoverage.place.text identified by a code or other identifier
@@ -112,9 +106,9 @@
 
 **Example**: ``eng``
 
-.. _13.3.2.2-spatialCoverage.place.language.schemaUri:
+.. _14.3.2.2-spatialCoverage.place.language.schemaUri:
 
-13.3.2.2 spatialCoverage.place.language.schemaUri
+14.3.2.2 spatialCoverage.place.language.schemaUri
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Definition**: the URI of the language identifier schema

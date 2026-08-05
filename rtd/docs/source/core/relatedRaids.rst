@@ -1,9 +1,9 @@
 .. autosummary::
    :toctree: generated
 
-.. _10-relatedRaid:
+.. _11-relatedRaid:
 
-10 relatedRaid
+11 relatedRaid
 ==============
 
 **Definition**: a metadata schema block containing related RAiDs and qualifying the relationship
@@ -14,9 +14,9 @@
 
 **Example JSON**
 
-.. _10.1-relatedRaid.id:
+.. _11.1-relatedRaid.id:
 
-10.1 relatedRaid.id
+11.1 relatedRaid.id
 -------------------
 
 **Definition**: a subsidiary or otherwise related RAiD
@@ -27,9 +27,9 @@
 
 **Allowed values**: RAiD name
 
-.. _10.2-relatedRaid.id.type:
+.. _11.2-relatedRaid.id.type:
 
-10.2 relatedRaid.type
+11.2 relatedRaid.type
 ----------------------
 
 **Definition**: a metadata schema sub-block qualifying the relationship with a related Raid
@@ -38,9 +38,9 @@
 
 **Occurrence**: 1
 
-.. _10.2.1-relatedRaid.type.id:
+.. _11.2.1-relatedRaid.type.id:
 
-10.2.1 relatedRaid.type.id
+11.2.1 relatedRaid.type.id
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: a description of the relationship between the activity being registered and the related resource
@@ -62,9 +62,9 @@
 
 **Note**: Controlled list is a subset of DataCite Schema v4.4 Table 8 'Description of relatedIdentifierType'. All list items appear in the DataCite Schema. 
 
-.. _10.2.2-relatedRaid.type.schemaUri:
+.. _11.2.2-relatedRaid.type.schemaUri:
 
-10.2.2 relatedRaid.type.schemaUri
+11.2.2 relatedRaid.type.schemaUri
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: The URI of the relationship schema used

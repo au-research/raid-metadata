@@ -1,9 +1,9 @@
 .. autosummary::
    :toctree: generated
 
-.. _5-contributor:
+.. _6-contributor:
 
-5 contributor
+6 contributor
 =============
 
 **Definition**: a metadata schema block containing a contributor to a RAiD and their associated properties
@@ -14,9 +14,9 @@
 
 **Example JSON**
 
-.. _5.1-contributor.id:
+.. _6.1-contributor.id:
 
-5.1 contributor.id
+6.1 contributor.id
 ------------------
 
 **Definition**: the contributor (person) associated with a project or activity identified by a persistent identifier (PID)
@@ -27,9 +27,9 @@
 
 **Allowed values**: identifier defined by contributor.schemaUri 
 
-.. _5.2-contributor.id.schemaUri:
+.. _6.2-contributor.id.schemaUri:
 
-5.2 contributor.schemaUri
+6.2 contributor.schemaUri
 -------------------------
 
 **Definition**: the URI of the contributor identifier schema
@@ -41,18 +41,15 @@
 **Allowed values**: *closed controlled list defined at https://vocabulary.raid.org/contributor.schemaUri/215*
 
 * ``https://orcid.org/`` (ORCID)
-
-**Proposed values**: *not yet implemented*
-
 * ``https://isni.org/`` (ISNI)
 
-**Constraints**: a PID is required and (currently) only ORCID is allowed
+**Constraints**: a PID is required; ORCID and ISNI are currently allowed
 
-**Note**: The controlled list of allowed identifier schemas is defined at https://vocabulary.raid.org/contributor.schemaUri/215 and is shared across all Registration Agencies.
+**Note**: The controlled list of allowed identifier schemas is defined at https://vocabulary.raid.org/contributor.schemaUri/215 and is shared across all Registration Agencies. An ORCID Sandbox schema (``https://sandbox.orcid.org/``) is also present in the controlled list for testing purposes only and is not intended for production RAiD records. ISNI existence is verified against the ISNI registry; local checksum validation of the ISNI check digit ahead of that lookup is planned but not yet implemented.
 
-.. _5.3-contributor.position:
+.. _6.3-contributor.position:
 
-5.3 contributor.position
+6.3 contributor.position
 ------------------------
 
 **Definition**: a metadata schema sub-block describing a contributor's administrative position on a project or activity
@@ -65,9 +62,9 @@
 
 **Note**: This property represents a contributor's administrative position on a project (such as their position on a grant application); use contributor.role to define for scientific or scholarly contribution.
 
-.. _5.3.1-contributor.position.id:
+.. _6.3.1-contributor.position.id:
 
-5.3.1 contributor.position.id
+6.3.1 contributor.position.id
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: a contributor's administrative position in the project
@@ -86,9 +83,9 @@
 
 **Default**: contributor.position.id for first-entered contributor (only) defaults to 'Principal or Chief Investigator' 
 
-.. _5.3.2-contributor.position.id.schemaUri:
+.. _6.3.2-contributor.position.id.schemaUri:
 
-5.3.2 contributor.position.schemaUri
+6.3.2 contributor.position.schemaUri
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: the URI of the position schema used
@@ -103,9 +100,9 @@
 
 **Note**: Controlled list informed by Simon Cox's Project Ontology, OpenAIRE ‘Project’ guidelines, NIH definitions, ARC definitions, and DataCite Metadata Schema 4.4 Appendix 1 Table 5 'Description of contributorType'.
 
-.. _5.3.3-contributor.position.startDate:
+.. _6.3.3-contributor.position.startDate:
 
-5.3.3 contributor.position.startDate
+6.3.3 contributor.position.startDate
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: date the contributor began position associated with the project or activity
@@ -124,9 +121,9 @@
 
 **Note**: Only year is required, month and day are optional (but recommended when available).
 
-.. _5.3.4-contributor.position.endDate:
+.. _6.3.4-contributor.position.endDate:
 
-5.3.4 contributor.position.endDate
+6.3.4 contributor.position.endDate
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: date the contributor terminated position associated with the project or activity
@@ -143,9 +140,9 @@
 
 **Note**: Only year is required, month and day are optional (but recommended when available).
 
-.. _5.4-contributor.position.leader:
+.. _6.4-contributor.position.leader:
 
-5.4 contributor.leader
+6.4 contributor.leader
 ----------------------
 
 **Definition**: flag indicating that the contributor as a project leader
@@ -161,9 +158,9 @@
 
 **Note**: More than one contributor can be flagged as a leader if the project is jointly led.
 
-.. _5.5-contributor.position.contact:
+.. _6.5-contributor.position.contact:
 
-5.5 contributor.contact
+6.5 contributor.contact
 -----------------------
 
 **Definition**: flag indicating that the contributor as a project contact
@@ -179,9 +176,9 @@
 
 **Note**: More than one contributor can be flagged as a contact.
 
-.. _5.6-contributor.role:
+.. _6.6-contributor.role:
 
-5.6 contributor.role
+6.6 contributor.role
 --------------------
 
 **Definition**: metadata schema sub-block describing a contributor's scientific or scholarly role on a project using the CRediT vocabulary
@@ -192,9 +189,9 @@
 
 **Note**: Changes to roles are tracked through version history rather than explicitly declared.
 
-.. _5.6.1-contributor.role.id:
+.. _6.6.1-contributor.role.id:
 
-5.6.1 contributor.role.id
+6.6.1 contributor.role.id
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: a contributor's (person) role(s) on the Project
@@ -220,9 +217,9 @@
 * ``https://credit.niso.org/contributor-roles/writing-original-draft/``
 * ``https://credit.niso.org/contributor-roles/writing-review-editing/``
 
-.. _5.6.2-contributor.role.id.schemaUri:
+.. _6.6.2-contributor.role.id.schemaUri:
 
-5.6.2 contributor.role.schemaUri
+6.6.2 contributor.role.schemaUri
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: the URI of the role schema used
