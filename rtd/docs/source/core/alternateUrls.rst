@@ -1,10 +1,10 @@
 .. autosummary::
    :toctree: generated
 
-.. _9-alternateUrl:
+.. _10-alternateUrl:
 
-9 alternateUrl
-==============
+10 alternateUrl
+===============
 
 **Definition**: a metadata schema block containing alternative URLs for the project
 
@@ -14,10 +14,10 @@
 
 **Example JSON**
 
-.. _9.1-alternateUrl.url:
+.. _10.1-alternateUrl.url:
 
-9.1 alternateUrl.url
---------------------
+10.1 alternateUrl.url
+---------------------
 
 **Definition**: a link to another website related to the project or activity
 

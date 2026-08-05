@@ -177,9 +177,24 @@
 
 **Note**: A RAiD minted by a Registration Agency must have an SP associated with an Owner affiliated with that Agency; Registration Agencies must maintain and register lists of their Service Points with the RAiD Registration Authority. 
 
-.. _1.5-identifier.license:
+.. _1.5-identifier.raidAgencyUrl:
 
-1.5 identifier.license
+1.5 identifier.raidAgencyUrl
+-----------------------------
+
+**Definition**: the URL for the RAiD via the minting Registration Agency's own system
+
+**Requirement**: mandatory
+
+**Occurrence**: 1
+
+**Allowed values**: system-supplied URL
+
+**Note**: Set automatically by the RAiD Service software; not user-editable.
+
+.. _1.6-identifier.license:
+
+1.6 identifier.license
 ----------------------
 
 **Definition**: the licence, or licence waiver, under which the RAiD metadata record associated with this Identifier has been issued.
@@ -196,9 +211,9 @@
 
 **Note**: All RAiD metadata is available on a 'no rights reserved' basis unless prohibited by law. 
 
-.. _1.6-identifier.version:
+.. _1.7-identifier.version:
 
-1.6 identifier.version
+1.7 identifier.version
 ----------------------
 
 **Definition**: the version number of the RAiD

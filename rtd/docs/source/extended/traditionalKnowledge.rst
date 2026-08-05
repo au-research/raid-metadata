@@ -1,9 +1,9 @@
 .. autosummary::
    :toctree: generated
 
-.. _14-traditionalKnowledge:
+.. _15-traditionalKnowledge:
 
-14 traditionalKnowledge
+15 traditionalKnowledge
 =======================
 
 **Note**: This metadata block is not yet implemented in the RAiD service.
@@ -16,9 +16,9 @@
 
 **Example JSON**
 
-.. _14.1-traditionalKnowledge.id:
+.. _15.1-traditionalKnowledge.id:
 
-14.1 traditionalKnowledge.id
+15.1 traditionalKnowledge.id
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: identifier (URI) linking to a verified source for TK or BC Labels or Notices pertaining to a project or activity
@@ -35,9 +35,9 @@
 
 **Note**: Currently only Local Contexts Hub Projects are allowed as a source for validated TK/BC Labels and Notices.
 
-.. _14.2-traditionalKnowledgeLabel.schemaUri:
+.. _15.2-traditionalKnowledgeLabel.schemaUri:
 
-14.2 traditionalKnowledge.schemaUri
+15.2 traditionalKnowledge.schemaUri
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: the URI of the TK/BC label identifier schema

@@ -15,6 +15,7 @@ Contents
 .. toctree::
 
    identifier
+   metadata
    dates
    titles
    descriptions

@@ -1,9 +1,9 @@
 .. autosummary::
    :toctree: generated
 
-.. _12-subject:
+.. _13-subject:
 
-12 subject
+13 subject
 ==========
 
 **Definition**: metadata schema block containing the subject area of the RAiD plus associated properties
@@ -14,9 +14,9 @@
 
 **Example JSON**
 
-.. _12.1-subject.id:
+.. _13.1-subject.id:
 
-12.1 subject.id
+13.1 subject.id
 ---------------
 
 **Definition**: identifier (URI) for a subject area or classification code describing the project or activity
@@ -29,12 +29,11 @@
 
 **Examples**
 
-* https://vocabs.ardc.edu.au/repository/api/lda/anzsrc-2020-for/resource?uri=https://linked.data.gov.au/def/anzsrc-for/2020/430106 (ANZSRC 2020 Fields of Research code: ‘Digital Archaeology’)
-* https://id.loc.gov/authorities/subject/sh85118622.html (LoC 'Science and State')
+* https://linked.data.gov.au/def/anzsrc-for/2020/430106 (ANZSRC 2020 Fields of Research code: ‘Digital Archaeology’)
 
-.. _12.2-subject.schemaUri:
+.. _13.2-subject.schemaUri:
 
-12.2 subject.schemaUri
+13.2 subject.schemaUri
 ----------------------
 
 **Definition**: the URI of the subject identifier schema
@@ -46,16 +45,13 @@
 **Allowed values**: *open controlled list of URIs defined at https://vocabulary.raid.org/subject.schemaUri/193*
 
 * https://vocabs.ardc.edu.au/viewById/316 (Australian and New Zealand Standard Research Classification 2020: Fields of Research)
-
-**Proposed values**: *not yet implemented*
-
-* https://id.loc.gov/authorities/subject.html (Library of Congress Subject Headings)
+* https://vocabs.ardc.edu.au/viewById/317 (Australian and New Zealand Standard Research Classification 2020: Socio-Economic Objectives)
 
 Other subject schemas can be nominated by Registration Agencies.
 
-.. _12.3-subject.keyword:
+.. _13.3-subject.keyword:
 
-12.3 subject.keyword
+13.3 subject.keyword
 --------------------
 
 **Definition**: metadata schema sub-block containing free-text keyword describing a project plus associated properties
@@ -64,9 +60,9 @@ Other subject schemas can be nominated by Registration Agencies.
 
 **Occurrence**: 0-n
 
-.. _12.3.1-subject.keyword.text:
+.. _13.3.1-subject.keyword.text:
 
-12.3.1 subject.keyword.text
+13.3.1 subject.keyword.text
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: unconstrained keyword or key phrase describing the project or activity
@@ -79,9 +75,9 @@ Other subject schemas can be nominated by Registration Agencies.
 
 **Constraints**: do not duplicate Subject(s) above
 
-.. _12.3.2-subject.keyword.language:
+.. _13.3.2-subject.keyword.language:
 
-12.3.2 subject.keyword.language
+13.3.2 subject.keyword.language
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: metadata schema block declaring the language of the subject keyword text
@@ -92,9 +88,9 @@ Other subject schemas can be nominated by Registration Agencies.
 
 **Example JSON**
 
-.. _12.3.2.1-subject.keyword.language.id:
+.. _13.3.2.1-subject.keyword.language.id:
 
-12.3.2.1 subject.keyword.language.id
+13.3.2.1 subject.keyword.language.id
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Definition**: language used for the subject keyword text identified by a code or other identifier
@@ -107,9 +103,9 @@ Other subject schemas can be nominated by Registration Agencies.
 
 **Example**: ``eng``
 
-.. _12.3.2.2-subject.keyword.language.schemaUri:
+.. _13.3.2.2-subject.keyword.language.schemaUri:
 
-12.3.2.2 subject.keyword.language.schemaUri
+13.3.2.2 subject.keyword.language.schemaUri
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Definition**: the URI of the language identifier schema

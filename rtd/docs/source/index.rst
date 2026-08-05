@@ -86,6 +86,7 @@ Contents
 
    core/core
       core/identifier
+      core/metadata
       core/dates
       core/titles
       core/descriptions

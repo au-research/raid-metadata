@@ -1,9 +1,9 @@
 .. autosummary::
    :toctree: generated
 
-.. _3-title:
+.. _4-title:
 
-3 title
+4 title
 =======
 
 **Definition**: a metadata schema block containing the title of the RAiD and associated properties
@@ -14,9 +14,9 @@
 
 **Example JSON**
 
-.. _3.1-title.text:
+.. _4.1-title.text:
 
-3.1 title.text
+4.1 title.text
 --------------
 
 **Definition**: a name or title by which the project or activity is known
@@ -31,7 +31,7 @@
 
 .. 3.2-title.type:
 
-3.2 title.type
+4.2 title.type
 --------------
 
 **Definition**: a metadata schema block containing information about the title type
@@ -42,9 +42,9 @@
 
 **Example JSON**
 
-.. _3.2.1-title.type.id:
+.. _4.2.1-title.type.id:
 
-3.2.1 title.type.id
+4.2.1 title.type.id
 ^^^^^^^^^^^^^^^^^^^
 
 **Definition**: the type of title
@@ -64,9 +64,9 @@
 
 **Note**: One (and only one) current (as per start-end dates) Primary Title is mandatory for each Title specified; additional titles are optional; any previous titles are managed by start-end dates (title type does not change).
 
-.. _3.2.2-title.type.schemaUri:
+.. _4.2.2-title.type.schemaUri:
 
-3.2.2 title.type.schemaUri
+4.2.2 title.type.schemaUri
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: the URI of the title type schema
@@ -81,9 +81,9 @@
 
 **Note**: Controlled list adapted from Vocabularies for Registry Schema 1.6.5 'Name Type'.
 
-.. _3.3-title.language:
+.. _4.3-title.language:
 
-3.3 title.language
+4.3 title.language
 ------------------
 
 **Definition**: a metadata schema block declaring the language of the title text
@@ -94,9 +94,9 @@
 
 **Example JSON**
 
-.. _3.3.1-title.languageId:
+.. _4.3.1-title.languageId:
 
-3.3.1 title.language.id
+4.3.1 title.language.id
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: the language used for the title text, identified by a code or another identifier
@@ -109,9 +109,9 @@
 
 **Example**: ``eng``
 
-.. _3.3.2-title.languageId.schemaUri:
+.. _4.3.2-title.languageId.schemaUri:
 
-3.3.2 title.language.schemaUri
+4.3.2 title.language.schemaUri
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: the URI of the language identifier schema
@@ -126,9 +126,9 @@
 
 **Constraints**: currently limited to ISO 639:2023 (Set 3)
 
-.. _3.4-title.startDate:
+.. _4.4-title.startDate:
 
-3.4 title.startDate
+4.4 title.startDate
 -------------------
 
 **Definition**: the date the project or activity's title began being used
@@ -147,9 +147,9 @@
 
 **Note**: Only the year is required, month and day are optional (but recommended when available).
 
-.. _3.5-title.endDate:
+.. _4.5-title.endDate:
 
-3.5 title.endDate
+4.5 title.endDate
 -----------------
 
 **Definition**: the date the project or activity title was changed or stopped being used

@@ -1,9 +1,9 @@
 .. autosummary::
    :toctree: generated
 
-.. _7-relatedObject:
+.. _8-relatedObject:
 
-7 relatedObject
+8 relatedObject
 ===============
 
 **Definition**: a metadata schema block containing inputs, outputs, and process documents related to a RAiD plus associated properties
@@ -14,9 +14,9 @@
 
 **Example JSON**
 
-.. _7.1-relatedObject.id:
+.. _8.1-relatedObject.id:
 
-7.1 relatedObject.id
+8.1 relatedObject.id
 --------------------
 
 **Definition**: any (a) input or resource used by a project or activity, (b) output or product created by a project or activity, and/or (c) internal process documentation used within a project or activity, that is identified by a persistent identifier (PID).
@@ -27,9 +27,9 @@
 
 **Allowed values**: an identifier as specified by relatedObject.schemaUri
 
-.. _7.2-relatedObject.id.schemaUri:
+.. _8.2-relatedObject.id.schemaUri:
 
-7.2 relatedObject.schemaUri
+8.2 relatedObject.schemaUri
 ---------------------------
 
 **Definition**: the URI of the relatedObject identifier schema
@@ -52,9 +52,9 @@
 
 **Note**: Controlled list is a subset of DataCite Metadata Schema 4.4 Appendix 1 Table 8 'Description of relatedIdentiferType'.
 
-.. _7.3-relatedObject.type:
+.. _8.3-relatedObject.type:
 
-7.3 relatedObject.type
+8.3 relatedObject.type
 ----------------------
 
 **Definition**: a metadata schema sub-block describing a relatedObject's type
@@ -63,9 +63,9 @@
 
 **Occurrence**: 1
 
-.. _7.3.1-relatedObject.type.id:
+.. _8.3.1-relatedObject.type.id:
 
-7.3.1 relatedObject.type.id
+8.3.1 relatedObject.type.id
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: a type of input, output, or process document
@@ -107,9 +107,9 @@
 
 **Note**: Controlled list is a subset of DataCite Metadata Schema 4.4 Appendix 1 Table 7  'Description of resourceTypeGeneral', with 'Instrument', 'Funding', 'Learning Object', ‘Conference Poster’, and 'Prize' added (DataCite Metadata Schema 4.5 also adds ‘Instrument’). COAR Resource Types 3.1 (https://vocabularies.coar-repositories.org/resource_types/) used as source for missing terms where possible. 
 
-.. _7.3.2-relatedObject.type.schemaUri:
+.. _8.3.2-relatedObject.type.schemaUri:
 
-7.3.2 relatedObject.type.schemaUri
+8.3.2 relatedObject.type.schemaUri
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: the URI of the type schema used
@@ -122,9 +122,9 @@
 
 * ``https://vocabulary.raid.org/relatedObject.type.schema/329``
 
-.. _7.4-relatedObject.category:
+.. _8.4-relatedObject.category:
 
-7.4 relatedObject.category
+8.4 relatedObject.category
 --------------------------
 
 **Definition**:  a metadata schema sub-block declaring that a relatedObject is an input, output and/or process document
@@ -135,9 +135,9 @@
 
 **Note**: A relatedObject may have more than one category (e.g.) a DMP could initially be a process document, yet eventually be published as an output.
 
-.. _7.4.1-relatedObject.category.id:
+.. _8.4.1-relatedObject.category.id:
 
-7.4.1 relatedObject.category.id
+8.4.1 relatedObject.category.id
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: a declaration of an object as an input, output, or other
@@ -152,9 +152,9 @@
 * ``https://vocabulary.raid.org/relatedObject.category.id/192`` (Internal process document or artefact)
 * ``https://vocabulary.raid.org/relatedObject.category.id/190`` (Output)
 
-.. _7.4.2-relatedObject.type.id.schemaUri:
+.. _8.4.2-relatedObject.type.id.schemaUri:
 
-7.4.2 relatedObject.category.schemaUri
+8.4.2 relatedObject.category.schemaUri
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Definition**: the URI of the category schema used.
