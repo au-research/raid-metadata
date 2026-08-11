@@ -14,6 +14,35 @@
 
 **Example JSON**
 
+.. code-block:: json
+
+   {
+     "description": [
+       {
+         "text": "KELPWATCH tracks the recovery of giant kelp forests at twelve reference sites along the Great Southern Reef, combining diver surveys with fixed underwater imagery to measure canopy extent and species assemblage change following marine heatwaves.",
+         "type": {
+           "id": "https://vocabulary.raid.org/description.type.schema/318",
+           "schemaUri": "https://vocabulary.raid.org/description.type.schema/320"
+         },
+         "language": {
+           "id": "eng",
+           "schemaUri": "https://www.iso.org/standard/74575.html"
+         }
+       },
+       {
+         "text": "Quarterly diver transects paired with time-lapse imagery, analysed against sea surface temperature records.",
+         "type": {
+           "id": "https://vocabulary.raid.org/description.type.schema/8",
+           "schemaUri": "https://vocabulary.raid.org/description.type.schema/320"
+         },
+         "language": {
+           "id": "eng",
+           "schemaUri": "https://www.iso.org/standard/74575.html"
+         }
+       }
+     ]
+   }
+
 .. _5.1-description.text:
 
 5.1 description.text
@@ -43,6 +72,15 @@
 **Occurrence**: 1
 
 **Example JSON**
+
+.. code-block:: json
+
+   {
+     "type": {
+       "id": "https://vocabulary.raid.org/description.type.schema/318",
+       "schemaUri": "https://vocabulary.raid.org/description.type.schema/320"
+     }
+   }
 
 .. _5.2.1-description.type.id:
 
@@ -99,6 +137,15 @@
 **Occurrence**: 0-1
 
 **Example JSON**
+
+.. code-block:: json
+
+   {
+     "language": {
+       "id": "eng",
+       "schemaUri": "https://www.iso.org/standard/74575.html"
+     }
+   }
 
 .. _5.3.1-description.languageId:
 

@@ -14,6 +14,41 @@
 
 **Example JSON**
 
+.. code-block:: json
+
+   {
+     "relatedObject": [
+       {
+         "id": "https://doi.org/10.5555/aurora-suite-recording",
+         "schemaUri": "https://doi.org/",
+         "type": {
+           "id": "https://vocabulary.raid.org/relatedObject.type.schema/261",
+           "schemaUri": "https://vocabulary.raid.org/relatedObject.type.schema/329"
+         },
+         "category": [
+           {
+             "id": "https://vocabulary.raid.org/relatedObject.category.id/190",
+             "schemaUri": "https://vocabulary.raid.org/relatedObject.category.schemaUri/386"
+           }
+         ]
+       },
+       {
+         "id": "https://web.archive.org/web/20260219073130/https://www.raid.org/",
+         "schemaUri": "https://web.archive.org/",
+         "type": {
+           "id": "https://vocabulary.raid.org/relatedObject.type.schema/265",
+           "schemaUri": "https://vocabulary.raid.org/relatedObject.type.schema/329"
+         },
+         "category": [
+           {
+             "id": "https://vocabulary.raid.org/relatedObject.category.id/191",
+             "schemaUri": "https://vocabulary.raid.org/relatedObject.category.schemaUri/386"
+           }
+         ]
+       }
+     ]
+   }
+
 .. _8.1-relatedObject.id:
 
 8.1 relatedObject.id

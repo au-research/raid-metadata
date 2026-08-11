@@ -14,6 +14,20 @@
 
 **Example JSON**
 
+.. code-block:: json
+
+   {
+     "relatedRaid": [
+       {
+         "id": "https://raid.org/10.99999/1f0ab934",
+         "type": {
+           "id": "https://vocabulary.raid.org/relatedRaid.type.schema/202",
+           "schemaUri": "https://vocabulary.raid.org/relatedRaid.type.schema/367"
+         }
+       }
+     ]
+   }
+
 .. _11.1-relatedRaid.id:
 
 11.1 relatedRaid.id

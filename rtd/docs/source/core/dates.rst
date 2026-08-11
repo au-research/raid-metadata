@@ -14,6 +14,15 @@
 
 **Example JSON**
 
+.. code-block:: json
+
+   {
+     "date": {
+       "startDate": "2024-03-01",
+       "endDate": "2027-02-28"
+     }
+   }
+
 .. _3.1-date.startDate:
 
 3.1 date.startDate

@@ -14,6 +14,37 @@
 
 **Example JSON**
 
+.. code-block:: json
+
+   {
+     "title": [
+       {
+         "text": "Kelp Forest Recovery Monitoring on the Great Southern Reef",
+         "type": {
+           "id": "https://vocabulary.raid.org/title.type.schema/5",
+           "schemaUri": "https://vocabulary.raid.org/title.type.schema/376"
+         },
+         "language": {
+           "id": "eng",
+           "schemaUri": "https://www.iso.org/standard/74575.html"
+         },
+         "startDate": "2024-03-01"
+       },
+       {
+         "text": "KELPWATCH",
+         "type": {
+           "id": "https://vocabulary.raid.org/title.type.schema/156",
+           "schemaUri": "https://vocabulary.raid.org/title.type.schema/376"
+         },
+         "language": {
+           "id": "eng",
+           "schemaUri": "https://www.iso.org/standard/74575.html"
+         },
+         "startDate": "2024-03-01"
+       }
+     ]
+   }
+
 .. _4.1-title.text:
 
 4.1 title.text
@@ -41,6 +72,15 @@
 **Occurrence**: 1
 
 **Example JSON**
+
+.. code-block:: json
+
+   {
+     "type": {
+       "id": "https://vocabulary.raid.org/title.type.schema/5",
+       "schemaUri": "https://vocabulary.raid.org/title.type.schema/376"
+     }
+   }
 
 .. _4.2.1-title.type.id:
 
@@ -93,6 +133,15 @@
 **Occurrence**: 0-1
 
 **Example JSON**
+
+.. code-block:: json
+
+   {
+     "language": {
+       "id": "eng",
+       "schemaUri": "https://www.iso.org/standard/74575.html"
+     }
+   }
 
 .. _4.3.1-title.languageId:
 

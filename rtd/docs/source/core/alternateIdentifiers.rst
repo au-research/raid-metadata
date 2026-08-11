@@ -14,6 +14,17 @@
 
 **Example JSON**
 
+.. code-block:: json
+
+   {
+     "alternateIdentifier": [
+       {
+         "id": "UTAS-IMAS-2024-0412",
+         "type": "Institutional research management system project ID"
+       }
+     ]
+   }
+
 .. _9.1-alternateIdentifier.id:
 
 9.1 alternateIdentifier.id
@@ -31,9 +42,6 @@
 
 **Note**: An alternateIdentifer.id may be any alphanumeric string that is unique within its domain of issue, for example a local identifier unique to an organisation. The alternateIdentifier.id represents an additional identifier for the same instance of the project or activity; its referent is identical to that of the RAiD.
 
-**Example JSON**
-
-
 .. _9.2-alternateIdentifier.type:
 
 9.2 alternateIdentifier.type
@@ -48,5 +56,3 @@
 **Allowed values**: free text
 
 **Example**: 'A local project ID in the university CRIS'
-
-**Example JSON**

@@ -14,6 +14,26 @@
 
 **Example JSON**
 
+.. code-block:: json
+
+   {
+     "spatialCoverage": [
+       {
+         "id": "https://www.openstreetmap.org/?#map=10/-43.0526/147.2472",
+         "schemaUri": "https://www.openstreetmap.org/",
+         "place": [
+           {
+             "text": "D'Entrecasteaux Channel, Tasmania, Australia",
+             "language": {
+               "id": "eng",
+               "schemaUri": "https://www.iso.org/standard/74575.html"
+             }
+           }
+         ]
+       }
+     ]
+   }
+
 .. _14.1-spatialCoverage.id:
 
 14.1 spatialCoverage.id
@@ -90,6 +110,15 @@
 **Occurrence**: 0-1
 
 **Example JSON**
+
+.. code-block:: json
+
+   {
+     "language": {
+       "id": "eng",
+       "schemaUri": "https://www.iso.org/standard/74575.html"
+     }
+   }
 
 .. _14.3.2.1-spatialCoverage.place.language.id:
 

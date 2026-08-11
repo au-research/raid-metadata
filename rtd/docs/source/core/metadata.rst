@@ -16,6 +16,15 @@
 
 **Example JSON**
 
+.. code-block:: json
+
+   {
+     "metadata": {
+       "created": 1709607127,
+       "updated": 1751505715
+     }
+   }
+
 .. _2.1-metadata.created:
 
 2.1 metadata.created
