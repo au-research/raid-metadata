@@ -46,7 +46,7 @@
 
 **Occurrence**: 1
 
-**Allowed values**: *closed controlled list defined at https://vocabulary.raid.org/identifier.schemaUri/170*
+**Allowed values**: *closed controlled list defined at https://vocabulary.raid.org/identifier.schemaUri/scheme*
 
 * ``https://raid.org/``
 
@@ -203,7 +203,7 @@
 
 **Occurrence**: 1
 
-**Allowed values**: *closed controlled list defined at https://vocabulary.raid.org/identifier.license/172*
+**Allowed values**: *closed controlled list defined at https://vocabulary.raid.org/identifier.license/scheme*
 
 * Creative Commons CC-0
 

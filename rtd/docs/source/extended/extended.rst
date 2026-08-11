@@ -25,4 +25,3 @@ Contents
 
    subjects
    spatialCoverages
-   traditionalKnowledge   

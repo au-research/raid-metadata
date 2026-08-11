@@ -98,7 +98,7 @@
 
 **Occurrence**: 1
 
-**Allowed values**: *closed controlled list defined at https://vocabulary.raid.org/organisation.role.schemaUri/281*
+**Allowed values**: *closed controlled list defined at https://vocabulary.raid.org/organisation.role.schemaUri/scheme*
 
 * ``https://vocabulary.raid.org/organisation.role.schema/359``
 

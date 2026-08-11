@@ -57,14 +57,14 @@
 
 **Allowed values**: *closed controlled list derived from description.type.schemaUri*
 
-* ``https://vocabulary.raid.org/description.type.id/326`` (Primary, i.e., a preferred full description or abstract)
-* ``https://vocabulary.raid.org/description.type.id/321`` (Alternative, i.e., an additional or supplementary full description or abstract)
-* ``https://vocabulary.raid.org/description.type.id/322`` (Brief, i.e., a shorted version of the primary description)
-* ``https://vocabulary.raid.org/description.type.id/327`` (Significance Statement)
-* ``https://vocabulary.raid.org/description.type.id/323`` (Methods)
-* ``https://vocabulary.raid.org/description.type.id/324`` (Objectives)
-* ``https://vocabulary.raid.org/description.type.id/392`` (Acknowledgements, i.e., for recognition of people not listed as Contributors or organisations not listed as Organisations)
-* ``https://vocabulary.raid.org/description.type.id/325`` (Other, i.e., any other descriptive information such as a note)
+* ``https://vocabulary.raid.org/description.type.schema/318`` (Primary, i.e., a preferred full description or abstract)
+* ``https://vocabulary.raid.org/description.type.schema/319`` (Alternative, i.e., an additional or supplementary full description or abstract)
+* ``https://vocabulary.raid.org/description.type.schema/3`` (Brief, i.e., a shortened version of the primary description)
+* ``https://vocabulary.raid.org/description.type.schema/9`` (Significance statement)
+* ``https://vocabulary.raid.org/description.type.schema/8`` (Methods)
+* ``https://vocabulary.raid.org/description.type.schema/7`` (Objectives)
+* ``https://vocabulary.raid.org/description.type.schema/392`` (Acknowledgements, i.e., for recognition of people not listed as Contributors or organisations not listed as Organisations)
+* ``https://vocabulary.raid.org/description.type.schema/6`` (Other, i.e., any other descriptive information such as a note)
 
 **Default**: description.type.id for first-entered description (only) defaults to 'Primary'
 
@@ -81,7 +81,7 @@
 
 **Occurrence**: 1
 
-**Allowed values**: *closed controlled list defined at https://vocabulary.raid.org/description.type.schemaUri/275*
+**Allowed values**: *closed controlled list defined at https://vocabulary.raid.org/description.type.schemaUri/scheme*
 
 * ``https://vocabulary.raid.org/description.type.schema/320``
 

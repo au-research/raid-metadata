@@ -35,7 +35,7 @@ The RAiD metadata schema is divided into three components:
 * Publish each list in a machine-readable format, preferably on a vocabulary service (**Note**: the ARDC can assist with this requirement)
 * Register the controlled list(s) with the ARDC as the RAiD's ISO 23527 Registration Authority (RAu). Reuse of an existing published controlled list is acceptable, as long as it is published in machine-readable format.
 
-**Local** components are properties and controlled lists that are entirely under the control of a Registration Agency, and only need to be reported to the ARDC annually or whenever major changes are made. Local properties can be tailored to meet the needs of the research community served by the Registration Agency. A mechanism will be provided by the Registration Authority to enable useful local metadata to be promoted into extended metadata, or extended properties into core metadata.
+**Local** components are properties and controlled lists that are entirely under the control of a Registration Agency, and only need to be reported to the ARDC annually or whenever major changes are made. Local properties can be tailored to meet the needs of the research community served by the Registration Agency. Proposals to promote useful local metadata into extended metadata, or extended properties into core metadata, are considered by the RAiD Metadata Advisory Group, which the Registration Authority is convening.
 
 Component blocks and sub-blocks
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -85,19 +85,5 @@ Contents
 .. toctree::
 
    core/core
-      core/identifier
-      core/metadata
-      core/dates
-      core/titles
-      core/descriptions
-      core/contributors
-      core/organisations
-      core/relatedObjects
-      core/alternateIdentifiers
-      core/alternateUrls
-      core/relatedRaids
-      core/access
    extended/extended
-      extended/subjects
-      extended/traditionalKnowledgeLabels
-      extended/spatialCoverages
+   appendix-not-implemented

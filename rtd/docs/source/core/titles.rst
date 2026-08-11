@@ -55,10 +55,10 @@
 
 **Allowed values**: *closed controlled list derived from title.type.schemaUri*
 
-* ``https://vocabulary.raid.org/title.type.id/380`` (Primary, i.e., a preferred full or long title)
-* ``https://vocabulary.raid.org/title.type.id/381`` (Short)
-* ``https://vocabulary.raid.org/title.type.id/378`` (Acronym)
-* ``https://vocabulary.raid.org/title.type.id/379`` (Alternative, including subtitle or other supplemental title)
+* ``https://vocabulary.raid.org/title.type.schema/5`` (Primary, i.e., a preferred full or long title)
+* ``https://vocabulary.raid.org/title.type.schema/157`` (Short)
+* ``https://vocabulary.raid.org/title.type.schema/156`` (Acronym)
+* ``https://vocabulary.raid.org/title.type.schema/4`` (Alternative, including subtitle or other supplemental title)
 
 **Default** 'Primary'
 
@@ -75,7 +75,7 @@
 
 **Occurrence**: 1
 
-**Allowed values**: *Closed controlled list defined at https://vocabulary.raid.org/title.type.schemaUri/377*
+**Allowed values**: *Closed controlled list defined at https://vocabulary.raid.org/title.type.schemaUri/scheme*
 
 * ``https://vocabulary.raid.org/title.type.schema/376``
 

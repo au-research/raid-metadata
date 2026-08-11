@@ -58,7 +58,7 @@
 
 **Occurrence**: 1
 
-**Allowed values**: *closed controlled list defined at https://vocabulary.raid.org/access.type.schemaUri/207*
+**Allowed values**: *closed controlled list defined at https://vocabulary.raid.org/access.type.schemaUri/scheme*
 
 * ``https://vocabularies.coar-repositories.org/access_rights/`` 
 

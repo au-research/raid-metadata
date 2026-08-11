@@ -73,6 +73,6 @@
 
 **Occurrence**: 1
 
-**Allowed values**: *closed controlled list defined at https://vocabulary.raid.org/relatedRaid.type.schemaUri/285*
+**Allowed values**: *closed controlled list defined at https://vocabulary.raid.org/relatedRaid.type.schemaUri/scheme*
 
 * https://vocabulary.raid.org/relatedRaid.type.schema/367
