@@ -6,3 +6,5 @@ RAiD is developed, maintained, and operated by the [Australian Research Data Com
 
 This documentation describes the RAiD metadata schema.
 
+The RAiD controlled lists are published through [Research Vocabularies Australia](https://vocabs.ardc.edu.au/), and individual terms resolve under `https://vocabulary.raid.org/`. They were previously kept as JSON files in the `scheme/` directory of this repository; that approach was deprecated and the directory has been removed. Any legacy `https://github.com/au-research/raid-metadata/.../scheme/...` URI found in older RAiD metadata is superseded by its equivalent in the published vocabulary.
+
