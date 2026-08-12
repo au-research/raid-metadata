@@ -55,7 +55,7 @@
 
 **Occurrence**: 1
 
-**Allowed values**: *closed controlled list derived from description.type.schemaUri*
+**Allowed values**: *closed controlled list derived from description.type.schemaUri, published at https://vocabulary.raid.org/description.type.id/scheme*
 
 * ``https://vocabulary.raid.org/description.type.schema/318`` (Primary, i.e., a preferred full description or abstract)
 * ``https://vocabulary.raid.org/description.type.schema/319`` (Alternative, i.e., an additional or supplementary full description or abstract)
@@ -111,7 +111,7 @@
 
 **Occurrence**: 1
 
-**Allowed values**: *closed controlled list derived from titles.language.schemaUri*
+**Allowed values**: *closed controlled list derived from description.language.schemaUri*
 
 **Example**: ``eng``
 

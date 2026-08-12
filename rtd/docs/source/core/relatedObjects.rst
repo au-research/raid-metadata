@@ -69,7 +69,7 @@
 
 **Occurrence**: 1
 
-**Allowed values**: *closed controlled list derived from relatedObject.type.schemaUri*
+**Allowed values**: *closed controlled list derived from relatedObject.type.schemaUri, published at https://vocabulary.raid.org/relatedObject.type.id/scheme*
 
 * ``https://vocabulary.raid.org/relatedObject.type.schema/273`` (Audiovisual)
 * ``https://vocabulary.raid.org/relatedObject.type.schema/258`` (Book)
@@ -141,7 +141,7 @@
 
 **Occurrence**: 1
 
-**Allowed values**: *closed controlled list derived from relatedObject.category.schemUri*
+**Allowed values**: *closed controlled list derived from relatedObject.category.schemaUri, published at https://vocabulary.raid.org/relatedObject.category.id/scheme*
 
 * ``https://vocabulary.raid.org/relatedObject.category.id/191`` (Input)
 * ``https://vocabulary.raid.org/relatedObject.category.id/192`` (Internal process document or artefact)

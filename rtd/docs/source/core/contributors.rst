@@ -73,7 +73,7 @@
 
 **Occurrence**: 1
 
-**Allowed values**: *closed controlled list derived from contributor.position.schemaUri*
+**Allowed values**: *closed controlled list derived from contributor.position.schemaUri, published at https://vocabulary.raid.org/contributor.position.id/scheme*
 
 * ``https://vocabulary.raid.org/contributor.position.schema/307`` (Principal or Chief Investigator)
 * ``https://vocabulary.raid.org/contributor.position.schema/308`` (Co-investigator or Collaborator)
@@ -200,7 +200,7 @@
 
 **Occurrence**: 1
 
-**Allowed values**: *closed controlled list derived from contributor.role.schemaUri*
+**Allowed values**: *closed controlled list derived from contributor.role.schemaUri, published at https://vocabulary.raid.org/contributor.role.id/scheme*
 
 * ``https://credit.niso.org/contributor-roles/conceptualization/``
 * ``https://credit.niso.org/contributor-roles/data-curation/``

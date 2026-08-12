@@ -49,7 +49,7 @@
 
 **Occurrence**: 1
 
-**Allowed values**: *closed controlled list derived from relatedRaid.type.schemaUri*
+**Allowed values**: *closed controlled list derived from relatedRaid.type.schemaUri, published at https://vocabulary.raid.org/relatedRaid.type.id/scheme*
 
 * ``https://vocabulary.raid.org/relatedRaid.type.schema/204`` (Continues)
 * ``https://vocabulary.raid.org/relatedRaid.type.schema/203`` (IsContinuedBy)

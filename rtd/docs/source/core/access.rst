@@ -38,7 +38,7 @@
 
 **Occurrence**: 1
 
-**Allowed values**: *closed controlled list derived from access.type.schemaUri*
+**Allowed values**: *closed controlled list derived from access.type.schemaUri, published at https://vocabulary.raid.org/access.type.id/scheme*
 
 * ``https://vocabularies.coar-repositories.org/access_rights/c_abf2/`` (Open access) 
 * ``https://vocabularies.coar-repositories.org/access_rights/c_f1cf/`` (Embargoed access)

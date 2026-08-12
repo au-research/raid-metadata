@@ -53,7 +53,7 @@
 
 **Occurrence**: 1
 
-**Allowed values**: *closed controlled list derived from title.type.schemaUri*
+**Allowed values**: *closed controlled list derived from title.type.schemaUri, published at https://vocabulary.raid.org/title.type.id/scheme*
 
 * ``https://vocabulary.raid.org/title.type.schema/5`` (Primary, i.e., a preferred full or long title)
 * ``https://vocabulary.raid.org/title.type.schema/157`` (Short)
