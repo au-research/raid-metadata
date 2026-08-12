@@ -31,7 +31,7 @@
 
 **Constraints**: RAiD name prefix supplied by DataCite; RAiD name suffix consisting of alphanumeric, English, ASCII Latin characters
 
-**Example**: ``https://raid.org/10.25.10.1234/a1b2c``
+**Example**: ``https://raid.org/10.99999/7a2f4c81``
 
 **Note**: RAiD names are valid DOIs and can also be resolved via https://doi.org/ or https://handle.net/.
 
