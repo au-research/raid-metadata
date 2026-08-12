@@ -33,7 +33,7 @@
 
 **Example**: ``https://raid.org/10.99999/7a2f4c81``
 
-**Note**: RAiD names are valid DOIs and can also be resolved via https://doi.org/ or https://handle.net/.
+**Note**: A RAiD name should be expressed using the ``https://raid.org/`` domain, as shown above. This is the preferred form and the form recorded in the RAiD metadata record. Because RAiD names are also valid DOIs, the same name resolves via https://doi.org/ and https://handle.net/, but those forms should not be used when supplying or citing a RAiD name.
 
 .. _1.2-identifier.id.schemaUri:
 
