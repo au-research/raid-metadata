@@ -42,7 +42,7 @@
 
 **Occurrence**: 1
 
-**Allowed values**: *open controlled list of URIs defined at https://vocabulary.raid.org/subject.schemaUri/193*
+**Allowed values**: *open controlled list of URIs defined at https://vocabulary.raid.org/subject.schemaUri/scheme*
 
 * https://vocabs.ardc.edu.au/viewById/316 (Australian and New Zealand Standard Research Classification 2020: Fields of Research)
 * https://vocabs.ardc.edu.au/viewById/317 (Australian and New Zealand Standard Research Classification 2020: Socio-Economic Objectives)

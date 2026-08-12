@@ -71,7 +71,7 @@
 
 **Occurrence**: 1
 
-**Allowed values**: *closed controlled list derived from organisation.role.schemaUri*
+**Allowed values**: *closed controlled list derived from organisation.role.schemaUri, published at https://vocabulary.raid.org/organisation.role.id/scheme*
 
 * ``https://vocabulary.raid.org/organisation.role.schema/182`` (Lead Research Organisation)
 * ``https://vocabulary.raid.org/organisation.role.schema/183`` (Other Research Organisation)
@@ -98,7 +98,7 @@
 
 **Occurrence**: 1
 
-**Allowed values**: *closed controlled list defined at https://vocabulary.raid.org/organisation.role.schemaUri/281*
+**Allowed values**: *closed controlled list defined at https://vocabulary.raid.org/organisation.role.schemaUri/scheme*
 
 * ``https://vocabulary.raid.org/organisation.role.schema/359``
 

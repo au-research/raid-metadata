@@ -38,19 +38,14 @@
 
 **Occurrence**: 1
 
-**Allowed values**: *closed controlled list defined by https://vocabulary.raid.org/relatedObject.schemaUri/218*
+**Allowed values**: *closed controlled list defined by https://vocabulary.raid.org/relatedObject.schemaUri/scheme*
 
-* http://doi.org/ (*all DOIs, including IGSNs, CrossRef Publication IDs or Grant IDs, DataCite DOIs, instrument DOIs, etc.*)
-* https://web.archive.org/web/ (*fallback for any Object that has no ID other than a webpage - a Wayback Machine snapshot must be taken and that link inserted into the RAiD, e.g.* ``https://web.archive.org/web/20260219073130/https://www.raid.org/``)
+* ``https://doi.org/`` (*all DOIs, including IGSNs, CrossRef Publication IDs or Grant IDs, DataCite DOIs, instrument DOIs, etc.*)
+* ``https://web.archive.org/`` (*fallback for any Object that has no ID other than a webpage - a Wayback Machine snapshot must be taken and that link inserted into the RAiD*)
 
-**Proposed values**: *not yet implemented*
+**Constraints**: a relatedObject.id declared under the Web Archive schema must be a full snapshot URL of the form ``https://web.archive.org/web/<14-digit timestamp>/<original URL>``, e.g. ``https://web.archive.org/web/20260219073130/https://www.raid.org/``.
 
-* https://n2t.net/ark: (*Archive Resource Keys*)
-* http://hdl.handle.net/ (*all non-DOI handles*)
-* https://www.isbn-international.org/ (*ISBN*)
-* https://scicrunch.org/resolver/ (*RRID*)
-
-**Note**: Controlled list is a subset of DataCite Metadata Schema 4.4 Appendix 1 Table 8 'Description of relatedIdentiferType'.
+**Note**: Controlled list is a subset of DataCite Metadata Schema 4.4 Appendix 1 Table 8 'Description of relatedIdentiferType'. Further identifier schemes are published in the controlled list but are not yet accepted by the RAiD service; see :doc:`../appendix-not-implemented`.
 
 .. _8.3-relatedObject.type:
 
@@ -74,7 +69,7 @@
 
 **Occurrence**: 1
 
-**Allowed values**: *closed controlled list derived from relatedObject.type.schemaUri*
+**Allowed values**: *closed controlled list derived from relatedObject.type.schemaUri, published at https://vocabulary.raid.org/relatedObject.type.id/scheme*
 
 * ``https://vocabulary.raid.org/relatedObject.type.schema/273`` (Audiovisual)
 * ``https://vocabulary.raid.org/relatedObject.type.schema/258`` (Book)
@@ -146,7 +141,7 @@
 
 **Occurrence**: 1
 
-**Allowed values**: *closed controlled list derived from relatedObject.category.schemUri*
+**Allowed values**: *closed controlled list derived from relatedObject.category.schemaUri, published at https://vocabulary.raid.org/relatedObject.category.id/scheme*
 
 * ``https://vocabulary.raid.org/relatedObject.category.id/191`` (Input)
 * ``https://vocabulary.raid.org/relatedObject.category.id/192`` (Internal process document or artefact)
@@ -163,6 +158,6 @@
 
 **Occurrence**: 1
 
-**Allowed values**: *closed controlled list defined at https://vocabulary.raid.org/relatedObject.category.schemaUri/386*
+**Allowed values**: *closed controlled list defined at https://vocabulary.raid.org/relatedObject.category.schemaUri/scheme*
 
-* https://vocabulary.raid.org/relatedObject.category.schema/385
+* ``https://vocabulary.raid.org/relatedObject.category.schemaUri/386``
