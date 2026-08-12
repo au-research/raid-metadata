@@ -45,7 +45,7 @@
 
 **Occurrence**: 1
 
-**Allowed values**: *open controlled list of URIs defined at https://vocabulary.raid.org/spatialCoverage.schemaUri/167*
+**Allowed values**: *open controlled list of URIs defined at https://vocabulary.raid.org/spatialCoverage.schemaUri/scheme*
 
 * ``https://www.openstreetmap.org/`` (OpenStreetMap)
 * ``https://www.geonames.org/`` (Geonames)

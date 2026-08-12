@@ -12,6 +12,8 @@
 
 **Occurrence**: 1
 
+**Note**: Every property in this block is set and maintained by the RAiD service. Registration Agencies and users cannot supply or alter these values when creating or updating a RAiD. They are documented because they form part of every RAiD metadata record and are returned when a record is retrieved.
+
 **Example JSON**
 
 .. _2.1-metadata.created:

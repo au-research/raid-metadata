@@ -45,7 +45,7 @@
 
 **Constraints**: a PID is required; ORCID and ISNI are currently allowed
 
-**Note**: The controlled list of allowed identifier schemas is defined at https://vocabulary.raid.org/contributor.schemaUri/215 and is shared across all Registration Agencies. An ORCID Sandbox schema (``https://sandbox.orcid.org/``) is also present in the controlled list for testing purposes only and is not intended for production RAiD records. ISNI existence is verified against the ISNI registry; local checksum validation of the ISNI check digit ahead of that lookup is planned but not yet implemented.
+**Note**: The controlled list of allowed identifier schemas is shared across all Registration Agencies. An ORCID Sandbox schema (``https://sandbox.orcid.org/``) is also present in the controlled list for testing purposes only and is not intended for production RAiD records. ISNI existence is verified against the ISNI registry.
 
 .. _6.3-contributor.position:
 
@@ -73,7 +73,7 @@
 
 **Occurrence**: 1
 
-**Allowed values**: *closed controlled list derived from contributor.position.schemaUri*
+**Allowed values**: *closed controlled list derived from contributor.position.schemaUri, published at https://vocabulary.raid.org/contributor.position.id/scheme*
 
 * ``https://vocabulary.raid.org/contributor.position.schema/307`` (Principal or Chief Investigator)
 * ``https://vocabulary.raid.org/contributor.position.schema/308`` (Co-investigator or Collaborator)
@@ -94,7 +94,7 @@
 
 **Occurrence**: 1
 
-**Allowed values**: *closed controlled list defined at https://vocabulary.raid.org/contributor.position.schemaUri/277*
+**Allowed values**: *closed controlled list defined at https://vocabulary.raid.org/contributor.position.schemaUri/scheme*
 
 * ``https://vocabulary.raid.org/contributor.position.schema/305``
 
@@ -151,10 +151,10 @@
 
 **Occurrence**: 0-1
 
-**Allowed values**: 
+**Allowed values**: boolean
 
-* ``Yes``
-* ``Null``
+* ``true``
+* ``false``
 
 **Note**: More than one contributor can be flagged as a leader if the project is jointly led.
 
@@ -169,10 +169,10 @@
 
 **Occurrence**: 0-1
 
-**Allowed values**: 
+**Allowed values**: boolean
 
-* ``Yes``
-* ``Null``
+* ``true``
+* ``false``
 
 **Note**: More than one contributor can be flagged as a contact.
 
@@ -200,7 +200,7 @@
 
 **Occurrence**: 1
 
-**Allowed values**: *closed controlled list derived from contributor.role.schemaUri*
+**Allowed values**: *closed controlled list derived from contributor.role.schemaUri, published at https://vocabulary.raid.org/contributor.role.id/scheme*
 
 * ``https://credit.niso.org/contributor-roles/conceptualization/``
 * ``https://credit.niso.org/contributor-roles/data-curation/``
@@ -228,7 +228,7 @@
 
 **Occurrence**: 1
 
-**Allowed values**: *closed controlled list defined at https://vocabulary.raid.org/contributor.role.schemaUri/165*
+**Allowed values**: *closed controlled list defined at https://vocabulary.raid.org/contributor.role.schemaUri/scheme*
 
 * ``https://credit.niso.org/``
 
