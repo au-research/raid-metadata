@@ -33,7 +33,7 @@
        {
          "text": "KELPWATCH",
          "type": {
-           "id": "https://vocabulary.raid.org/title.type.schema/156",
+           "id": "https://vocabulary.raid.org/title.type.schema/157",
            "schemaUri": "https://vocabulary.raid.org/title.type.schema/376"
          },
          "language": {

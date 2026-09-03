@@ -203,7 +203,7 @@
 1.5 identifier.raidAgencyUrl
 -----------------------------
 
-**Definition**: the URL for the RAiD via the minting Registration Agency's own system
+**Definition**: the URL of the RAiD landing page provided by the Registration Agency's Service
 
 **Requirement**: mandatory
 

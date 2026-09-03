@@ -40,7 +40,7 @@
 
 **Format**: epoch seconds
 
-**Note**: Set automatically by the RAiD Service software when a RAiD is created; not user-editable.
+**Note**: Set automatically by the RAiD Service software when a RAiD is created; not user-editable. Epoch seconds are the number of seconds that have passed since 00:00:00 UTC on 1 January 1970, excluding leap seconds, formally defined by the `POSIX.1 Time Standard (IEEE Std 1003.1) <https://pubs.opengroup.org/onlinepubs/9699919799/>`__. Epoch seconds can be converted into a human-readable date and time using free online tools such as `EpochConverter <https://www.epochconverter.com/>`__.
 
 .. _2.2-metadata.updated:
 
@@ -57,4 +57,4 @@
 
 **Format**: epoch seconds
 
-**Note**: Set automatically by the RAiD Service software whenever a RAiD is updated; not user-editable.
+**Note**: Set automatically by the RAiD Service software whenever a RAiD is updated; not user-editable. Epoch seconds are the number of seconds that have passed since 00:00:00 UTC on 1 January 1970, excluding leap seconds, formally defined by the `POSIX.1 Time Standard (IEEE Std 1003.1) <https://pubs.opengroup.org/onlinepubs/9699919799/>`__. Epoch seconds can be converted into a human-readable date and time using free online tools such as `EpochConverter <https://www.epochconverter.com/>`__.

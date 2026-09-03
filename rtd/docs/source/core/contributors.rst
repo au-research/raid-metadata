@@ -94,7 +94,7 @@
 
 **Constraints**: a PID is required; ORCID and ISNI are currently allowed
 
-**Note**: The controlled list of allowed identifier schemas is shared across all Registration Agencies. An ORCID Sandbox schema (``https://sandbox.orcid.org/``) is also present in the controlled list for testing purposes only and is not intended for production RAiD records. ISNI existence is verified against the ISNI registry.
+**Note**: The controlled list of allowed identifier schemas is shared across all Registration Agencies. An ORCID Sandbox schema (``https://sandbox.orcid.org/``) is also present in the controlled list within the RAiD Demo environment. This schema is for the purposes of RAiD testing only and should not be used for real RAiD records minted in the Production environment. ISNI existence is verified against the ISNI registry.
 
 .. _6.3-contributor.position:
 
