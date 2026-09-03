@@ -69,7 +69,7 @@ Furthermore, some properties include additional information.
 
 **Constraints** specify further limits or requirements governing 'Allowed values'.
 
-**Example(s)** provide models for the value.
+**Example(s)** can illustrate the value.
 
 **Example JSON** provides an indicative JSON snippet showing how a block or sub-block appears in a RAiD metadata record, including its enclosing property name. Properties that hold a single value are illustrated by **Example(s)** instead. Snippets are drawn from fictional projects; organisation identifiers, vocabulary URIs and language codes are real, while RAiD names, contributor identifiers and object identifiers are illustrative only and will not resolve.
 
