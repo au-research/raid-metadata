@@ -39,4 +39,4 @@
 
 **Note**: An alternateURL can be used to point to any other project website, whether standalone, organisational, or in a platform such as Open Science Framework.
 
-**Example(s)**: ``https://osf.io/puwgx/`` (an Open Science Framework project page)
+**Example(s)**: ``https://imas.utas.edu.au/projects/kelpwatch`` (a project page on an institutional website)

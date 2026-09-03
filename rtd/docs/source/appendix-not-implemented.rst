@@ -6,16 +6,16 @@
 Appendix: schema components not yet implemented
 ===============================================
 
-This appendix is **non-normative**. It describes metadata components that have been approved for the RAiD Metadata Schema, or that are published in the RAiD controlled lists, but that the RAiD service does not currently accept. They are recorded here so that Registration Agencies can plan for them, and so that the numbered sections of this documentation describe only what is implemented.
+This appendix is **non-normative**. It describes metadata components that have been approved for the RAiD Metadata Schema, or that are published in the RAiD controlled lists, but that the RAiD system does not currently accept. They are recorded here so that Registration Agencies can plan for them, and so that the numbered sections of this documentation describe only what is implemented.
 
-Nothing in this appendix should be used in a RAiD metadata record. Components are moved into the numbered sections when the RAiD service begins accepting them.
+Nothing in this appendix should be used in a RAiD metadata record. Components are moved into the numbered sections when the RAiD system begins accepting them.
 
 .. _appendix-relatedObject.schemaUri:
 
 Additional relatedObject identifier schemes
 -------------------------------------------
 
-The controlled list at https://vocabulary.raid.org/relatedObject.schemaUri/scheme publishes six identifier schemes. Two of these, DOI and Web Archive, are accepted by the RAiD service and are documented at :ref:`8.2-relatedObject.id.schemaUri`. The remaining four are published in the controlled list but are not currently accepted:
+The controlled list at https://vocabulary.raid.org/relatedObject.schemaUri/scheme publishes six identifier schemes. Two of these, DOI and Web Archive, are accepted by the RAiD system and are documented at :ref:`8.2-relatedObject.id.schemaUri`. The remaining four are published in the controlled list but are not currently accepted:
 
 * ``https://hdl.handle.net/`` (*all non-DOI handles*)
 * ``https://scicrunch.org/resolver/`` (*RRID*)
@@ -37,7 +37,7 @@ traditionalKnowledge
 
 **Occurrence**: 0-n
 
-**Note**: This metadata block is not implemented in the RAiD service. No RAiD metadata record currently contains a traditionalKnowledge block. It is documented here because the block has been approved for the schema and its identifier schema is published in the RAiD controlled lists.
+**Note**: This metadata block is not implemented in the RAiD system. No RAiD metadata record currently contains a traditionalKnowledge block. It is documented here because the block has been approved for the schema and its identifier schema is published in the RAiD controlled lists.
 
 .. _appendix-traditionalKnowledge.id:
 
