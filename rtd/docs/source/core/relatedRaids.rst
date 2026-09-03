@@ -46,7 +46,7 @@
 11.2 relatedRaid.type
 ----------------------
 
-**Definition**: a metadata schema sub-block qualifying the relationship with a related Raid
+**Definition**: a metadata schema sub-block qualifying the relationship with a relatedRaid
 
 **Requirement**: mandatory for each relatedRaid supplied
 

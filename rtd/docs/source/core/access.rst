@@ -109,7 +109,7 @@
 
 **Constraints**: an embargo expiration date must be within 18 months of the date the RAiD was registered; the year, month, and day that the embargo ends must be specified
 
-**Example**: ``2021-08-28``
+**Example(s)**: ``2021-08-28``
 
 .. _12.3-access.statement:
 
@@ -186,7 +186,7 @@
 
 **Allowed values**: *closed controlled list derived from access.statement.language.schemaUri*
 
-**Example**: ``eng``
+**Example(s)**: ``eng``
 
 .. _12.3.2.2-access.statement.language.schemaUri:
 

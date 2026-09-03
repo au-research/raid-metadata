@@ -54,7 +54,7 @@
 
 **Allowed values**: *closed controlled list of URIs derived from the schema chosen at subject.id.schemaUri*
 
-**Examples**
+**Example(s)**
 
 * https://linked.data.gov.au/def/anzsrc-for/2020/430106 (ANZSRC 2020 Fields of Research code: ‘Digital Archaeology’)
 
@@ -137,7 +137,7 @@ Other subject schemas can be nominated by Registration Agencies.
 
 **Allowed values**: *closed controlled list derived from subject.keyword.language.schemaUri*
 
-**Example**: ``eng``
+**Example(s)**: ``eng``
 
 .. _13.3.2.2-subject.keyword.language.schemaUri:
 

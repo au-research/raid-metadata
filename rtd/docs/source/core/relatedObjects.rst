@@ -54,7 +54,7 @@
 8.1 relatedObject.id
 --------------------
 
-**Definition**: any (a) input or resource used by a project or activity, (b) output or product created by a project or activity, and/or (c) internal process documentation used within a project or activity, that is identified by a persistent identifier (PID).
+**Definition**: any (a) input or resource used by a project or activity, (b) output or product created by a project or activity, and/or (c) internal process documentation used within a project or activity, that is identified by a persistent identifier (PID)
 
 **Requirement**: mandatory for each relatedObject supplied
 
@@ -187,7 +187,7 @@
 8.4.2 relatedObject.category.schemaUri
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Definition**: the URI of the category schema used.
+**Definition**: the URI of the category schema used
 
 **Requirement**: mandatory for each relatedObject.category supplied
 

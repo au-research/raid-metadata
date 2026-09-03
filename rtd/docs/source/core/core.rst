@@ -1,4 +1,4 @@
-Core Metadata Schema Properties
+Core metadata schema properties
 ===============================
 
 .. autosummary::

@@ -87,7 +87,7 @@
 5.2.1 description.type.id
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Definition**: the type of description.
+**Definition**: the type of description
 
 **Requirement**: mandatory for each description.type supplied
 
@@ -160,7 +160,7 @@
 
 **Allowed values**: *closed controlled list derived from description.language.schemaUri*
 
-**Example**: ``eng``
+**Example(s)**: ``eng``
 
 .. _5.3.1-description.languageId.schemaUri:
 

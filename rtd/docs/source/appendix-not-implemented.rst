@@ -52,7 +52,7 @@ traditionalKnowledge.id
 
 **Allowed values**: *identifier defined by traditionalKnowledge.schemaUri*
 
-**Examples**:
+**Example(s)**:
 
 * https://localcontextshub.org/projects/03818172-23c1-4dd1-a662-f11aa07cccda/ (`Island Sustainability Project 2025`, a Project in Local Contexts Hub)
 

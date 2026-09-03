@@ -1,4 +1,4 @@
-Extended Metadata Schema Properties
+Extended metadata schema properties
 ===================================
 
 .. autosummary::
