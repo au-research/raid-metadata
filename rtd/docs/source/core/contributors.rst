@@ -14,6 +14,55 @@
 
 **Example JSON**
 
+.. code-block:: json
+
+   {
+     "contributor": [
+       {
+         "id": "https://orcid.org/0000-0002-1825-0097",
+         "schemaUri": "https://orcid.org/",
+         "position": [
+           {
+             "id": "https://vocabulary.raid.org/contributor.position.schema/307",
+             "schemaUri": "https://vocabulary.raid.org/contributor.position.schema/305",
+             "startDate": "2024-03-01"
+           }
+         ],
+         "role": [
+           {
+             "id": "https://credit.niso.org/contributor-roles/conceptualization/",
+             "schemaUri": "https://credit.niso.org/"
+           },
+           {
+             "id": "https://credit.niso.org/contributor-roles/supervision/",
+             "schemaUri": "https://credit.niso.org/"
+           }
+         ],
+         "leader": true,
+         "contact": true
+       },
+       {
+         "id": "https://orcid.org/0000-0001-9971-0253",
+         "schemaUri": "https://orcid.org/",
+         "position": [
+           {
+             "id": "https://vocabulary.raid.org/contributor.position.schema/308",
+             "schemaUri": "https://vocabulary.raid.org/contributor.position.schema/305",
+             "startDate": "2024-06-01"
+           }
+         ],
+         "role": [
+           {
+             "id": "https://credit.niso.org/contributor-roles/investigation/",
+             "schemaUri": "https://credit.niso.org/"
+           }
+         ],
+         "leader": false,
+         "contact": false
+       }
+     ]
+   }
+
 .. _6.1-contributor.id:
 
 6.1 contributor.id

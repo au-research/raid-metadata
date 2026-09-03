@@ -14,6 +14,27 @@
 
 **Example JSON**
 
+.. code-block:: json
+
+   {
+     "identifier": {
+       "id": "https://raid.org/10.99999/7a2f4c81",
+       "schemaUri": "https://raid.org/",
+       "registrationAgency": {
+         "id": "https://ror.org/038sjwq14",
+         "schemaUri": "https://ror.org/"
+       },
+       "owner": {
+         "id": "https://ror.org/01nfmeh72",
+         "schemaUri": "https://ror.org/",
+         "servicePoint": 20000003
+       },
+       "raidAgencyUrl": "https://static.prod.raid.org.au/raids/10.99999/7a2f4c81",
+       "license": "Creative Commons CC-0",
+       "version": 3
+     }
+   }
+
 .. _1.1-identifier.id:
 
 1.1 identifier.id

@@ -14,6 +14,33 @@
 
 **Example JSON**
 
+.. code-block:: json
+
+   {
+     "subject": [
+       {
+         "id": "https://linked.data.gov.au/def/anzsrc-for/2020/310305",
+         "schemaUri": "https://vocabs.ardc.edu.au/viewById/316",
+         "keyword": [
+           {
+             "text": "kelp forest",
+             "language": {
+               "id": "eng",
+               "schemaUri": "https://www.iso.org/standard/74575.html"
+             }
+           },
+           {
+             "text": "marine heatwave",
+             "language": {
+               "id": "eng",
+               "schemaUri": "https://www.iso.org/standard/74575.html"
+             }
+           }
+         ]
+       }
+     ]
+   }
+
 .. _13.1-subject.id:
 
 13.1 subject.id
@@ -87,6 +114,15 @@ Other subject schemas can be nominated by Registration Agencies.
 **Occurrence**: 0-1
 
 **Example JSON**
+
+.. code-block:: json
+
+   {
+     "language": {
+       "id": "eng",
+       "schemaUri": "https://www.iso.org/standard/74575.html"
+     }
+   }
 
 .. _13.3.2.1-subject.keyword.language.id:
 

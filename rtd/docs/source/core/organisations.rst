@@ -14,6 +14,35 @@
 
 **Example JSON**
 
+.. code-block:: json
+
+   {
+     "organisation": [
+       {
+         "id": "https://ror.org/01nfmeh72",
+         "schemaUri": "https://ror.org/",
+         "role": [
+           {
+             "id": "https://vocabulary.raid.org/organisation.role.schema/182",
+             "schemaUri": "https://vocabulary.raid.org/organisation.role.schema/359",
+             "startDate": "2024-03-01"
+           }
+         ]
+       },
+       {
+         "id": "https://ror.org/03x57gn41",
+         "schemaUri": "https://ror.org/",
+         "role": [
+           {
+             "id": "https://vocabulary.raid.org/organisation.role.schema/184",
+             "schemaUri": "https://vocabulary.raid.org/organisation.role.schema/359",
+             "startDate": "2024-03-01"
+           }
+         ]
+       }
+     ]
+   }
+
 .. _7.1-organisation.id:
 
 7.1 organisation.id

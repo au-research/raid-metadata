@@ -14,6 +14,25 @@
 
 **Example JSON**
 
+.. code-block:: json
+
+   {
+     "access": {
+       "type": {
+         "id": "https://vocabularies.coar-repositories.org/access_rights/c_f1cf/",
+         "schemaUri": "https://vocabularies.coar-repositories.org/access_rights/"
+       },
+       "embargoExpiry": "2027-06-30",
+       "statement": {
+         "text": "Metadata for this record is embargoed until the primary data custodian approves release of the linked data collection.",
+         "language": {
+           "id": "eng",
+           "schemaUri": "https://www.iso.org/standard/74575.html"
+         }
+       }
+     }
+   }
+
 .. _12.1-access.type:
 
 12.1 access.type
@@ -26,6 +45,15 @@
 **Occurrence**: 1
 
 **Example JSON**
+
+.. code-block:: json
+
+   {
+     "type": {
+       "id": "https://vocabularies.coar-repositories.org/access_rights/c_f1cf/",
+       "schemaUri": "https://vocabularies.coar-repositories.org/access_rights/"
+     }
+   }
 
 .. _12.2-access.typeId:
 
@@ -96,6 +124,18 @@
 
 **Example JSON**
 
+.. code-block:: json
+
+   {
+     "statement": {
+       "text": "Metadata for this record is embargoed until the primary data custodian approves release of the linked data collection.",
+       "language": {
+         "id": "eng",
+         "schemaUri": "https://www.iso.org/standard/74575.html"
+       }
+     }
+   }
+
 .. _12.3.1-access.statement.text:
 
 12.3.1 access.statement.text
@@ -111,8 +151,6 @@
 
 **Constraints**: maximum 1,000 characters
 
-**Example JSON**
-
 .. _12.3.2-access.statement.language:
 
 12.3.2 access.statement.language
@@ -125,6 +163,15 @@
 **Occurrence**: 0-1
 
 **Example JSON**
+
+.. code-block:: json
+
+   {
+     "language": {
+       "id": "eng",
+       "schemaUri": "https://www.iso.org/standard/74575.html"
+     }
+   }
 
 .. _12.3.2.1-access.statement.language.id:
 
