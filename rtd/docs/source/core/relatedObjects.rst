@@ -14,12 +14,47 @@
 
 **Example JSON**
 
+.. code-block:: json
+
+   {
+     "relatedObject": [
+       {
+         "id": "https://doi.org/10.5555/aurora-suite-recording",
+         "schemaUri": "https://doi.org/",
+         "type": {
+           "id": "https://vocabulary.raid.org/relatedObject.type.schema/261",
+           "schemaUri": "https://vocabulary.raid.org/relatedObject.type.schema/329"
+         },
+         "category": [
+           {
+             "id": "https://vocabulary.raid.org/relatedObject.category.id/190",
+             "schemaUri": "https://vocabulary.raid.org/relatedObject.category.schemaUri/386"
+           }
+         ]
+       },
+       {
+         "id": "https://web.archive.org/web/20260219073130/https://www.raid.org/",
+         "schemaUri": "https://web.archive.org/",
+         "type": {
+           "id": "https://vocabulary.raid.org/relatedObject.type.schema/265",
+           "schemaUri": "https://vocabulary.raid.org/relatedObject.type.schema/329"
+         },
+         "category": [
+           {
+             "id": "https://vocabulary.raid.org/relatedObject.category.id/191",
+             "schemaUri": "https://vocabulary.raid.org/relatedObject.category.schemaUri/386"
+           }
+         ]
+       }
+     ]
+   }
+
 .. _8.1-relatedObject.id:
 
 8.1 relatedObject.id
 --------------------
 
-**Definition**: any (a) input or resource used by a project or activity, (b) output or product created by a project or activity, and/or (c) internal process documentation used within a project or activity, that is identified by a persistent identifier (PID).
+**Definition**: any (a) input or resource used by a project or activity, (b) output or product created by a project or activity, and/or (c) internal process documentation used within a project or activity, that is identified by a persistent identifier (PID)
 
 **Requirement**: mandatory for each relatedObject supplied
 
@@ -117,6 +152,8 @@
 
 * ``https://vocabulary.raid.org/relatedObject.type.schema/329``
 
+**Default**: ``https://vocabulary.raid.org/relatedObject.type.schema/329``, the only value in this closed controlled list
+
 .. _8.4-relatedObject.category:
 
 8.4 relatedObject.category
@@ -152,7 +189,7 @@
 8.4.2 relatedObject.category.schemaUri
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Definition**: the URI of the category schema used.
+**Definition**: the URI of the category schema used
 
 **Requirement**: mandatory for each relatedObject.category supplied
 
@@ -161,3 +198,5 @@
 **Allowed values**: *closed controlled list defined at https://vocabulary.raid.org/relatedObject.category.schemaUri/scheme*
 
 * ``https://vocabulary.raid.org/relatedObject.category.schemaUri/386``
+
+**Default**: ``https://vocabulary.raid.org/relatedObject.category.schemaUri/386``, the only value in this closed controlled list

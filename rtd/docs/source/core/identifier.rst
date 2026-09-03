@@ -14,6 +14,27 @@
 
 **Example JSON**
 
+.. code-block:: json
+
+   {
+     "identifier": {
+       "id": "https://raid.org/10.99999/7a2f4c81",
+       "schemaUri": "https://raid.org/",
+       "registrationAgency": {
+         "id": "https://ror.org/038sjwq14",
+         "schemaUri": "https://ror.org/"
+       },
+       "owner": {
+         "id": "https://ror.org/01nfmeh72",
+         "schemaUri": "https://ror.org/",
+         "servicePoint": 20000003
+       },
+       "raidAgencyUrl": "https://static.prod.raid.org.au/raids/10.99999/7a2f4c81",
+       "license": "Creative Commons CC-0",
+       "version": 3
+     }
+   }
+
 .. _1.1-identifier.id:
 
 1.1 identifier.id
@@ -31,7 +52,7 @@
 
 **Constraints**: RAiD name prefix supplied by DataCite; RAiD name suffix consisting of alphanumeric, English, ASCII Latin characters
 
-**Example**: ``https://raid.org/10.99999/7a2f4c81``
+**Example(s)**: ``https://raid.org/10.99999/7a2f4c81``
 
 **Note**: A RAiD name should be expressed using the ``https://raid.org/`` domain, as shown above. This is the preferred form and the form recorded in the RAiD metadata record. Because RAiD names are also valid DOIs, the same name resolves via https://doi.org/ and https://handle.net/, but those forms should not be used when supplying or citing a RAiD name.
 
@@ -40,7 +61,7 @@
 1.2 identifier.schemaUri
 ------------------------
 
-**Definition**: the URI of the identifier scheme used to identify RAiDs.
+**Definition**: the URI of the identifier scheme used to identify RAiDs
 
 **Requirement**: mandatory
 
@@ -50,6 +71,8 @@
 
 * ``https://raid.org/``
 
+**Default**: ``https://raid.org/``, the only value in this closed controlled list
+
 **Note**: This property declares that the identifier is a RAiD and resolvable at https://raid.org/.
 
 .. _1.3-identifier.registrationAgency:
@@ -57,7 +80,7 @@
 1.3 identifier.registrationAgency
 ---------------------------------
 
-**Definition**: metadata schema sub-block declaring the Registration Agency that minted the RAiD.
+**Definition**: metadata schema sub-block declaring the Registration Agency that minted the RAiD
 
 **Requirement**: mandatory
 
@@ -76,7 +99,7 @@
 
 **Allowed values**: *the organisational identifier of a bona fide RAiD Registration Agency, limited to the list maintained by the Registration Authority, utilising the schema declared at identifier.registrationAgency.schemaUri*
 
-**Examples**:
+**Example(s)**:
 
 * ``https://ror.org/038sjwq14`` (The Australian Research Data Commons)
 * ``https://ror.org/009vhk114`` (SURF)
@@ -98,7 +121,9 @@
 
 **Allowed values**: *closed controlled list defined at https://vocabulary.raid.org/identifier.registrationAgency.schemaUri/242*
 
-* ``https://ror.org``  
+* ``https://ror.org``
+
+**Default**: ``https://ror.org``, the only value in this closed controlled list
 
 **Constraints**: a PID is required and (currently) only ROR is allowed
 
@@ -126,7 +151,7 @@
 
 **Allowed values**: *the identifier of an organisation recognised by a Registration Agency as able to mint RAiDs, utilising the schema declared at identifier.owner.schemaUri*
 
-**Examples**:
+**Example(s)**:
 
 * ``https://ror.org/00rqy9422`` (University of Queensland)
 * ``https://ror.org/02stey378`` (University of Notre Dame Australia)
@@ -151,6 +176,8 @@
 
 * ``https://ror.org/``
 
+**Default**: ``https://ror.org/``, the only value in this closed controlled list
+
 **Constraints**: a PID is required and (currently) only ROR is allowed
 
 .. _1.4.3-identifier.owner.servicePoint:
@@ -166,7 +193,7 @@
 
 **Allowed values**: *SPs from list maintained by each Registration Agency*
 
-**Examples**:
+**Example(s)**:
 
 * Queensland University of Technology - Research Infrastructure
 * RDM@UQ
@@ -182,7 +209,7 @@
 1.5 identifier.raidAgencyUrl
 -----------------------------
 
-**Definition**: the URL for the RAiD via the minting Registration Agency's own system
+**Definition**: the URL of the RAiD landing page provided by the Registration Agency's Service
 
 **Requirement**: mandatory
 
@@ -197,7 +224,7 @@
 1.6 identifier.license
 ----------------------
 
-**Definition**: the licence, or licence waiver, under which the RAiD metadata record associated with this Identifier has been issued.
+**Definition**: the licence, or licence waiver, under which the RAiD metadata record associated with this Identifier has been issued
 
 **Requirement**: mandatory
 
@@ -206,6 +233,8 @@
 **Allowed values**: *closed controlled list defined at https://vocabulary.raid.org/identifier.license/scheme*
 
 * Creative Commons CC-0
+
+**Default**: 'Creative Commons CC-0', the only value in this closed controlled list
 
 **Constraints**: CC-0 only (with fallback to CC-BY-4.0 in jurisdictions where CC-0 is not allowed)
 

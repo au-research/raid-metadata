@@ -14,6 +14,20 @@
 
 **Example JSON**
 
+.. code-block:: json
+
+   {
+     "relatedRaid": [
+       {
+         "id": "https://raid.org/10.99999/1f0ab934",
+         "type": {
+           "id": "https://vocabulary.raid.org/relatedRaid.type.schema/202",
+           "schemaUri": "https://vocabulary.raid.org/relatedRaid.type.schema/367"
+         }
+       }
+     ]
+   }
+
 .. _11.1-relatedRaid.id:
 
 11.1 relatedRaid.id
@@ -32,7 +46,7 @@
 11.2 relatedRaid.type
 ----------------------
 
-**Definition**: a metadata schema sub-block qualifying the relationship with a related Raid
+**Definition**: a metadata schema sub-block qualifying the relationship with a relatedRaid
 
 **Requirement**: mandatory for each relatedRaid supplied
 
@@ -67,7 +81,7 @@
 11.2.2 relatedRaid.type.schemaUri
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Definition**: The URI of the relationship schema used
+**Definition**: the URI of the relationship schema used
 
 **Requirement**: mandatory for each relatedRaid.type supplied
 
@@ -76,3 +90,5 @@
 **Allowed values**: *closed controlled list defined at https://vocabulary.raid.org/relatedRaid.type.schemaUri/scheme*
 
 * https://vocabulary.raid.org/relatedRaid.type.schema/367
+
+**Default**: ``https://vocabulary.raid.org/relatedRaid.type.schema/367``, the only value in this closed controlled list

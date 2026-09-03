@@ -14,6 +14,35 @@
 
 **Example JSON**
 
+.. code-block:: json
+
+   {
+     "description": [
+       {
+         "text": "KELPWATCH tracks the recovery of giant kelp forests at twelve reference sites along the Great Southern Reef, combining diver surveys with fixed underwater imagery to measure canopy extent and species assemblage change following marine heatwaves.",
+         "type": {
+           "id": "https://vocabulary.raid.org/description.type.schema/318",
+           "schemaUri": "https://vocabulary.raid.org/description.type.schema/320"
+         },
+         "language": {
+           "id": "eng",
+           "schemaUri": "https://www.iso.org/standard/74575.html"
+         }
+       },
+       {
+         "text": "Quarterly diver transects paired with time-lapse imagery, analysed against sea surface temperature records.",
+         "type": {
+           "id": "https://vocabulary.raid.org/description.type.schema/8",
+           "schemaUri": "https://vocabulary.raid.org/description.type.schema/320"
+         },
+         "language": {
+           "id": "eng",
+           "schemaUri": "https://www.iso.org/standard/74575.html"
+         }
+       }
+     ]
+   }
+
 .. _5.1-description.text:
 
 5.1 description.text
@@ -36,7 +65,7 @@
 5.2 description.type
 --------------------
 
-**Definition**: a metadata schema block declaring the type of description
+**Definition**: a metadata schema sub-block declaring the type of description
 
 **Requirement**: mandatory for each description supplied
 
@@ -44,12 +73,21 @@
 
 **Example JSON**
 
+.. code-block:: json
+
+   {
+     "type": {
+       "id": "https://vocabulary.raid.org/description.type.schema/318",
+       "schemaUri": "https://vocabulary.raid.org/description.type.schema/320"
+     }
+   }
+
 .. _5.2.1-description.type.id:
 
 5.2.1 description.type.id
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Definition**: the type of description.
+**Definition**: the type of description
 
 **Requirement**: mandatory for each description.type supplied
 
@@ -85,6 +123,8 @@
 
 * ``https://vocabulary.raid.org/description.type.schema/320``
 
+**Default**: ``https://vocabulary.raid.org/description.type.schema/320``, the only value in this closed controlled list
+
 **Note**: Controlled list adapted from Vocabularies for Registry Schema 1.6.5 'Description Type' and DataCite Metadata Schema 4.4 Appendix 1 Table 10 'Description of descriptiontype'.
 
 .. _5.3-description.language:
@@ -92,13 +132,22 @@
 5.3 description.language
 ------------------------
 
-**Definition**: a metadata schema block declaring the language of the description text
+**Definition**: a metadata schema sub-block declaring the language of the description text
 
 **Requirement**: recommended
 
 **Occurrence**: 0-1
 
 **Example JSON**
+
+.. code-block:: json
+
+   {
+     "language": {
+       "id": "eng",
+       "schemaUri": "https://www.iso.org/standard/74575.html"
+     }
+   }
 
 .. _5.3.1-description.languageId:
 
@@ -113,7 +162,9 @@
 
 **Allowed values**: *closed controlled list derived from description.language.schemaUri*
 
-**Example**: ``eng``
+**Example(s)**: ``eng``
+
+**Note**: Individual codes are not listed here, unlike other closed lists in this schema, because ISO 639:2023 (Set 3) contains several thousand language codes. Browse the full list at https://iso639-3.sil.org/code_tables/639/data.
 
 .. _5.3.1-description.languageId.schemaUri:
 
@@ -129,5 +180,7 @@
 **Allowed values**: *closed controlled list of allowed language schemas defined at https://vocabulary.raid.org/description.language.schemaUri/240*
 
 * ``https://www.iso.org/standard/74575.html`` (ISO 639:2023 Code for individual languages and language groups (Set 3))
+
+**Default**: ``https://www.iso.org/standard/74575.html``, the only value in this closed controlled list
 
 **Constraints**: currently limited to ISO 639:2023 (Set 3)

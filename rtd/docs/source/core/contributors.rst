@@ -14,6 +14,55 @@
 
 **Example JSON**
 
+.. code-block:: json
+
+   {
+     "contributor": [
+       {
+         "id": "https://orcid.org/0000-0002-1825-0097",
+         "schemaUri": "https://orcid.org/",
+         "position": [
+           {
+             "id": "https://vocabulary.raid.org/contributor.position.schema/307",
+             "schemaUri": "https://vocabulary.raid.org/contributor.position.schema/305",
+             "startDate": "2024-03-01"
+           }
+         ],
+         "role": [
+           {
+             "id": "https://credit.niso.org/contributor-roles/conceptualization/",
+             "schemaUri": "https://credit.niso.org/"
+           },
+           {
+             "id": "https://credit.niso.org/contributor-roles/supervision/",
+             "schemaUri": "https://credit.niso.org/"
+           }
+         ],
+         "leader": true,
+         "contact": true
+       },
+       {
+         "id": "https://orcid.org/0000-0001-9971-0253",
+         "schemaUri": "https://orcid.org/",
+         "position": [
+           {
+             "id": "https://vocabulary.raid.org/contributor.position.schema/308",
+             "schemaUri": "https://vocabulary.raid.org/contributor.position.schema/305",
+             "startDate": "2024-06-01"
+           }
+         ],
+         "role": [
+           {
+             "id": "https://credit.niso.org/contributor-roles/investigation/",
+             "schemaUri": "https://credit.niso.org/"
+           }
+         ],
+         "leader": false,
+         "contact": false
+       }
+     ]
+   }
+
 .. _6.1-contributor.id:
 
 6.1 contributor.id
@@ -45,7 +94,7 @@
 
 **Constraints**: a PID is required; ORCID and ISNI are currently allowed
 
-**Note**: The controlled list of allowed identifier schemas is shared across all Registration Agencies. An ORCID Sandbox schema (``https://sandbox.orcid.org/``) is also present in the controlled list for testing purposes only and is not intended for production RAiD records. ISNI existence is verified against the ISNI registry.
+**Note**: The controlled list of allowed identifier schemas is shared across all Registration Agencies. An ORCID Sandbox schema (``https://sandbox.orcid.org/``) is also present in the controlled list within the RAiD Demo environment. This schema is for the purposes of RAiD testing only and should not be used for real RAiD records minted in the Production environment. ISNI existence is verified against the ISNI registry.
 
 .. _6.3-contributor.position:
 
@@ -98,6 +147,8 @@
 
 * ``https://vocabulary.raid.org/contributor.position.schema/305``
 
+**Default**: ``https://vocabulary.raid.org/contributor.position.schema/305``, the only value in this closed controlled list
+
 **Note**: Controlled list informed by Simon Cox's Project Ontology, OpenAIRE ‘Project’ guidelines, NIH definitions, ARC definitions, and DataCite Metadata Schema 4.4 Appendix 1 Table 5 'Description of contributorType'.
 
 .. _6.3.3-contributor.position.startDate:
@@ -117,7 +168,7 @@
 
 **Format**: ``YYYY-MM-DD``
 
-**Examples**: ``2025-08-28``; ``2025-08``; ``2025``
+**Example(s)**: ``2025-08-28``; ``2025-08``; ``2025``
 
 **Note**: Only year is required, month and day are optional (but recommended when available).
 
@@ -136,7 +187,7 @@
 
 **Format**: ``YYYY-MM-DD``
 
-**Examples**: ``2025-08-28``; ``2025-08``; ``2025``
+**Example(s)**: ``2025-08-28``; ``2025-08``; ``2025``
 
 **Note**: Only year is required, month and day are optional (but recommended when available).
 
@@ -231,5 +282,7 @@
 **Allowed values**: *closed controlled list defined at https://vocabulary.raid.org/contributor.role.schemaUri/scheme*
 
 * ``https://credit.niso.org/``
+
+**Default**: ``https://credit.niso.org/``, the only value in this closed controlled list
 
 **Constraints**: currently limited to the CRediT vocabulary 

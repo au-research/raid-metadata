@@ -40,7 +40,7 @@ The RAiD metadata schema is divided into three components:
 Component blocks and sub-blocks
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Within each metadata schema component, the metadata properties are divided into groups or 'blocks' of related properties, such as all properties related to contributors or organisations. Blocks are further divided into 'sub-blocks', which contain no values themselves, but instead bracket tightly bound properties; for example, a recurring 'language' sub-block includes language code, language code scheme, and language code scheme URL. 
+Within each metadata schema component, the metadata properties are divided into groups or 'blocks' of related properties, such as all properties related to contributors or organisations. Blocks are further divided into 'sub-blocks', which contain no values themselves, but instead bracket tightly bound properties; for example, a recurring 'language' sub-block includes language code, language code scheme, and language code scheme URL. A sub-block may itself contain another sub-block; every grouping below the top-level block is a sub-block, regardless of how deeply it is nested.
 
 
 Metadata properties
@@ -54,7 +54,7 @@ Metadata properties, contained within blocks and sometimes sub-blocks, are descr
 
 **Occurrence** indicates the number of times a property may occur:
 
-* 0 represents a recommended or optional property that may occur only once
+* 0-1 represents a recommended or optional property that may occur only once
 * 0-n represents a recommended or optional property that may occur one or many times
 * 1 represents a required property that may occur only once
 * 1-n represents a required property that may occur one or many times
@@ -69,9 +69,9 @@ Furthermore, some properties include additional information.
 
 **Constraints** specify further limits or requirements governing 'Allowed values'.
 
-**Examples** provide models for the value.
+**Example(s)** can illustrate the value.
 
-**Example JSON** provides an indicative JSON code snippet.
+**Example JSON** provides an indicative JSON snippet showing how a block or sub-block appears in a RAiD metadata record, including its enclosing property name. Properties that hold a single value are illustrated by **Example(s)** instead. Snippets are drawn from fictional projects; organisation identifiers, vocabulary URIs and language codes are real, while RAiD names, contributor identifiers and object identifiers are illustrative only and will not resolve.
 
 **Note** contains any additional information about the property.
 

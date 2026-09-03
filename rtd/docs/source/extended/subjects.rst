@@ -14,6 +14,33 @@
 
 **Example JSON**
 
+.. code-block:: json
+
+   {
+     "subject": [
+       {
+         "id": "https://linked.data.gov.au/def/anzsrc-for/2020/310305",
+         "schemaUri": "https://vocabs.ardc.edu.au/viewById/316",
+         "keyword": [
+           {
+             "text": "kelp forest",
+             "language": {
+               "id": "eng",
+               "schemaUri": "https://www.iso.org/standard/74575.html"
+             }
+           },
+           {
+             "text": "marine heatwave",
+             "language": {
+               "id": "eng",
+               "schemaUri": "https://www.iso.org/standard/74575.html"
+             }
+           }
+         ]
+       }
+     ]
+   }
+
 .. _13.1-subject.id:
 
 13.1 subject.id
@@ -27,7 +54,7 @@
 
 **Allowed values**: *closed controlled list of URIs derived from the schema chosen at subject.id.schemaUri*
 
-**Examples**
+**Example(s)**:
 
 * https://linked.data.gov.au/def/anzsrc-for/2020/430106 (ANZSRC 2020 Fields of Research code: ‘Digital Archaeology’)
 
@@ -67,7 +94,7 @@ Other subject schemas can be nominated by Registration Agencies.
 
 **Definition**: unconstrained keyword or key phrase describing the project or activity
 
-**Requirement**: optional
+**Requirement**: mandatory for each subject.keyword supplied
 
 **Occurrence**: 1
 
@@ -80,13 +107,22 @@ Other subject schemas can be nominated by Registration Agencies.
 13.3.2 subject.keyword.language
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Definition**: metadata schema block declaring the language of the subject keyword text
+**Definition**: metadata schema sub-block declaring the language of the subject keyword text
 
 **Requirement**: recommended for each subject.keyword.text supplied
 
 **Occurrence**: 0-1
 
 **Example JSON**
+
+.. code-block:: json
+
+   {
+     "language": {
+       "id": "eng",
+       "schemaUri": "https://www.iso.org/standard/74575.html"
+     }
+   }
 
 .. _13.3.2.1-subject.keyword.language.id:
 
@@ -101,7 +137,9 @@ Other subject schemas can be nominated by Registration Agencies.
 
 **Allowed values**: *closed controlled list derived from subject.keyword.language.schemaUri*
 
-**Example**: ``eng``
+**Example(s)**: ``eng``
+
+**Note**: Individual codes are not listed here, unlike other closed lists in this schema, because ISO 639:2023 (Set 3) contains several thousand language codes. Browse the full list at https://iso639-3.sil.org/code_tables/639/data.
 
 .. _13.3.2.2-subject.keyword.language.schemaUri:
 
@@ -117,5 +155,7 @@ Other subject schemas can be nominated by Registration Agencies.
 **Allowed values**: *closed controlled list of allowed language schemas defined at https://vocabulary.raid.org/subject.keyword.language.schemaUri/245*
 
 * ``https://www.iso.org/standard/74575.html`` (ISO 639:2023 Code for individual languages and language groups (Set 3))
+
+**Default**: ``https://www.iso.org/standard/74575.html``, the only value in this closed controlled list
 
 **Constraints**: currently limited to ISO 639:2023 (Set 3)

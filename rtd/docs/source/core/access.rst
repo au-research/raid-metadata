@@ -14,12 +14,31 @@
 
 **Example JSON**
 
+.. code-block:: json
+
+   {
+     "access": {
+       "type": {
+         "id": "https://vocabularies.coar-repositories.org/access_rights/c_f1cf/",
+         "schemaUri": "https://vocabularies.coar-repositories.org/access_rights/"
+       },
+       "embargoExpiry": "2027-06-30",
+       "statement": {
+         "text": "Metadata for this record is embargoed until the primary data custodian approves release of the linked data collection.",
+         "language": {
+           "id": "eng",
+           "schemaUri": "https://www.iso.org/standard/74575.html"
+         }
+       }
+     }
+   }
+
 .. _12.1-access.type:
 
 12.1 access.type
 ----------------
 
-**Definition**: a metadata schema block containing RAiD access type information
+**Definition**: a metadata schema sub-block containing RAiD access type information
 
 **Requirement**: mandatory
 
@@ -27,7 +46,16 @@
 
 **Example JSON**
 
-.. _12.2-access.typeId:
+.. code-block:: json
+
+   {
+     "type": {
+       "id": "https://vocabularies.coar-repositories.org/access_rights/c_f1cf/",
+       "schemaUri": "https://vocabularies.coar-repositories.org/access_rights/"
+     }
+   }
+
+.. _12.1.1-access.typeId:
 
 12.1.1 access.type.id
 ^^^^^^^^^^^^^^^^^^^^^
@@ -60,7 +88,9 @@
 
 **Allowed values**: *closed controlled list defined at https://vocabulary.raid.org/access.type.schemaUri/scheme*
 
-* ``https://vocabularies.coar-repositories.org/access_rights/`` 
+* ``https://vocabularies.coar-repositories.org/access_rights/``
+
+**Default**: ``https://vocabularies.coar-repositories.org/access_rights/``, the only value in this closed controlled list
 
 **Note**: The RAiD controlled list includes only a subset of the COAR vocabulary (https://vocabularies.coar-repositories.org/access_rights/1.1/), including 'Open access' and 'Embargoed access', but excluding 'Restricted access' (since no permanently restricted RAiDs are allowed), and ‘Metadata only’ (since RAiDs by design contain only metadata).
 
@@ -81,20 +111,32 @@
 
 **Constraints**: an embargo expiration date must be within 18 months of the date the RAiD was registered; the year, month, and day that the embargo ends must be specified
 
-**Example**: ``2021-08-28``
+**Example(s)**: ``2021-08-28``
 
 .. _12.3-access.statement:
 
 12.3 access.statement
 ---------------------
 
-**Definition**: a metadata schema block containing an explanation of why the RAiD metadata record is not openly accessible, along with the explanation's associated properties
+**Definition**: a metadata schema sub-block containing an explanation of why the RAiD metadata record is not openly accessible, along with the explanation's associated properties
 
 **Requirement**: mandatory if access.type.id is not 'Open access'
 
 **Occurrence**: 0-1
 
 **Example JSON**
+
+.. code-block:: json
+
+   {
+     "statement": {
+       "text": "Metadata for this record is embargoed until the primary data custodian approves release of the linked data collection.",
+       "language": {
+         "id": "eng",
+         "schemaUri": "https://www.iso.org/standard/74575.html"
+       }
+     }
+   }
 
 .. _12.3.1-access.statement.text:
 
@@ -111,20 +153,27 @@
 
 **Constraints**: maximum 1,000 characters
 
-**Example JSON**
-
 .. _12.3.2-access.statement.language:
 
 12.3.2 access.statement.language
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Definition**: a metadata schema block declaring the language of the text in the access statement
+**Definition**: a metadata schema sub-block declaring the language of the text in the access statement
 
 **Requirement**: recommended
 
 **Occurrence**: 0-1
 
 **Example JSON**
+
+.. code-block:: json
+
+   {
+     "language": {
+       "id": "eng",
+       "schemaUri": "https://www.iso.org/standard/74575.html"
+     }
+   }
 
 .. _12.3.2.1-access.statement.language.id:
 
@@ -139,7 +188,9 @@
 
 **Allowed values**: *closed controlled list derived from access.statement.language.schemaUri*
 
-**Example**: ``eng``
+**Example(s)**: ``eng``
+
+**Note**: Individual codes are not listed here, unlike other closed lists in this schema, because ISO 639:2023 (Set 3) contains several thousand language codes. Browse the full list at https://iso639-3.sil.org/code_tables/639/data.
 
 .. _12.3.2.2-access.statement.language.schemaUri:
 
@@ -155,5 +206,7 @@
 **Allowed values**: *closed controlled list of allowed language schemas defined at https://vocabulary.raid.org/access.statement.language.schemaUri/196*
 
 * ``https://www.iso.org/standard/74575.html`` (ISO 639:2023 Code for individual languages and language groups (Set 3))
+
+**Default**: ``https://www.iso.org/standard/74575.html``, the only value in this closed controlled list
 
 **Constraints**: currently limited to ISO 639:2023 (Set 3)

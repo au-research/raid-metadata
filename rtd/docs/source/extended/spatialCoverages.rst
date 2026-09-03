@@ -14,6 +14,26 @@
 
 **Example JSON**
 
+.. code-block:: json
+
+   {
+     "spatialCoverage": [
+       {
+         "id": "https://www.openstreetmap.org/?#map=10/-43.0526/147.2472",
+         "schemaUri": "https://www.openstreetmap.org/",
+         "place": [
+           {
+             "text": "D'Entrecasteaux Channel, Tasmania, Australia",
+             "language": {
+               "id": "eng",
+               "schemaUri": "https://www.iso.org/standard/74575.html"
+             }
+           }
+         ]
+       }
+     ]
+   }
+
 .. _14.1-spatialCoverage.id:
 
 14.1 spatialCoverage.id
@@ -27,7 +47,7 @@
 
 **Allowed values**: *closed controlled list of URIs derived from the schema chosen at spatialCoverage.id.schemaUri*
 
-**Examples**
+**Example(s)**:
 
 * ``https://www.openstreetmap.org/relation/80500`` (Australia, from OpenStreetMap)
 * ``https://www.openstreetmap.org/way/173530296`` (University of New South Wales, Kensington, Sydney, from OpenStreetMap)
@@ -83,13 +103,22 @@
 14.3.2 spatialCoverage.place.language
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Definition**: metadata schema block declaring the language of spatialCoverage.place.text
+**Definition**: metadata schema sub-block declaring the language of spatialCoverage.place.text
 
 **Requirement**: recommended for each spatialCoverage.place.text provided
 
 **Occurrence**: 0-1
 
 **Example JSON**
+
+.. code-block:: json
+
+   {
+     "language": {
+       "id": "eng",
+       "schemaUri": "https://www.iso.org/standard/74575.html"
+     }
+   }
 
 .. _14.3.2.1-spatialCoverage.place.language.id:
 
@@ -98,13 +127,15 @@
 
 **Definition**: language used for spatialCoverage.place.text identified by a code or other identifier
 
-**Requirement**: mandatory for each subject.place.language supplied
+**Requirement**: mandatory for each spatialCoverage.place.language supplied
 
 **Occurrence**: 1
 
 **Allowed values**: *closed controlled list derived from spatialCoverage.place.language.schemaUri*
 
-**Example**: ``eng``
+**Example(s)**: ``eng``
+
+**Note**: Individual codes are not listed here, unlike other closed lists in this schema, because ISO 639:2023 (Set 3) contains several thousand language codes. Browse the full list at https://iso639-3.sil.org/code_tables/639/data.
 
 .. _14.3.2.2-spatialCoverage.place.language.schemaUri:
 
@@ -113,12 +144,14 @@
 
 **Definition**: the URI of the language identifier schema
 
-**Requirement**: mandatory for each subject.place.language supplied
+**Requirement**: mandatory for each spatialCoverage.place.language supplied
 
 **Occurrence**: 1
 
 **Allowed values**: *closed controlled list of allowed language schemas defined at https://vocabulary.raid.org/spatialCoverage.place.language.schemaUri/206*
 
 * ``https://www.iso.org/standard/74575.html`` (ISO 639:2023 Code for individual languages and language groups (Set 3))
+
+**Default**: ``https://www.iso.org/standard/74575.html``, the only value in this closed controlled list
 
 **Constraints**: currently limited to ISO 639:2023 (Set 3)

@@ -14,6 +14,37 @@
 
 **Example JSON**
 
+.. code-block:: json
+
+   {
+     "title": [
+       {
+         "text": "Kelp Forest Recovery Monitoring on the Great Southern Reef",
+         "type": {
+           "id": "https://vocabulary.raid.org/title.type.schema/5",
+           "schemaUri": "https://vocabulary.raid.org/title.type.schema/376"
+         },
+         "language": {
+           "id": "eng",
+           "schemaUri": "https://www.iso.org/standard/74575.html"
+         },
+         "startDate": "2024-03-01"
+       },
+       {
+         "text": "KELPWATCH",
+         "type": {
+           "id": "https://vocabulary.raid.org/title.type.schema/157",
+           "schemaUri": "https://vocabulary.raid.org/title.type.schema/376"
+         },
+         "language": {
+           "id": "eng",
+           "schemaUri": "https://www.iso.org/standard/74575.html"
+         },
+         "startDate": "2024-03-01"
+       }
+     ]
+   }
+
 .. _4.1-title.text:
 
 4.1 title.text
@@ -34,13 +65,22 @@
 4.2 title.type
 --------------
 
-**Definition**: a metadata schema block containing information about the title type
+**Definition**: a metadata schema sub-block containing information about the title type
 
 **Requirement**: mandatory for each title supplied
 
 **Occurrence**: 1
 
 **Example JSON**
+
+.. code-block:: json
+
+   {
+     "type": {
+       "id": "https://vocabulary.raid.org/title.type.schema/5",
+       "schemaUri": "https://vocabulary.raid.org/title.type.schema/376"
+     }
+   }
 
 .. _4.2.1-title.type.id:
 
@@ -60,9 +100,9 @@
 * ``https://vocabulary.raid.org/title.type.schema/156`` (Acronym)
 * ``https://vocabulary.raid.org/title.type.schema/4`` (Alternative, including subtitle or other supplemental title)
 
-**Default** 'Primary'
+**Default**: 'Primary'
 
-**Note**: One (and only one) current (as per start-end dates) Primary Title is mandatory for each Title specified; additional titles are optional; any previous titles are managed by start-end dates (title type does not change).
+**Note**: One (and only one) current (as per start-end dates) primary title is mandatory for each title specified; additional titles are optional; any previous titles are managed by start-end dates (title type does not change).
 
 .. _4.2.2-title.type.schemaUri:
 
@@ -75,7 +115,7 @@
 
 **Occurrence**: 1
 
-**Allowed values**: *Closed controlled list defined at https://vocabulary.raid.org/title.type.schemaUri/scheme*
+**Allowed values**: *closed controlled list defined at https://vocabulary.raid.org/title.type.schemaUri/scheme*
 
 * ``https://vocabulary.raid.org/title.type.schema/376``
 
@@ -86,13 +126,22 @@
 4.3 title.language
 ------------------
 
-**Definition**: a metadata schema block declaring the language of the title text
+**Definition**: a metadata schema sub-block declaring the language of the title text
 
 **Requirement**: recommended
 
 **Occurrence**: 0-1
 
 **Example JSON**
+
+.. code-block:: json
+
+   {
+     "language": {
+       "id": "eng",
+       "schemaUri": "https://www.iso.org/standard/74575.html"
+     }
+   }
 
 .. _4.3.1-title.languageId:
 
@@ -107,7 +156,9 @@
 
 **Allowed values**: *closed controlled list derived from title.language.schemaUri*
 
-**Example**: ``eng``
+**Example(s)**: ``eng``
+
+**Note**: Individual codes are not listed here, unlike other closed lists in this schema, because ISO 639:2023 (Set 3) contains several thousand language codes. Browse the full list at https://iso639-3.sil.org/code_tables/639/data.
 
 .. _4.3.2-title.languageId.schemaUri:
 
@@ -123,6 +174,8 @@
 **Allowed values**: *closed controlled list of allowed language schemas defined at https://vocabulary.raid.org/title.language.schemaUri/163*
 
 * ``https://www.iso.org/standard/74575.html`` (ISO 639:2023 Code for individual languages and language groups (Set 3))
+
+**Default**: ``https://www.iso.org/standard/74575.html``, the only value in this closed controlled list
 
 **Constraints**: currently limited to ISO 639:2023 (Set 3)
 
@@ -141,9 +194,9 @@
 
 **Format**: ``YYYY-MM-DD``
 
-**Default**: Date record created
+**Default**: date record created
 
-**Examples**: ``2023-08-28``; ``2023-08``; ``2023``
+**Example(s)**: ``2023-08-28``; ``2023-08``; ``2023``
 
 **Note**: Only the year is required, month and day are optional (but recommended when available).
 
@@ -162,6 +215,6 @@
 
 **Format**: ``YYYY-MM-DD``
 
-**Examples**: ``2023-08-28``; ``2023-08``; ``2023``
+**Example(s)**: ``2023-08-28``; ``2023-08``; ``2023``
 
 **Note**: Only the year is required, month and day are optional (but recommended when available).
