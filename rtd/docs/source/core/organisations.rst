@@ -56,7 +56,7 @@
 
 **Allowed values**: the organisation's identifier as specified by organisation.schemaUri
 
-**Example(s)**
+**Example(s)**:
 
 * ``https://ror.org/01sf06y89`` (Macquarie University)
 * ``https://ror.org/027bh9e2`` (Leiden University)
@@ -75,6 +75,8 @@
 **Allowed values**: *closed controlled list defined at https://vocabulary.raid.org/organisation.schemaUri/158*
 
 * ``https://ror.org/``
+
+**Default**: ``https://ror.org/``, the only value in this closed controlled list
 
 .. _7.3-organisation.role:
 
@@ -110,9 +112,9 @@
 * ``https://vocabulary.raid.org/organisation.role.schema/187`` (Facility, i.e., an organisation providing access to physical or digital infrastructure, but not otherwise listed as a research organisation, partner organisation or contractor)
 * ``https://vocabulary.raid.org/organisation.role.schema/188`` (Other Organisation not covered by the roles above)
 
-**Default**: first-entered Organisation (only) defaults to 'Lead Research Organisation'
+**Default**: first-entered organisation (only) defaults to 'Lead Research Organisation'
 
-**Constraints**: one (and only one) Organisation must be designated as 'Lead Research Organisation'
+**Constraints**: one (and only one) organisation must be designated as 'Lead Research Organisation'
 
 **Note**: Roles are likely to vary by region; controlled list adapted from Simon Cox's Project Ontology, OpenAIRE ‘Project’ guidelines, NIH definitions, ARC definitions, and DataCite Metadata Schema 4.4 Appendix 1 Table 5 'Description of contributorType'.
 
@@ -130,6 +132,8 @@
 **Allowed values**: *closed controlled list defined at https://vocabulary.raid.org/organisation.role.schemaUri/scheme*
 
 * ``https://vocabulary.raid.org/organisation.role.schema/359``
+
+**Default**: ``https://vocabulary.raid.org/organisation.role.schema/359``, the only value in this closed controlled list
 
 .. _7.3.3-organisation.role.startDate:
 

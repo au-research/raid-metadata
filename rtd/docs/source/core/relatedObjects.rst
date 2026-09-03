@@ -152,6 +152,8 @@
 
 * ``https://vocabulary.raid.org/relatedObject.type.schema/329``
 
+**Default**: ``https://vocabulary.raid.org/relatedObject.type.schema/329``, the only value in this closed controlled list
+
 .. _8.4-relatedObject.category:
 
 8.4 relatedObject.category
@@ -196,3 +198,5 @@
 **Allowed values**: *closed controlled list defined at https://vocabulary.raid.org/relatedObject.category.schemaUri/scheme*
 
 * ``https://vocabulary.raid.org/relatedObject.category.schemaUri/386``
+
+**Default**: ``https://vocabulary.raid.org/relatedObject.category.schemaUri/386``, the only value in this closed controlled list

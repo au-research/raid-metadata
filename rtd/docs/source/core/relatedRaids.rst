@@ -81,7 +81,7 @@
 11.2.2 relatedRaid.type.schemaUri
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Definition**: The URI of the relationship schema used
+**Definition**: the URI of the relationship schema used
 
 **Requirement**: mandatory for each relatedRaid.type supplied
 
@@ -90,3 +90,5 @@
 **Allowed values**: *closed controlled list defined at https://vocabulary.raid.org/relatedRaid.type.schemaUri/scheme*
 
 * https://vocabulary.raid.org/relatedRaid.type.schema/367
+
+**Default**: ``https://vocabulary.raid.org/relatedRaid.type.schema/367``, the only value in this closed controlled list

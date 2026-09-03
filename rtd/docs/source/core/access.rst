@@ -38,7 +38,7 @@
 12.1 access.type
 ----------------
 
-**Definition**: a metadata schema block containing RAiD access type information
+**Definition**: a metadata schema sub-block containing RAiD access type information
 
 **Requirement**: mandatory
 
@@ -55,7 +55,7 @@
      }
    }
 
-.. _12.2-access.typeId:
+.. _12.1.1-access.typeId:
 
 12.1.1 access.type.id
 ^^^^^^^^^^^^^^^^^^^^^
@@ -88,7 +88,9 @@
 
 **Allowed values**: *closed controlled list defined at https://vocabulary.raid.org/access.type.schemaUri/scheme*
 
-* ``https://vocabularies.coar-repositories.org/access_rights/`` 
+* ``https://vocabularies.coar-repositories.org/access_rights/``
+
+**Default**: ``https://vocabularies.coar-repositories.org/access_rights/``, the only value in this closed controlled list
 
 **Note**: The RAiD controlled list includes only a subset of the COAR vocabulary (https://vocabularies.coar-repositories.org/access_rights/1.1/), including 'Open access' and 'Embargoed access', but excluding 'Restricted access' (since no permanently restricted RAiDs are allowed), and ‘Metadata only’ (since RAiDs by design contain only metadata).
 
@@ -116,7 +118,7 @@
 12.3 access.statement
 ---------------------
 
-**Definition**: a metadata schema block containing an explanation of why the RAiD metadata record is not openly accessible, along with the explanation's associated properties
+**Definition**: a metadata schema sub-block containing an explanation of why the RAiD metadata record is not openly accessible, along with the explanation's associated properties
 
 **Requirement**: mandatory if access.type.id is not 'Open access'
 
@@ -156,7 +158,7 @@
 12.3.2 access.statement.language
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Definition**: a metadata schema block declaring the language of the text in the access statement
+**Definition**: a metadata schema sub-block declaring the language of the text in the access statement
 
 **Requirement**: recommended
 
@@ -188,6 +190,8 @@
 
 **Example(s)**: ``eng``
 
+**Note**: Individual codes are not listed here, unlike other closed lists in this schema, because ISO 639:2023 (Set 3) contains several thousand language codes. Browse the full list at https://iso639-3.sil.org/code_tables/639/data.
+
 .. _12.3.2.2-access.statement.language.schemaUri:
 
 12.3.2.2 access.statement.language.schemaUri
@@ -202,5 +206,7 @@
 **Allowed values**: *closed controlled list of allowed language schemas defined at https://vocabulary.raid.org/access.statement.language.schemaUri/196*
 
 * ``https://www.iso.org/standard/74575.html`` (ISO 639:2023 Code for individual languages and language groups (Set 3))
+
+**Default**: ``https://www.iso.org/standard/74575.html``, the only value in this closed controlled list
 
 **Constraints**: currently limited to ISO 639:2023 (Set 3)
