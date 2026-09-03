@@ -52,7 +52,7 @@
 
 **Constraints**: RAiD name prefix supplied by DataCite; RAiD name suffix consisting of alphanumeric, English, ASCII Latin characters
 
-**Example**: ``https://raid.org/10.99999/7a2f4c81``
+**Example(s)**: ``https://raid.org/10.99999/7a2f4c81``
 
 **Note**: A RAiD name should be expressed using the ``https://raid.org/`` domain, as shown above. This is the preferred form and the form recorded in the RAiD metadata record. Because RAiD names are also valid DOIs, the same name resolves via https://doi.org/ and https://handle.net/, but those forms should not be used when supplying or citing a RAiD name.
 
@@ -61,7 +61,7 @@
 1.2 identifier.schemaUri
 ------------------------
 
-**Definition**: the URI of the identifier scheme used to identify RAiDs.
+**Definition**: the URI of the identifier scheme used to identify RAiDs
 
 **Requirement**: mandatory
 
@@ -78,7 +78,7 @@
 1.3 identifier.registrationAgency
 ---------------------------------
 
-**Definition**: metadata schema sub-block declaring the Registration Agency that minted the RAiD.
+**Definition**: metadata schema sub-block declaring the Registration Agency that minted the RAiD
 
 **Requirement**: mandatory
 
@@ -97,7 +97,7 @@
 
 **Allowed values**: *the organisational identifier of a bona fide RAiD Registration Agency, limited to the list maintained by the Registration Authority, utilising the schema declared at identifier.registrationAgency.schemaUri*
 
-**Examples**:
+**Example(s)**:
 
 * ``https://ror.org/038sjwq14`` (The Australian Research Data Commons)
 * ``https://ror.org/009vhk114`` (SURF)
@@ -147,7 +147,7 @@
 
 **Allowed values**: *the identifier of an organisation recognised by a Registration Agency as able to mint RAiDs, utilising the schema declared at identifier.owner.schemaUri*
 
-**Examples**:
+**Example(s)**:
 
 * ``https://ror.org/00rqy9422`` (University of Queensland)
 * ``https://ror.org/02stey378`` (University of Notre Dame Australia)
@@ -187,7 +187,7 @@
 
 **Allowed values**: *SPs from list maintained by each Registration Agency*
 
-**Examples**:
+**Example(s)**:
 
 * Queensland University of Technology - Research Infrastructure
 * RDM@UQ
@@ -218,7 +218,7 @@
 1.6 identifier.license
 ----------------------
 
-**Definition**: the licence, or licence waiver, under which the RAiD metadata record associated with this Identifier has been issued.
+**Definition**: the licence, or licence waiver, under which the RAiD metadata record associated with this Identifier has been issued
 
 **Requirement**: mandatory
 

@@ -56,7 +56,7 @@
 
 **Allowed values**: the organisation's identifier as specified by organisation.schemaUri
 
-**Examples**
+**Example(s)**
 
 * ``https://ror.org/01sf06y89`` (Macquarie University)
 * ``https://ror.org/027bh9e2`` (Leiden University)
@@ -146,7 +146,7 @@
 
 **Format**: ``YYYY-MM-DD``
 
-**Examples**: ``2026-08-28``; ``2026-08``; ``2026``
+**Example(s)**: ``2026-08-28``; ``2026-08``; ``2026``
 
 **Note**: Only the year is required; month and day are optional (but recommended when available).
 
@@ -165,6 +165,6 @@
 
 **Format**: ``YYYY-MM-DD``
 
-**Examples**: ``2026-08-28``; ``2026-08``; ``2026``
+**Example(s)**: ``2026-08-28``; ``2026-08``; ``2026``
 
 **Note**: Only the year is required; month and day are optional (but recommended when available).

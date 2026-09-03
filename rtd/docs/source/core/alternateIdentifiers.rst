@@ -38,7 +38,7 @@
 
 **Allowed values**: free text
 
-**Example**: '123456ABC'
+**Example(s)**: '123456ABC'
 
 **Note**: An alternateIdentifer.id may be any alphanumeric string that is unique within its domain of issue, for example a local identifier unique to an organisation. The alternateIdentifier.id represents an additional identifier for the same instance of the project or activity; its referent is identical to that of the RAiD.
 
@@ -55,4 +55,4 @@
 
 **Allowed values**: free text
 
-**Example**: 'A local project ID in the university CRIS'
+**Example(s)**: 'A local project ID in the university CRIS'

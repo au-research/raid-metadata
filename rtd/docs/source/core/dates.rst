@@ -40,7 +40,7 @@
 
 **Format**: ``YYYY-MM-DD``
 
-**Examples**: ``2023-08-28``; ``2023-08``; ``2023``
+**Example(s)**: ``2023-08-28``; ``2023-08``; ``2023``
 
 **Note**: Only the year is required, month and day are optional (but recommended when available).
 
@@ -59,6 +59,6 @@
 
 **Format**: ``YYYY-MM-DD``
 
-**Examples**: ``2023-08-28``; ``2023-08``; ``2023``
+**Example(s)**: ``2023-08-28``; ``2023-08``; ``2023``
 
 **Note**: Only year is required, month and day are optional (but recommended when available). An end date should be supplied when a project concludes. Providing an end date terminates active management of, and Registration Agency / Identifier Owner responsibility for, a RAiD. Once a RAiD has an end date, it should be considered archival only.

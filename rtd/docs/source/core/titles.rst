@@ -156,7 +156,7 @@
 
 **Allowed values**: *closed controlled list derived from title.language.schemaUri*
 
-**Example**: ``eng``
+**Example(s)**: ``eng``
 
 .. _4.3.2-title.languageId.schemaUri:
 
@@ -192,7 +192,7 @@
 
 **Default**: Date record created
 
-**Examples**: ``2023-08-28``; ``2023-08``; ``2023``
+**Example(s)**: ``2023-08-28``; ``2023-08``; ``2023``
 
 **Note**: Only the year is required, month and day are optional (but recommended when available).
 
@@ -211,6 +211,6 @@
 
 **Format**: ``YYYY-MM-DD``
 
-**Examples**: ``2023-08-28``; ``2023-08``; ``2023``
+**Example(s)**: ``2023-08-28``; ``2023-08``; ``2023``
 
 **Note**: Only the year is required, month and day are optional (but recommended when available).

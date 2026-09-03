@@ -47,7 +47,7 @@
 
 **Allowed values**: *closed controlled list of URIs derived from the schema chosen at spatialCoverage.id.schemaUri*
 
-**Examples**
+**Example(s)**
 
 * ``https://www.openstreetmap.org/relation/80500`` (Australia, from OpenStreetMap)
 * ``https://www.openstreetmap.org/way/173530296`` (University of New South Wales, Kensington, Sydney, from OpenStreetMap)
@@ -133,7 +133,7 @@
 
 **Allowed values**: *closed controlled list derived from spatialCoverage.place.language.schemaUri*
 
-**Example**: ``eng``
+**Example(s)**: ``eng``
 
 .. _14.3.2.2-spatialCoverage.place.language.schemaUri:
 

@@ -166,7 +166,7 @@
 
 **Format**: ``YYYY-MM-DD``
 
-**Examples**: ``2025-08-28``; ``2025-08``; ``2025``
+**Example(s)**: ``2025-08-28``; ``2025-08``; ``2025``
 
 **Note**: Only year is required, month and day are optional (but recommended when available).
 
@@ -185,7 +185,7 @@
 
 **Format**: ``YYYY-MM-DD``
 
-**Examples**: ``2025-08-28``; ``2025-08``; ``2025``
+**Example(s)**: ``2025-08-28``; ``2025-08``; ``2025``
 
 **Note**: Only year is required, month and day are optional (but recommended when available).
 
