@@ -71,6 +71,8 @@
 
 * ``https://raid.org/``
 
+**Default**: ``https://raid.org/``, the only value in this closed controlled list
+
 **Note**: This property declares that the identifier is a RAiD and resolvable at https://raid.org/.
 
 .. _1.3-identifier.registrationAgency:
@@ -119,7 +121,9 @@
 
 **Allowed values**: *closed controlled list defined at https://vocabulary.raid.org/identifier.registrationAgency.schemaUri/242*
 
-* ``https://ror.org``  
+* ``https://ror.org``
+
+**Default**: ``https://ror.org``, the only value in this closed controlled list
 
 **Constraints**: a PID is required and (currently) only ROR is allowed
 
@@ -171,6 +175,8 @@
 **Allowed values**: *closed controlled list defined at https://vocabulary.raid.org/identifier.owner.schemaUri/328*
 
 * ``https://ror.org/``
+
+**Default**: ``https://ror.org/``, the only value in this closed controlled list
 
 **Constraints**: a PID is required and (currently) only ROR is allowed
 
@@ -227,6 +233,8 @@
 **Allowed values**: *closed controlled list defined at https://vocabulary.raid.org/identifier.license/scheme*
 
 * Creative Commons CC-0
+
+**Default**: 'Creative Commons CC-0', the only value in this closed controlled list
 
 **Constraints**: CC-0 only (with fallback to CC-BY-4.0 in jurisdictions where CC-0 is not allowed)
 

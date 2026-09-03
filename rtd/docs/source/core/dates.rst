@@ -36,7 +36,7 @@
 
 **Allowed values**: ISO 8601 standard date
 
-**Default**: Date record created
+**Default**: date record created
 
 **Format**: ``YYYY-MM-DD``
 

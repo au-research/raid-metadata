@@ -147,6 +147,8 @@
 
 * ``https://vocabulary.raid.org/contributor.position.schema/305``
 
+**Default**: ``https://vocabulary.raid.org/contributor.position.schema/305``, the only value in this closed controlled list
+
 **Note**: Controlled list informed by Simon Cox's Project Ontology, OpenAIRE ‘Project’ guidelines, NIH definitions, ARC definitions, and DataCite Metadata Schema 4.4 Appendix 1 Table 5 'Description of contributorType'.
 
 .. _6.3.3-contributor.position.startDate:
@@ -280,5 +282,7 @@
 **Allowed values**: *closed controlled list defined at https://vocabulary.raid.org/contributor.role.schemaUri/scheme*
 
 * ``https://credit.niso.org/``
+
+**Default**: ``https://credit.niso.org/``, the only value in this closed controlled list
 
 **Constraints**: currently limited to the CRediT vocabulary 

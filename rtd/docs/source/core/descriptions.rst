@@ -65,7 +65,7 @@
 5.2 description.type
 --------------------
 
-**Definition**: a metadata schema block declaring the type of description
+**Definition**: a metadata schema sub-block declaring the type of description
 
 **Requirement**: mandatory for each description supplied
 
@@ -123,6 +123,8 @@
 
 * ``https://vocabulary.raid.org/description.type.schema/320``
 
+**Default**: ``https://vocabulary.raid.org/description.type.schema/320``, the only value in this closed controlled list
+
 **Note**: Controlled list adapted from Vocabularies for Registry Schema 1.6.5 'Description Type' and DataCite Metadata Schema 4.4 Appendix 1 Table 10 'Description of descriptiontype'.
 
 .. _5.3-description.language:
@@ -130,7 +132,7 @@
 5.3 description.language
 ------------------------
 
-**Definition**: a metadata schema block declaring the language of the description text
+**Definition**: a metadata schema sub-block declaring the language of the description text
 
 **Requirement**: recommended
 
@@ -162,6 +164,8 @@
 
 **Example(s)**: ``eng``
 
+**Note**: Individual codes are not listed here, unlike other closed lists in this schema, because ISO 639:2023 (Set 3) contains several thousand language codes. Browse the full list at https://iso639-3.sil.org/code_tables/639/data.
+
 .. _5.3.1-description.languageId.schemaUri:
 
 5.3.2 description.language.schemaUri
@@ -176,5 +180,7 @@
 **Allowed values**: *closed controlled list of allowed language schemas defined at https://vocabulary.raid.org/description.language.schemaUri/240*
 
 * ``https://www.iso.org/standard/74575.html`` (ISO 639:2023 Code for individual languages and language groups (Set 3))
+
+**Default**: ``https://www.iso.org/standard/74575.html``, the only value in this closed controlled list
 
 **Constraints**: currently limited to ISO 639:2023 (Set 3)
