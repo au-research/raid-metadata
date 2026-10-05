@@ -15,16 +15,14 @@ Nothing in this appendix should be used in a RAiD metadata record. Components ar
 Additional relatedObject identifier schemes
 -------------------------------------------
 
-The controlled list at https://vocabulary.raid.org/relatedObject.schemaUri/scheme publishes six identifier schemes. Two of these, DOI and Web Archive, are accepted by the RAiD system and are documented at :ref:`8.2-relatedObject.id.schemaUri`. The remaining four are published in the controlled list but are not currently accepted:
+The controlled list at https://vocabulary.raid.org/relatedObject.schemaUri/scheme publishes six identifier schemes. Four of these, DOI, Web Archive, Handle and RRID, are accepted by the RAiD system and are documented at :ref:`8.2-relatedObject.id.schemaUri`. The remaining two are published in the controlled list but are not currently accepted:
 
-* ``https://hdl.handle.net/`` (*all non-DOI handles*)
-* ``https://scicrunch.org/resolver/`` (*RRID*)
 * ``https://arks.org/`` (*Archival Resource Keys*)
 * ``https://www.isbn-international.org/`` (*ISBN*)
 
-Validation for Handle and RRID has been built but is not yet released to production. Validation for ARK is planned. No validation work has been scheduled for ISBN.
+Validation for ARK is planned. No validation work has been scheduled for ISBN.
 
-**Note**: an earlier version of this documentation listed ``https://n2t.net/ark:`` for ARK and ``http://hdl.handle.net/`` for Handle. The forms published in the controlled list, and shown above, are the correct ones.
+**Note**: an earlier version of this documentation listed ``https://n2t.net/ark:`` for ARK. The form published in the controlled list, and shown above, is the correct one.
 
 .. _appendix-traditionalKnowledge:
 
