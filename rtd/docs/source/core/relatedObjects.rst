@@ -45,6 +45,20 @@
              "schemaUri": "https://vocabulary.raid.org/relatedObject.category.schemaUri/386"
            }
          ]
+       },
+       {
+         "id": "https://scicrunch.org/resolver/RRID:AB_2298772",
+         "schemaUri": "https://scicrunch.org/resolver/",
+         "type": {
+           "id": "https://vocabulary.raid.org/relatedObject.type.schema/270",
+           "schemaUri": "https://vocabulary.raid.org/relatedObject.type.schema/329"
+         },
+         "category": [
+           {
+             "id": "https://vocabulary.raid.org/relatedObject.category.id/191",
+             "schemaUri": "https://vocabulary.raid.org/relatedObject.category.schemaUri/386"
+           }
+         ]
        }
      ]
    }
@@ -77,10 +91,16 @@
 
 * ``https://doi.org/`` (*all DOIs, including IGSNs, CrossRef Publication IDs or Grant IDs, DataCite DOIs, instrument DOIs, etc.*)
 * ``https://web.archive.org/`` (*fallback for any Object that has no ID other than a webpage - a Wayback Machine snapshot must be taken and that link inserted into the RAiD*)
+* ``https://hdl.handle.net/`` (*Handle, for all non-DOI handles*)
+* ``https://scicrunch.org/resolver/`` (*RRID*)
 
-**Constraints**: a relatedObject.id declared under the Web Archive schema must be a full snapshot URL of the form ``https://web.archive.org/web/<14-digit timestamp>/<original URL>``, e.g. ``https://web.archive.org/web/20260219073130/https://www.raid.org/``.
+**Constraints**:
 
-**Note**: Controlled list is a subset of DataCite Metadata Schema 4.4 Appendix 1 Table 8 'Description of relatedIdentiferType'. Further identifier schemes are published in the controlled list but are not yet accepted by the RAiD service; see :doc:`../appendix-not-implemented`.
+* a relatedObject.id declared under the Web Archive schema must be a full snapshot URL of the form ``https://web.archive.org/web/<14-digit timestamp>/<original URL>``, e.g. ``https://web.archive.org/web/20260219073130/https://www.raid.org/``.
+* a relatedObject.id declared under the Handle schema must be of the form ``https://hdl.handle.net/<prefix>/<suffix>``, e.g. ``https://hdl.handle.net/10.1234/xyz``, and is verified against the Handle resolver.
+* a relatedObject.id declared under the RRID schema must be of the form ``https://scicrunch.org/resolver/RRID:<source-prefix>_<id>``, e.g. ``https://scicrunch.org/resolver/RRID:AB_2298772``, and is verified against the RRID resolver.
+
+**Note**: Controlled list is a subset of DataCite Metadata Schema 4.4 Appendix 1 Table 8 'Description of relatedIdentiferType'. Further identifier schemes are published in the controlled list but are not yet accepted by the RAiD service; see :doc:`../appendix-not-implemented`. An earlier version of this documentation listed ``http://hdl.handle.net/`` (rather than ``https://hdl.handle.net/``) for Handle; the form shown above is the correct one.
 
 .. _8.3-relatedObject.type:
 
